@@ -17858,15 +17858,14 @@ msgid "%s: not a directory"
 msgstr "%s: ディレクトリではありません"
 
 #: sys-utils/fstrim.c:113
-#, fuzzy, c-format
-#| msgid "%s: %s mounted on %s.\n"
+#, c-format
 msgid "%s: 0 B (dry run) trimmed on %s\n"
-msgstr "%s: %s は %s にマウントされました。\n"
+msgstr "%s: %s で 0 B (ドライラン) trim されました\n"
 
 #: sys-utils/fstrim.c:115
 #, c-format
 msgid "%s: 0 B (dry run) trimmed\n"
-msgstr ""
+msgstr "%s: 0 B (ドライラン) trim されました\n"
 
 #: sys-utils/fstrim.c:133
 #, c-format
@@ -17875,16 +17874,15 @@ msgstr "%s: FITRIM ioctl に失敗しました"
 
 #. TRANSLATORS: The standard value here is a very large number.
 #: sys-utils/fstrim.c:143
-#, fuzzy, c-format
-#| msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
+#, c-format
 msgid "%s: %s (%<PRIu64> bytes) trimmed on %s\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%1$s: %2$s で %4$s (%3$<PRIu64> バイト) trim されました\n"
 
 #. TRANSLATORS: The standard value here is a very large number.
 #: sys-utils/fstrim.c:147
 #, c-format
 msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%s: %s (%<PRIu64> バイト) trim されました\n"
 
 #: sys-utils/fstrim.c:290 sys-utils/lsns.c:1487 sys-utils/swapon.c:759
 #: sys-utils/umount.c:271
@@ -17911,24 +17909,16 @@ msgid "Discard unused blocks on a mounted filesystem.\n"
 msgstr "マウントされたファイルシステムの未使用ブロックを破棄します。\n"
 
 #: sys-utils/fstrim.c:460
-#, fuzzy
-#| msgid " -a, --all               unmount all filesystems\n"
 msgid " -a, --all                trim mounted filesystems\n"
-msgstr " -a, --all               すべてのファイルシステムをアンマウントします\n"
+msgstr " -a, --all                マウントされたファイルシステムを trim します\n"
 
 #: sys-utils/fstrim.c:461
-#, fuzzy
-#| msgid " -a, --all               unmount all filesystems\n"
 msgid " -A, --fstab              trim filesystems from /etc/fstab\n"
-msgstr " -a, --all               すべてのファイルシステムをアンマウントします\n"
+msgstr " -A, --fstab              /etc/fstab にあるファイルシステムを trim します\n"
 
 #: sys-utils/fstrim.c:462
-#, fuzzy
-#| msgid " -w, --whitelist-environment <list>  don't reset specified variables\n"
 msgid " -I, --listed-in <list>   trim filesystems listed in specified files\n"
-msgstr ""
-" -w, --whitelist-environment <list>  指定した変数をリセットしません\n"
-"\n"
+msgstr " -I, --listed-in <list>   指定したファイルの一覧内のファイルシステムを trim します\n"
 
 #: sys-utils/fstrim.c:463
 #, fuzzy
@@ -17961,16 +17951,12 @@ msgid " -v, --verbose            print number of discarded bytes\n"
 msgstr " -v, --verbose             冗長なデータ出力を行います\n"
 
 #: sys-utils/fstrim.c:468
-#, fuzzy
-#| msgid " -q, --quiet               suppress extra info messages\n"
 msgid "     --quiet-unsupported  suppress error messages if trim unsupported\n"
-msgstr " -q, --quiet               出力するメッセージの量を抑えます\n"
+msgstr "     --quiet-unsupported  trim 非対応時に出力するエラーメッセージを省略します\n"
 
 #: sys-utils/fstrim.c:469
-#, fuzzy
-#| msgid " -n, --dry-run            does everything, but suspend\n"
 msgid " -n, --dry-run            does everything, but trim\n"
-msgstr " -n, --dry-run            実際のサスペンド処理以外のすべてを行います\n"
+msgstr " -n, --dry-run            実際の trim 処理以外のすべてを行います\n"
 
 #: sys-utils/fstrim.c:550
 msgid "failed to parse minimum extent length"
