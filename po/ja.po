@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-06-15 14:39+0900\n"
+"PO-Revision-Date: 2024-07-02 16:44+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -4857,7 +4857,7 @@ msgstr " -n, --no-act              デバイスに書き込まないこと以外
 
 #: disk-utils/sfdisk.c:2091
 msgid "     --no-reread           do not check whether the device is in use\n"
-msgstr "     --noclear             デバイスが使用中かどうか確認しません\n"
+msgstr "     --no-reread           デバイスが使用中かどうか確認しません\n"
 
 #: disk-utils/sfdisk.c:2092
 msgid "     --no-tell-kernel      do not tell kernel about changes\n"
@@ -9139,7 +9139,7 @@ msgstr " -h, --help           使用法 (これ) を表示します\n"
 
 #: login-utils/lslogins.c:1457 sys-utils/lsipc.c:306
 msgid "     --noheadings         don't print headings\n"
-msgstr " -n, --noheadings        ヘッダを表示しません\n"
+msgstr "     --noheadings         ヘッダを表示しません\n"
 
 #: login-utils/lslogins.c:1458 sys-utils/lsipc.c:307
 #, fuzzy
@@ -9421,7 +9421,7 @@ msgstr " -G, --supp-group <グループ>            補助グループを指定�
 
 #: login-utils/su-common.c:897
 msgid " -, -l, --login                  make the shell a login shell\n"
-msgstr "  -h, --help                     このちょっとした使い方を表示する\n"
+msgstr " -, -l, --login                  シェルをログインシェルにする\n"
 
 #: login-utils/su-common.c:898
 msgid " -c, --command <command>         pass a single command to the shell with -c\n"
