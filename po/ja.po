@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-07 21:56+0900\n"
+"PO-Revision-Date: 2024-07-08 08:26+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -15903,142 +15903,116 @@ msgid "unknown flag"
 msgstr "不明なフラグです: %s"
 
 #: sys-utils/blkzone.c:93
-#, fuzzy
-#| msgid "%s: not a block device"
 msgid "Report zone information about the given device"
-msgstr "%s: ブロックデバイスではありません"
+msgstr "指定したデバイスのゾーン情報を表示します"
 
 #: sys-utils/blkzone.c:97
-#, fuzzy
-#| msgid "%s: not a block device"
 msgid "Report sum of zone capacities for the given device"
-msgstr "%s: ブロックデバイスではありません"
+msgstr "指定したデバイスのゾーン容量の合計を表示します"
 
 #: sys-utils/blkzone.c:103
-#, fuzzy
 msgid "Reset a range of zones."
-msgstr "範囲を指定"
+msgstr "ゾーンの範囲をリセットします。"
 
 #: sys-utils/blkzone.c:109
-#, fuzzy
 msgid "Open a range of zones."
-msgstr "ゾーンを保存(_S)"
+msgstr "ゾーンの範囲をオープンします。"
 
 #: sys-utils/blkzone.c:115
-#, fuzzy
 msgid "Close a range of zones."
-msgstr "閉じる"
+msgstr "ゾーンの範囲をクローズします。"
 
 #: sys-utils/blkzone.c:121
-#, fuzzy
 msgid "Set a range of zones to Full."
-msgstr "      --smtpname    SMTP 転送で利用するフルネーム username@domain を指定します\n"
+msgstr "ゾーンの範囲をフルに設定します。"
 
 #: sys-utils/blkzone.c:152
-#, fuzzy, c-format
-#| msgid "%s: change directory failed"
+#, c-format
 msgid "%s: blkdev_get_sectors ioctl failed"
-msgstr "%s: ディレクトリの変更に失敗しました"
+msgstr "%s: blkdev_get_sectors ioctl に失敗しました"
 
 #: sys-utils/blkzone.c:242
-#, fuzzy, c-format
-#| msgid "%s: offset is greater than device size"
+#, c-format
 msgid "%s: offset is greater than or equal to device size"
-msgstr "%s: オフセットがデバイスサイズよりも大きいです"
+msgstr "%s: オフセットがデバイスサイズ以上です"
 
 #: sys-utils/blkzone.c:246 sys-utils/blkzone.c:339
-#, fuzzy, c-format
-#| msgid "%s: unable to write zone map"
+#, c-format
 msgid "%s: unable to determine zone size"
-msgstr "ioctl が失敗: デバイスサイズを取得できません: %s"
+msgstr "%s: ゾーンサイズを取得できません"
 
 #: sys-utils/blkzone.c:264
-#, fuzzy, c-format
-#| msgid "%s: BLKGETSIZE64 ioctl failed"
+#, c-format
 msgid "%s: BLKREPORTZONE ioctl failed"
-msgstr "%s に対する BLKGETSIZE ioctl が失敗しました"
+msgstr "%s: BLKREPORTZONE ioctl に失敗しました"
 
 #: sys-utils/blkzone.c:267
 #, c-format
 msgid "Found %d zones from 0x%<PRIx64>\n"
-msgstr ""
+msgstr "0x%2$<PRIx64> から始まる %1$d 個のゾーンを検出しました\n"
 
 #: sys-utils/blkzone.c:295
 #, c-format
 msgid "  start: 0x%09<PRIx64>, len 0x%06<PRIx64>, cap 0x%06<PRIx64>, wptr 0x%06<PRIx64> reset:%u non-seq:%u, zcond:%2u(%s) [type: %u(%s)]\n"
-msgstr ""
+msgstr "  開始: 0x%09<PRIx64>, 長さ 0x%06<PRIx64>, 容量 0x%06<PRIx64>, wptr 0x%06<PRIx64> reset:%u non-seq:%u, 状態:%2u(%s) [タイプ: %u(%s)]\n"
 
 #: sys-utils/blkzone.c:303
 #, c-format
 msgid "  start: 0x%09<PRIx64>, len 0x%06<PRIx64>, wptr 0x%06<PRIx64> reset:%u non-seq:%u, zcond:%2u(%s) [type: %u(%s)]\n"
-msgstr ""
+msgstr "  開始: 0x%09<PRIx64>, 長さ 0x%06<PRIx64>, wptr 0x%06<PRIx64> reset:%u non-seq:%u, 状態:%2u(%s) [タイプ: %u(%s)]\n"
 
 #: sys-utils/blkzone.c:319
 #, c-format
 msgid "0x%09<PRIx64>\n"
-msgstr ""
+msgstr "0x%09<PRIx64>\n"
 
 #: sys-utils/blkzone.c:344
-#, fuzzy, c-format
-#| msgid "%s: offset %<PRIu64> is not aligned to sector size %i"
+#, c-format
 msgid "%s: offset %<PRIu64> is not aligned to zone size %lu"
-msgstr "%s: オフセット %<PRIu64> はセクタのサイズ %i の倍数ではありません"
+msgstr "%s: オフセット %<PRIu64> はゾーンサイズ %lu の倍数ではありません"
 
 #: sys-utils/blkzone.c:363
-#, fuzzy, c-format
-#| msgid "%s: offset %<PRIu64> is not aligned to sector size %i"
+#, c-format
 msgid "%s: number of sectors %<PRIu64> is not aligned to zone size %lu"
-msgstr "%s: オフセット %<PRIu64> はセクタのサイズ %i の倍数ではありません"
+msgstr "%s: セクタ数 %<PRIu64> はゾーンサイズ %lu の倍数ではありません"
 
 #: sys-utils/blkzone.c:374
-#, fuzzy, c-format
-#| msgid "Partition name changed from '%s' to '%.*s'."
+#, c-format
 msgid "%s: successful %s of zones in range from %<PRIu64>, to %<PRIu64>"
-msgstr "パーティションの名前を `%s' から `%.*s' に変更しました。"
+msgstr "%1$s: %3$<PRIu64> から %4$<PRIu64> までの範囲のゾーンの %2$s に成功しました"
 
 #: sys-utils/blkzone.c:389
-#, fuzzy, c-format
-#| msgid " %s [options] <device>\n"
+#, c-format
 msgid " %s <command> [options] <device>\n"
-msgstr " %s [オプション] [tty デバイス]\n"
+msgstr " %s <コマンド> [オプション] <デバイス>\n"
 
 #: sys-utils/blkzone.c:392
 msgid "Run zone command on the given block device.\n"
-msgstr ""
+msgstr "指定したブロックデバイスでゾーンコマンドを実行します\n"
 
 #: sys-utils/blkzone.c:399
-#, fuzzy
-#| msgid " -o, --offset <num>            start at offset <num> into file\n"
 msgid " -o, --offset <sector>  start sector of zone to act (in 512-byte sectors)\n"
-msgstr " -o, --offset <番号>    ファイル内の <番号> で示されたオフセット位置から始めます\n"
+msgstr " -o, --offset <セクタ番号> 操作するゾーンの開始セクタ (512バイトセクタ単位)\n"
 
 #: sys-utils/blkzone.c:400
 msgid " -l, --length <sectors> maximum sectors to act (in 512-byte sectors)\n"
-msgstr ""
+msgstr " -l, --length <セクタ数>   操作する最大セクタ数 (512バイトセクタ単位)\n"
 
 #: sys-utils/blkzone.c:401
-#, fuzzy
-#| msgid " -s, --sectors <number>    set the number of sectors to use\n"
 msgid " -c, --count <number>   maximum number of zones\n"
-msgstr " -s, --sectors <数値>   利用するセクタの数をセットします\n"
+msgstr " -c, --count <数値>        最大ゾーン数\n"
 
 #: sys-utils/blkzone.c:402
-#, fuzzy
-#| msgid " -f, --fs             output info about filesystems\n"
 msgid " -f, --force            enforce on block devices used by the system\n"
-msgstr " -f, --fs             ファイルシステムに関する情報を出力します\n"
+msgstr " -f, --force               システムが利用するブロックデバイスに強制適用します\n"
 
 #: sys-utils/blkzone.c:403
-#, fuzzy
-#| msgid " -v, --verbose             print verbose data\n"
 msgid " -v, --verbose          display more details\n"
-msgstr " -v, --verbose            より詳しく出力します\n"
+msgstr " -v, --verbose             より詳しく出力します\n"
 
 #: sys-utils/blkzone.c:408
-#, fuzzy
-#| msgid "sector count: %d, sector size: %d\n"
 msgid "<sector> and <sectors>"
-msgstr "最終セクタ, +セクタ番号 または +サイズ{K,M,G,T,P}"
+msgstr "<セクタ番号> および <セクタ数>"
 
 #: sys-utils/blkzone.c:446
 #, c-format
