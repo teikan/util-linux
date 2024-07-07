@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-02 16:44+0900\n"
+"PO-Revision-Date: 2024-07-07 19:06+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -3064,7 +3064,7 @@ msgstr " -E             すべての警告をエラーとして扱います (0 �
 
 #: disk-utils/mkfs.cramfs.c:138
 msgid " -b blksize     use this blocksize, must equal page size"
-msgstr " -b, --blocksize     このブロックサイズを使用します。ページサイズと同じである必要があります"
+msgstr " -b blksize     このブロックサイズを使用します。ページサイズと同じである必要があります"
 
 #: disk-utils/mkfs.cramfs.c:139
 msgid " -e edition     set edition number (part of fsid)"
@@ -4022,7 +4022,7 @@ msgstr " -t, --type <タイプ>  パーティションの種類を指定しま�
 
 #: disk-utils/partx.c:782
 msgid "     --list-types     list supported partition types and exit\n"
-msgstr "     --list-types     設定可能なパ゛ーティションタイプを表示して終了します\n"
+msgstr "     --list-types     設定可能なパーティションタイプを表示して終了します\n"
 
 #: disk-utils/partx.c:783 sys-utils/fallocate.c:101
 msgid " -v, --verbose        verbose mode\n"
@@ -7031,7 +7031,7 @@ msgstr "gpt: stat() に失敗しました"
 #: libfdisk/src/gpt.c:989
 #, c-format
 msgid "gpt: cannot handle files with mode %o"
-msgstr "gpt: モード %o が設定されたファイルを扱うことができません1"
+msgstr "gpt: モード %o が設定されたファイルを扱うことができません"
 
 #: libfdisk/src/gpt.c:1249
 msgid "GPT Header"
@@ -10464,7 +10464,7 @@ msgstr " -r, --raw             特に加工を行わずに出力します\n"
 #: misc-utils/findfs.c:28
 #, c-format
 msgid " %s [options] {LABEL,UUID,PARTUUID,PARTLABEL}=<value>\n"
-msgstr " %s [オプション] {ラベル,UUID,パーティションUUID,パーティションラベル}=<値>\n"
+msgstr " %s [オプション] {LABEL,UUID,PARTUUID,PARTLABEL}=<値>\n"
 
 #: misc-utils/findfs.c:32
 msgid "Find a filesystem by label or UUID.\n"
@@ -11004,7 +11004,7 @@ msgstr "VFS オプション: %s"
 #: misc-utils/findmnt-verify.c:245
 #, c-format
 msgid "FS options: %s"
-msgstr "VFS オプション: %s"
+msgstr "FS オプション: %s"
 
 #: misc-utils/findmnt-verify.c:249
 #, c-format
@@ -14288,7 +14288,7 @@ msgstr "  [f]          - 挿入されたファイル名を切り詰める\n"
 
 #: misc-utils/uuidd.c:418
 msgid "sd_listen_fds() failed"
-msgstr "sd_listen_fds() に失敗しましたに"
+msgstr "sd_listen_fds() に失敗しました"
 
 #: misc-utils/uuidd.c:421
 msgid "no file descriptors received, check systemctl status uuidd.socket"
@@ -22583,7 +22583,7 @@ msgstr "アラーム: OFF\n"
 
 #: sys-utils/rtcwake.c:372
 msgid "convert time failed"
-msgstr "自国の変換に失敗しました"
+msgstr "時刻の変換に失敗しました"
 
 #: sys-utils/rtcwake.c:378
 #, c-format
@@ -26307,7 +26307,7 @@ msgstr " -n, --noheadings          ヘッダを表示しません\n"
 
 #: text-utils/column.c:766
 msgid " -J, --json                       use JSON output format for table\n"
-msgstr " -J, --json                       表をJSON形式で出力します ()\n"
+msgstr " -J, --json                       表をJSON形式で出力します\n"
 
 #: text-utils/column.c:769
 #, fuzzy
