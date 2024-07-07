@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-07 19:54+0900\n"
+"PO-Revision-Date: 2024-07-07 21:56+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -15718,68 +15718,41 @@ msgid "Discard the content of sectors on a device.\n"
 msgstr "デバイスのセクタの内容を破棄します。\n"
 
 #: sys-utils/blkdiscard.c:98
-#, fuzzy
-#| msgid " -f, --force               disable all consistency checking\n"
 msgid " -f, --force         disable all checking\n"
-msgstr " -f, --force               すべての整合性チェックを無効にします\n"
+msgstr " -f, --force         すべてのチェックを無効にします\n"
 
 #: sys-utils/blkdiscard.c:99
-#, fuzzy
-#| msgid " -c, --cylinders <number>  set the number of cylinders to use\n"
 msgid " -l, --length <num>  length of bytes to discard from the offset\n"
-msgstr " -c, --cylinders <数値> 利用するシリンダの数をセットします\n"
+msgstr " -l, --length <数値> 開始位置から破棄するバイト数\n"
 
 #: sys-utils/blkdiscard.c:100
-#, fuzzy
-#| msgid " -c, --cylinders <number>  set the number of cylinders to use\n"
 msgid " -o, --offset <num>  offset in bytes to discard from\n"
-msgstr " -c, --cylinders <数値> 利用するシリンダの数をセットします\n"
+msgstr " -o, --offset <数値> 破棄を開始するオフセット (バイト単位)\n"
 
 #: sys-utils/blkdiscard.c:101
-#, fuzzy
-#| msgid " -o, --offset <num>            start at offset <num> into file\n"
 msgid " -p, --step <num>    size of the discard iterations within the offset\n"
-msgstr " -o, --offset <番号>    ファイル内の <番号> で示されたオフセット位置から始めます\n"
+msgstr " -p, --step <数値>   繰り返し一回あたりの破棄バイト数\n"
 
 #: sys-utils/blkdiscard.c:102
-#, fuzzy
-#| msgid " -q, --quiet               suppress extra info messages\n"
 msgid " -q, --quiet         suppress warning messages\n"
-msgstr ""
-" -a, --all           すべてのマジック文字列を消去します (注意してお使いください！)\n"
-" -b, --backup        署名のバックアップを $HOME に作成します\n"
-" -f, --force         強制的に消去します\n"
-" -h, --help          このヘルプテキストを表示します\n"
-" -n, --no-act        write() コール以外のすべての処理を行います\n"
-" -o, --offset <数値> 消去するオフセット値をバイト単位で指定します\n"
-" -p, --parsable      印字可能な形式ではなく、プログラムなどで処理しやすい形式で出力します\n"
-" -q, --quiet         出力されるメッセージを省略します\n"
-" -t, --types <リスト> 指定したファイルシステム (RAID, パーティション情報など) のみに制限します\n"
-" -V, --version       バージョン情報を表示して終了します\n"
+msgstr " -q, --quiet         警告メッセージの量を抑えます\n"
 
 #: sys-utils/blkdiscard.c:103
-#, fuzzy
-#| msgid " --securebits <bits>      set securebits\n"
 msgid " -s, --secure        perform secure discard\n"
-msgstr " --securebits <ビット>    secure bit を設定します\n"
+msgstr " -s, --secure        secure discard を行うようにします\n"
 
 #: sys-utils/blkdiscard.c:104
-#, fuzzy
-#| msgid " -v, --verbose              explain what is being done\n"
 msgid " -v, --verbose       print aligned length and offset\n"
-msgstr " -v, --verbose    何が行われるのかを詳しく表示します\n"
+msgstr " -v, --verbose       調整済みの開始位置と長さを表示します\n"
 
 #: sys-utils/blkdiscard.c:105
-#, fuzzy
-#| msgid " -n, --nonblock           fail rather than wait\n"
 msgid " -z, --zeroout       zero-fill rather than discard\n"
-msgstr " -n, --nonblock           待機が必要な場合、失敗させるようにします\n"
+msgstr " -z, --zeroout       破棄するのではなく、0で埋めます\n"
 
 #: sys-utils/blkdiscard.c:162 sys-utils/blkzone.c:371
-#, fuzzy, c-format
-#| msgid "%s: FITRIM ioctl failed"
+#, c-format
 msgid "%s: %s ioctl failed"
-msgstr "%s: FITRIM ioctl に失敗しました"
+msgstr "%s: %s ioctl に失敗しました"
 
 #: sys-utils/blkdiscard.c:208 sys-utils/fstrim.c:546 sys-utils/losetup.c:799
 #: text-utils/hexdump.c:129
@@ -15787,10 +15760,8 @@ msgid "failed to parse offset"
 msgstr "開始位置の解釈に失敗しました"
 
 #: sys-utils/blkdiscard.c:212
-#, fuzzy
-#| msgid "failed to parse size"
 msgid "failed to parse step"
-msgstr "サイズ情報の解釈に失敗しました。"
+msgstr "一回あたり破棄バイト数の解釈に失敗しました"
 
 #: sys-utils/blkdiscard.c:242 sys-utils/blkpr.c:307 sys-utils/blkzone.c:492
 #: sys-utils/fallocate.c:384 sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:577
@@ -15825,17 +15796,15 @@ msgstr "%s: 長さ %<PRIu64> はセクタのサイズ %i の倍数ではあり�
 
 #: sys-utils/blkdiscard.c:281
 msgid "Operation forced, data will be lost!"
-msgstr ""
+msgstr "操作が強制されました。データが失われます！"
 
 #: sys-utils/blkdiscard.c:292
 msgid "This is destructive operation, data will be lost! Use the -f option to override."
-msgstr ""
+msgstr "これは破壊的操作です。データが失われます！強制するには -f オプションを指定してください。"
 
 #: sys-utils/blkdiscard.c:299
-#, fuzzy
-#| msgid "failed to allocate device"
 msgid "failed to probe the device"
-msgstr "%s: デバイスを検出できません"
+msgstr "デバイスの検出に失敗しました"
 
 #: sys-utils/blkpr.c:195 sys-utils/blkpr.c:280
 #, fuzzy
