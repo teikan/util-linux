@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-07 19:06+0900\n"
+"PO-Revision-Date: 2024-07-07 19:54+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -11529,10 +11529,9 @@ msgid "Scanning [device/inode/links]:"
 msgstr ""
 
 #: misc-utils/hardlink.c:1440 sys-utils/fstrim.c:97
-#, fuzzy, c-format
-#| msgid "cannot read %s"
+#, c-format
 msgid "cannot get realpath: %s"
-msgstr "%s のサイズを取得できません"
+msgstr "%s の絶対パスを取得できません"
 
 #: misc-utils/hardlink.c:1446
 #, c-format
@@ -13627,9 +13626,8 @@ msgstr " -v, --verbose              何が行われるのかを詳しく表示�
 
 #: misc-utils/mcookie.c:101 misc-utils/wipefs.c:653 sys-utils/blkdiscard.c:111
 #: sys-utils/fallocate.c:107 sys-utils/fstrim.c:475
-#, fuzzy
 msgid "<num>"
-msgstr " -o, --offset <番号>    ファイル内の <番号> で示されたオフセット位置から始めます\n"
+msgstr "<数値>"
 
 #: misc-utils/mcookie.c:128
 #, c-format
@@ -17664,34 +17662,24 @@ msgid " -I, --listed-in <list>   trim filesystems listed in specified files\n"
 msgstr " -I, --listed-in <list>   指定したファイルの一覧内のファイルシステムを trim します\n"
 
 #: sys-utils/fstrim.c:463
-#, fuzzy
-#| msgid " -c, --cylinders <number>  set the number of cylinders to use\n"
 msgid " -o, --offset <num>       the offset in bytes to start discarding from\n"
-msgstr " -c, --cylinders <数値> 利用するシリンダの数をセットします\n"
+msgstr " -o, --offset <数値>      破棄を開始するオフセット (バイト単位)\n"
 
 #: sys-utils/fstrim.c:464
-#, fuzzy
-#| msgid " -c, --cylinders <number>  set the number of cylinders to use\n"
 msgid " -l, --length <num>       the number of bytes to discard\n"
-msgstr " -c, --cylinders <数値> 利用するシリンダの数をセットします\n"
+msgstr " -l, --length <数値>      破棄するバイト数\n"
 
 #: sys-utils/fstrim.c:465
-#, fuzzy
-#| msgid " -c, --cylinders <number>  set the number of cylinders to use\n"
 msgid " -m, --minimum <num>      the minimum extent length to discard\n"
-msgstr " -c, --cylinders <数値> 利用するシリンダの数をセットします\n"
+msgstr " -m, --minimum <数値>     破棄する最小エクステント長\n"
 
 #: sys-utils/fstrim.c:466
-#, fuzzy
-#| msgid " -t, --types <list>      limit the set of filesystem types\n"
 msgid " -t, --types <list>       limit the set of filesystem types\n"
-msgstr " -t, --types <リスト>    ファイルシステムの種類を指定します\n"
+msgstr " -t, --types <リスト>     ファイルシステムの種類を指定します\n"
 
 #: sys-utils/fstrim.c:467
-#, fuzzy
-#| msgid " -v, --verbose             print verbose data\n"
 msgid " -v, --verbose            print number of discarded bytes\n"
-msgstr " -v, --verbose             冗長なデータ出力を行います\n"
+msgstr " -v, --verbose            破棄したバイト数を表示します\n"
 
 #: sys-utils/fstrim.c:468
 msgid "     --quiet-unsupported  suppress error messages if trim unsupported\n"
