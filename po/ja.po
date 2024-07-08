@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-08 09:20+0900\n"
+"PO-Revision-Date: 2024-07-08 14:53+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -23404,7 +23404,7 @@ msgstr " %s [オプション] [<指定>]\n"
 
 #: sys-utils/swapoff.c:157
 msgid "Disable devices and files for paging and swapping.\n"
-msgstr ""
+msgstr "デバイスやファイルへのページングやスワップを無効にします\n"
 
 #: sys-utils/swapoff.c:160
 msgid ""
@@ -23464,10 +23464,9 @@ msgstr "スワップのラベル"
 
 #. TRANSLATORS: The tabs make each field a multiple of 8 characters. Keep aligned with each entry below.
 #: sys-utils/swapon.c:263
-#, fuzzy, c-format
-#| msgid "%s\t\t\t\tType\t\tSize\tUsed\tPriority\n"
+#, c-format
 msgid "Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n"
-msgstr "%s\t\t\t\tタイプ\t\tサイズ\t使用済み\t優先順位\n"
+msgstr "ファイル名\t\t\t\tタイプ\t\tサイズ\t\t使用済み\t優先順位\n"
 
 #: sys-utils/swapon.c:341
 #, c-format
@@ -23550,88 +23549,71 @@ msgid "%s: swapon failed"
 msgstr "%s: swapon が失敗しました"
 
 #: sys-utils/swapon.c:773
-#, fuzzy, c-format
-#| msgid "%s: parse error at line %d -- ignore"
+#, c-format
 msgid "%s: noauto option -- ignored"
-msgstr "オプション %s は無視されました; デフォルトです。\n"
+msgstr "%s: noauto オプション -- 無視しました"
 
 #: sys-utils/swapon.c:795
-#, fuzzy, c-format
-#| msgid "%s: parse error at line %d -- ignore"
+#, c-format
 msgid "%s: already active -- ignored"
-msgstr "オプション %s は無視されました; デフォルトです。\n"
+msgstr "%s: 既に有効です -- 無視しました"
 
 #: sys-utils/swapon.c:801
-#, fuzzy, c-format
-#| msgid "%s: unable to write inodes"
+#, c-format
 msgid "%s: inaccessible -- ignored"
-msgstr "%s は %s を %s 書式で使用しているため無視されます"
+msgstr "%s: アクセスできません -- 無視しました"
 
 #: sys-utils/swapon.c:823
 msgid "Enable devices and files for paging and swapping.\n"
-msgstr ""
+msgstr "デバイスやファイルへのページングやスワップを有効にします\n"
 
 #: sys-utils/swapon.c:826
-#, fuzzy
-#| msgid " -a, --all                     list all used devices\n"
 msgid " -a, --all                enable all swaps from /etc/fstab\n"
-msgstr " -a, --all              使用しているすべてのデバイスを表示します\n"
+msgstr " -a, --all                /etc/fstab にあるすべてのスワップを有効にします\n"
 
 #: sys-utils/swapon.c:827
 msgid " -d, --discard[=<policy>] enable swap discards, if supported by device\n"
-msgstr ""
+msgstr " -d, --discard[=<ポリシー>] デバイスが対応している場合にスワップの破棄を有効化します\n"
 
 #: sys-utils/swapon.c:828
 msgid " -e, --ifexists           silently skip devices that do not exist\n"
-msgstr ""
+msgstr " -e, --ifexists           存在しないデバイスであった場合、何もせずに飛ばします\n"
 
 #: sys-utils/swapon.c:829
 msgid " -f, --fixpgsz            reinitialize the swap space if necessary\n"
-msgstr ""
+msgstr " -f, --fixpgsz            必要であれば、スワップ領域の再初期化を行います\n"
 
 #: sys-utils/swapon.c:830
-#, fuzzy
-#| msgid " -O, --options <list>   limit the set of filesystems by mount options\n"
 msgid " -o, --options <list>     comma-separated list of swap options\n"
-msgstr " -O, --options <list>   マウントオプションでファイルシステムの出力を制限します\n"
+msgstr " -o, --options <リスト>   カンマ区切りでスワップオプションを指定します\n"
 
 #: sys-utils/swapon.c:831
-#, fuzzy
-#| msgid " -p, --priority <prio> mark given message with this priority\n"
 msgid " -p, --priority <prio>    specify the priority of the swap device\n"
-msgstr " -p, --priority <優先順位> 対象のメッセージを指定した優先順位にします\n"
+msgstr " -p, --priority <優先順位> スワップデバイスの優先順位を指定します\n"
 
 #: sys-utils/swapon.c:832
-#, fuzzy
-#| msgid " -s, --getsz                   display device size in 512-byte sectors [DEPRECATED]\n"
 msgid " -s, --summary            display summary about used swap devices (DEPRECATED)\n"
-msgstr " -s, --getsz                   デバイスのサイズを 512バイトセクタ数で表示します（非推奨）\n"
+msgstr " -s, --summary            使用中のスワップデバイスについて、概要を表示します（非推奨）\n"
 
 #: sys-utils/swapon.c:833
-#, fuzzy
-#| msgid " -a, --all               unmount all filesystems\n"
 msgid " -T, --fstab <path>       alternative file to /etc/fstab\n"
-msgstr " -a, --all               すべてのファイルシステムをアンマウントします\n"
+msgstr " -T, --fstab <path>       /etc/fstab の代わりのファイル\n"
 
 #: sys-utils/swapon.c:834
 msgid "     --show[=<columns>]   display summary in definable table\n"
-msgstr ""
+msgstr "     --show[=<columns>]   概要を設定可能な表形式で表示します\n"
 
 #: sys-utils/swapon.c:835
 msgid "     --noheadings         don't print table heading (with --show)\n"
 msgstr "     --noheadings         --show での表示の際、ヘッダを表示しません\n"
 
 #: sys-utils/swapon.c:836
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid "     --raw                use the raw output format (with --show)\n"
-msgstr "     --raw              --list の結果を特に加工を行わずに出力します\n"
+msgstr "     --raw                --show での表示の際、加工を行わずに出力します\n"
 
 #: sys-utils/swapon.c:837
-#, fuzzy
-#| msgid "     --help                 display this help and exit\n"
 msgid "     --bytes              display swap size in bytes in --show output\n"
-msgstr "     --help                 このヘルプを表示して終了します\n"
+msgstr "     --bytes              --show での出力の際、スワップサイズをバイト単位で表示します\n"
 
 #: sys-utils/swapon.c:838
 msgid " -v, --verbose            verbose mode\n"
