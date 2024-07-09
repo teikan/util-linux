@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-08 14:53+0900\n"
+"PO-Revision-Date: 2024-07-09 10:23+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -10560,7 +10560,7 @@ msgstr "VFS 伝播フラグ"
 
 #: misc-utils/findmnt.c:131 misc-utils/lsblk.c:185
 msgid "filesystem size, use <number> if --bytes is given"
-msgstr ""
+msgstr "ファイルシステムのサイズ。--bytes 指定時は <数値>"
 
 #: misc-utils/findmnt.c:132
 #, fuzzy
@@ -10582,7 +10582,7 @@ msgstr "タスク ID"
 
 #: misc-utils/findmnt.c:136 misc-utils/lsblk.c:187
 msgid "filesystem size used, use <number> if --bytes is given"
-msgstr ""
+msgstr "ファイルシステムの使用済みサイズ。--bytes 指定時は <数値>"
 
 #: misc-utils/findmnt.c:137 misc-utils/lsblk.c:188
 msgid "filesystem use percentage"
@@ -12043,7 +12043,7 @@ msgstr "アライメントオフセット"
 
 #: misc-utils/lsblk.c:175
 msgid "udev ID (based on ID-LINK)"
-msgstr ""
+msgstr "udev ID (ID-LINK ベース)"
 
 #: misc-utils/lsblk.c:176
 msgid "the shortest udev /dev/disk/by-id link name"
@@ -12054,44 +12054,36 @@ msgid "discard alignment offset"
 msgstr "discard アライメントオフセット"
 
 #: misc-utils/lsblk.c:178
-#, fuzzy
-#| msgid "removable device"
 msgid "dax-capable device"
-msgstr "リムーバブルデバイス"
+msgstr "DAX 対応デバイス"
 
 #: misc-utils/lsblk.c:179
 msgid "discard granularity, use <number> if --bytes is given"
-msgstr ""
+msgstr "discard 粒度。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:180
-#, fuzzy
-#| msgid "disk serial number"
 msgid "disk sequence number"
-msgstr "ディスクのシリアル番号"
+msgstr "ディスクのシーケンス番号"
 
 #: misc-utils/lsblk.c:181
 msgid "discard max bytes, use <number> if --bytes is given"
-msgstr ""
+msgstr "discard 最大バイト数。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:182
 msgid "discard zeroes data"
-msgstr "discard ゼロデータ"
+msgstr "discard zeroes 対応"
 
 #: misc-utils/lsblk.c:183
 msgid "filesystem size available for unprivileged users, use <number> if --bytes is given"
-msgstr ""
+msgstr "非特権ユーザが利用可能なファイルシステムサイズ。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:184
-#, fuzzy
-#| msgid "filesystem root"
 msgid "mounted filesystem roots"
-msgstr "マウントされたファイルシステムを見つけます。\n"
+msgstr "マウントされたファイルシステムのルート"
 
 #: misc-utils/lsblk.c:189
-#, fuzzy
-#| msgid "filesystem size"
 msgid "filesystem version"
-msgstr "ファイルシステム:"
+msgstr "ファイルシステムのバージョン"
 
 #: misc-utils/lsblk.c:190
 msgid "group name"
@@ -12103,7 +12095,7 @@ msgstr "SCSI 向けのホスト:チャンネル:ターゲット:LUN"
 
 #: misc-utils/lsblk.c:192
 msgid "removable or hotplug device (usb, pcmcia, ...)"
-msgstr ""
+msgstr "リムーバブルまたはホットプラグデバイス (USB, PCMCIA, ...)"
 
 #: misc-utils/lsblk.c:193
 msgid "internal kernel device name"
@@ -12118,16 +12110,12 @@ msgid "logical sector size"
 msgstr "論理セクタサイズ"
 
 #: misc-utils/lsblk.c:197
-#, fuzzy
-#| msgid "major:minor device number"
 msgid "major device number"
-msgstr "メジャー:マイナーデバイス番号"
+msgstr "メジャーデバイス番号"
 
 #: misc-utils/lsblk.c:198
-#, fuzzy
-#| msgid "major:minor device number"
 msgid "minor device number"
-msgstr "メジャー:マイナーデバイス番号"
+msgstr "マイナーデバイス番号"
 
 #: misc-utils/lsblk.c:199
 msgid "minimum I/O size"
@@ -12142,10 +12130,8 @@ msgid "device node permissions"
 msgstr "デバイスノードのパーミッション"
 
 #: misc-utils/lsblk.c:202
-#, fuzzy
-#| msgid "device name"
 msgid "device queues"
-msgstr "デバイス名"
+msgstr "デバイスキュー"
 
 #: misc-utils/lsblk.c:203
 msgid "device name"
@@ -12160,22 +12146,16 @@ msgid "partition LABEL"
 msgstr "パーティションのラベル"
 
 #: misc-utils/lsblk.c:208
-#, fuzzy
-#| msgid "%s: partition %zu: failed to get partition type"
 msgid "partition number as read from the partition table"
-msgstr "%s: パーティション %zu: パーティションのタイプを取得できませんでした"
+msgstr "パーティションテーブルから読み込んだパーティション番号"
 
 #: misc-utils/lsblk.c:209
-#, fuzzy
-#| msgid "partition name"
 msgid "partition type name"
-msgstr "パーティション名:"
+msgstr "パーティションタイプ名"
 
 #: misc-utils/lsblk.c:210
-#, fuzzy
-#| msgid "partition type UUID"
 msgid "partition type code or UUID"
-msgstr "パーティションの種類 (文字列、UUID、16進のどれか)"
+msgstr "パーティションタイプコードまたは UUID"
 
 #: misc-utils/lsblk.c:212
 msgid "path to the device node"
@@ -12195,7 +12175,7 @@ msgstr "パーティションテーブルのタイプ"
 
 #: misc-utils/lsblk.c:216
 msgid "partition table identifier (usually UUID)"
-msgstr ""
+msgstr "パーティションテーブルの識別子 (通常は UUID)"
 
 #: misc-utils/lsblk.c:217
 msgid "adds randomness"
@@ -12235,13 +12215,11 @@ msgstr "ディスクのシリアル番号"
 
 #: misc-utils/lsblk.c:226
 msgid "size of the device, use <number> if --bytes is given"
-msgstr ""
+msgstr "デバイスのサイズ。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:227
-#, fuzzy
-#| msgid "partition name"
 msgid "partition start offset (in 512-byte sectors)"
-msgstr "パーティション名"
+msgstr "パーティションの開始オフセット (512バイトセクタ単位)"
 
 #: misc-utils/lsblk.c:228
 msgid "state of the device"
@@ -12249,13 +12227,11 @@ msgstr "デバイスの状態"
 
 #: misc-utils/lsblk.c:229
 msgid "de-duplicated chain of subsystems"
-msgstr ""
+msgstr "重複を除いたサブシステムチェーン"
 
 #: misc-utils/lsblk.c:230
-#, fuzzy
-#| msgid "where the device is mounted"
 msgid "all locations where device is mounted"
-msgstr "マウントされている場所"
+msgstr "デバイスがマウントされているすべての場所"
 
 #: misc-utils/lsblk.c:231 sys-utils/zramctl.c:86
 msgid "where the device is mounted"
@@ -12275,52 +12251,43 @@ msgstr "デバイスの製造元"
 
 #: misc-utils/lsblk.c:236
 msgid "write same max bytes, use <number> if --bytes is given"
-msgstr ""
+msgstr "write same 最大バイト数。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:237
 msgid "unique storage identifier"
 msgstr "ユニークなストレージ識別子"
 
 #: misc-utils/lsblk.c:238
-#, fuzzy
 msgid "zone model"
-msgstr "モデル:"
+msgstr "ゾーンモデル"
 
 #: misc-utils/lsblk.c:239
 msgid "zone size, use <number> if --bytes is given"
-msgstr ""
+msgstr "ゾーンサイズ。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:240
 msgid "zone write granularity, use <number> if --bytes is given"
-msgstr ""
+msgstr "ゾーン書き込み粒度。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:241
 msgid "zone append max bytes, use <number> if --bytes is given"
-msgstr ""
+msgstr "ゾーン追記最大バイト数。--bytes 指定時は <数値>"
 
 #: misc-utils/lsblk.c:242
-#, fuzzy
-#| msgid "number of sectors"
 msgid "number of zones"
-msgstr "セクタ数"
+msgstr "ゾーン数"
 
 #: misc-utils/lsblk.c:243
-#, fuzzy
-#| msgid "max number of open files"
 msgid "maximum number of open zones"
-msgstr "ファイルの最大オープン数"
+msgstr "ゾーンの最大オープン数"
 
 #: misc-utils/lsblk.c:244
-#, fuzzy
-#| msgid "max number of processes"
 msgid "maximum number of active zones"
-msgstr "プロセスの最大数"
+msgstr "ゾーンの最大アクティブ数"
 
 #: misc-utils/lsblk.c:1345 misc-utils/lsfd.c:1280
-#, fuzzy
-#| msgid "Failed to apply script %s"
 msgid "failed to apply filter"
-msgstr "スクリプトファイル %s の適用に失敗しました"
+msgstr "フィルタの適用に失敗しました"
 
 #: misc-utils/lsblk.c:1562
 msgid "failed to allocate device"
@@ -12341,10 +12308,8 @@ msgid "%s: failed to get whole-disk device number"
 msgstr "%s: ディスク全体を示すデバイス番号の取得に失敗しました"
 
 #: misc-utils/lsblk.c:1895 misc-utils/lsblk.c:1943
-#, fuzzy
-#| msgid "failed to allocate script handler"
 msgid "failed to allocate /sys handler"
-msgstr "pty ハンドラの割り当てに失敗しました"
+msgstr "/sys ハンドラの割り当てに失敗しました"
 
 #: misc-utils/lsblk.c:2003 misc-utils/lsblk.c:2005 misc-utils/lsblk.c:2034
 #: misc-utils/lsblk.c:2036
@@ -12365,50 +12330,39 @@ msgid "the list of included devices is too large (limit is %d devices)"
 msgstr "含めるデバイスの一覧が多すぎます (最大 %d 個のデバイスまでです)"
 
 #: misc-utils/lsblk.c:2117 misc-utils/lsfd.c:1963
-#, fuzzy
-#| msgid "failed to allocate iterator"
 msgid "failed to allocate filter"
-msgstr "列挙子の割り当てに失敗しました"
+msgstr "フィルタの割り当てに失敗しました"
 
 #: misc-utils/lsblk.c:2119 misc-utils/lsfd.c:1965
-#, fuzzy, c-format
-#| msgid "failed to parse %s"
+#, c-format
 msgid "failed to parse \"%s\": %s"
-msgstr "%s の処理に失敗しました"
+msgstr "\"%s\" の処理に失敗しました: %s"
 
 #: misc-utils/lsblk.c:2150
-#, fuzzy, c-format
-#| msgid "unexpected value in %s: %ju"
+#, c-format
 msgid "unexpected counter specification: %s"
-msgstr "%s で予期しない値が見つかりました: %ju"
+msgstr "想定していないカウンタ指定です: %s"
 
 #: misc-utils/lsblk.c:2154
-#, fuzzy
-#| msgid "no mount source specified"
 msgid "counter not properly specified"
-msgstr "マウント対象が指定されていません"
+msgstr "カウンタが正しく指定されていません"
 
 #: misc-utils/lsblk.c:2164 misc-utils/lsfd.c:2053
-#, fuzzy
-#| msgid "failed to allocate iterator"
 msgid "failed to allocate counter"
-msgstr "列挙子の割り当てに失敗しました"
+msgstr "カウンタの割り当てに失敗しました"
 
 #: misc-utils/lsblk.c:2181
-#, fuzzy, c-format
-#| msgid "unsupported source tag: %s"
+#, c-format
 msgid "unsupported counter type: %s"
-msgstr "未対応のソースタグです: %s"
+msgstr "未対応のカウンタタイプです: %s"
 
 #: misc-utils/lsblk.c:2194
 msgid "Summary:\n"
-msgstr ""
+msgstr "概要:\n"
 
 #: misc-utils/lsblk.c:2291
-#, fuzzy
-#| msgid "failed to initialize loopcxt"
 msgid "failed to initialize filter"
-msgstr "loopcxt の準備に失敗しました"
+msgstr "フィルタの準備に失敗しました"
 
 #: misc-utils/lsblk.c:2300 sys-utils/wdctl.c:230
 #, c-format
@@ -12420,82 +12374,64 @@ msgid "List information about block devices.\n"
 msgstr "ブロックデバイスの情報を一覧表示する。\n"
 
 #: misc-utils/lsblk.c:2306
-#, fuzzy
-#| msgid " -d, --nodeps         don't print slaves or holders\n"
 msgid " -A, --noempty        don't print empty devices\n"
-msgstr " -d, --nodeps         スレーブデバイスやホルダーを表示しません\n"
+msgstr " -A, --noempty        空のデバイスを表示しません\n"
 
 #: misc-utils/lsblk.c:2307
 msgid " -D, --discard        print discard capabilities\n"
 msgstr " -D, --discard        discard 関連の機能を表示します\n"
 
 #: misc-utils/lsblk.c:2308
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid " -E, --dedup <column> de-duplicate output by <column>\n"
-msgstr " -o, --output <list>  出力する列を指定します\n"
+msgstr " -E, --dedup <列>     出力を <列> で重複排除します\n"
 
 #: misc-utils/lsblk.c:2309
 msgid " -I, --include <list> show only devices with specified major numbers\n"
 msgstr " -I, --include <一覧> 指定したメジャー番号のデバイスのみを表示します\n"
 
 #: misc-utils/lsblk.c:2310 sys-utils/lsirq.c:56 sys-utils/lsmem.c:518
-#, fuzzy
-#| msgid " -r, --raw            use raw output format\n"
 msgid " -J, --json           use JSON output format\n"
-msgstr " -J, --json            JSON形式で出力します\n"
+msgstr " -J, --json           JSON形式で出力します\n"
 
 #: misc-utils/lsblk.c:2311
-#, fuzzy
-#| msgid " -d, --dump <dev>                  dump partition table (usable for later input)\n"
 msgid " -M, --merge          group parents of sub-trees (usable for RAIDs, Multi-path)\n"
-msgstr ""
-" -d, --dump <dev>                  パーティションテーブルを出力します (入力として使いやすい形式で)\n"
-"\n"
+msgstr " -M, --merge          サブツリーの親ノードをグループ化します (RAID, Multi-path 用)\n"
 
 #: misc-utils/lsblk.c:2312
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid " -O, --output-all     output all columns\n"
-msgstr "     --output-all     すべての列を出力します\n"
+msgstr " -O, --output-all     すべての列を出力します\n"
 
 #: misc-utils/lsblk.c:2314
 msgid " -Q, --filter <expr>  print only lines maching the expression\n"
-msgstr ""
+msgstr " -Q, --filter <式>    式に一致する行のみ表示します\n"
 
 #: misc-utils/lsblk.c:2315
 msgid "     --highlight <expr> colorize lines maching the expression\n"
-msgstr ""
+msgstr "     --highlight <式> 式に一致する行を色づけします\n"
 
 #: misc-utils/lsblk.c:2316
 msgid "     --ct-filter <expr> restrict the next counter\n"
-msgstr ""
+msgstr "     --ct-filter <式> 次のカウンタに制限をかけます\n"
 
 #: misc-utils/lsblk.c:2317
 msgid "     --ct <name>[:<param>[:<func>]] define a custom counter\n"
-msgstr ""
+msgstr "     --ct <name>[:<param>[:<func>]] カスタムカウンタを定義します\n"
 
 #: misc-utils/lsblk.c:2318
 msgid " -S, --scsi           output info about SCSI devices\n"
 msgstr " -S, --scsi           SCSI デバイスに関する情報を出力します\n"
 
 #: misc-utils/lsblk.c:2319
-#, fuzzy
-#| msgid " -S, --scsi           output info about SCSI devices\n"
 msgid " -N, --nvme           output info about NVMe devices\n"
-msgstr " -S, --scsi           SCSI デバイスに関する情報を出力します\n"
+msgstr " -N, --nvme           NVMe デバイスに関する情報を出力します\n"
 
 #: misc-utils/lsblk.c:2320
-#, fuzzy
-#| msgid " -S, --scsi           output info about SCSI devices\n"
 msgid " -v, --virtio         output info about virtio devices\n"
-msgstr " -S, --scsi           SCSI デバイスに関する情報を出力します\n"
+msgstr " -v, --virtio         virtio デバイスに関する情報を出力します\n"
 
 #: misc-utils/lsblk.c:2321
-#, fuzzy
-#| msgid " -l, --list           use list format output\n"
 msgid " -T, --tree[=<column>] use tree format output\n"
-msgstr " -l, --list           一覧形式で出力します\n"
+msgstr " -T, --tree[=<列>]    ツリー型で出力します\n"
 
 #: misc-utils/lsblk.c:2322
 msgid " -a, --all            print all devices\n"
@@ -12530,10 +12466,8 @@ msgid " -n, --noheadings     don't print headings\n"
 msgstr " -n, --noheadings     ヘッダを表示しません\n"
 
 #: misc-utils/lsblk.c:2331
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid " -o, --output <list>  output columns (see --list-columns)\n"
-msgstr " -o, --output <list>  出力する列を指定します\n"
+msgstr " -o, --output <list>  出力する列を指定します (--list-columns を参照)\n"
 
 #: misc-utils/lsblk.c:2332
 msgid " -p, --paths          print complete device path\n"
@@ -12548,37 +12482,28 @@ msgid " -t, --topology       output info about topology\n"
 msgstr " -t, --topology       トポロジに関する情報を出力します\n"
 
 #: misc-utils/lsblk.c:2336
-#, fuzzy
-#| msgid " -c, --output-width <width>       width of output in number of characters\n"
 msgid " -w, --width <num>    specifies output width as number of characters\n"
-msgstr " -c, --output-width <幅>       出力幅を文字数で指定します\n"
+msgstr " -w, --width <数値>   出力幅を文字数で指定します\n"
 
 #: misc-utils/lsblk.c:2337
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid " -x, --sort <column>  sort output by <column>\n"
-msgstr " -o, --output <list>  出力する列を指定します\n"
+msgstr " -x, --sort <列>      出力を <列> で並べ替えます\n"
 
 #: misc-utils/lsblk.c:2338
 msgid " -y, --shell          use column names to be usable as shell variable identifiers\n"
-msgstr ""
+msgstr " -y, --shell          列の名前をシェル変数名として利用できる形式にします\n"
 
 #: misc-utils/lsblk.c:2339
-#, fuzzy
-#| msgid " -c, --offline           print offline CPUs only\n"
 msgid " -z, --zoned          print zone related information\n"
-msgstr " -c, --offline           オフラインの CPU のみを表示します\n"
+msgstr " -z, --zoned          ゾーン関連情報を表示します\n"
 
 #: misc-utils/lsblk.c:2340
-#, fuzzy
-#| msgid " -s, --sysroot <dir>     use specified directory as system root\n"
 msgid "     --sysroot <dir>  use specified directory as system root\n"
-msgstr " -s, --sysroot <dir>     指定したディレクトリをシステムルートとみなすようにします\n"
+msgstr "     --sysroot <dir>  指定したディレクトリをシステムルートとみなすようにします\n"
 
 #: misc-utils/lsblk.c:2343
-#, fuzzy
 msgid " -H, --list-columns   list the available columns\n"
-msgstr "    利用可能な辞書/フィルタ/フィルタモード の一覧を表示する"
+msgstr " -H, --list-columns   利用可能な列の一覧を表示します\n"
 
 #: misc-utils/lsblk.c:2382
 #, c-format
@@ -12586,10 +12511,8 @@ msgid "failed to access sysfs directory: %s"
 msgstr "sysfs ディレクトリへのアクセスに失敗しました: %s"
 
 #: misc-utils/lsblk.c:2641
-#, fuzzy
-#| msgid "invalid partition number argument"
 msgid "invalid output width number argument"
-msgstr " -c, --columns <幅>       出力幅を文字数で指定します\n"
+msgstr "出力幅の引数が正しくありません"
 
 #: misc-utils/lsblk.c:2803
 msgid "failed to allocate device tree"
