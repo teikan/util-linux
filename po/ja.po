@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-09 10:23+0900\n"
+"PO-Revision-Date: 2024-07-15 19:54+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -17012,10 +17012,8 @@ msgstr "%s: アンマウントしています"
 
 #: sys-utils/eject.c:662 sys-utils/mount.c:51 sys-utils/umount.c:122
 #: text-utils/more.c:1268
-#, fuzzy
-#| msgid "permission denied"
 msgid "drop permissions failed"
-msgstr "落とす"
+msgstr "権限を落とせませんでした"
 
 #: sys-utils/eject.c:671
 msgid "unable to fork"
@@ -21014,10 +21012,8 @@ msgid "not found namespace: %ju"
 msgstr "%s (%ju-%ju, 既定値 %ju): "
 
 #: sys-utils/mount.c:55 sys-utils/umount.c:126
-#, fuzzy
-#| msgid "permission denied"
 msgid "drop permissions failed."
-msgstr "落とす"
+msgstr "権限を落とせませんでした。"
 
 #: sys-utils/mount.c:75 sys-utils/umount.c:65
 #, c-format
@@ -21059,13 +21055,7 @@ msgid "%s: %s propagation flags changed.\n"
 msgstr "%s: %s 伝播フラグを変更しました。\n"
 
 #: sys-utils/mount.c:319
-#, fuzzy, c-format
-#| msgid ""
-#| "mount: %s does not contain SELinux labels.\n"
-#| "       You just mounted an file system that supports labels which does not\n"
-#| "       contain labels, onto an SELinux box. It is likely that confined\n"
-#| "       applications will generate AVC messages and not be allowed access to\n"
-#| "       this file system.  For more details see restorecon(8) and mount(8).\n"
+#, c-format
 msgid ""
 "mount: %s does not contain SELinux labels.\n"
 "       You just mounted a file system that supports labels which does not\n"
@@ -21074,8 +21064,8 @@ msgid ""
 "       this file system.  For more details see restorecon(8) and mount(8).\n"
 msgstr ""
 "mount: %s には SELinux のラベルが含まれていません。\n"
-"       この処理により、 SELinux の搭載されたマシンにラベルを含まないファイル\n"
-"       システムをマウントすることになります。その結果、制限下にある\n"
+"       この処理により、 SELinux の搭載されたマシンに、ラベルを含まない\n"
+"       ラベル対応ファイルシステムがマウントされました。その結果、制限下にある\n"
 "       アプリケーションが AVC メッセージを生成し、このファイルシステム内に\n"
 "       存在するファイルにアクセスできない可能性があります。詳しい情報に\n"
 "       ついては、 restorecon(8) および mount(8) をお読みください。\n"
@@ -21086,11 +21076,13 @@ msgid ""
 "mount: (hint) your fstab has been modified, but systemd still uses\n"
 "       the old version; use 'systemctl daemon-reload' to reload.\n"
 msgstr ""
+"mount: (注意) fstab が変更されましたが、 systemd はまだ古いバージョンを\n"
+"       使っています。'systemctl daemon-reload' でリロードしてください。\n"
 
 #: sys-utils/mount.c:380
 #, c-format
 msgid "       dmesg(1) may have more information after failed mount system call.\n"
-msgstr ""
+msgstr "       mount システムコールの失敗について、 dmesg(1) で詳しい情報が得られる場合があります。\n"
 
 #: sys-utils/mount.c:409
 #, c-format
@@ -21123,81 +21115,64 @@ msgstr ""
 " %1$s <操作> <マウントポイント> [<ターゲット>]\n"
 
 #: sys-utils/mount.c:486
-#, fuzzy
-#| msgid "Checking all file systems.\n"
 msgid "Mount a filesystem.\n"
-msgstr ""
-"     --mount-proc[=<ディレクトリ>]\n"
-"                   proc ファイルシステムを最初にマウントします\n"
-"                     (これには --mount の意味を含みます)\n"
+msgstr "ファイルシステムをマウントします。\n"
 
 #: sys-utils/mount.c:489
-#, fuzzy
-#| msgid " -a, --all               unmount all filesystems\n"
 msgid " -a, --all               mount all filesystems mentioned in fstab\n"
-msgstr " -a, --all               すべてのファイルシステムをアンマウントします\n"
+msgstr " -a, --all               fstab に設定されたすべてのファイルシステムをマウントします\n"
 
 #: sys-utils/mount.c:490 sys-utils/umount.c:94
 msgid " -c, --no-canonicalize   don't canonicalize paths\n"
 msgstr " -c, --no-canonicalize   パスを正規化しないようにします\n"
 
 #: sys-utils/mount.c:491
-#, fuzzy
-#| msgid "     --fake              dry run; skip the umount(2) syscall\n"
 msgid " -f, --fake              dry run; skip the mount(2) syscall\n"
-msgstr "     --fake              実際には umount(2) のシステムコールを行いません\n"
+msgstr " -f, --fake              実際には mount(2) のシステムコールを行いません\n"
 
 #: sys-utils/mount.c:492
-#, fuzzy
-#| msgid " -f, --fs             output info about filesystems\n"
 msgid " -F, --fork              fork off for each device (use with -a)\n"
-msgstr " -f, --fs             ファイルシステムに関する情報を出力します\n"
+msgstr " -F, --fork              各デバイスのマウント処理を fork して行います (-a と併用します)\n"
 
 #: sys-utils/mount.c:493
-#, fuzzy
-#| msgid " -a, --all               unmount all filesystems\n"
 msgid " -T, --fstab <path>      alternative file to /etc/fstab\n"
-msgstr " -a, --all               すべてのファイルシステムをアンマウントします\n"
+msgstr " -T, --fstab <path>      /etc/fstab の代わりのファイル\n"
 
 #: sys-utils/mount.c:494
-#, fuzzy
-#| msgid " -i, --internal-only     don't call the umount.<type> helpers\n"
 msgid " -i, --internal-only     don't call the mount.<type> helpers\n"
-msgstr ""
-" -h, --help              このヘルプを表示して終了します\n"
-" -i, --internal-only     mount.<タイプ> のヘルパーを呼び出さないようにします\n"
-" -l, --show-labels       すべてのマウントをラベル付きで表示します\n"
-" -n, --no-mtab           /etc/mtab に書き込まないようにします\n"
+msgstr " -i, --internal-only     mount.<タイプ> のヘルパーを呼び出さないようにします\n"
 
 #: sys-utils/mount.c:495
-#, fuzzy
-#| msgid " -b, --bytes       show sizes in bytes\n"
 msgid " -l, --show-labels       show also filesystem labels\n"
-msgstr " -b, --bytes       サイズをバイト単位で表示します\n"
+msgstr " -l, --show-labels       ファイルシステムのラベル付きで表示します\n"
 
 #: sys-utils/mount.c:496
 msgid ""
 "     --map-groups <inner>:<outer>:<count>\n"
 "                         add the specified GID map to an ID-mapped mount\n"
 msgstr ""
+"     --map-groups <inner>:<outer>:<count>\n"
+"                         指定された GID map を ID マップマウントに追加します\n"
 
 #: sys-utils/mount.c:498
 msgid ""
 "     --map-users <inner>:<outer>:<count>\n"
 "                         add the specified UID map to an ID-mapped mount\n"
 msgstr ""
+"     --map-users <inner>:<outer>:<count>\n"
+"                         指定された UID map を ID マップマウントに追加します\n"
 
 #: sys-utils/mount.c:500
-#, fuzzy
-#| msgid " --default                         use default terminal settings\n"
 msgid ""
 "     --map-users /proc/<pid>/ns/user\n"
 "                         specify the user namespace for an ID-mapped mount\n"
-msgstr " --default                         端末のデフォルト設定を使用します\n"
+msgstr ""
+"     --map-users /proc/<pid>/ns/user\n"
+"                         ID マップマウントでユーザネームスペースを指定します\n"
 
 #: sys-utils/mount.c:502
 msgid " -m, --mkdir[=<mode>]    alias to '-o X-mount.mkdir[=<mode>]'\n"
-msgstr ""
+msgstr " -m, --mkdir[=<mode>]    '-o X-mount.mkdir[=<mode>]' の別名\n"
 
 #: sys-utils/mount.c:503 sys-utils/umount.c:99
 msgid " -n, --no-mtab           don't write to /etc/mtab\n"
@@ -21208,222 +21183,164 @@ msgid ""
 "     --options-mode <mode>\n"
 "                         what to do with options loaded from fstab\n"
 msgstr ""
+"     --options-mode <モード>\n"
+"                         fstab から読み込まれたオプションの扱い\n"
 
 #: sys-utils/mount.c:506
-#, fuzzy
-#| msgid "     --fake              dry run; skip the umount(2) syscall\n"
 msgid ""
 "     --options-source <source>\n"
 "                         mount options source\n"
-msgstr "     --fake              実際には umount(2) のシステムコールを行いません\n"
+msgstr ""
+"     --options-source <ソース>\n"
+"                         マウントオプションのソース\n"
 
 #: sys-utils/mount.c:508
 msgid ""
 "     --options-source-force\n"
 "                         force use of options from fstab/mtab\n"
 msgstr ""
+"     --options-source-force\n"
+"                         fstab/mtab から読み込んだオプションを強制的に使う\n"
 
 #: sys-utils/mount.c:510
-#, fuzzy
-#| msgid " -P         check filesystems in parallel, including root\n"
 msgid "     --onlyonce          check if filesystem is already mounted\n"
-msgstr " -P         ルートファイルシステムを含め、チェックを並列で処理します\n"
+msgstr "     --onlyonce          ファイルシステムがすでにマウントされているか確認する\n"
 
 #: sys-utils/mount.c:511
-#, fuzzy
-#| msgid " -O, --options <list>   limit the set of filesystems by mount options\n"
 msgid " -o, --options <list>    comma-separated list of mount options\n"
-msgstr " -O, --options <list>   マウントオプションでファイルシステムの出力を制限します\n"
+msgstr " -o, --options <リスト>  カンマ区切りでマウントオプションを指定します\n"
 
 #: sys-utils/mount.c:512 sys-utils/umount.c:101
 msgid " -O, --test-opts <list>  limit the set of filesystems (use with -a)\n"
 msgstr " -O, --test-opts <リスト> ファイルシステムを指定します (-a と併用します)\n"
 
 #: sys-utils/mount.c:513
-#, fuzzy
-#| msgid " -r, --read-only          forced open cfdisk in read-only mode\n"
 msgid " -r, --read-only         mount the filesystem read-only (same as -o ro)\n"
-msgstr " -r, --read-only          cfdisk を強制的に読み込み専用で開きます\n"
+msgstr " -r, --read-only         ファイルシステムを読み込み専用でマウントします (-o ro と同じ動作です)\n"
 
 #: sys-utils/mount.c:514 sys-utils/umount.c:104
 msgid " -t, --types <list>      limit the set of filesystem types\n"
 msgstr " -t, --types <リスト>    ファイルシステムの種類を指定します\n"
 
 #: sys-utils/mount.c:515
-#, fuzzy
-#| msgid ""
-#| "     --source <src>      explicitly specifies source (path, label, uuid)\n"
-#| "     --target <target>   explicitly specifies mountpoint\n"
 msgid "     --source <src>      explicitly specifies source (path, label, uuid)\n"
-msgstr ""
-"     --source <src>      マウント元を明示的に指定します (パス, ラベル, uuid のいずれか)\n"
-"     --target <target>   マウントポイントを明示的に指定します\n"
+msgstr "     --source <ソース>   マウント元を明示的に指定します (パス, ラベル, uuid のいずれか)\n"
 
 #: sys-utils/mount.c:516
-#, fuzzy
-#| msgid ""
-#| "     --source <src>      explicitly specifies source (path, label, uuid)\n"
-#| "     --target <target>   explicitly specifies mountpoint\n"
 msgid "     --target <target>   explicitly specifies mountpoint\n"
-msgstr ""
-"     --source <src>      マウント元を明示的に指定します (パス, ラベル, uuid のいずれか)\n"
-"     --target <target>   マウントポイントを明示的に指定します\n"
+msgstr "     --target <ターゲット> マウントポイントを明示的に指定します\n"
 
 #: sys-utils/mount.c:517
-#, fuzzy
-#| msgid " --default                         use default terminal settings\n"
 msgid ""
 "     --target-prefix <path>\n"
 "                         specifies path used for all mountpoints\n"
-msgstr " --default                         端末のデフォルト設定を使用します\n"
+msgstr ""
+"     --target-prefix <パス>\n"
+"                         すべてのマウントポイントに使用するパスを指定します\n"
 
 #: sys-utils/mount.c:519 sys-utils/umount.c:105
 msgid " -v, --verbose           say what is being done\n"
 msgstr " -v, --verbose           何が行われるのかを表示します\n"
 
 #: sys-utils/mount.c:520
-#, fuzzy
 msgid " -w, --rw, --read-write  mount the filesystem read-write (default)\n"
-msgstr ""
-" -v, --verbose           何が行われるのかを表示します\n"
-" -V, --version           バージョン情報を表示して終了します\n"
-" -w, --rw, --read-write  ファイルシステムを読み書き可能な状態でマウントします (既定値)\n"
+msgstr " -w, --rw, --read-write  ファイルシステムを読み書き可能な状態でマウントします (既定値)\n"
 
 #: sys-utils/mount.c:521
-#, fuzzy
-#| msgid " -S, --setuid <uid>     set uid in user namespace\n"
 msgid " -N, --namespace <ns>    perform mount in another namespace\n"
-msgstr " -S, --setuid <uid>        ユーザネームスペースでの uid をセットします\n"
+msgstr " -N, --namespace <ns>    別のネームスペースでマウントを行います\n"
 
 #: sys-utils/mount.c:527
-#, fuzzy
-#| msgid "Resource"
 msgid "Source:\n"
-msgstr "リソース"
+msgstr "ソース:\n"
 
 #: sys-utils/mount.c:528
-#, fuzzy
-#| msgid " -s, --size <size>         device size\n"
 msgid " -L, --label <label>     synonym for LABEL=<label>\n"
-msgstr ""
-" -s, --size <サイズ>       デバイスのサイズ\n"
-"\n"
+msgstr " -L, --label <ラベル>    LABEL=<ラベル> と同じ\n"
 
 #: sys-utils/mount.c:529
-#, fuzzy
-#| msgid " -u, --user <user>             username\n"
 msgid " -U, --uuid <uuid>       synonym for UUID=<uuid>\n"
-msgstr " -u, --user <ユーザ>             ユーザ名\n"
+msgstr " -U, --uuid <uuid>       UUID=<uuid> と同じ\n"
 
 #: sys-utils/mount.c:530
-#, fuzzy
-#| msgid " -L, --label LABEL         specify label\n"
 msgid " LABEL=<label>           specifies device by filesystem label\n"
-msgstr " -L, --label LABEL         ラベルを指定します\n"
+msgstr " LABEL=<ラベル>          デバイスをファイルシステムのラベルで指定します\n"
 
 #: sys-utils/mount.c:531
 msgid " UUID=<uuid>             specifies device by filesystem UUID\n"
-msgstr ""
+msgstr " UUID=<uuid>             デバイスをファイルシステムの UUID で指定します\n"
 
 #: sys-utils/mount.c:532
 msgid " PARTLABEL=<label>       specifies device by partition label\n"
-msgstr ""
+msgstr " PARTLABEL=<ラベル>      デバイスをパーティションのラベルで指定します\n"
 
 #: sys-utils/mount.c:533
 msgid " PARTUUID=<uuid>         specifies device by partition UUID\n"
-msgstr ""
+msgstr " PARTUUID=<uuid>         デバイスをパーティションの UUID で指定します\n"
 
 #: sys-utils/mount.c:534
-#, fuzzy
-#| msgid " <dev>                     device (usually disk) path\n"
 msgid " ID=<id>                 specifies device by udev hardware ID\n"
-msgstr " <dev>                     デバイス（通常はディスク）のパス\n"
+msgstr " ID=<id>                 デバイスをパーティションの udev ハードウェア ID で指定します\n"
 
 #: sys-utils/mount.c:535
-#, fuzzy
-#| msgid " <dev>                     device (usually disk) path\n"
 msgid " <device>                specifies device by path\n"
-msgstr " <dev>                     デバイス（通常はディスク）のパス\n"
+msgstr " <デバイス>              デバイスをパスで指定します\n"
 
 #: sys-utils/mount.c:536
 msgid " <directory>             mountpoint for bind mounts (see --bind/rbind)\n"
-msgstr ""
+msgstr " <ディレクトリ>          バインドマウント用のマウントポイント (--bind/rbind を参照)\n"
 
 #: sys-utils/mount.c:537
-#, fuzzy
-#| msgid " -f, --file <file>    use a specific file instead of %s\n"
 msgid " <file>                  regular file for loopdev setup\n"
-msgstr " -F, --file <ファイル>    %s ではなく、指定したファイルを使用して出力します\n"
+msgstr " <ファイル>              ループバックマウント用の通常ファイル\n"
 
 #: sys-utils/mount.c:540
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Options:\n"
 msgid "Operations:\n"
-msgstr ""
-"\n"
-"オプション:\n"
+msgstr "操作:\n"
 
 #: sys-utils/mount.c:541
-#, fuzzy
-#| msgid " -1, --one             show only a single month (default)\n"
 msgid " -B, --bind              mount a subtree somewhere else (same as -o bind)\n"
-msgstr " -1, --one             1 か月分だけを表示します (既定値)\n"
+msgstr " -B, --bind              サブツリーを別の場所にマウントします (-o bind と同じ動作です)\n"
 
 #: sys-utils/mount.c:542
-#, fuzzy
-#| msgid " -n, --net                 unshare network namespace\n"
 msgid " -M, --move              move a subtree to some other place\n"
-msgstr " -n, --net         ネットワークネームスペースの共有を解除します\n"
+msgstr " -M, --move              サブツリーを別の場所に移動します\n"
 
 #: sys-utils/mount.c:543
-#, fuzzy
-#| msgid " -m, --mount               unshare mounts namespace\n"
 msgid " -R, --rbind             mount a subtree and all submounts somewhere else\n"
-msgstr " -m, --mount       マウントネームスペースの共有を解除します\n"
+msgstr " -R, --rbind             サブツリーとすべてのサブマウントを別の場所にマウントします\n"
 
 #: sys-utils/mount.c:544
-#, fuzzy
-#| msgid " -s, --shared             get a shared lock\n"
 msgid " --make-shared           mark a subtree as shared\n"
-msgstr " -s, --shared             共有ロックを取得します\n"
+msgstr " --make-shared           サブツリーを共有としてマークします\n"
 
 #: sys-utils/mount.c:545
-#, fuzzy
-#| msgid " -s, --shared             get a shared lock\n"
 msgid " --make-slave            mark a subtree as slave\n"
-msgstr " -s, --shared             共有ロックを取得します\n"
+msgstr " --make-slave            サブツリーをスレーブとしてマークします\n"
 
 #: sys-utils/mount.c:546
 msgid " --make-private          mark a subtree as private\n"
-msgstr ""
+msgstr " --make-private          サブツリーをプライベートとしてマークします\n"
 
 #: sys-utils/mount.c:547
 msgid " --make-unbindable       mark a subtree as unbindable\n"
-msgstr ""
+msgstr " --make-unbindable       サブツリーをバインド不可能としてマークします\n"
 
 #: sys-utils/mount.c:548
-#, fuzzy
-#| msgid " -s, --shared             get a shared lock\n"
 msgid " --make-rshared          recursively mark a whole subtree as shared\n"
-msgstr " -s, --shared             共有ロックを取得します\n"
+msgstr " --make-rshared          サブツリー全体を再帰的に共有としてマークします\n"
 
 #: sys-utils/mount.c:549
-#, fuzzy
-#| msgid " -R, --recursive         recursively unmount a target with all its children\n"
 msgid " --make-rslave           recursively mark a whole subtree as slave\n"
-msgstr " -R, --recursive         指定したものと、それ以下のディレクトリすべてをアンマウントします\n"
+msgstr " --make-rslave           サブツリー全体を再帰的にスレーブとしてマークします\n"
 
 #: sys-utils/mount.c:550
-#, fuzzy
-#| msgid " -R, --recursive         recursively unmount a target with all its children\n"
 msgid " --make-rprivate         recursively mark a whole subtree as private\n"
-msgstr " -R, --recursive         指定したものと、それ以下のディレクトリすべてをアンマウントします\n"
+msgstr " --make-rprivate         サブツリー全体を再帰的にプライベートとしてマークします\n"
 
 #: sys-utils/mount.c:551
 msgid " --make-runbindable      recursively mark a whole subtree as unbindable\n"
-msgstr ""
+msgstr " --make-runbindable      サブツリー全体を再帰的にバインド不可能としてマークします\n"
 
 #: sys-utils/mount.c:707 sys-utils/umount.c:520
 msgid "libmount context allocation failed"
@@ -21434,16 +21351,13 @@ msgid "failed to set options pattern"
 msgstr "オプションパターンの設定に失敗しました"
 
 #: sys-utils/mount.c:821 sys-utils/umount.c:599
-#, fuzzy, c-format
-#| msgid "Failed to set personality to %s"
+#, c-format
 msgid "failed to set target namespace to %s"
-msgstr "ネームスペース '%s' の再割り当てに失敗しました"
+msgstr "ターゲットネームスペースを '%s' に設定できませんでした"
 
 #: sys-utils/mount.c:1009
-#, fuzzy
-#| msgid "You specified more cylinders than fit on disk"
 msgid "source specified more than once"
-msgstr "%qE がデータ句内で二回以上出現しています"
+msgstr "ソースが複数指定されています"
 
 #: sys-utils/mountpoint.c:112
 #, c-format
@@ -21459,11 +21373,6 @@ msgid "Check whether a directory or file is a mountpoint.\n"
 msgstr "ディレクトリがマウントポイントかどうか確認します。\n"
 
 #: sys-utils/mountpoint.c:119
-#, fuzzy
-#| msgid ""
-#| " -q, --quiet        quiet mode - don't print anything\n"
-#| " -d, --fs-devno     print maj:min device number of the filesystem\n"
-#| " -x, --devno        print maj:min device number of the block device\n"
 msgid ""
 " -q, --quiet        quiet mode - don't print anything\n"
 "     --nofollow     do not follow symlink\n"
@@ -21471,6 +21380,7 @@ msgid ""
 " -x, --devno        print maj:min device number of the block device\n"
 msgstr ""
 " -q, --quiet        静寂モードを指定します - 何も出力しません\n"
+"     --nofollow     シンボリックリンクを追跡しないようにします\n"
 " -d, --fs-devno     ファイルシステムのメジャー:マイナーデバイス番号を表示します\n"
 " -x, --devno        ブロックデバイスのメジャー:マイナーデバイス番号を表示します\n"
 
@@ -23821,16 +23731,12 @@ msgstr ""
 "                           読み込み専用で再マウントします\n"
 
 #: sys-utils/umount.c:106
-#, fuzzy
-#| msgid " -q, --quiet               suppress extra info messages\n"
 msgid " -q, --quiet             suppress 'not mounted' error messages\n"
-msgstr " -q, --quiet               出力するメッセージの量を抑えます\n"
+msgstr " -q, --quiet             「マウントされていません」というエラーメッセージを省略します\n"
 
 #: sys-utils/umount.c:107
-#, fuzzy
-#| msgid " -S, --setuid <uid>     set uid in user namespace\n"
 msgid " -N, --namespace <ns>    perform umount in another namespace\n"
-msgstr " -S, --setuid <uid>        ユーザネームスペースでの uid をセットします\n"
+msgstr " -N, --namespace <ns>    別のネームスペースでアンマウントを行います\n"
 
 #: sys-utils/umount.c:152
 #, c-format
@@ -23867,7 +23773,7 @@ msgstr "%s: 見つかりません"
 #: sys-utils/umount.c:397
 #, c-format
 msgid "%s: failed to determine source (--all-targets is unsupported on systems with regular mtab file)."
-msgstr ""
+msgstr "%s: ソースの特定に失敗しました (--all-targets は mtab が通常ファイルであるシステムではサポートされていません)。"
 
 #: sys-utils/unshare.c:98
 #, c-format
