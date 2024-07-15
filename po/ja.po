@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-15 19:54+0900\n"
+"PO-Revision-Date: 2024-07-15 20:50+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -15729,100 +15729,69 @@ msgid "failed to probe the device"
 msgstr "デバイスの検出に失敗しました"
 
 #: sys-utils/blkpr.c:195 sys-utils/blkpr.c:280
-#, fuzzy
-#| msgid "%c: unknown command"
 msgid "unknown command"
-msgstr "%c: 不明なコマンドです"
+msgstr "不明なコマンドです"
 
 #: sys-utils/blkpr.c:200
-#, fuzzy
-#| msgid "ioctl failed"
 msgid "pr ioctl failed"
-msgstr "ioctl に失敗しました"
+msgstr "pr ioctl に失敗しました"
 
 #: sys-utils/blkpr.c:202
 #, c-format
 msgid "error code 0x%x, for more detailed information see specification of device model."
-msgstr ""
+msgstr "エラーコード 0x%x です。詳しい情報については、デバイスモデルの仕様を参照してください。"
 
 #: sys-utils/blkpr.c:216
-#, fuzzy
-#| msgid "Discard the content of sectors on a device.\n"
 msgid "Persistent reservations on a device.\n"
-msgstr "デバイスのセクタの内容を破棄します。\n"
+msgstr "デバイス上の永続予約。\n"
 
 #: sys-utils/blkpr.c:219
-#, fuzzy
-#| msgid " -c, --command <command>  run a single command string through the shell\n"
 msgid " -c, --command <cmd>      command of persistent reservations\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr " -c, --command <コマンド> 永続予約のコマンド\n"
 
 #: sys-utils/blkpr.c:220
-#, fuzzy
-#| msgid " -u, --user <user>               username\n"
 msgid " -k, --key <num>          key to operate\n"
-msgstr " -u, --user <ユーザー>             ユーザー名\n"
+msgstr " -k, --key <数値>         操作するキー\n"
 
 #: sys-utils/blkpr.c:221
-#, fuzzy
-#| msgid " -t, --target <pid>     target process to get namespaces from\n"
 msgid " -K, --oldkey <num>       old key to operate\n"
-msgstr " -t, --target <pid>     ネームスペースを取得するプロセスを指定します\n"
+msgstr " -K, --oldkey <数値>      操作する古いキー\n"
 
 #: sys-utils/blkpr.c:222
-#, fuzzy
-#| msgid " -i, --iflag [-]<iflag>  set input mode flag\n"
 msgid " -f, --flag <flag>        command flag\n"
-msgstr " -i, --iflag [-]<フラグ> 入力モードフラグを設定します\n"
+msgstr " -f, --flag <フラグ>      コマンドフラグ\n"
 
 #: sys-utils/blkpr.c:223
-#, fuzzy
-#| msgid " -t, --type <type>    specify the partition type\n"
 msgid " -t, --type <type>        command type\n"
-msgstr " -t, --type <タイプ>  パーティションの種類を指定します\n"
+msgstr " -t, --type <タイプ>      コマンドの種類\n"
 
 #: sys-utils/blkpr.c:230
 msgid " <cmd> is an command, available command:\n"
-msgstr ""
+msgstr "<コマンド> はコマンドです。利用可能なコマンド:\n"
 
 #: sys-utils/blkpr.c:233
 msgid " <flag> is a command flag, available flags:\n"
-msgstr ""
+msgstr "<フラグ> はコマンドのフラグです。利用可能なフラグ:\n"
 
 #: sys-utils/blkpr.c:236
 msgid " <type> is a command type, available types:\n"
-msgstr ""
+msgstr "<タイプ> はコマンドの種類です。利用可能な種類:\n"
 
 #: sys-utils/blkpr.c:271
-#, fuzzy
-#| msgid "failed to parse end"
 msgid "failed to parse key"
-msgstr "終了位置の処理に失敗しました"
+msgstr "キーの解釈に失敗しました"
 
 #: sys-utils/blkpr.c:275
-#, fuzzy
-#| msgid "failed to parse id"
 msgid "failed to parse old key"
-msgstr "ID の解析に失敗しました"
+msgstr "古いキーの解釈に失敗しました"
 
 #: sys-utils/blkpr.c:285
-#, fuzzy
-#| msgid "unknown user %s"
 msgid "unknown type"
-msgstr "不明なユーザ %s です"
+msgstr "不明な種類です"
 
 #: sys-utils/blkpr.c:290
-#, fuzzy
-#| msgid "unknown flag: %s"
 msgid "unknown flag"
-msgstr "不明なフラグです: %s"
+msgstr "不明なフラグです"
 
 #: sys-utils/blkzone.c:93
 msgid "Report zone information about the given device"
