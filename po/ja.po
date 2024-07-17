@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-15 20:50+0900\n"
+"PO-Revision-Date: 2024-07-18 09:30+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -19356,16 +19356,12 @@ msgid "backing file major:minor device number"
 msgstr "裏側にあるファイルのメジャー:マイナーデバイス番号"
 
 #: sys-utils/losetup.c:89
-#, fuzzy
-#| msgid "backing file major:minor device number"
 msgid "backing file major device number"
-msgstr "裏側にあるファイルのメジャー:マイナーデバイス番号"
+msgstr "裏側にあるファイルのメジャーデバイス番号"
 
 #: sys-utils/losetup.c:90
-#, fuzzy
-#| msgid "backing file major:minor device number"
 msgid "backing file minor device number"
-msgstr "裏側にあるファイルのメジャー:マイナーデバイス番号"
+msgstr "裏側にあるファイルのマイナーデバイス番号"
 
 #: sys-utils/losetup.c:91
 msgid "loop device name"
@@ -19380,10 +19376,8 @@ msgid "partscan flag set"
 msgstr "パートスキャンフラグセット"
 
 #: sys-utils/losetup.c:94
-#, fuzzy
-#| msgid "loop device name"
 msgid "loop device reference string"
-msgstr "ループバックデバイス名"
+msgstr "ループバックデバイスの参照文字列"
 
 #: sys-utils/losetup.c:96
 msgid "size limit of the file in bytes"
@@ -19394,20 +19388,16 @@ msgid "loop device major:minor number"
 msgstr "ループバックデバイスのメジャー:マイナー番号"
 
 #: sys-utils/losetup.c:98
-#, fuzzy
-#| msgid "loop device major:minor number"
 msgid "loop device major number"
-msgstr "ループバックデバイスのメジャー:マイナー番号"
+msgstr "ループバックデバイスのメジャー番号"
 
 #: sys-utils/losetup.c:99
-#, fuzzy
-#| msgid "loop device major:minor number"
 msgid "loop device minor number"
-msgstr "ループバックデバイスのメジャー:マイナー番号"
+msgstr "ループバックデバイスのマイナー番号"
 
 #: sys-utils/losetup.c:100
 msgid "access backing file with direct-io"
-msgstr ""
+msgstr "裏側にあるファイルを direct-io でアクセス"
 
 #: sys-utils/losetup.c:101
 msgid "logical sector size in bytes"
@@ -19448,7 +19438,7 @@ msgstr "ループバックデバイスの設定と制御を行います。\n"
 
 #: sys-utils/losetup.c:474
 msgid " -a, --all                     list all used devices\n"
-msgstr " -a, --all              使用しているすべてのデバイスを表示します\n"
+msgstr " -a, --all                     使用しているすべてのデバイスを表示します\n"
 
 #: sys-utils/losetup.c:475
 msgid " -d, --detach <loopdev>...     detach one or more devices\n"
@@ -19456,11 +19446,11 @@ msgstr " -d, --detach <ループバックデバイス>...      1つ以上のデ�
 
 #: sys-utils/losetup.c:476
 msgid " -D, --detach-all              detach all used devices\n"
-msgstr " -D, --detach-all       使用しているすべてのデバイスを切り離します\n"
+msgstr " -D, --detach-all              使用しているすべてのデバイスを切り離します\n"
 
 #: sys-utils/losetup.c:477
 msgid " -f, --find                    find first unused device\n"
-msgstr " -f, --find             使っていない最初のデバイスを検索します\n"
+msgstr " -f, --find                    使っていない最初のデバイスを検索します\n"
 
 #: sys-utils/losetup.c:478
 msgid " -c, --set-capacity <loopdev>  resize the device\n"
@@ -19468,29 +19458,23 @@ msgstr " -c, --set-capacity <ループバックデバイス>   デバイスの�
 
 #: sys-utils/losetup.c:479
 msgid " -j, --associated <file>       list all devices associated with <file>\n"
-msgstr ""
-" -j, --associated <ファイル>\n"
-"                        <ファイル>に関連する全デバイス一覧を表示します\n"
+msgstr " -j, --associated <ファイル>   <ファイル> に関連する全デバイス一覧を表示します\n"
 
 #: sys-utils/losetup.c:480
-#, fuzzy
-#| msgid " -f, --find                find a free device\n"
 msgid " -L, --nooverlap               avoid possible conflict between devices\n"
-msgstr " -f, --find                使っていないデバイスを検索します\n"
+msgstr " -L, --nooverlap               デバイス間の衝突の可能性を避けます\n"
 
 #: sys-utils/losetup.c:484
 msgid " -o, --offset <num>            start at offset <num> into file\n"
-msgstr " -o, --offset <番号>    ファイル内の <番号> で示されたオフセット位置から始めます\n"
+msgstr " -o, --offset <番号>           ファイル内の <番号> で示されたオフセット位置から始めます\n"
 
 #: sys-utils/losetup.c:485
 msgid "     --sizelimit <num>         device is limited to <num> bytes of the file\n"
-msgstr "     --sizelimit <数値>        デバイス上のファイルのサイズを <数値> バイトまでに制限します\n"
+msgstr "     --sizelimit <数値>        デバイスのファイル上のサイズを <数値> バイトまでに制限します\n"
 
 #: sys-utils/losetup.c:486
-#, fuzzy
-#| msgid " -b, --sector-size <size>      physical and logical sector size\n"
 msgid " -b, --sector-size <num>       set the logical sector size to <num>\n"
-msgstr " -b, --sector-size <サイズ>    物理および論理セクタサイズ\n"
+msgstr " -b, --sector-size <数値>      論理セクタサイズを <数値> に設定します\n"
 
 #: sys-utils/losetup.c:487
 msgid " -P, --partscan                create a partitioned loop device\n"
@@ -19502,47 +19486,43 @@ msgstr " -r, --read-only               読み込み専用のループバック�
 
 #: sys-utils/losetup.c:489
 msgid "     --direct-io[=<on|off>]    open backing file with O_DIRECT\n"
-msgstr ""
+msgstr "     --direct-io[=<on|off>]    裏側にあるファイルを O_DIRECT で開きます\n"
 
 #: sys-utils/losetup.c:490
 msgid "     --loop-ref <string>       loop device reference\n"
-msgstr ""
+msgstr "     --loop-ref <string>       ループバックデバイスの参照文字列を設定します\n"
 
 #: sys-utils/losetup.c:491
 msgid "     --show                    print device name after setup (with -f)\n"
-msgstr "     --show             設定後にデバイス名を表示します (-f と共に使用します)\n"
+msgstr "     --show                    設定後にデバイス名を表示します (-f と共に使用します)\n"
 
 #: sys-utils/losetup.c:492
 msgid " -v, --verbose                 verbose mode\n"
-msgstr " -v, --verbose          冗長モードを設定します\n"
+msgstr " -v, --verbose                 冗長モードを設定します\n"
 
 #: sys-utils/losetup.c:496
 msgid " -J, --json                    use JSON --list output format\n"
 msgstr " -J, --json                    JSON --list 形式で出力します\n"
 
 #: sys-utils/losetup.c:497
-#, fuzzy
-#| msgid " -l, --list                    list info about all or specified\n"
 msgid " -l, --list                    list info about all or specified (default)\n"
-msgstr " -l, --list             全て、もしくは指定したデバイスの情報を一覧で表示します\n"
+msgstr " -l, --list                    全て、もしくは指定したデバイスの情報を一覧で表示します (既定値)\n"
 
 #: sys-utils/losetup.c:498
 msgid " -n, --noheadings              don't print headings for --list output\n"
-msgstr " -n, --noheadings       --list の出力にヘッダを表示しません\n"
+msgstr " -n, --noheadings              --list の出力にヘッダを表示しません\n"
 
 #: sys-utils/losetup.c:499
 msgid " -O, --output <cols>           specify columns to output for --list\n"
-msgstr " -O, --output <cols>    --list で表示する列を指定します\n"
+msgstr " -O, --output <cols>           --list で表示する列を指定します\n"
 
 #: sys-utils/losetup.c:500
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid "     --output-all              output all columns\n"
-msgstr "     --output-all         すべての列を出力します\n"
+msgstr "     --output-all              すべての列を出力します\n"
 
 #: sys-utils/losetup.c:501
 msgid "     --raw                     use raw --list output format\n"
-msgstr "     --raw              --list の結果を特に加工を行わずに出力します\n"
+msgstr "     --raw                     --list の結果を特に加工を行わずに出力します\n"
 
 #: sys-utils/losetup.c:529
 #, c-format
@@ -19550,54 +19530,46 @@ msgid "%s: Warning: file is smaller than 512 bytes; the loop device may be usele
 msgstr "%s: 警告: ファイルが 512 バイトよりも小さいサイズです。ループバックデバイスは利用できなくなるか、もしくはシステムツールから見えなくなってしまう場合があります。"
 
 #: sys-utils/losetup.c:533
-#, fuzzy, c-format
-#| msgid "%s: Warning: file does not fit into a 512-byte sector; the end of the file will be ignored."
+#, c-format
 msgid "%s: Warning: file does not end on a 512-byte sector boundary; the remaining end of the file will be ignored."
-msgstr "%s: 警告: ファイルは 512 バイトセクタに合致しないため、ファイルの終わりのほうが無視されます。"
+msgstr "%s: 警告: ファイルが 512 バイトセクタ境界で終了していません。ファイル末尾の残り部分が無視されます。"
 
 #: sys-utils/losetup.c:552
 msgid "cannot find an unused loop device"
 msgstr "未使用のループバックデバイスが見つかりません"
 
 #: sys-utils/losetup.c:575 sys-utils/losetup.c:627
-#, fuzzy, c-format
-#| msgid "%s not an lp device"
+#, c-format
 msgid "%s: overlapping loop device exists"
-msgstr "%s 用の重複するループバックデバイスが存在します"
+msgstr "%s: 重複するループバックデバイスが存在します"
 
 #: sys-utils/losetup.c:586
-#, fuzzy, c-format
+#, c-format
 msgid "%s: overlapping read-only loop device exists"
-msgstr "%s 用の重複するループバックデバイスが存在します"
+msgstr "%s: 重複する読み込み専用ループバックデバイスが存在します"
 
 #: sys-utils/losetup.c:593
-#, fuzzy, c-format
+#, c-format
 msgid "%s: overlapping encrypted loop device exists"
-msgstr "%s 用の重複するループバックデバイスが存在します"
+msgstr "%s: 重複する暗号化ループバックデバイスが存在します"
 
 #: sys-utils/losetup.c:599
-#, fuzzy, c-format
-#| msgid "%s: failed to setup loop device"
+#, c-format
 msgid "%s: failed to re-use loop device"
-msgstr "%s 用のループバックデバイスの設定に失敗しました"
+msgstr "%s: ループバックデバイスの再利用に失敗しました"
 
 #: sys-utils/losetup.c:605
-#, fuzzy
-#| msgid "%s: failed to setup loop device"
 msgid "failed to inspect loop devices"
-msgstr "ループバックデバイスの設定と制御を行います。\n"
+msgstr "ループバックデバイスの検査に失敗しました"
 
 #: sys-utils/losetup.c:628
-#, fuzzy, c-format
-#| msgid "%s: failed to setup loop device"
+#, c-format
 msgid "%s: failed to check for conflicting loop devices"
-msgstr "%s: ループバックデバイスの設定に失敗しました"
+msgstr "%s: ループバックデバイスの重複の検査に失敗しました"
 
 #: sys-utils/losetup.c:650
-#, fuzzy
-#| msgid "cannot set line discipline"
 msgid "cannot set loop reference string"
-msgstr "回線制御を設定できません"
+msgstr "ループバックデバイスの参照文字列を設定できません"
 
 #: sys-utils/losetup.c:654
 #, c-format
@@ -19605,10 +19577,8 @@ msgid "%s: failed to use backing file"
 msgstr "%s: 裏側に設定するファイルを使用できませんでした"
 
 #: sys-utils/losetup.c:753
-#, fuzzy
-#| msgid "failed to parse size"
 msgid "failed to parse logical block size"
-msgstr "論理ブロック (セクタ) サイズを取得"
+msgstr "論理ブロックサイズの解釈に失敗しました"
 
 #: sys-utils/losetup.c:758 sys-utils/losetup.c:770 sys-utils/losetup.c:898
 #: sys-utils/losetup.c:912 sys-utils/losetup.c:949
@@ -19632,19 +19602,17 @@ msgstr "オプション --offset は、この処理では利用できません"
 #: sys-utils/losetup.c:981
 #, c-format
 msgid "%s: set capacity failed"
-msgstr "%s: stat が失敗しました"
+msgstr "%s: 容量の設定に失敗しました"
 
 #: sys-utils/losetup.c:987
-#, fuzzy, c-format
-#| msgid "%s: change directory failed"
+#, c-format
 msgid "%s: set direct io failed"
-msgstr "%s: stat が失敗しました"
+msgstr "%s: direct io の設定に失敗しました"
 
 #: sys-utils/losetup.c:993
-#, fuzzy, c-format
-#| msgid "%s: get size failed"
+#, c-format
 msgid "%s: set logical block size failed"
-msgstr "%s: サイズの取得に失敗しました"
+msgstr "%s: 論理ブロックサイズの設定に失敗しました"
 
 #: sys-utils/lscpu.c:40
 msgid "none"
