@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-07-18 09:30+0900\n"
+"PO-Revision-Date: 2024-08-22 16:34+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -744,7 +744,7 @@ msgstr " -z, --zero               パーティションテーブルを何もな�
 #: disk-utils/cfdisk.c:2737
 #, c-format
 msgid "     --lock[=<mode>]      use exclusive device lock (%s, %s or %s)\n"
-msgstr "     --lock[=<モード>]      排他的デバイスロックを使用します(%s, %s, %s のどれか)\n"
+msgstr "     --lock[=<モード>]    排他的デバイスロックを使用します(%s, %s, %s のどれか)\n"
 
 #: disk-utils/cfdisk.c:2738
 msgid " -r, --read-only          forced open cfdisk in read-only mode\n"
@@ -9099,10 +9099,8 @@ msgid " -c, --colon-separate     display data in a format similar to /etc/passwd
 msgstr ""
 
 #: login-utils/lslogins.c:1450 sys-utils/lsipc.c:311
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " -e, --export             display in an export-able output format\n"
-msgstr " -r, --raw              特に加工を行わずに出力します\n"
+msgstr " -e, --export             エクスポート可能な出力形式で表示します\n"
 
 #: login-utils/lslogins.c:1451
 #, fuzzy
@@ -9131,20 +9129,16 @@ msgid " -l, --logins=<logins>    display only users from <logins>\n"
 msgstr " -w, --fullnames          ユーザ名とドメイン名を完全な形式で表示します\n"
 
 #: login-utils/lslogins.c:1456 sys-utils/lsipc.c:313
-#, fuzzy
-#| msgid " -h, --help           usage information (this)\n"
 msgid " -n, --newline            display each piece of information on a new line\n"
-msgstr " -h, --help           使用法 (これ) を表示します\n"
+msgstr " -n, --newline            情報ごとに改行して表示します\n"
 
 #: login-utils/lslogins.c:1457 sys-utils/lsipc.c:306
 msgid "     --noheadings         don't print headings\n"
 msgstr "     --noheadings         ヘッダを表示しません\n"
 
 #: login-utils/lslogins.c:1458 sys-utils/lsipc.c:307
-#, fuzzy
-#| msgid "     --nohints              do not print hints\n"
 msgid "     --notruncate         don't truncate output\n"
-msgstr "     --nohints              ヒントを表示しないようにします\n"
+msgstr "     --notruncate         出力を切り詰めません\n"
 
 #: login-utils/lslogins.c:1459 sys-utils/lsipc.c:315
 msgid " -o, --output[=<list>]    define the columns to output\n"
@@ -9171,10 +9165,8 @@ msgid " -s, --system-accs        display system accounts\n"
 msgstr " -a, --hostlast           最後の列に表示するホスト名\n"
 
 #: login-utils/lslogins.c:1464 sys-utils/lsipc.c:308
-#, fuzzy
-#| msgid "     --time-format <format>  show time stamp using format:\n"
 msgid "     --time-format=<type> display dates in short, full or iso format\n"
-msgstr "     --time-format <形式> タイムスタンプを指定した形式で表示します:\n"
+msgstr "     --time-format=<タイプ> 日付を short, full, iso のいずれかの形式で表示します\n"
 
 #: login-utils/lslogins.c:1465
 #, fuzzy
@@ -9184,7 +9176,7 @@ msgstr " -u, --userspace             ユーザスペースのメッセージを�
 
 #: login-utils/lslogins.c:1466 sys-utils/lsipc.c:319
 msgid " -y, --shell              use column names to be usable as shell variable identifiers\n"
-msgstr ""
+msgstr " -y, --shell              列の名前をシェル変数名として利用できる形式にします\n"
 
 #: login-utils/lslogins.c:1467
 #, fuzzy
@@ -10751,10 +10743,8 @@ msgstr " -s, --inverse        依存関係を逆転します\n"
 
 #: misc-utils/findmnt.c:1438 misc-utils/lslocks.c:814 sys-utils/lsns.c:1295
 #: sys-utils/rfkill.c:640
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " -J, --json             use JSON output format\n"
-msgstr " -J, --json            JSON形式で出力します\n"
+msgstr " -J, --json             JSON形式で出力します\n"
 
 #: misc-utils/findmnt.c:1439 sys-utils/lsns.c:1296
 msgid " -l, --list             use list format output\n"
@@ -10839,17 +10829,8 @@ msgstr ""
 "                           クリーンアップは後から行うようにします\n"
 
 #: misc-utils/findmnt.c:1458 misc-utils/lslocks.c:821 sys-utils/lsns.c:1303
-#, fuzzy
-#| msgid " -n, --no-mtab           don't write to /etc/mtab\n"
 msgid " -u, --notruncate       don't truncate text in columns\n"
-msgstr ""
-" -p, --pid <pid>        プロセス ID\n"
-" -o, --output <一覧>    出力する列を指定します\n"
-" -n, --noheadings       ヘッダを表示しません\n"
-" -r, --raw              加工を行なわない形式で出力します\n"
-" -u, --notruncate       テキストを列方向に切り詰めないようにします\n"
-" -h, --help             このヘルプを表示して終了します\n"
-" -V, --version          バージョン情報を表示して終了します\n"
+msgstr " -u, --notruncate       テキストを列方向に切り詰めません\n"
 
 #: misc-utils/findmnt.c:1459
 #, fuzzy
@@ -12662,10 +12643,9 @@ msgid "Could not glob: %d"
 msgstr "ディレクトリ %s を読み込むことができませんでした"
 
 #: misc-utils/lsclocks.c:443 sys-utils/hwclock-rtc.c:145
-#, fuzzy, c-format
-#| msgid "ioctl(%s) to %s to read the time failed"
+#, c-format
 msgid "ioctl(RTC_RD_NAME) to %s to read the time failed"
-msgstr "時刻を読み込む際、 %2$s に対して ioctl(%1$s) を要求しましたが、失敗しました"
+msgstr "時刻を読み込む際、 %s に対して ioctl(RTC_RD_NAME) を要求しましたが、失敗しました"
 
 #: misc-utils/lsclocks.c:502
 #, c-format
@@ -13115,10 +13095,8 @@ msgid "extended version of MODE (rwxD[Ll]m)"
 msgstr ""
 
 #: misc-utils/lsfd.c:457 sys-utils/prlimit.c:79
-#, fuzzy
-#| msgid "process ID"
 msgid "processes"
-msgstr "ユーザによって実行中のプロセス数"
+msgstr "プロセス数"
 
 #: misc-utils/lsfd.c:461
 #, fuzzy
@@ -13499,26 +13477,20 @@ msgid " -i, --noinaccessible   ignore locks without read permissions\n"
 msgstr ""
 
 #: misc-utils/lslocks.c:816 sys-utils/lsns.c:1297 sys-utils/rfkill.c:641
-#, fuzzy
-#| msgid " -n, --noheadings     don't print headings\n"
 msgid " -n, --noheadings       don't print headings\n"
-msgstr " -n, --noheadings      ヘッダを表示しません\n"
+msgstr " -n, --noheadings       ヘッダを表示しません\n"
 
 #: misc-utils/lslocks.c:818 sys-utils/lsns.c:1299 sys-utils/rfkill.c:643
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid "     --output-all       output all columns\n"
-msgstr "     --output-all         すべての列を出力します\n"
+msgstr "     --output-all       すべての列を出力します\n"
 
 #: misc-utils/lslocks.c:819
 msgid " -p, --pid <pid>        display only locks held by this process\n"
 msgstr ""
 
 #: misc-utils/lslocks.c:820 sys-utils/lsns.c:1302 sys-utils/rfkill.c:644
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " -r, --raw              use the raw output format\n"
-msgstr " -r, --raw              特に加工を行わずに出力します"
+msgstr " -r, --raw              特に加工を行わずに出力します\n"
 
 #: misc-utils/lslocks.c:907 schedutils/chrt.c:413 schedutils/ionice.c:179
 #: schedutils/taskset.c:190 schedutils/uclampset.c:249 sys-utils/choom.c:102
@@ -16099,7 +16071,7 @@ msgstr "未対応の引数です: %s"
 #: sys-utils/chmem.c:100
 #, c-format
 msgid "Memory Block %<PRIu64> (0x%016<PRIx64>-0x%016<PRIx64>)"
-msgstr ""
+msgstr "メモリブロック %<PRIu64> (0x%016<PRIx64>-0x%016<PRIx64>)"
 
 #: sys-utils/chmem.c:124 sys-utils/chmem.c:197
 msgid "Failed to parse index"
@@ -16128,12 +16100,12 @@ msgstr "%s を無効化しました\n"
 #: sys-utils/chmem.c:170
 #, c-format
 msgid "Could only enable %s of memory"
-msgstr ""
+msgstr "メモリを %s しか有効化できませんでした"
 
 #: sys-utils/chmem.c:172
 #, c-format
 msgid "Could only disable %s of memory"
-msgstr ""
+msgstr "メモリを %s しか無効化できませんでした"
 
 #: sys-utils/chmem.c:206
 #, c-format
@@ -16181,7 +16153,7 @@ msgstr "サイズの解釈に失敗しました"
 #: sys-utils/chmem.c:289
 #, c-format
 msgid "Size must be aligned to memory block size (%s)"
-msgstr ""
+msgstr "サイズはメモリブロックサイズ (%s) の倍数である必要があります"
 
 #: sys-utils/chmem.c:298
 msgid "Failed to parse start"
@@ -16192,10 +16164,9 @@ msgid "Failed to parse end"
 msgstr "終了位置の解析に失敗しました"
 
 #: sys-utils/chmem.c:303
-#, fuzzy, c-format
-#| msgid "invalid start argument"
+#, c-format
 msgid "Invalid start address format: %s"
-msgstr "無効な終了アドレス形式: %s"
+msgstr "無効な開始アドレス形式: %s"
 
 #: sys-utils/chmem.c:305
 #, c-format
@@ -16203,104 +16174,64 @@ msgid "Invalid end address format: %s"
 msgstr "無効な終了アドレス形式: %s"
 
 #: sys-utils/chmem.c:306
-#, fuzzy
-#| msgid "failed to parse start"
 msgid "Failed to parse start address"
-msgstr "開始位置の解析に失敗しました"
+msgstr "開始アドレスの解析に失敗しました"
 
 #: sys-utils/chmem.c:307
-#, fuzzy
-#| msgid "failed to parse end"
 msgid "Failed to parse end address"
-msgstr "終了位置の処理に失敗しました"
+msgstr "終了アドレスの解析に失敗しました"
 
 #: sys-utils/chmem.c:310
 #, c-format
 msgid "Start address and (end address + 1) must be aligned to memory block size (%s)"
-msgstr ""
+msgstr "開始アドレスおよび (終了アドレス + 1) はメモリブロックサイズ (%s) の倍数である必要があります"
 
 #: sys-utils/chmem.c:324
-#, fuzzy, c-format
-#| msgid "invalid argument: %s"
+#, c-format
 msgid "Invalid parameter: %s"
-msgstr "無効なパラメータ %qs です"
+msgstr "無効なパラメータ: %s"
 
 #: sys-utils/chmem.c:331
-#, fuzzy, c-format
-#| msgid "invalid argument: %s"
+#, c-format
 msgid "Invalid range: %s"
-msgstr "無効な範囲の終わり"
+msgstr "無効な範囲: %s"
 
 #: sys-utils/chmem.c:340
-#, fuzzy, c-format
-#| msgid " %s [options] [y | n]\n"
+#, c-format
 msgid " %s [options] [SIZE|RANGE|BLOCKRANGE]\n"
-msgstr ""
-"\n"
-"使い方:\n"
-" %s [オプション] デバイス [サイズ]\n"
+msgstr " %s [オプション] [サイズ|範囲|ブロック範囲]\n"
 
 #: sys-utils/chmem.c:343
 msgid "Set a particular size or range of memory online or offline.\n"
-msgstr ""
+msgstr "特定のサイズまたは範囲のメモリをオンラインまたはオフラインにします\n"
 
 #: sys-utils/chmem.c:346
-#, fuzzy
-#| msgid " -v, --verbose    be verbose\n"
 msgid " -e, --enable       enable memory\n"
-msgstr "有効/無効"
+msgstr " -e, --enable       メモリを有効化します\n"
 
 #: sys-utils/chmem.c:347
-#, fuzzy
-#| msgid " -v, --verbose    be verbose\n"
 msgid " -d, --disable      disable memory\n"
-msgstr "CPU %d の無効化に失敗しました"
+msgstr " -d, --disable      メモリを無効化します\n"
 
 #: sys-utils/chmem.c:348
-#, fuzzy
-#| msgid " -v, --verbose    be verbose\n"
 msgid " -b, --blocks       use memory blocks\n"
-msgstr "このシステムはメモリブロックに対応していません"
+msgstr " -b, --blocks       メモリブロックで指定します\n"
 
 #: sys-utils/chmem.c:349
 msgid " -z, --zone <name>  select memory zone (see below)\n"
-msgstr ""
+msgstr " -z, --zone <名前>  メモリゾーンを選択します (下記参照)\n"
 
 #: sys-utils/chmem.c:350
-#, fuzzy
-#| msgid " -v, --verbose    be verbose\n"
 msgid " -v, --verbose      verbose output\n"
-msgstr ""
-" -a, --auto <on|off>         自動排出機能を有効 (on) または無効 (off) にします\n"
-" -c, --changerslot <slot>    CD-ROM チェンジャーのディスクを交換します\n"
-" -d, --default               既定のデバイスを表示します\n"
-" -f, --floppy                フロッピィディスクを取り出します\n"
-" -F, --force                 デバイスの種類を無視して実行します\n"
-" -i, --manualeject <on|off>  手動排出を有効 (on) または無効 (off) にします\n"
-" -m, --no-unmount            マウント済みの場合、アンマウントを行わないようにします\n"
-" -M, --no-partitions-unmount 他のパーティションをアンマウントしないようにします\n"
-" -n, --noop                  実際の取り出しは行わず、見つかったデバイスを表示します\n"
-" -p, --proc                  /etc/mtab ではなく /proc/mounts を使用するようにします\n"
-" -q, --tape                  テープメディアを取り出します\n"
-" -r, --cdrom                 CD-ROM メディアを取り出します\n"
-" -s, --scsi                  SCSI デバイスを取り出します\n"
-" -t, --trayclose             トレイを閉じます\n"
-" -T, --traytoggle            トレイを開くか、閉じます\n"
-" -v, --verbose               出力を冗長に行います\n"
-" -x, --cdspeed <速度>        CD-ROM の最大速度を指定します\n"
-" -X, --listspeed             CD-ROM で利用可能な速度を表示します\n"
+msgstr " -v, --verbose      冗長な出力を行います\n"
 
 #: sys-utils/chmem.c:353
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Supported log facilities:\n"
 msgid ""
 "\n"
 "Supported zones:\n"
 msgstr ""
 "\n"
-"利用可能なログ分類:\n"
+"利用可能なゾーン:\n"
 
 #: sys-utils/chmem.c:394 sys-utils/lscpu-cputype.c:904 sys-utils/lsmem.c:660
 #, c-format
@@ -16309,64 +16240,47 @@ msgstr "%s ハンドラの準備に失敗しました"
 
 #: sys-utils/chmem.c:440
 msgid "zone ignored, no valid_zones sysfs attribute present"
-msgstr ""
+msgstr "ゾーンが無視されました。valid_zones sysfs 属性が見つかりません"
 
 #: sys-utils/chmem.c:445
-#, fuzzy, c-format
-#| msgid "unknown priority name: %s"
+#, c-format
 msgid "unknown memory zone: %s"
-msgstr "%s: ゾーンマップに書き込むことができません"
+msgstr "不明なメモリゾーン: %s"
 
 #: sys-utils/choom.c:38
-#, fuzzy, c-format
-#| msgid ""
-#| " %1$s [options]\n"
-#| " %1$s [options] <device> | <mountpoint>\n"
-#| " %1$s [options] <device> <mountpoint>\n"
-#| " %1$s [options] [--source <device>] [--target <mountpoint>]\n"
+#, c-format
 msgid ""
 " %1$s [options] -p pid\n"
 " %1$s [options] -n number -p pid\n"
 " %1$s [options] -n number [--] command [args...]]\n"
 msgstr ""
-" %1$s [オプション]\n"
-" %1$s [オプション] <デバイス> | <マウントポイント>\n"
-" %1$s [オプション] <デバイス> <マウントポイント>\n"
-" %1$s [オプション] [--source <デバイス>] [--target <マウントポイント>]\n"
+" %1$s [オプション] -p pid\n"
+" %1$s [オプション] -n 数値 -p pid\n"
+" %1$s [オプション] -n 数値 [--] コマンド [引数...]]\n"
 
 #: sys-utils/choom.c:44
 msgid "Display and adjust OOM-killer score.\n"
-msgstr ""
+msgstr "OOM キラーのスコアの表示と調整を行います。\n"
 
 #: sys-utils/choom.c:47
-#, fuzzy
-#| msgid " -C, --cylinders <number>      specify the number of cylinders\n"
 msgid " -n, --adjust <num>     specify the adjust score value\n"
-msgstr " -C, --cylinders <数値>        シリンダ数を指定します\n"
+msgstr " -n, --adjust <数値>    調整スコア値を指定します\n"
 
 #: sys-utils/choom.c:48
-#, fuzzy
-#| msgid " -t, --target <pid>     target process to get namespaces from\n"
 msgid " -p, --pid <num>        process ID\n"
-msgstr " -t, --target <pid>     ネームスペースを取得するプロセスを指定します\n"
+msgstr " -p, --pid <数値>       プロセス ID\n"
 
 #: sys-utils/choom.c:60
-#, fuzzy
-#| msgid "failed to read speed"
 msgid "failed to read OOM score value"
-msgstr "速度の読み込みに失敗しました"
+msgstr "OOM スコア値の読み込みに失敗しました"
 
 #: sys-utils/choom.c:70
-#, fuzzy
-#| msgid "failed to read speed"
 msgid "failed to read OOM score adjust value"
-msgstr "速度の読み込みに失敗しました"
+msgstr "OOM スコア調整値の読み込みに失敗しました"
 
 #: sys-utils/choom.c:105
-#, fuzzy
-#| msgid "invalid heads argument"
 msgid "invalid adjust argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "adjust の引数が正しくありません"
 
 #: sys-utils/choom.c:119 term-utils/mesg.c:178
 #, c-format
@@ -16378,33 +16292,27 @@ msgid "no PID or COMMAND specified"
 msgstr "PIDもコマンドも指定されていません"
 
 #: sys-utils/choom.c:127
-#, fuzzy
-#| msgid "invalid offset value specified"
 msgid "no OOM score adjust value specified"
-msgstr "指定されたオフセット値が正しくありません"
+msgstr "OOM スコア調整値が指定されていません"
 
 #: sys-utils/choom.c:135
-#, fuzzy, c-format
-#| msgid "pid %d's current scheduling priority: %d\n"
+#, c-format
 msgid "pid %d's current OOM score: %d\n"
-msgstr "プロセス ID %d の現在のスケジュール優先順位: %d\n"
+msgstr "プロセス ID %d の現在の OOM スコア: %d\n"
 
 #: sys-utils/choom.c:136
-#, fuzzy, c-format
-#| msgid "pid %d's current scheduling priority: %d\n"
+#, c-format
 msgid "pid %d's current OOM score adjust value: %d\n"
-msgstr "プロセス ID %d の現在のスケジュール優先順位: %d\n"
+msgstr "プロセス ID %d の現在の OOM スコア調整値: %d\n"
 
 #: sys-utils/choom.c:143 sys-utils/choom.c:150
-#, fuzzy
-#| msgid "failed to set data"
 msgid "failed to set score adjust value"
-msgstr "データの設定に失敗しました"
+msgstr "スコア調整値の設定に失敗しました"
 
 #: sys-utils/choom.c:145
 #, c-format
 msgid "pid %d's OOM score adjust value changed from %d to %d\n"
-msgstr ""
+msgstr "プロセス ID %d の OOM スコア調整値を %d から %d に変更しました\n"
 
 #: sys-utils/ctrlaltdel.c:34
 #, c-format
@@ -16417,9 +16325,8 @@ msgid "Set the function of the Ctrl-Alt-Del combination.\n"
 msgstr "Ctrl-Alt-Del の組み合わせの機能を設定します。\n"
 
 #: sys-utils/ctrlaltdel.c:60
-#, fuzzy
 msgid "implicit"
-msgstr "'%s' のための暗黙ルールを探します.\n"
+msgstr "暗黙"
 
 #: sys-utils/ctrlaltdel.c:61
 #, c-format
@@ -16433,155 +16340,131 @@ msgstr "不明な引数です: %s"
 
 #: sys-utils/dmesg.c:124
 msgid "system is unusable"
-msgstr "システムが利用できない状態です"
+msgstr "システムが利用できない状態"
 
 #: sys-utils/dmesg.c:125
 msgid "action must be taken immediately"
-msgstr "すぐに処理しなければならないものです"
+msgstr "すぐに処理しなければならないもの"
 
 #: sys-utils/dmesg.c:126
 msgid "critical conditions"
-msgstr "致命的な状態です"
+msgstr "致命的な状態"
 
 #: sys-utils/dmesg.c:127
 msgid "error conditions"
-msgstr "エラー状態です"
+msgstr "エラー状態"
 
 #: sys-utils/dmesg.c:128
 msgid "warning conditions"
-msgstr "警告状態です"
+msgstr "警告状態"
 
 #: sys-utils/dmesg.c:129
 msgid "normal but significant condition"
-msgstr "特に問題のない状態ですが、特定の状況を表すものです"
+msgstr "特に問題のない状態だが、特定の状況を表すもの"
 
 #: sys-utils/dmesg.c:130
 msgid "informational"
-msgstr "参考情報です"
+msgstr "参考情報"
 
 #: sys-utils/dmesg.c:131
 msgid "debug-level messages"
-msgstr "デバッグレベルのメッセージです"
+msgstr "デバッグレベルのメッセージ"
 
 #: sys-utils/dmesg.c:146
 msgid "kernel messages"
-msgstr "カーネルメッセージです"
+msgstr "カーネルメッセージ"
 
 #: sys-utils/dmesg.c:147
 msgid "random user-level messages"
-msgstr "特に規定のないユーザ定義のメッセージです"
+msgstr "特に規定のないユーザ定義のメッセージ"
 
 #: sys-utils/dmesg.c:148
 msgid "mail system"
-msgstr "メールシステムのメッセージです"
+msgstr "メールシステムのメッセージ"
 
 #: sys-utils/dmesg.c:149
 msgid "system daemons"
-msgstr "システムデーモンのメッセージです"
+msgstr "システムデーモンのメッセージ"
 
 #: sys-utils/dmesg.c:150
 msgid "security/authorization messages"
-msgstr "セキュリティ／認可メッセージです"
+msgstr "セキュリティ／認可メッセージ"
 
 #: sys-utils/dmesg.c:151
 msgid "messages generated internally by syslogd"
-msgstr "syslogd が内部で生成したメッセージです"
+msgstr "syslogd が内部で生成したメッセージ"
 
 #: sys-utils/dmesg.c:152
 msgid "line printer subsystem"
-msgstr "ラインプリンタサブシステムです"
+msgstr "ラインプリンタサブシステム"
 
 #: sys-utils/dmesg.c:153
 msgid "network news subsystem"
-msgstr "network news サブシステムです"
+msgstr "network news サブシステム"
 
 #: sys-utils/dmesg.c:154
 msgid "UUCP subsystem"
-msgstr "UUCP サブシステムです"
+msgstr "UUCP サブシステム"
 
 #: sys-utils/dmesg.c:155
 msgid "clock daemon"
-msgstr "クロックデーモンです"
+msgstr "クロックデーモン"
 
 #: sys-utils/dmesg.c:156
 msgid "security/authorization messages (private)"
-msgstr "セキュリティ／認可メッセージ (機密扱い) です"
+msgstr "セキュリティ／認可メッセージ (機密扱い)"
 
 #: sys-utils/dmesg.c:157
 msgid "FTP daemon"
-msgstr "FTP デーモンです"
+msgstr "FTP デーモン"
 
 #: sys-utils/dmesg.c:158
-#, fuzzy
-#| msgid "Linux reserved"
 msgid "reserved 0"
-msgstr "Linux 予約領域"
+msgstr "予約分類 0"
 
 #: sys-utils/dmesg.c:159
-#, fuzzy
-#| msgid "Linux reserved"
 msgid "reserved 1"
-msgstr "Linux 予約領域"
+msgstr "予約分類 1"
 
 #: sys-utils/dmesg.c:160
-#, fuzzy
-#| msgid "Linux reserved"
 msgid "reserved 2"
-msgstr "Linux 予約領域"
+msgstr "予約分類 2"
 
 #: sys-utils/dmesg.c:161
-#, fuzzy
-#| msgid "Linux reserved"
 msgid "reserved 3"
-msgstr "Linux 予約領域"
+msgstr "予約分類 3"
 
 #: sys-utils/dmesg.c:162
-#, fuzzy
-#| msgid "local"
 msgid "local use 0"
-msgstr "ローカル時刻"
+msgstr "ローカル用 0"
 
 #: sys-utils/dmesg.c:163
-#, fuzzy
-#| msgid "local"
 msgid "local use 1"
-msgstr "ローカル時刻"
+msgstr "ローカル用 1"
 
 #: sys-utils/dmesg.c:164
-#, fuzzy
-#| msgid "local"
 msgid "local use 2"
-msgstr "ローカル時刻"
+msgstr "ローカル用 2"
 
 #: sys-utils/dmesg.c:165
-#, fuzzy
-#| msgid "local"
 msgid "local use 3"
-msgstr "ローカル時刻"
+msgstr "ローカル用 3"
 
 #: sys-utils/dmesg.c:166
-#, fuzzy
-#| msgid "local"
 msgid "local use 4"
-msgstr "ローカル時刻"
+msgstr "ローカル用 4"
 
 #: sys-utils/dmesg.c:167
-#, fuzzy
-#| msgid "local"
 msgid "local use 5"
-msgstr "ローカル時刻"
+msgstr "ローカル用 5"
 
 #: sys-utils/dmesg.c:168
-#, fuzzy
-#| msgid "local"
 msgid "local use 6"
-msgstr "ローカル時刻"
+msgstr "ローカル用 6"
 
 #: sys-utils/dmesg.c:169
-#, fuzzy
-#| msgid "local"
 msgid "local use 7"
-msgstr "ローカル時刻"
+msgstr "ローカル用 7"
 
 #: sys-utils/dmesg.c:320
 msgid "Display or control the kernel ring buffer.\n"
@@ -16608,10 +16491,8 @@ msgid " -F, --file <file>           use the file instead of the kernel log buffe
 msgstr " -F, --file <file>           カーネルのログバッファではなく、ファイルを使用して出力します\n"
 
 #: sys-utils/dmesg.c:328
-#, fuzzy
-#| msgid " -F, --file <file>           use the file instead of the kernel log buffer\n"
 msgid " -K, --kmsg-file <file>      use the file in kmsg format\n"
-msgstr " -F, --file <file>           カーネルのログバッファではなく、ファイルを使用して出力します\n"
+msgstr " -K, --kmsg-file <file>      kmsg 形式のファイルを使用します\n"
 
 #: sys-utils/dmesg.c:329
 msgid " -f, --facility <list>       restrict output to defined facilities\n"
@@ -16622,10 +16503,8 @@ msgid " -H, --human                 human readable output\n"
 msgstr " -H, --human                 人間にとって読みやすい形式で出力します\n"
 
 #: sys-utils/dmesg.c:331
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " -J, --json                  use JSON output format\n"
-msgstr " -J, --json            JSON形式で出力します\n"
+msgstr " -J, --json                 JSON形式で出力します\n"
 
 #: sys-utils/dmesg.c:332
 msgid " -k, --kernel                display kernel messages\n"
@@ -16634,7 +16513,7 @@ msgstr " -k, --kernel                カーネルメッセージを表示しま�
 #: sys-utils/dmesg.c:334
 #, c-format
 msgid " -L, --color[=<when>]        colorize messages (%s, %s or %s)\n"
-msgstr " -L, --color[=<時期>]        メッセージを色づけします (%s, %s, %s のどれか)\n"
+msgstr " -L, --color[=<いつ>]        メッセージを色づけします (%s, %s, %s のどれか)\n"
 
 #: sys-utils/dmesg.c:337
 msgid " -l, --level <list>          restrict output to defined levels\n"
@@ -16650,17 +16529,15 @@ msgstr " -P, --nopager               出力をページャに渡さずに出力�
 
 #: sys-utils/dmesg.c:340
 msgid " -p, --force-prefix          force timestamp output on each line of multi-line messages\n"
-msgstr ""
+msgstr " -p, --force-prefix          複数行メッセージで各行にタイムスタンプ出力を強制します\n"
 
 #: sys-utils/dmesg.c:341
 msgid " -r, --raw                   print the raw message buffer\n"
 msgstr " -r, --raw                   加工を行なわずにメッセージバッファを出力します\n"
 
 #: sys-utils/dmesg.c:342
-#, fuzzy
-#| msgid " -n, --noheadings          don't print headings\n"
 msgid "     --noescape              don't escape unprintable character\n"
-msgstr " -n, --noheadings          ヘッダを表示しません\n"
+msgstr "     --noescape              印刷不可能な文字をエスケープしません\n"
 
 #: sys-utils/dmesg.c:343
 msgid " -S, --syslog                force to use syslog(2) rather than /dev/kmsg\n"
@@ -16679,10 +16556,8 @@ msgid " -w, --follow                wait for new messages\n"
 msgstr " -w, --follow                新しいメッセージの到着を待ちます\n"
 
 #: sys-utils/dmesg.c:347
-#, fuzzy
-#| msgid " -w, --follow                wait for new messages\n"
 msgid " -W, --follow-new            wait and print only new messages\n"
-msgstr " -w, --follow                新しいメッセージの到着を待ちます\n"
+msgstr " -W, --follow-new            新しいメッセージのみ到着を待って出力します\n"
 
 #: sys-utils/dmesg.c:348
 msgid " -x, --decode                decode facility and level to readable string\n"
@@ -16705,31 +16580,22 @@ msgid " -t, --notime                don't show any timestamp with messages\n"
 msgstr " -t, --notime                メッセージのタイムスタンプを出力しません\n"
 
 #: sys-utils/dmesg.c:353
-#, fuzzy
-#| msgid ""
-#| "     --time-format <format>  show timestamp using the given format:\n"
-#| "                               [delta|reltime|ctime|notime|iso]\n"
-#| "Suspending/resume will make ctime and iso timestamps inaccurate.\n"
 msgid ""
 "     --time-format <format>  show timestamp using the given format:\n"
 "                               [delta|reltime|ctime|notime|iso|raw]\n"
 "Suspending/resume will make ctime and iso timestamps inaccurate.\n"
 msgstr ""
 "     --time-format <形式>    タイムスタンプの表示形式を指定します:\n"
-"                               [delta|reltime|ctime|notime|iso]\n"
-"サスペンドやレジュームを行うと ctime と iso のタイムスタンプは不正確になります。\n"
+"                               [delta|reltime|ctime|notime|iso|raw]\n"
+"サスペンド/レジュームを行うと ctime と iso タイムスタンプは不正確になります。\n"
 
 #: sys-utils/dmesg.c:356
-#, fuzzy
-#| msgid " -s, --since <time>   display the lines since the specified time\n"
 msgid "     --since <time>          display the lines since the specified time\n"
-msgstr " -s, --since <時刻>       指定した時刻以降の行を表示します\n"
+msgstr "     --since <時刻>          指定した時刻以降の行を表示します\n"
 
 #: sys-utils/dmesg.c:357
-#, fuzzy
-#| msgid " -t, --until <time>   display the lines until the specified time\n"
 msgid "     --until <time>          display the lines until the specified time\n"
-msgstr " -t, --until <時刻>       指定した時刻以前の行を表示します\n"
+msgstr "     --until <時刻>          指定した時刻以前の行を表示します\n"
 
 #: sys-utils/dmesg.c:361
 msgid ""
@@ -16788,10 +16654,8 @@ msgid "%b%e %H:%M"
 msgstr ""
 
 #: sys-utils/dmesg.c:1569
-#, fuzzy
-#| msgid "data block too large"
 msgid "record too large"
-msgstr "データブロックが大きすぎます"
+msgstr "レコードが大きすぎます"
 
 #: sys-utils/dmesg.c:1795
 msgid "invalid buffer size argument"
@@ -16803,17 +16667,15 @@ msgstr "--raw を --level, --facility と同時に指定できるのはメッセ
 
 #: sys-utils/dmesg.c:1919
 msgid "only kmsg supports multi-line messages"
-msgstr ""
+msgstr "複数行メッセージに対応しているのは kmsg だけです"
 
 #: sys-utils/dmesg.c:1934
 msgid "read kernel buffer failed"
 msgstr "カーネルバッファの読み込みに失敗しました"
 
 #: sys-utils/dmesg.c:1942
-#, fuzzy
-#| msgid "read kernel buffer failed"
 msgid "clear kernel buffer failed"
-msgstr "カーネルバッファの読み込みに失敗しました"
+msgstr "カーネルバッファのクリアに失敗しました"
 
 #: sys-utils/dmesg.c:1958
 msgid "klogctl failed"
@@ -16854,7 +16716,7 @@ msgstr ""
 " -d, --default               既定のデバイスを表示します\n"
 " -f, --floppy                フロッピィディスクを取り出します\n"
 " -F, --force                 デバイスの種類を無視して実行します\n"
-" -i, --manualeject <on|off>  手動排出を有効 (on) または無効 (off) にします\n"
+" -i, --manualeject <on|off>  手動排出ロックを有効 (on) または無効 (off) にします\n"
 " -m, --no-unmount            マウント済みの場合、アンマウントを行わないようにします\n"
 " -M, --no-partitions-unmount 他のパーティションをアンマウントしないようにします\n"
 " -n, --noop                  実際の取り出しは行わず、見つかったデバイスを表示します\n"
@@ -16894,7 +16756,7 @@ msgstr "CD-ROM ドアロックコマンドはサポートされていません"
 
 #: sys-utils/eject.c:343
 msgid "other users have the drive open and not CAP_SYS_ADMIN"
-msgstr ""
+msgstr "他のユーザがドライブをオープン中で、 CAP_SYS_ADMIN でもありません"
 
 #: sys-utils/eject.c:345
 msgid "CD-ROM lock door command failed"
@@ -17027,10 +16889,8 @@ msgid "using default device `%s'"
 msgstr "既定値 `%s' を使用しています"
 
 #: sys-utils/eject.c:888
-#, fuzzy
-#| msgid "%s: unable to find device"
 msgid "unable to find device"
-msgstr "%s: デバイスを検出できません"
+msgstr "デバイスを検出できません"
 
 #: sys-utils/eject.c:890
 #, c-format
@@ -17058,10 +16918,9 @@ msgid "%s: is whole-disk device"
 msgstr "%s: これはディスク全体を表すデバイスです"
 
 #: sys-utils/eject.c:915
-#, fuzzy, c-format
-#| msgid "%s: is not hot-pluggable device"
+#, c-format
 msgid "%s: is not ejectable device"
-msgstr "%s: ホットプラグ対応のデバイスではありません"
+msgstr "%s: 排出対応のデバイスではありません"
 
 #: sys-utils/eject.c:919
 #, c-format
@@ -17166,54 +17025,47 @@ msgstr " %s [オプション] <ファイル名>\n"
 
 #: sys-utils/fallocate.c:87
 msgid "Preallocate space to, or deallocate space from a file.\n"
-msgstr ""
+msgstr "領域のファイルへの事前割当やファイルからの解放を行います\n"
 
 #: sys-utils/fallocate.c:90
 msgid " -c, --collapse-range remove a range from the file\n"
-msgstr ""
+msgstr " -c, --collapse-range 範囲をファイルから削除します\n"
 
 #: sys-utils/fallocate.c:91
 msgid " -d, --dig-holes      detect zeroes and replace with holes\n"
-msgstr ""
+msgstr " -d, --dig-holes      ゼロを検出してホールに置き換えます\n"
 
 #: sys-utils/fallocate.c:92
 msgid " -i, --insert-range   insert a hole at range, shifting existing data\n"
-msgstr ""
+msgstr " -i, --insert-range   範囲にホールを挿入し、既存データを移動します\n"
 
 #: sys-utils/fallocate.c:93
-#, fuzzy
 msgid " -l, --length <num>   length for range operations, in bytes\n"
-msgstr " -l, --length <長さ>           入力のうち先頭から指定バイトだけを解釈\n"
+msgstr " -l, --length <長さ>  操作する範囲の長さ (バイト単位)\n"
 
 #: sys-utils/fallocate.c:94
 msgid " -n, --keep-size      maintain the apparent size of the file\n"
 msgstr " -n, --keep-size     ファイルの見かけのサイズを保持します\n"
 
 #: sys-utils/fallocate.c:95
-#, fuzzy
-#| msgid " -o, --offset <num>            start at offset <num> into file\n"
 msgid " -o, --offset <num>   offset for range operations, in bytes\n"
-msgstr " -o, --offset <番号>    ファイル内の <番号> で示されたオフセット位置から始めます\n"
+msgstr " -o, --offset <数値>   操作する範囲のオフセット (バイト単位)\n"
 
 #: sys-utils/fallocate.c:96
 msgid " -p, --punch-hole     replace a range with a hole (implies -n)\n"
-msgstr ""
+msgstr " -p, --punch-hole     範囲をホールに置き換えます (-n の意味を含みます)\n"
 
 #: sys-utils/fallocate.c:97
 msgid " -z, --zero-range     zero and ensure allocation of a range\n"
-msgstr ""
+msgstr " -z, --zero-range     範囲をゼロで埋めて割り当てを保証します\n"
 
 #: sys-utils/fallocate.c:99
-#, fuzzy
-#| msgid " -a, --all            print all devices\n"
 msgid " -x, --posix          use posix_fallocate(3) instead of fallocate(2)\n"
-msgstr " -a, --all            すべてのデバイスを表示します\n"
+msgstr " -x, --posix          fallocate(2) ではなく posix_fallocate(3) を使用します\n"
 
 #: sys-utils/fallocate.c:139
-#, fuzzy
-#| msgid "keep size mode (-n option) unsupported"
 msgid "fallocate failed: keep size mode is unsupported"
-msgstr "サイズ維持モード (-n オプション) には対応していません"
+msgstr "fallocate が失敗: サイズ維持モード (-n オプション) には対応していません"
 
 #: sys-utils/fallocate.c:140 sys-utils/fallocate.c:149
 msgid "fallocate failed"
@@ -17227,12 +17079,11 @@ msgstr "%s: 読み込みに失敗しました"
 #: sys-utils/fallocate.c:281
 #, c-format
 msgid "%s: %s (%ju bytes) converted to sparse holes.\n"
-msgstr ""
+msgstr "%s: %s (%ju バイトが) 疎なホールに変換されました。\n"
 
 #: sys-utils/fallocate.c:363
-#, fuzzy
 msgid "posix_fallocate support is not compiled"
-msgstr "KERBEROS v4 対応が設定されていますがコンパイルの時点で有効にされておりません。\n"
+msgstr "posix_fallocate 対応がコンパイルの時点で有効にされていません"
 
 #: sys-utils/fallocate.c:379 sys-utils/fsfreeze.c:106
 msgid "no filename specified"
@@ -17251,34 +17102,29 @@ msgid "invalid offset value specified"
 msgstr "指定されたオフセット値が正しくありません"
 
 #: sys-utils/fallocate.c:423
-#, fuzzy, c-format
-#| msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
+#, c-format
 msgid "%s: %s (%ju bytes) hole created.\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%s: %s (%ju バイト) のホールを作成しました。\n"
 
 #: sys-utils/fallocate.c:426
-#, fuzzy, c-format
-#| msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
+#, c-format
 msgid "%s: %s (%ju bytes) removed.\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%s: %s (%ju バイト) を削除しました。\n"
 
 #: sys-utils/fallocate.c:429
-#, fuzzy, c-format
-#| msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
+#, c-format
 msgid "%s: %s (%ju bytes) inserted.\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%s: %s (%ju バイト) を挿入しました。\n"
 
 #: sys-utils/fallocate.c:432
-#, fuzzy, c-format
-#| msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
+#, c-format
 msgid "%s: %s (%ju bytes) zeroed.\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%s: %s (%ju バイト) をゼロで埋めました。\n"
 
 #: sys-utils/fallocate.c:435
-#, fuzzy, c-format
-#| msgid "%s: %s (%<PRIu64> bytes) trimmed\n"
+#, c-format
 msgid "%s: %s (%ju bytes) allocated.\n"
-msgstr "%s: %s (%<PRIu64> バイト) に切り揃えました\n"
+msgstr "%s: %s (%ju バイト) を割り当てました。\n"
 
 #: sys-utils/flock.c:55
 #, c-format
@@ -17293,7 +17139,7 @@ msgstr ""
 
 #: sys-utils/flock.c:61
 msgid "Manage file locks from shell scripts.\n"
-msgstr ""
+msgstr "シェルスクリプトからファイルロックを管理します。\n"
 
 #: sys-utils/flock.c:64
 msgid " -s, --shared             get a shared lock\n"
@@ -17329,7 +17175,7 @@ msgstr " -c, --command <コマンド> シェルを介して単一のコマンド
 
 #: sys-utils/flock.c:72
 msgid " -F, --no-fork            execute command without forking\n"
-msgstr " -F, --no-fork             コマンドを実行するときに fork しません\n"
+msgstr " -F, --no-fork            コマンドを実行するときに fork しません\n"
 
 #: sys-utils/flock.c:73
 msgid "     --verbose            increase verbosity\n"
@@ -17350,12 +17196,11 @@ msgstr "不正な終了コードです"
 
 #: sys-utils/flock.c:218
 msgid "exit code out of range (expected 0 to 255)"
-msgstr ""
+msgstr "終了コードが範囲外です (0 から 255 である必要があります)"
 
 #: sys-utils/flock.c:235
-#, fuzzy
 msgid "the --no-fork and --close options are incompatible"
-msgstr "--dump は他のオプションとの互換性がありません"
+msgstr "--no-fork と --close オプションは同時に指定できません"
 
 #: sys-utils/flock.c:243
 #, c-format
@@ -17379,10 +17224,9 @@ msgid "timeout while waiting to get lock"
 msgstr "ロックの取得中にタイムアウトしました"
 
 #: sys-utils/flock.c:336
-#, fuzzy, c-format
-#| msgid "%s: getting lock took %ld.%06ld seconds\n"
+#, c-format
 msgid "%s: getting lock took %<PRId64>.%06<PRId64> seconds\n"
-msgstr "%s: ロックの取得に %ld.%06ld 秒 かかりました\n"
+msgstr "%s: ロックの取得に %<PRId64>.%06<PRId64> 秒かかりました\n"
 
 #: sys-utils/flock.c:348
 #, c-format
@@ -17543,14 +17387,9 @@ msgid "local"
 msgstr "ローカル時刻"
 
 #: sys-utils/hwclock.c:265 sys-utils/hwclock.c:268
-#, fuzzy, c-format
-#| msgid ""
-#| "Warning: unrecognized third line in adjtime file\n"
-#| "(Expected: `UTC' or `LOCAL' or nothing.)"
+#, c-format
 msgid "Warning: unrecognized line in adjtime file: %s"
-msgstr ""
-"警告: adjtime ファイルの 3 行目が解釈できません\n"
-"(`UTC', `LOCAL' または空文字のいずれかである必要があります)"
+msgstr "警告: adjtime ファイルに解釈できない行があります: %s"
 
 #: sys-utils/hwclock.c:280
 msgid ""
@@ -17561,16 +17400,14 @@ msgstr ""
 "(`UTC', `LOCAL' または空文字のいずれかである必要があります)"
 
 #: sys-utils/hwclock.c:286
-#, fuzzy, c-format
-#| msgid "Last drift adjustment done at %ld seconds after 1969\n"
+#, c-format
 msgid "Last drift adjustment done at %<PRId64> seconds after 1969\n"
-msgstr "直前のズレの修正は、 1969 年から %ld 秒経過した時点で行なわれました\n"
+msgstr "直前のズレの修正は、 1969 年から %<PRId64> 秒経過した時点で行なわれました\n"
 
 #: sys-utils/hwclock.c:288
-#, fuzzy, c-format
-#| msgid "Last calibration done at %ld seconds after 1969\n"
+#, c-format
 msgid "Last calibration done at %<PRId64> seconds after 1969\n"
-msgstr "直前の調整は 1969 年から %ld 秒経過した時点で行なわれました\n"
+msgstr "直前の調整は 1969 年から %<PRId64> 秒経過した時点で行なわれました\n"
 
 #: sys-utils/hwclock.c:290
 #, c-format
@@ -17598,10 +17435,9 @@ msgid "Invalid values in hardware clock: %4d/%.2d/%.2d %.2d:%.2d:%.2d\n"
 msgstr "ハードウェアの時刻値が正しくありません: %4d/%.2d/%.2d %.2d:%.2d:%.2d\n"
 
 #: sys-utils/hwclock.c:373
-#, fuzzy, c-format
-#| msgid "Hw clock time : %4d/%.2d/%.2d %.2d:%.2d:%.2d = %ld seconds since 1969\n"
+#, c-format
 msgid "Hw clock time : %4d/%.2d/%.2d %.2d:%.2d:%.2d = %<PRId64> seconds since 1969\n"
-msgstr "ハードウェアの時刻値 : %4d/%.2d/%.2d %.2d:%.2d:%.2d = 1969 年から %ld 秒経過\n"
+msgstr "ハードウェアの時刻値 : %4d/%.2d/%.2d %.2d:%.2d:%.2d = 1969 年から %<PRId64> 秒経過\n"
 
 #: sys-utils/hwclock.c:399
 #, c-format
@@ -17609,10 +17445,9 @@ msgid "Time read from Hardware Clock: %4d/%.2d/%.2d %02d:%02d:%02d\n"
 msgstr "ハードウェアの時計から読み込んだ時刻: %4d/%.2d/%.2d %02d:%02d:%02d\n"
 
 #: sys-utils/hwclock.c:426
-#, fuzzy, c-format
-#| msgid "Setting Hardware Clock to %.2d:%.2d:%.2d = %ld seconds since 1969\n"
+#, c-format
 msgid "Setting Hardware Clock to %.2d:%.2d:%.2d = %<PRId64> seconds since 1969\n"
-msgstr "ハードウェアの時刻値を %.2d:%.2d:%.2d (= 1969 年から %ld 秒経過) に設定しています\n"
+msgstr "ハードウェアの時刻値を %.2d:%.2d:%.2d (= 1969 年から %<PRId64> 秒経過) に設定しています\n"
 
 #: sys-utils/hwclock.c:462
 #, c-format
@@ -17620,20 +17455,19 @@ msgid "RTC type: '%s'\n"
 msgstr "RTC タイプ: '%s'\n"
 
 #: sys-utils/hwclock.c:562
-#, fuzzy, c-format
-#| msgid "%s  .%06d seconds\n"
+#, c-format
 msgid "Using delay: %.6f seconds\n"
-msgstr "     --delay <秒数>         プロンプトを表示する前に指定した秒数待ちます\n"
+msgstr "使用する遅延: %.6f 秒\n"
 
 #: sys-utils/hwclock.c:581
 #, c-format
 msgid "time jumped backward %.6f seconds to %<PRId64>.%06<PRId64> - retargeting\n"
-msgstr ""
+msgstr "時刻が %.6f 秒戻って %<PRId64>.%06<PRId64> になりました - 目標を再設定します\n"
 
 #: sys-utils/hwclock.c:603
 #, c-format
 msgid "missed it - %<PRId64>.%06<PRId64> is too far past %<PRId64>.%06<PRId64> (%.6f > %.6f)\n"
-msgstr ""
+msgstr "許容範囲外です - %<PRId64>.%06<PRId64> は %<PRId64>.%06<PRId64> を超えすぎています (%.6f > %.6f)\n"
 
 #: sys-utils/hwclock.c:630
 #, c-format
@@ -17641,39 +17475,36 @@ msgid ""
 "%<PRId64>.%06<PRId64> is close enough to %<PRId64>.%06<PRId64> (%.6f < %.6f)\n"
 "Set RTC to %<PRId64> (%<PRId64> + %d; refsystime = %<PRId64>.%06<PRId64>)\n"
 msgstr ""
+"%<PRId64>.%06<PRId64> は %<PRId64>.%06<PRId64> に十分近いです (%.6f < %.6f)\n"
+"RTC を %<PRId64> に設定します (%<PRId64> + %d; refsystime = %<PRId64>.%06<PRId64>)\n"
 
 #: sys-utils/hwclock.c:724
-#, fuzzy
-#| msgid "Calling settimeofday:\n"
 msgid "Calling settimeofday(NULL, 0) to lock the warp_clock function."
-msgstr "settimeofday を呼び出しています:\n"
+msgstr "settimeofday(NULL, 0) を呼び出して warp_clock 関数をロックします。"
 
 #: sys-utils/hwclock.c:727
-#, fuzzy, c-format
-#| msgid "Calling settimeofday:\n"
+#, c-format
 msgid "Calling settimeofday(NULL, %d) to set the kernel timezone.\n"
-msgstr "settimeofday を呼び出しています:\n"
+msgstr "settimeofday(NULL, %d) を呼び出してカーネルタイムゾーンを設定します。\n"
 
 #: sys-utils/hwclock.c:731
 #, c-format
 msgid "Calling settimeofday(NULL, %d) to warp System time, set PCIL and the kernel tz.\n"
-msgstr ""
+msgstr "settimeofday(NULL, %d) を呼び出して、システム時刻をワープさせ PCIL とカーネルタイムゾーンを設定します。\n"
 
 #: sys-utils/hwclock.c:736
-#, fuzzy, c-format
-#| msgid "Calling settimeofday:\n"
+#, c-format
 msgid "Calling settimeofday(%<PRId64>.%06<PRId64>, NULL) to set the System time.\n"
-msgstr "settimeofday を呼び出しています:\n"
+msgstr "settimeofday(%<PRId64>.%06<PRId64>, NULL) を呼び出してシステム時刻を設定します。\n"
 
 #: sys-utils/hwclock.c:758
 msgid "settimeofday() failed"
 msgstr "settimeofday() に失敗しました"
 
 #: sys-utils/hwclock.c:782
-#, fuzzy, c-format
-#| msgid "Not adjusting drift factor because the Hardware Clock previously contained garbage.\n"
+#, c-format
 msgid "Not adjusting drift factor because the --update-drift option was not used.\n"
-msgstr "以前、ハードウェアの時計内にゴミが含まれていたため、ズレの値を調整する処理は行いません。\n"
+msgstr "--update-drift オプションが使用されていないため、ズレの値を調整する処理は行いません。\n"
 
 #: sys-utils/hwclock.c:786
 #, c-format
@@ -17685,10 +17516,9 @@ msgstr ""
 "これは校正履歴が正しいものではないため、校正をやり直す必要があるためです。\n"
 
 #: sys-utils/hwclock.c:792
-#, fuzzy, c-format
-#| msgid "Not adjusting drift factor because it has been less than a day since the last calibration.\n"
+#, c-format
 msgid "Not adjusting drift factor because it has been less than four hours since the last calibration.\n"
-msgstr "直近の校正時刻から、少なくとも 1 日以上経過しないと、ズレの値を調整することができません。\n"
+msgstr "直近の校正時刻から 4 時間経過していないため、ズレの値を調整する処理は行いません。\n"
 
 #: sys-utils/hwclock.c:830
 #, c-format
@@ -17696,45 +17526,44 @@ msgid ""
 "Clock drift factor was calculated as %f seconds/day.\n"
 "It is far too much. Resetting to zero.\n"
 msgstr ""
+"ズレの値が %f 秒／日と計算されました。\n"
+"値が大きすぎるため、ゼロにリセットします。\n"
 
 #: sys-utils/hwclock.c:837
-#, fuzzy, c-format
-#| msgid ""
-#| "Clock drifted %.1f seconds in the past %d seconds in spite of a drift factor of %f seconds/day.\n"
-#| "Adjusting drift factor by %f seconds/day\n"
+#, c-format
 msgid ""
 "Clock drifted %f seconds in the past %f seconds\n"
 "in spite of a drift factor of %f seconds/day.\n"
 "Adjusting drift factor by %f seconds/day\n"
 msgstr ""
-"ズレの値が 1 日あたり %3$f 秒に設定されているにも関わらず、過去 %2$d 秒間に%1$.1f 秒のズレが発生しました。\n"
-"ズレの値を %4$f 秒／日に調整します。\n"
+"ズレの値が %3$f 秒／日に設定されているにも関わらず、\n"
+"過去 %2$f 秒間に%1$f 秒のズレが発生しました。\n"
+"ズレの値を %4$f 秒／日だけ調整します。\n"
 
 #: sys-utils/hwclock.c:881
-#, fuzzy, c-format
-#| msgid "Time since last adjustment is %d seconds\n"
+#, c-format
 msgid "Time since last adjustment is %<PRId64> second\n"
 msgid_plural "Time since last adjustment is %<PRId64> seconds\n"
-msgstr[0] "前回の修正からの %d 秒が経過しています\n"
+msgstr[0] "前回の修正から %<PRId64> 秒が経過しています\n"
 
 #: sys-utils/hwclock.c:885
-#, fuzzy, c-format
-#| msgid "%s  .%06d seconds\n"
+#, c-format
 msgid "Calculated Hardware Clock drift is %<PRId64>.%06<PRId64> seconds\n"
-msgstr "%s  .%06d 秒\n"
+msgstr "ハードウェアの時計のズレは %<PRId64>.%06<PRId64> 秒と計算されました\n"
 
 #: sys-utils/hwclock.c:910
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "New %s data:\n"
 "%s"
-msgstr "%s: データの移動に失敗しました"
+msgstr ""
+"%s の新しいデータ:\n"
+"%s"
 
 #: sys-utils/hwclock.c:927
-#, fuzzy, c-format
-#| msgid "cannot open %s"
+#, c-format
 msgid "cannot update %s"
-msgstr " 更新(_U) "
+msgstr "%s を更新できません"
 
 #: sys-utils/hwclock.c:963
 #, c-format
@@ -17756,20 +17585,18 @@ msgid "Cannot access the Hardware Clock via any known method."
 msgstr "既知のいずれの方法を使用しても、ハードウェアの時計にアクセスすることができません。"
 
 #: sys-utils/hwclock.c:1003
-#, fuzzy
-#| msgid "Use the --debug option to see the details of our search for an access method."
 msgid "Use the --verbose option to see the details of our search for an access method."
-msgstr "--debug オプションを使用すると、アクセス方法の検索処理を詳しく確認することができます。"
+msgstr "--verbose オプションを使用すると、アクセス方法の検索処理を詳しく確認することができます。"
 
 #: sys-utils/hwclock.c:1053
-#, fuzzy, c-format
+#, c-format
 msgid "Target date:   %<PRId64>\n"
-msgstr "# ターゲットではありません:"
+msgstr "目標日時: %<PRId64>\n"
 
 #: sys-utils/hwclock.c:1054
-#, fuzzy, c-format
+#, c-format
 msgid "Predicted RTC: %<PRId64>\n"
-msgstr "%s は predicted_by_p をサポートしていません"
+msgstr "予想 RTC: %<PRId64>\n"
 
 #: sys-utils/hwclock.c:1084
 msgid "RTC read returned an invalid value."
@@ -17781,36 +17608,31 @@ msgid "Needed adjustment is less than one second, so not setting clock.\n"
 msgstr "必要な修正が 1 秒未満なので、時刻設定は行いません。\n"
 
 #: sys-utils/hwclock.c:1151
-#, fuzzy
-#| msgid "unable to read super block"
 msgid "unable to read the RTC epoch."
-msgstr "%s への ioctl(RTC_EPOCH_READ) が失敗しました"
+msgstr "RTC エポック値を読み込むことができません。"
 
 #: sys-utils/hwclock.c:1153
-#, fuzzy, c-format
+#, c-format
 msgid "The RTC epoch is set to %lu.\n"
-msgstr "%s への ioctl(RTC_EPOCH_SET) が失敗しました"
+msgstr "RTC エポック値を %lu に設定しました。\n"
 
 #: sys-utils/hwclock.c:1156
 msgid "--epoch is required for --setepoch."
-msgstr ""
+msgstr "--setepoch には --epoch が必要です。"
 
 #: sys-utils/hwclock.c:1159
-#, fuzzy
-#| msgid "Unable to set system clock.\n"
 msgid "unable to set the RTC epoch."
-msgstr "%s への ioctl(RTC_EPOCH_SET) が失敗しました"
+msgstr "RTC エポック値を設定することができません。"
 
 #: sys-utils/hwclock.c:1172
-#, fuzzy, c-format
-#| msgid "unable to read super block"
+#, c-format
 msgid "unable to read the RTC parameter %s"
-msgstr "%s への ioctl(RTC_EPOCH_READ) が失敗しました"
+msgstr "RTC パラメータ %s を読み込むことができません"
 
 #: sys-utils/hwclock.c:1177
-#, fuzzy, c-format
+#, c-format
 msgid "The RTC parameter 0x%jx is set to 0x%jx.\n"
-msgstr "%s への ioctl(RTC_EPOCH_SET) が失敗しました"
+msgstr "RTC パラメータ 0x%jx を 0x%jx に設定しました。\n"
 
 #: sys-utils/hwclock.c:1219
 #, c-format
@@ -17818,181 +17640,133 @@ msgid " %s [function] [option...]\n"
 msgstr " %s [機能] [オプション...]\n"
 
 #: sys-utils/hwclock.c:1222
-#, fuzzy
 msgid "Time clocks utility."
-msgstr "Dell ユーティリティ"
+msgstr "時刻クロックユーティリティです。"
 
 #: sys-utils/hwclock.c:1225
-#, fuzzy
-#| msgid " -k, --kernel                display kernel messages\n"
 msgid " -r, --show                      display the RTC time"
-msgstr " -r, --raw            加工を行なわない出力形式を使用します\n"
+msgstr " -r, --show                      RTC 時刻を表示します"
 
 #: sys-utils/hwclock.c:1226
-#, fuzzy
-#| msgid " -k, --kernel                display kernel messages\n"
 msgid "     --get                       display drift corrected RTC time"
-msgstr " -k, --kernel                カーネルメッセージを表示します\n"
+msgstr "     --get                       ズレを修正した RTC 時刻を表示します"
 
 #: sys-utils/hwclock.c:1227
-#, fuzzy
-#| msgid " -r, --reset                  reset the port\n"
 msgid "     --set                       set the RTC according to --date"
-msgstr "RTC アラームの設定に失敗しました"
+msgstr "     --set                       --date にもとづいて RTC を設定します"
 
 #: sys-utils/hwclock.c:1228
-#, fuzzy
-#| msgid " -r, --reset                  reset the port\n"
 msgid " -s, --hctosys                   set the system time from the RTC"
-msgstr " -r, --reset                  ポートをリセットします\n"
+msgstr " -s, --hctosys                   RTC からシステム時刻を設定します"
 
 #: sys-utils/hwclock.c:1229
-#, fuzzy
-#| msgid " -t, --types <list>      limit the set of filesystem types\n"
 msgid " -w, --systohc                   set the RTC from the system time"
-msgstr " -t, --types <リスト>    ファイルシステムの種類を指定します\n"
+msgstr " -w, --systohc                   システム時刻から RTC を設定します"
 
 #: sys-utils/hwclock.c:1230
-#, fuzzy
-#| msgid "                                   set vesa powersaving features\n"
 msgid "     --systz                     send timescale configurations to the kernel"
-msgstr "                                   VESA の省電力機能設定\n"
+msgstr "     --systz                     カーネルにタイムスケール設定を送信します"
 
 #: sys-utils/hwclock.c:1231
-#, fuzzy
 msgid " -a, --adjust                    adjust the RTC to account for systematic drift"
-msgstr ""
-" -s, --hctosys        ハードウェアの時刻を元にしてシステムの時刻を設定します\n"
-" -w, --systohc        システムの時刻を元にしてハードウェアの時刻を設定します\n"
-"     --systz          現在のタイムゾーンを元にしてシステム時刻を設定します\n"
-"     --adjust         最後に設定または調整された時点からどれだけズレているのかを\n"
-"                        測定するため、 RTC を調整します\n"
+msgstr " -a, --adjust                    規則的なズレに対応するため RTC を調整します"
 
 #: sys-utils/hwclock.c:1233
-#, fuzzy
-#| msgid "     --help                 display this help and exit\n"
 msgid "     --getepoch                  display the RTC epoch"
-msgstr "%s への ioctl(RTC_EPOCH_READ) が失敗しました"
+msgstr "     --getepoch                  RTC エポック値を表示します"
 
 #: sys-utils/hwclock.c:1234
-#, fuzzy
 msgid "     --setepoch                  set the RTC epoch according to --epoch"
-msgstr "%s への ioctl(RTC_EPOCH_SET) が失敗しました"
+msgstr "     --setepoch                  --epoch にもとづいて RTC エポック値を設定します"
 
 #: sys-utils/hwclock.c:1237
-#, fuzzy
-#| msgid "     --help                 display this help and exit\n"
 msgid "     --param-get <param>         display the RTC parameter"
-msgstr "%s への ioctl(RTC_EPOCH_READ) が失敗しました"
+msgstr "     --param-get <パラメータ>    RTC パラメータを表示します"
 
 #: sys-utils/hwclock.c:1238
 msgid "     --param-set <param>=<value> set the RTC parameter"
-msgstr ""
+msgstr "     --param-set <パラメータ>=<値> RTC パラメータを設定します"
 
 #: sys-utils/hwclock.c:1239
-#, fuzzy
-#| msgid "     --raw                 use raw status output format\n"
 msgid "     --vl-read                   read voltage low information"
-msgstr "     --raw                 加工を行なわない出力形式を使用します\n"
+msgstr "     --vl-read                   低電圧情報を読み込みます"
 
 #: sys-utils/hwclock.c:1240
-#, fuzzy
-#| msgid " -C, --clear                 clear the kernel ring buffer\n"
 msgid "     --vl-clear                  clear voltage low information"
-msgstr " -C, --clear                 カーネルのリングバッファを消去します\n"
+msgstr "     --vl-clear                  低電圧情報を消去します"
 
 #: sys-utils/hwclock.c:1242
-#, fuzzy
-#| msgid " -r, --reset                  reset the port\n"
 msgid "     --predict                   predict the drifted RTC time according to --date"
-msgstr "RTC アラームの設定に失敗しました"
+msgstr "     --predict                   --date にもとづいて RTC 時刻のズレを予想します"
 
 #: sys-utils/hwclock.c:1244
-#, fuzzy
-#| msgid " -u, --utc                RTC uses UTC\n"
 msgid " -u, --utc                       the RTC timescale is UTC"
-msgstr " -u, --utc                RTC が UTC になっているものとみなします\n"
+msgstr " -u, --utc                       RTC が UTC になっているものとみなします"
 
 #: sys-utils/hwclock.c:1245
-#, fuzzy
-#| msgid " -l, --local              RTC uses local timezone\n"
 msgid " -l, --localtime                 the RTC timescale is Local"
-msgstr " -l, --local              RTC がローカル時刻になっているものとみなします\n"
+msgstr " -l, --localtime                 RTC がローカル時刻になっているものとみなします"
 
 #: sys-utils/hwclock.c:1248
-#, fuzzy, c-format
-#| msgid " -f, --file <file>    use a specific file instead of %s\n"
+#, c-format
 msgid " -f, --rtc <file>                use an alternate file to %1$s\n"
-msgstr " -F, --file <ファイル>    %s ではなく、指定したファイルを使用して出力します\n"
+msgstr " -f, --rtc <ファイル>            %1$s の代わりのファイルを使用します\n"
 
 #: sys-utils/hwclock.c:1251
-#, fuzzy, c-format
-#| msgid "     --raw                 use raw status output format\n"
+#, c-format
 msgid "     --directisa                 use the ISA bus instead of %1$s access\n"
-msgstr "     --raw                 加工を行なわない出力形式を使用します\n"
+msgstr "     --directisa                 %1$s ではなく ISA バスをアクセスします\n"
 
 #: sys-utils/hwclock.c:1252
-#, fuzzy
-#| msgid " -t, --time <time_t>      time to wake\n"
 msgid "     --date <time>               date/time input for --set and --predict"
-msgstr " -t, --time <time_t>      復帰する時刻を指定します\n"
+msgstr "     --date <時刻>               --set と --predict 用の日時です"
 
 #: sys-utils/hwclock.c:1253
-#, fuzzy
-#| msgid " -k, --kernel                display kernel messages\n"
 msgid "     --delay <sec>               delay used when set new RTC time"
-msgstr " -k, --kernel                カーネルメッセージを表示します\n"
+msgstr "     --delay <秒>                新しい RTC 時刻を設定する際の遅延です"
 
 #: sys-utils/hwclock.c:1255
-#, fuzzy
 msgid "     --epoch <year>              epoch input for --setepoch"
-msgstr "%s への ioctl(RTC_EPOCH_SET) が失敗しました"
+msgstr "     --epoch <年>                --setepoch 用のエポック値です"
 
 #: sys-utils/hwclock.c:1257
-#, fuzzy
 msgid "     --update-drift              update the RTC drift factor"
-msgstr "--update-drift には --set または --systohc が必要です"
+msgstr "     --update-drift              RTC のズレの値を更新します"
 
 #: sys-utils/hwclock.c:1259
-#, fuzzy, c-format
-#| msgid "     --noheadings         don't print headings\n"
+#, c-format
 msgid "     --noadjfile                 do not use %1$s\n"
-msgstr " -n, --noheadings        ヘッダを表示しません\n"
+msgstr "     --noadjfile                 %1$s を使用しません\n"
 
 #: sys-utils/hwclock.c:1261
-#, fuzzy, c-format
-#| msgid " -f, --file <file>    use a specific file instead of %s\n"
+#, c-format
 msgid "     --adjfile <file>            use an alternate file to %1$s\n"
-msgstr " -F, --file <ファイル>    %s ではなく、指定したファイルを使用して出力します\n"
+msgstr "     --adjfile <ファイル>        %1$s の代わりのファイルを使用します\n"
 
 #: sys-utils/hwclock.c:1262
-#, fuzzy
-#| msgid "     --fake              dry run; skip the umount(2) syscall\n"
 msgid "     --test                      dry run; implies --verbose"
-msgstr "     --fake              実際には umount(2) のシステムコールを行いません\n"
+msgstr "     --test                      実際には何もしません。 --verbose の意味を含みます"
 
 #: sys-utils/hwclock.c:1263
-#, fuzzy
-#| msgid " -v, --verbose             print verbose data\n"
 msgid " -v, --verbose                   display more details"
-msgstr " -v, --verbose            より詳しく出力します\n"
+msgstr " -v, --verbose                   より詳しく出力します"
 
 #: sys-utils/hwclock.c:1270
 msgid " <param> is either a numeric RTC parameter value or one of these aliases:"
-msgstr ""
+msgstr " <パラメータ> には RTC パラメータの数値か以下の別名のいずれかを指定します:"
 
 #: sys-utils/hwclock.c:1273
 #, c-format
 msgid "   - %1$s: %2$s (0x%3$x)\n"
-msgstr ""
+msgstr "   - %1$s: %2$s (0x%3$x)\n"
 
 #: sys-utils/hwclock.c:1277
 msgid "   See Kernel's include/uapi/linux/rtc.h for parameters and values."
-msgstr ""
+msgstr "   パラメータと値についてはカーネルの include/uapi/linux/rtc.h を参照してください。"
 
 #: sys-utils/hwclock.c:1279
 msgid " <param> and <value> accept hexadecimal values if prefixed with 0x, otherwise decimal."
-msgstr ""
+msgstr " <パラメータ> と <値> は 0x で始まれば 16 進数、そうでなければ 10 進数で指定します。"
 
 #: sys-utils/hwclock.c:1384
 msgid "Unable to connect to audit system"
@@ -18020,48 +17794,41 @@ msgid "invalid date '%s'"
 msgstr "無効な日付 '%s'"
 
 #: sys-utils/hwclock.c:1596
-#, fuzzy, c-format
-#| msgid "Current system time: %ld = %s\n"
+#, c-format
 msgid "System Time: %<PRId64>.%06<PRId64>\n"
-msgstr "現在のシステム時刻: %ld = %s\n"
+msgstr "システム時刻: %<PRId64>.%06<PRId64>\n"
 
 #: sys-utils/hwclock.c:1613
 msgid "Test mode: nothing was changed."
 msgstr "テストモード: 何も変更していません。"
 
 #: sys-utils/hwclock.c:1633
-#, fuzzy
-#| msgid "cannot set up timer"
 msgid "could not send audit message"
-msgstr "ユーザ ID を設定できません"
+msgstr "監査メッセージを送信できませんでした"
 
 #: sys-utils/hwclock-cmos.c:366
 msgid "ISA port access is not implemented"
 msgstr "ISA ポートアクセスは実装されていません"
 
 #: sys-utils/hwclock-cmos.c:368
-#, fuzzy
-#| msgid "cannot access file %s"
 msgid "iopl() port access failed"
-msgstr "ファイル %s にアクセスできません"
+msgstr "iopl() によるポートアクセスに失敗しました"
 
 #: sys-utils/hwclock-cmos.c:379
 msgid "Using direct ISA access to the clock"
 msgstr "直接 ISA でクロックにアクセスします"
 
 #: sys-utils/hwclock-rtc.c:53
-#, fuzzy
-#| msgid "unsupported filesystem features"
 msgid "supported features"
-msgstr "サポートされないファイルシステムの機能です"
+msgstr "利用可能な機能"
 
 #: sys-utils/hwclock-rtc.c:54
 msgid "time correction"
-msgstr ""
+msgstr "時刻補正"
 
 #: sys-utils/hwclock-rtc.c:55
 msgid "backup switch mode"
-msgstr ""
+msgstr "バックアップスイッチモード"
 
 #: sys-utils/hwclock-rtc.c:106
 #, c-format
@@ -18102,16 +17869,14 @@ msgid "ioctl(%d, RTC_UIE_ON, 0) to %s failed"
 msgstr "ioctl(%d, RTC_UIE_ON, 0) を %s に対して発行し、失敗しました"
 
 #: sys-utils/hwclock-rtc.c:308
-#, fuzzy, c-format
-#| msgid "ioctl(%s) to %s to set the time failed."
+#, c-format
 msgid "ioctl(RTC_SET_TIME) to %s to set the time failed"
-msgstr "%2$s に対して時刻を設定する際、 ioctl(%1$s) に失敗しました。"
+msgstr "時刻を設定するための %s への ioctl(RTC_SET_TIME) が失敗しました"
 
 #: sys-utils/hwclock-rtc.c:314
-#, fuzzy, c-format
-#| msgid "ioctl(%s) was successful.\n"
+#, c-format
 msgid "ioctl(RTC_SET_TIME) was successful.\n"
-msgstr "ioctl(%s) に成功しました。\n"
+msgstr "ioctl(RTC_SET_TIME) に成功しました。\n"
 
 #: sys-utils/hwclock-rtc.c:330
 msgid "Using the rtc interface to the clock."
@@ -18123,16 +17888,14 @@ msgid "ioctl(%d, RTC_EPOCH_READ, epoch_p) to %s failed"
 msgstr "ioctl(%d, RTC_EPOCH_READ, epoch_p) を %s に対して発行し、失敗しました"
 
 #: sys-utils/hwclock-rtc.c:369
-#, fuzzy, c-format
-#| msgid "ioctl(RTC_EPOCH_READ) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_EPOCH_READ, epoch_p) to %s succeeded.\n"
-msgstr "ioctl(%d, RTC_EPOCH_READ, epoch_p) を %s に対して発行し、失敗しました"
+msgstr "ioctl(%d, RTC_EPOCH_READ, epoch_p) を %s に対して発行し、成功しました。\n"
 
 #: sys-utils/hwclock-rtc.c:388
-#, fuzzy, c-format
-#| msgid "invalid id: %s"
+#, c-format
 msgid "invalid epoch '%s'."
-msgstr "エポック値の指定が正しくありません"
+msgstr "エポック値の指定 '%s' が正しくありません。"
 
 #: sys-utils/hwclock-rtc.c:399
 #, c-format
@@ -18140,90 +17903,81 @@ msgid "ioctl(%d, RTC_EPOCH_SET, %lu) to %s failed"
 msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
 
 #: sys-utils/hwclock-rtc.c:405
-#, fuzzy, c-format
-#| msgid "ioctl(RTC_EPOCH_SET) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_EPOCH_SET, %lu) to %s succeeded.\n"
-msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
+msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 成功しました。\n"
 
 #: sys-utils/hwclock-rtc.c:447 sys-utils/hwclock-rtc.c:489
 msgid "could not convert parameter name to number"
-msgstr ""
+msgstr "パラメータ名を数値に変換できませんでした"
 
 #: sys-utils/hwclock-rtc.c:459
-#, fuzzy, c-format
-#| msgid "ioctl(%d, RTC_EPOCH_SET, %lu) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_PARAM_GET, param) to %s failed"
-msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
+msgstr "ioctl(%d, RTC_PARAM_GET, param) を %s に対して発行し、 失敗しました"
 
 #: sys-utils/hwclock-rtc.c:470
-#, fuzzy, c-format
-#| msgid "ioctl(RTC_EPOCH_SET) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_PARAM_GET, param) to %s succeeded.\n"
-msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
+msgstr "ioctl(%d, RTC_PARAM_GET, param) を %s に対して発行し、 成功しました。\n"
 
 #: sys-utils/hwclock-rtc.c:496
 msgid "expected <param>=<value>"
-msgstr ""
+msgstr "<パラメータ>=<値> である必要があります"
 
 #: sys-utils/hwclock-rtc.c:500
 msgid "could not convert parameter value to number"
-msgstr ""
+msgstr "パラメータ値を数値に変換できませんでした"
 
 #: sys-utils/hwclock-rtc.c:512
-#, fuzzy, c-format
-#| msgid "ioctl(%d, RTC_EPOCH_SET, %lu) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_PARAM_SET, param) to %s failed"
-msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
+msgstr "ioctl(%d, RTC_PARAM_SET, param) を %s に対して発行し、 失敗しました"
 
 #: sys-utils/hwclock-rtc.c:518
-#, fuzzy, c-format
-#| msgid "ioctl(RTC_EPOCH_SET) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_PARAM_SET, param) to %s succeeded.\n"
-msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
+msgstr "ioctl(%d, RTC_PARAM_SET, param) を %s に対して発行し、 成功しました。\n"
 
 #: sys-utils/hwclock-rtc.c:552
 msgid "Voltage too low, RTC data is invalid"
-msgstr ""
+msgstr "電圧が低すぎます。 RTC データが正しくありません"
 
 #: sys-utils/hwclock-rtc.c:553
 msgid "Backup voltage is low"
-msgstr ""
+msgstr "バックアップ電圧が低下しています"
 
 #: sys-utils/hwclock-rtc.c:554
 msgid "Backup empty or not present"
-msgstr ""
+msgstr "バックアップ電池が空か存在しません"
 
 #: sys-utils/hwclock-rtc.c:555
 msgid "Voltage is low, RTC accuracy is reduced"
-msgstr ""
+msgstr "電圧が低いため、 RTC の精度が低下しています"
 
 #: sys-utils/hwclock-rtc.c:556
 msgid "Backup switchover happened"
-msgstr ""
+msgstr "バックアップ切り替えが発生しました"
 
 #: sys-utils/hwclock-rtc.c:566
-#, fuzzy, c-format
-#| msgid "ioctl(%d, RTC_EPOCH_READ, epoch_p) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_VL_READ) on %s failed"
-msgstr "ioctl(%d, RTC_EPOCH_READ, epoch_p) を %s に対して発行し、失敗しました"
+msgstr "ioctl(%d, RTC_VL_READ) を %s に対して発行し、失敗しました"
 
 #: sys-utils/hwclock-rtc.c:572
-#, fuzzy, c-format
-#| msgid "ioctl(RTC_EPOCH_READ) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_VL_READ) on %s returned 0x%x\n"
-msgstr "ioctl(%d, RTC_EPOCH_READ, epoch_p) を %s に対して発行し、失敗しました"
+msgstr "ioctl(%d, RTC_VL_READ) を %s に対して発行し、 0x%x が返ってきました\n"
 
 #: sys-utils/hwclock-rtc.c:601
-#, fuzzy, c-format
-#| msgid "ioctl(%d, RTC_UIE_ON, 0) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_VL_CLEAR) on %s failed"
-msgstr "ioctl(%d, RTC_UIE_ON, 0) を %s に対して発行し、失敗しました"
+msgstr "ioctl(%d, RTC_VL_CLEAR) を %s に対して発行し、失敗しました"
 
 #: sys-utils/hwclock-rtc.c:607
-#, fuzzy, c-format
-#| msgid "ioctl(RTC_EPOCH_SET) to %s failed"
+#, c-format
 msgid "ioctl(%d, RTC_VL_CLEAR) on %s succeeded.\n"
-msgstr "ioctl(%d, RTC_EPOCH_SET, %lu) を %s に対して発行し、 失敗しました"
+msgstr "ioctl(%d, RTC_VL_CLEAR) を %s に対して発行し、成功しました\n"
 
 #: sys-utils/ipcmk.c:70
 msgid "Create various IPC resources.\n"
@@ -18258,10 +18012,8 @@ msgid "failed to parse elements"
 msgstr "要素数の解釈に失敗しました"
 
 #: sys-utils/ipcmk.c:130
-#, fuzzy
-#| msgid "failed to parse id"
 msgid "failed to parse mode"
-msgstr "ID の解析に失敗しました"
+msgstr "モードの解析に失敗しました"
 
 #: sys-utils/ipcmk.c:149
 msgid "create share memory failed"
@@ -18415,11 +18167,12 @@ msgid ""
 " %1$s [resource-option...] [output-option]\n"
 " %1$s -m|-q|-s -i <id>\n"
 msgstr ""
+" %1$s [リソースオプション...] [出力オプション]\n"
+" %1$s -m|-q|-s -i <id>\n"
 
 #: sys-utils/ipcs.c:75 sys-utils/lsipc.c:295
-#, fuzzy
 msgid "Show information on IPC facilities.\n"
-msgstr " --version                         バージョン情報を表示して終了します\n"
+msgstr "IPC 機能に関する情報を表示します。\n"
 
 #: sys-utils/ipcs.c:78
 msgid " -i, --id <id>  print details on resource identified by <id>\n"
@@ -18470,30 +18223,25 @@ msgid " -u, --summary     show status summary\n"
 msgstr " -u, --summary     状態の概要を表示します\n"
 
 #: sys-utils/ipcs.c:95
-#, fuzzy
-#| msgid "     --human       show sizes in human readable format\n"
 msgid "     --human       show sizes in human-readable format\n"
-msgstr " -T, --ctime                 人間にとって読みやすい形式でタイムスタンプを表示します\n"
+msgstr "     --human       人間にとって読みやすい形式でサイズを表示します\n"
 
 #: sys-utils/ipcs.c:96
 msgid " -b, --bytes       show sizes in bytes\n"
 msgstr " -b, --bytes       サイズをバイト単位で表示します\n"
 
 #: sys-utils/ipcs.c:134
-#, fuzzy
-#| msgid "failed to parse argument"
 msgid "failed to parse id argument"
-msgstr "引数の処理に失敗しました"
+msgstr "id の引数の処理に失敗しました"
 
 #: sys-utils/ipcs.c:182
 msgid "when using an ID, a single resource must be specified"
 msgstr "ID を使用した場合は、単一のリソースのみを指定しなければなりません"
 
 #: sys-utils/ipcs.c:222
-#, fuzzy, c-format
-#| msgid "max total shared memory"
+#, c-format
 msgid "unable to fetch shared memory limits\n"
-msgstr "セマフォの制限を取得できませんでした\n"
+msgstr "共有メモリの制限を取得できませんでした\n"
 
 #: sys-utils/ipcs.c:225
 #, c-format
@@ -18510,10 +18258,8 @@ msgid "max seg size"
 msgstr "最大セグメントサイズ"
 
 #: sys-utils/ipcs.c:235
-#, fuzzy
-#| msgid "max total shared memory"
 msgid "max total shared memory (kbytes)"
-msgstr "共有メモリの最大合計値"
+msgstr "共有メモリの最大合計値 (キロバイト)"
 
 #: sys-utils/ipcs.c:243
 msgid "max total shared memory"
@@ -19018,28 +18764,20 @@ msgid "%s (kbytes) = "
 msgstr "%s (キロバイト) = "
 
 #: sys-utils/irq-common.c:46
-#, fuzzy
-#| msgid "Interrupted %s"
 msgid "interrupts"
-msgstr "割り込み更新を無効化するための %s への ioctl() が失敗しました"
+msgstr "割り込み数"
 
 #: sys-utils/irq-common.c:47
-#, fuzzy
-#| msgid "read count"
 msgid "total count"
-msgstr " 合計                  :"
+msgstr "合計"
 
 #: sys-utils/irq-common.c:48
-#, fuzzy
-#| msgid "read count"
 msgid "delta count"
-msgstr "読み込みカウント"
+msgstr "差分"
 
 #: sys-utils/irq-common.c:49
-#, fuzzy
-#| msgid "New name"
 msgid "name"
-msgstr "Name"
+msgstr "名前"
 
 #: sys-utils/irq-common.c:131 sys-utils/irq-common.c:463 sys-utils/lsmem.c:695
 #: sys-utils/lsns.c:1120
@@ -19051,21 +18789,17 @@ msgid "failed to add line to output"
 msgstr "出力先への行追加が失敗しました"
 
 #: sys-utils/irq-common.c:419
-#, fuzzy
-#| msgid "unsupported color mode"
 msgid "unsupported column name to sort output"
-msgstr "未対応の色モードです"
+msgstr "未対応の列の名前が行の並べ替えに指定されています"
 
 #: sys-utils/irq-common.c:471
-#, fuzzy
-#| msgid "Interrupted %s"
 msgid "cpu-interrupts"
-msgstr "CPU ファミリー:"
+msgstr "cpu-interrupts"
 
 #: sys-utils/irq-common.c:507
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "%delta:"
-msgstr "時刻の表示形式として iso8601 を同時に指定した場合 --show-delta は無視されます。"
+msgstr "%delta:"
 
 #: sys-utils/irqtop.c:132
 #, c-format
@@ -19073,146 +18807,97 @@ msgid ""
 "irqtop | total: %ld delta: %ld | %s | %s\n"
 "\n"
 msgstr ""
+"irqtop | 合計: %ld 差分: %ld | %s | %s\n"
+"\n"
 
 #: sys-utils/irqtop.c:180
-#, fuzzy
-#| msgid "cannot set up timer"
 msgid "cannot create timerfd"
-msgstr "ソケット %s を作成できません\n"
+msgstr "timerfd を作成できません"
 
 #: sys-utils/irqtop.c:182
-#, fuzzy
-#| msgid "cannot set up timer"
 msgid "cannot set timerfd"
-msgstr "ユーザ ID を設定できません"
+msgstr "timerfd を設定できません"
 
 #: sys-utils/irqtop.c:187 sys-utils/irqtop.c:205 sys-utils/irqtop.c:210
-#, fuzzy
-#| msgid "poll failed"
 msgid "epoll_ctl failed"
-msgstr "CTL アンカーの数: %u\n"
+msgstr "epoll_ctl に失敗しました"
 
 #: sys-utils/irqtop.c:190
-#, fuzzy
-#| msgid "seek failed"
 msgid "sigfillset failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigfillset に失敗しました"
 
 #: sys-utils/irqtop.c:192 sys-utils/setpgid.c:81 sys-utils/setpgid.c:85
-#, fuzzy
-#| msgid "setgroups failed"
 msgid "sigprocmask failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigprocmask に失敗しました"
 
 #: sys-utils/irqtop.c:200
-#, fuzzy
-#| msgid "cannot block signals"
 msgid "cannot create signalfd"
-msgstr "ディレクトリ %s を作成できません"
+msgstr "signalfd を作成できません"
 
 #: sys-utils/irqtop.c:258
 msgid "Interactive utility to display kernel interrupt information."
-msgstr ""
+msgstr "カーネルの割り込み情報を対話的に表示するユーティリティです。"
 
 #: sys-utils/irqtop.c:261
 msgid " -c, --cpu-stat <mode> show per-cpu stat (auto, enable, disable)\n"
-msgstr ""
+msgstr " -c, --cpu-stat <モード> CPU ごとの統計を表示します (auto, enable, disable)\n"
 
 #: sys-utils/irqtop.c:262
 msgid " -C, --cpu-list <list> specify cpus in list format\n"
-msgstr ""
+msgstr " -C, --cpu-list <リスト> CPU をリスト形式で指定します\n"
 
 #: sys-utils/irqtop.c:263
 msgid " -d, --delay <secs>   delay updates\n"
-msgstr ""
+msgstr " -d, --delay <秒>     更新を遅らせます\n"
 
 #: sys-utils/irqtop.c:265 sys-utils/lsirq.c:60
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid " -s, --sort <column>  specify sort column\n"
-msgstr " -o, --output <list>  出力する列を指定します\n"
+msgstr " -s, --sort <列>      並べ替えに使う列を指定します\n"
 
 #: sys-utils/irqtop.c:266 sys-utils/lsirq.c:61
-#, fuzzy
-#| msgid " -v, --vertical        show day vertically instead of line\n"
 msgid " -S, --softirq        show softirqs instead of interrupts\n"
-msgstr " -v, --vertical        日を行でなく縦に表示します\n"
+msgstr " -S, --softirq        割り込みではなく softirq を表示します\n"
 
 #: sys-utils/irqtop.c:270
 msgid ""
 "\n"
 "The following interactive key commands are valid:\n"
 msgstr ""
+"\n"
+"以下の対話型キーコマンドが使えます:\n"
 
 #: sys-utils/irqtop.c:271
-#, fuzzy
 msgid "  i      sort by IRQ\n"
-msgstr "並べ替え"
+msgstr "  i      IRQ で並べ替えます\n"
 
 #: sys-utils/irqtop.c:272
-#, fuzzy
 msgid "  t      sort by TOTAL\n"
-msgstr "合計"
+msgstr "  t      TOTAL で並べ替えます\n"
 
 #: sys-utils/irqtop.c:273
-#, fuzzy
 msgid "  d      sort by DELTA\n"
-msgstr "並べ替え"
+msgstr "  d      DELTA で並べ替えます\n"
 
 #: sys-utils/irqtop.c:274
-#, fuzzy
 msgid "  n      sort by NAME\n"
-msgstr ""
-"ID  名前\n"
-"\n"
+msgstr "  n      NAME で並べ替えます\n"
 
 #: sys-utils/irqtop.c:275
-#, fuzzy
 msgid "  q Q    quit program\n"
-msgstr ""
-"-------------------------------------------------------\n"
-"  h                       この画面を表示します\n"
-"  q または Q              プログラムを終了します\n"
-"  <newline>               次のページに移動します\n"
-"  f                       1 ページ分だけ次に移動します\n"
-"  d または ^D             半ページ分だけ次に移動します\n"
-"  l                       次の行に移動します\n"
-"  $                       最終ページに移動します\n"
-"  /regex/                 正規表現で前進検索を行ないます\n"
-"  ?regex? または ^regex^  正規表現で後退検査を行ないます\n"
-"  . または ^L             画面を再描画します\n"
-"  w または z              ページサイズを設定し、次のページに移動します\n"
-"  s ファイル名            現在のファイルを指定したファイル名に保存します\n"
-"  !コマンド               シェルを実行します\n"
-"  p                       前のファイルに移動します\n"
-"  n                       次のファイルに移動します\n"
-"\n"
-"ほとんどのコマンドの前には、整数を指定することができます。たとえば:\n"
-"+1<newline> (次のページ); -1<newline> (前のページ); 1<newline> (最初のページ)\n"
-"\n"
-"詳しくは pg(1) をお読みください。\n"
-"-------------------------------------------------------\n"
+msgstr "  q Q    プログラムを終了します\n"
 
 #: sys-utils/irqtop.c:313
-#, fuzzy, c-format
-#| msgid "unsupported label '%s'"
+#, c-format
 msgid "unsupported mode '%s'"
-msgstr "未対応のロックモードです: %s"
+msgstr "未対応のモード '%s'"
 
 #: sys-utils/irqtop.c:335
-#, fuzzy
-#| msgid "failed to parse argument"
 msgid "failed to parse delay argument"
-msgstr "遅延時間の引数が正しくありません"
+msgstr "遅延時間の引数の処理に失敗しました"
 
 #: sys-utils/irqtop.c:392
-#, fuzzy
 msgid "terminal setting retrieval"
-msgstr "端末の属性設定に失敗しました: %m"
+msgstr "端末の設定を取得します"
 
 #: sys-utils/ldattach.c:181
 msgid "invalid iflag"
@@ -19237,11 +18922,11 @@ msgstr " -s, --speed <値>        シリアルポートの回線速度を指定�
 
 #: sys-utils/ldattach.c:205
 msgid " -c, --intro-command <string> intro sent before ldattach\n"
-msgstr ""
+msgstr " -c, --intro-command <文字列> ldattach の前に送信するイントロコマンド\n"
 
 #: sys-utils/ldattach.c:206
 msgid " -p, --pause <seconds>   pause between intro and ldattach\n"
-msgstr ""
+msgstr " -p, --pause <秒>        イントロコマンドと ldattach の間の待ち時間\n"
 
 #: sys-utils/ldattach.c:207
 msgid " -7, --sevenbits         set character size to 7 bits\n"
@@ -19296,10 +18981,8 @@ msgid "invalid speed argument"
 msgstr "速度引数が正しくありません"
 
 #: sys-utils/ldattach.c:344
-#, fuzzy
-#| msgid "invalid heads argument"
 msgid "invalid pause argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "pause の引数が正しくありません"
 
 #: sys-utils/ldattach.c:371
 msgid "invalid line discipline argument"
@@ -19326,10 +19009,9 @@ msgid "cannot set terminal attributes for %s"
 msgstr "%s の端末属性を設定できません"
 
 #: sys-utils/ldattach.c:460
-#, fuzzy, c-format
-#| msgid "cannot create directory %s"
+#, c-format
 msgid "cannot write intro command to %s"
-msgstr "%s に書き込むことができません"
+msgstr "%s にイントロコマンドを書き込むことができません"
 
 #: sys-utils/ldattach.c:470
 msgid "cannot set line discipline"
@@ -19640,7 +19322,7 @@ msgstr "垂直"
 
 #: sys-utils/lscpu.c:136
 msgid "crude measurement of CPU speed"
-msgstr ""
+msgstr "大まかに測定した CPU 速度"
 
 #: sys-utils/lscpu.c:137
 msgid "logical CPU number"
@@ -19651,10 +19333,8 @@ msgid "logical core number"
 msgstr "論理コア番号"
 
 #: sys-utils/lscpu.c:139
-#, fuzzy
-#| msgid "logical core number"
 msgid "logical cluster number"
-msgstr "論理ソケット番号"
+msgstr "論理クラスタ番号"
 
 #: sys-utils/lscpu.c:140
 msgid "logical socket number"
@@ -19669,10 +19349,8 @@ msgid "logical book number"
 msgstr "論理ブック番号"
 
 #: sys-utils/lscpu.c:143
-#, fuzzy
-#| msgid "logical core number"
 msgid "logical drawer number"
-msgstr "論理ソケット番号"
+msgstr "論理ドロワー番号"
 
 #: sys-utils/lscpu.c:144
 msgid "shows how caches are shared between CPUs"
@@ -19695,14 +19373,12 @@ msgid "shows if Linux currently makes use of the CPU"
 msgstr "Linux が CPU を利用しているかどうかの表示"
 
 #: sys-utils/lscpu.c:149
-#, fuzzy
-#| msgid "shows the maximum MHz of the CPU"
 msgid "shows the currently MHz of the CPU"
-msgstr "CPU の最大 MHz を表示します"
+msgstr "CPU の現在の MHz を表示します"
 
 #: sys-utils/lscpu.c:150
 msgid "shows scaling percentage of the CPU frequency"
-msgstr ""
+msgstr "CPU 周波数のスケーリング率を表示します"
 
 #: sys-utils/lscpu.c:151
 msgid "shows the maximum MHz of the CPU"
@@ -19714,30 +19390,23 @@ msgstr "CPU の最小 MHz を表示します"
 
 #: sys-utils/lscpu.c:153
 msgid "shows CPU model name"
-msgstr ""
+msgstr "CPU モデル名を表示します"
 
 #: sys-utils/lscpu.c:158
-#, fuzzy
-#| msgid "set filesystem readahead"
 msgid "size of all system caches"
-msgstr "ファイルシステム readahead 値を設定"
+msgstr "システムキャッシュの合計サイズ"
 
 #: sys-utils/lscpu.c:159
-#, fuzzy
 msgid "cache level"
 msgstr "レベル"
 
 #: sys-utils/lscpu.c:160
-#, fuzzy
-#| msgid "device name"
 msgid "cache name"
-msgstr "キャッシュタイプ"
+msgstr "キャッシュ名"
 
 #: sys-utils/lscpu.c:161
-#, fuzzy
-#| msgid "size of the device"
 msgid "size of one cache"
-msgstr "キャッシュサイズの非数値"
+msgstr "キャッシュ一個あたりのサイズ"
 
 #: sys-utils/lscpu.c:162
 msgid "cache type"
@@ -19745,50 +19414,39 @@ msgstr "キャッシュタイプ"
 
 #: sys-utils/lscpu.c:163
 msgid "ways of associativity"
-msgstr ""
+msgstr "連想数"
 
 #: sys-utils/lscpu.c:164
-#, fuzzy
 msgid "allocation policy"
-msgstr "メモリ配置に失敗しました"
+msgstr "割り当てポリシー"
 
 #: sys-utils/lscpu.c:165
-#, fuzzy
-#| msgid "write error"
 msgid "write policy"
-msgstr "書き込み"
+msgstr "書き込みポリシー"
 
 #: sys-utils/lscpu.c:166
-#, fuzzy
-#| msgid "Number of physical cylinders"
 msgid "number of physical cache line per cache tag"
-msgstr "物理シリンダ数"
+msgstr "キャッシュタグあたりの物理キャッシュライン数"
 
 #: sys-utils/lscpu.c:167
 msgid "number of sets in the cache; set lines has the same cache index"
-msgstr ""
+msgstr "キャッシュのセット数(セットラインはキャッシュインデックスが同じ)"
 
 #: sys-utils/lscpu.c:168
 msgid "minimum amount of data in bytes transferred from memory to cache"
-msgstr ""
+msgstr "メモリからキャッシュへの最小転送データ量(バイト単位)"
 
 #: sys-utils/lscpu.c:221
-#, fuzzy
-#| msgid "%s: failed to initialize sysfs handler"
 msgid "failed to initialize rootfs handler"
-msgstr "sysfs ハンドラの準備に失敗しました"
+msgstr "rootfs ハンドラの準備に失敗しました"
 
 #: sys-utils/lscpu.c:228
-#, fuzzy
-#| msgid "%s: failed to initialize sysfs handler"
 msgid "failed to initialize CPUs sysfs handler"
-msgstr "sysfs ハンドラの準備に失敗しました"
+msgstr "CPU の sysfs ハンドラの準備に失敗しました"
 
 #: sys-utils/lscpu.c:235
-#, fuzzy
-#| msgid "%s: failed to initialize sysfs handler"
 msgid "failed to initialize procfs handler"
-msgstr "sysfs ハンドラの準備に失敗しました"
+msgstr "procfs ハンドラの準備に失敗しました"
 
 #: sys-utils/lscpu.c:328
 msgid "Y"
@@ -19799,40 +19457,30 @@ msgid "N"
 msgstr "N"
 
 #: sys-utils/lscpu.c:669
-#, fuzzy, c-format
-#| msgid ""
-#| "# The following is the parsable format, which can be fed to other\n"
-#| "# programs. Each different item in every column has an unique ID\n"
-#| "# starting from zero.\n"
+#, c-format
 msgid ""
 "# The following is the parsable format, which can be fed to other\n"
 "# programs. Each different item in every column has an unique ID\n"
 "# starting usually from zero.\n"
 msgstr ""
 "# 下記は、他のプログラムに渡して処理することのできる形式での出力です。\n"
-"# 各行の冒頭には、0から始まるユニークな番号が書かれています。\n"
+"# 各列の ID は項目ごとにユニークで、通常 0 から始まります。\n"
 
 #: sys-utils/lscpu.c:876
 msgid "Model name:"
 msgstr "モデル名:"
 
 #: sys-utils/lscpu.c:878
-#, fuzzy
-#| msgid "Model name:"
 msgid "BIOS Model name:"
-msgstr "モデル名:"
+msgstr "BIOS モデル名:"
 
 #: sys-utils/lscpu.c:880
-#, fuzzy
-#| msgid "CPU family:"
 msgid "BIOS CPU family:"
-msgstr "CPU ファミリー:"
+msgstr "BIOS CPU ファミリー:"
 
 #: sys-utils/lscpu.c:882
-#, fuzzy
-#| msgid "Partition type:"
 msgid "Machine type:"
-msgstr "不明なマシン型です: %s\n"
+msgstr "マシンタイプ:"
 
 #: sys-utils/lscpu.c:884
 msgid "CPU family:"
@@ -19847,10 +19495,8 @@ msgid "Thread(s) per core:"
 msgstr "コアあたりのスレッド数:"
 
 #: sys-utils/lscpu.c:890
-#, fuzzy
-#| msgid "Core(s) per socket:"
 msgid "Core(s) per cluster:"
-msgstr "コアあたりのスレッド数:"
+msgstr "クラスタあたりのコア数:"
 
 #: sys-utils/lscpu.c:892
 msgid "Core(s) per socket:"
@@ -19861,14 +19507,12 @@ msgid "Socket(s) per book:"
 msgstr "ブックあたりのソケット数:"
 
 #: sys-utils/lscpu.c:897
-#, fuzzy
 msgid "Book(s) per drawer:"
-msgstr "ブックあたりのソケット数:"
+msgstr "ドロワーあたりのブック数:"
 
 #: sys-utils/lscpu.c:898
-#, fuzzy
 msgid "Drawer(s):"
-msgstr "%s '%s'\n"
+msgstr "ドロワー数:"
 
 #: sys-utils/lscpu.c:900
 msgid "Book(s):"
@@ -19879,19 +19523,16 @@ msgid "Socket(s):"
 msgstr "ソケット数:"
 
 #: sys-utils/lscpu.c:908
-#, fuzzy
 msgid "Cluster(s):"
-msgstr "%s '%s'\n"
+msgstr "クラスタ数:"
 
 #: sys-utils/lscpu.c:916
 msgid "Stepping:"
 msgstr "ステッピング:"
 
 #: sys-utils/lscpu.c:918
-#, fuzzy
-#| msgid "FreeBSD boot"
 msgid "Frequency boost:"
-msgstr "周波数の連続化"
+msgstr "周波数ブースト:"
 
 #: sys-utils/lscpu.c:919
 msgid "enabled"
@@ -19902,22 +19543,16 @@ msgid "disabled"
 msgstr "使用しない"
 
 #: sys-utils/lscpu.c:923
-#, fuzzy
-#| msgid "CPU min MHz:"
 msgid "CPU dynamic MHz:"
-msgstr "CPU の最大 MHz を表示します"
+msgstr "CPU 動的 MHz:"
 
 #: sys-utils/lscpu.c:925
-#, fuzzy
-#| msgid "CPU max MHz:"
 msgid "CPU static MHz:"
-msgstr "CPU の最大 MHz を表示します"
+msgstr "CPU 静的 MHz:"
 
 #: sys-utils/lscpu.c:930
-#, fuzzy
-#| msgid "CPU min MHz:"
 msgid "CPU(s) scaling MHz:"
-msgstr "CPU 最小 MHz:"
+msgstr "CPU スケーリング MHz:"
 
 #: sys-utils/lscpu.c:931
 msgid "CPU max MHz:"
@@ -19960,9 +19595,8 @@ msgid "CPU op-mode(s):"
 msgstr "CPU 操作モード:"
 
 #: sys-utils/lscpu.c:1005
-#, fuzzy
 msgid "Address sizes:"
-msgstr "自動的にウィンドウの大きさを記憶"
+msgstr "アドレスサイズ:"
 
 #: sys-utils/lscpu.c:1008 sys-utils/lscpu.c:1010
 msgid "Byte Order:"
@@ -19997,16 +19631,12 @@ msgid "Vendor ID:"
 msgstr "ベンダー ID:"
 
 #: sys-utils/lscpu.c:1049
-#, fuzzy
-#| msgid "Vendor ID:"
 msgid "BIOS Vendor ID:"
-msgstr "ベンダー ID:"
+msgstr "BIOS ベンダー ID:"
 
 #: sys-utils/lscpu.c:1057
-#, fuzzy
-#| msgid "Virtualization type:"
 msgid "Virtualization features:"
-msgstr "仮想化:"
+msgstr "仮想化機能:"
 
 #: sys-utils/lscpu.c:1059 sys-utils/lscpu.c:1061
 msgid "Virtualization:"
@@ -20026,13 +19656,12 @@ msgstr "仮想化タイプ:"
 
 #: sys-utils/lscpu.c:1090
 msgid "Caches (sum of all):"
-msgstr ""
+msgstr "キャッシュ (合計):"
 
 #: sys-utils/lscpu.c:1094 sys-utils/lscpu.c:1124 sys-utils/lscpu.c:1156
-#, fuzzy, c-format
-#| msgid "%s"
+#, c-format
 msgid "%s:"
-msgstr "%s\n"
+msgstr "%s:"
 
 #: sys-utils/lscpu.c:1094 sys-utils/lscpu.c:1124
 #, c-format
@@ -20040,27 +19669,24 @@ msgid "%s cache:"
 msgstr "%s キャッシュ:"
 
 #: sys-utils/lscpu.c:1097
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIu64> (%d instance)"
 msgid_plural "%<PRIu64> (%d instances)"
-msgstr[0] "この出現を置換しますか?"
+msgstr[0] "%<PRIu64> (%d インスタンス)"
 
 #: sys-utils/lscpu.c:1106
-#, fuzzy, c-format
+#, c-format
 msgid "%s (%d instance)"
 msgid_plural "%s (%d instances)"
-msgstr[0] "この出現を置換しますか?"
+msgstr[0] "%s (%d インスタンス)"
 
 #: sys-utils/lscpu.c:1121
-#, fuzzy
-#| msgid "%s cache:"
 msgid "Caches:"
-msgstr "CPU 間でどのようにキャッシュが共有されるかの表示"
+msgstr "キャッシュ:"
 
 #: sys-utils/lscpu.c:1140
-#, fuzzy
 msgid "NUMA:"
-msgstr "NUMA ノード %d CPU:"
+msgstr "NUMA:"
 
 #: sys-utils/lscpu.c:1142
 msgid "NUMA node(s):"
@@ -20072,16 +19698,13 @@ msgid "NUMA node%d CPU(s):"
 msgstr "NUMA ノード %d CPU:"
 
 #: sys-utils/lscpu.c:1152
-#, fuzzy
-#| msgid "Inheritable capabilities: "
 msgid "Vulnerabilities:"
-msgstr "継承可能なケーパビリティ: "
+msgstr "脆弱性:"
 
 #: sys-utils/lscpu.c:1156
-#, fuzzy, c-format
-#| msgid "unknown capability \"%s\""
+#, c-format
 msgid "Vulnerability %s:"
-msgstr "%s '%s'\n"
+msgstr "脆弱性 %s:"
 
 #: sys-utils/lscpu.c:1174
 msgid "Display information about the CPU architecture.\n"
@@ -20096,26 +19719,20 @@ msgid " -b, --online            print online CPUs only (default for -p)\n"
 msgstr " -b, --online            オンラインの CPU のみを表示します (-p を指定した場合の既定値)\n"
 
 #: sys-utils/lscpu.c:1179
-#, fuzzy
-#| msgid " -b, --bytes            print sizes in bytes rather than in human readable format\n"
 msgid " -B, --bytes             print sizes in bytes rather than in human readable format\n"
-msgstr " -b, --bytes            可読性の高い形式ではなく、バイト単位でサイズを表示します\n"
+msgstr " -B, --bytes             可読性の高い形式ではなく、バイト単位でサイズを表示します\n"
 
 #: sys-utils/lscpu.c:1180
-#, fuzzy
-#| msgid " -e, --extended[=<list>] print out an extended readable format\n"
 msgid " -C, --caches[=<list>]   info about caches in extended readable format\n"
-msgstr " -e, --extended[=<リスト>] 読みやすい拡張形式で表示します\n"
+msgstr " -C, --caches[=<リスト>] 読みやすい拡張形式でキャッシュの情報を表示します\n"
 
 #: sys-utils/lscpu.c:1181
 msgid " -c, --offline           print offline CPUs only\n"
 msgstr " -c, --offline           オフラインの CPU のみを表示します\n"
 
 #: sys-utils/lscpu.c:1182
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " -J, --json              use JSON for default or extended format\n"
-msgstr " -J, --json            JSON形式で出力します\n"
+msgstr " -J, --json              既定および拡張形式で JSON を使用します\n"
 
 #: sys-utils/lscpu.c:1183
 msgid " -e, --extended[=<list>] print out an extended readable format\n"
@@ -20123,7 +19740,7 @@ msgstr " -e, --extended[=<リスト>] 読みやすい拡張形式で表示しま
 
 #: sys-utils/lscpu.c:1184
 msgid " -p, --parse[=<list>]    print out a parsable format\n"
-msgstr " -p, --parse[=<list>]    プログラムなどで処理しやすい形式で表示します\n"
+msgstr " -p, --parse[=<リスト>]  プログラムなどで処理しやすい形式で表示します\n"
 
 #: sys-utils/lscpu.c:1185
 msgid " -s, --sysroot <dir>     use specified directory as system root\n"
@@ -20134,50 +19751,36 @@ msgid " -x, --hex               print hexadecimal masks rather than lists of CPU
 msgstr " -x, --hex               CPU をリストではなく 16 進数のマスク形式で表示します\n"
 
 #: sys-utils/lscpu.c:1187
-#, fuzzy
-#| msgid " -a, --all            print all devices\n"
 msgid " -y, --physical          print physical instead of logical IDs\n"
-msgstr " -a, --all            すべてのデバイスを表示します\n"
+msgstr " -y, --physical          論理 ID でなく物理 ID で表示します\n"
 
 #: sys-utils/lscpu.c:1188
 msgid "     --hierarchic[=when] use subsections in summary (auto, never, always)\n"
-msgstr ""
+msgstr "     --hierarchic[=いつ] 概要でサブセクションを使用します (auto、always、never のどれか)\n"
 
 #: sys-utils/lscpu.c:1189
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid "     --output-all        print all available columns for -e, -p or -C\n"
-msgstr " -o, --output <list>           出力する列を指定します\n"
+msgstr "     --output-all        -e, -p, -C で出力可能な列をすべて表示します\n"
 
 #: sys-utils/lscpu.c:1193
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Available output columns:\n"
 msgid ""
 "\n"
 "Available output columns for -e or -p:\n"
 msgstr ""
 "\n"
-"利用可能な列 (--output で指定します):\n"
+"-e および -p で出力可能な列:\n"
 
 #: sys-utils/lscpu.c:1197
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Available output columns:\n"
 msgid ""
 "\n"
 "Available output columns for -C:\n"
 msgstr ""
 "\n"
-"利用可能な列 (--output で指定します):\n"
+"-C で出力可能な列:\n"
 
 #: sys-utils/lscpu.c:1313
-#, fuzzy
-#| msgid "unsupported --summary argument"
 msgid "unsupported --flat argument"
-msgstr "未対応の --summary 引数です"
+msgstr "未対応の --flat 引数です"
 
 #: sys-utils/lscpu.c:1337
 #, c-format
@@ -20191,29 +19794,23 @@ msgstr "エラー: uname が失敗しました"
 #: sys-utils/lscpu-cputype.c:726
 #, c-format
 msgid "failed to determine number of CPUs: %s"
-msgstr "CPU 番号の判別に失敗しました: %s"
+msgstr "CPU 数の判別に失敗しました: %s"
 
 #: sys-utils/lscpu-cputype.c:929
 msgid "Failed to extract the node number"
 msgstr "ノード番号の抽出に失敗しました"
 
 #: sys-utils/lscpu-virt.c:492 sys-utils/lscpu-virt.c:514
-#, fuzzy
-#| msgid "cannot set signal mask"
 msgid "cannot restore signal mask"
-msgstr "シグナルマスクを設定できません"
+msgstr "シグナルマスクを復元できません"
 
 #: sys-utils/lscpu-virt.c:499
-#, fuzzy
-#| msgid "cannot block signals"
 msgid "cannot unblock signal"
-msgstr "シグナルをブロックできません"
+msgstr "シグナルをブロック解除できません"
 
 #: sys-utils/lscpu-virt.c:511
-#, fuzzy
-#| msgid "cannot set signal handler"
 msgid "cannot restore signal handler"
-msgstr "シグナルハンドラを設定できません"
+msgstr "シグナルハンドラを復元できません"
 
 #: sys-utils/lsipc.c:150
 msgid "Resource key"
@@ -20232,39 +19829,32 @@ msgid "ID"
 msgstr "ID"
 
 #: sys-utils/lsipc.c:152
-#, fuzzy
 msgid "Owner's username or UID"
-msgstr "ユーザー名"
+msgstr "所有者のユーザ名または UID"
 
 #: sys-utils/lsipc.c:152
 msgid "Owner"
 msgstr "所有者"
 
 #: sys-utils/lsipc.c:153
-#, fuzzy
-#| msgid "version"
 msgid "Permissions"
-msgstr "致命的エラー: %s: パーミッションの変更に失敗しました: %m"
+msgstr "パーミッション"
 
 #: sys-utils/lsipc.c:154
-#, fuzzy
 msgid "Creator UID"
-msgstr "uid"
+msgstr "作成者の UID"
 
 #: sys-utils/lsipc.c:155
 msgid "Creator user"
-msgstr ""
+msgstr "作成者のユーザ名"
 
 #: sys-utils/lsipc.c:156
-#, fuzzy
 msgid "Creator GID"
-msgstr "gid"
+msgstr "作成者の GID"
 
 #: sys-utils/lsipc.c:157
-#, fuzzy
-#| msgid "Primary group"
 msgid "Creator group"
-msgstr "そのようなグループはありません"
+msgstr "作成者のグループ名"
 
 #: sys-utils/lsipc.c:158
 msgid "User ID"
@@ -20276,12 +19866,11 @@ msgstr "UID"
 
 #: sys-utils/lsipc.c:159
 msgid "User name"
-msgstr "ユーザー名"
+msgstr "ユーザ名"
 
 #: sys-utils/lsipc.c:160
-#, fuzzy
 msgid "Group ID"
-msgstr "プライマリグループ ID"
+msgstr "グループ ID"
 
 #: sys-utils/lsipc.c:160
 msgid "GID"
@@ -20292,154 +19881,120 @@ msgid "Group name"
 msgstr "グループ名"
 
 #: sys-utils/lsipc.c:162
-#, fuzzy
-#| msgid "size of the swap area"
 msgid "Time of the last change"
-msgstr "最後の変更は:\n"
+msgstr "直近の変更時刻"
 
 #: sys-utils/lsipc.c:162
-#, fuzzy
-#| msgid "last-changed"
 msgid "Last change"
-msgstr "直近の変更を表示"
+msgstr "直近の変更"
 
 #: sys-utils/lsipc.c:165
 msgid "Bytes used"
 msgstr "使用済みのバイト数"
 
 #: sys-utils/lsipc.c:166
-#, fuzzy
-#| msgid "Number of heads"
 msgid "Number of messages"
-msgstr "メッセージ"
+msgstr "メッセージ数"
 
 #: sys-utils/lsipc.c:166
 msgid "Messages"
-msgstr "メッセージ"
+msgstr "メッセージ数"
 
 #: sys-utils/lsipc.c:167
-#, fuzzy
-#| msgid "date of last login"
 msgid "Time of last msg sent"
-msgstr "サーバーに送られた経過時間 [%lld, %ld]"
+msgstr "直近のメッセージ送信時刻"
 
 #: sys-utils/lsipc.c:167
-#, fuzzy
 msgid "Msg sent"
-msgstr "event; 送ったらTRUEを返す"
+msgstr "メッセージ送信"
 
 #: sys-utils/lsipc.c:168
 msgid "Time of last msg received"
-msgstr ""
+msgstr "直近のメッセージ受信時刻"
 
 #: sys-utils/lsipc.c:168
-#, fuzzy
 msgid "Msg received"
-msgstr "前の構文チェックメッセージ"
+msgstr "メッセージ受信"
 
 #: sys-utils/lsipc.c:169
 msgid "PID of the last msg sender"
-msgstr ""
+msgstr "直近のメッセージ送信プロセスの PID"
 
 #: sys-utils/lsipc.c:169
-#, fuzzy
 msgid "Msg sender"
-msgstr "前の構文チェックメッセージへ"
+msgstr "メッセージ送信プロセス"
 
 #: sys-utils/lsipc.c:170
 msgid "PID of the last msg receiver"
-msgstr ""
+msgstr "直近のメッセージ受信プロセスの PID"
 
 #: sys-utils/lsipc.c:170
-#, fuzzy
 msgid "Msg receiver"
-msgstr "前の構文チェックメッセージ"
+msgstr "メッセージ受信プロセス"
 
 #: sys-utils/lsipc.c:173
-#, fuzzy
-#| msgid "get blocksize"
 msgid "Segment size"
-msgstr "ポインタサイズ + セグメントサイズが2のべき乗数ではありません。\n"
+msgstr "セグメントサイズ"
 
 #: sys-utils/lsipc.c:174
-#, fuzzy
-#| msgid "max number of processes"
 msgid "Number of attached processes"
-msgstr "プロセスの最大数"
+msgstr "結合プロセス数"
 
 #: sys-utils/lsipc.c:174
-#, fuzzy
 msgid "Attached processes"
-msgstr "結合"
+msgstr "結合プロセス"
 
 #: sys-utils/lsipc.c:175
 msgid "Status"
 msgstr "状態"
 
 #: sys-utils/lsipc.c:176
-#, fuzzy
-#| msgid "attached"
 msgid "Attach time"
-msgstr "結合"
+msgstr "結合時刻"
 
 #: sys-utils/lsipc.c:177
-#, fuzzy
-#| msgid "detached"
 msgid "Detach time"
-msgstr "分離"
+msgstr "分離時刻"
 
 #: sys-utils/lsipc.c:178
-#, fuzzy
-#| msgid "Parse command options.\n"
 msgid "Creator command line"
-msgstr "<コマンドライン>"
+msgstr "作成者のコマンドライン"
 
 #: sys-utils/lsipc.c:178
-#, fuzzy
-#| msgid "Illegal command"
 msgid "Creator command"
-msgstr "不正なコマンドです"
+msgstr "作成者のコマンド"
 
 #: sys-utils/lsipc.c:179
-#, fuzzy
 msgid "PID of the creator"
-msgstr " -p, --pid         作成および直近に操作を行なった PID を表示します\n"
+msgstr "作成者の PID"
 
 #: sys-utils/lsipc.c:179
 msgid "Creator PID"
-msgstr ""
+msgstr "作成者 PID"
 
 #: sys-utils/lsipc.c:180
-#, fuzzy
 msgid "PID of last user"
-msgstr "pid"
+msgstr "直近のユーザの PID"
 
 #: sys-utils/lsipc.c:180
-#, fuzzy
-#| msgid "user ID"
 msgid "Last user PID"
-msgstr "pid"
+msgstr "直近ユーザ PID"
 
 #: sys-utils/lsipc.c:183
-#, fuzzy
-#| msgid "Number of sectors"
 msgid "Number of semaphores"
-msgstr "セマフォ"
+msgstr "セマフォ数"
 
 #: sys-utils/lsipc.c:183
 msgid "Semaphores"
-msgstr "セマフォ"
+msgstr "セマフォ数"
 
 #: sys-utils/lsipc.c:184
-#, fuzzy
 msgid "Time of the last operation"
-msgstr "直前の操作を取り消す (undo)"
+msgstr "直近の操作の時刻"
 
 #: sys-utils/lsipc.c:184
-#, fuzzy
-#| msgid "operation %d\n"
 msgid "Last operation"
-msgstr "直前の操作を取り消す (undo)"
+msgstr "直近の操作"
 
 #: sys-utils/lsipc.c:187
 msgid "Resource name"
@@ -20450,253 +20005,211 @@ msgid "Resource"
 msgstr "リソース"
 
 #: sys-utils/lsipc.c:188
-#, fuzzy
-#| msgid "resource description"
 msgid "Resource description"
-msgstr "リソース設定"
+msgstr "リソースの説明"
 
 #: sys-utils/lsipc.c:188
 msgid "Description"
 msgstr "説明"
 
 #: sys-utils/lsipc.c:189
-#, fuzzy
 msgid "Currently used"
-msgstr "%1海軍は現在使用されていません！"
+msgstr "現在使用中"
 
 #: sys-utils/lsipc.c:189
-#, fuzzy
 msgid "Used"
-msgstr "未使用\n"
+msgstr "使用中"
 
 #: sys-utils/lsipc.c:190
-#, fuzzy
-#| msgid "filesystem use percentage"
 msgid "Currently use percentage"
-msgstr "ファイルシステムの使用率"
+msgstr "現在の使用率"
 
 #: sys-utils/lsipc.c:190
 msgid "Use"
-msgstr "利用"
+msgstr "使用"
 
 #: sys-utils/lsipc.c:191
-#, fuzzy
 msgid "System-wide limit"
-msgstr "システム全体での最大キュー数 = %d\n"
+msgstr "システム全体での制限"
 
 #: sys-utils/lsipc.c:191
-#, fuzzy
 msgid "Limit"
-msgstr "  メッセージの大きさに制限はありません。 (--limit 0)\n"
+msgstr "制限"
 
 #: sys-utils/lsipc.c:226
 #, c-format
 msgid "column %s does not apply to the specified IPC"
-msgstr ""
+msgstr "列 %s は指定された IPC に適用できません"
 
 #: sys-utils/lsipc.c:302
 msgid " -g, --global      info about system-wide usage (may be used with -m, -q and -s)\n"
-msgstr ""
+msgstr " -g, --global      システム全体の利用情報 (-m, -q, -s と共に使用します)\n"
 
 #: sys-utils/lsipc.c:303
 msgid " -i, --id <id>     print details on resource identified by <id>\n"
 msgstr " -i, --id <id>     指定した ID のリソースについて詳細を表示します\n"
 
 #: sys-utils/lsipc.c:309
-#, fuzzy
-#| msgid " -b, --bytes          print SIZE in bytes rather than in human readable format\n"
 msgid " -b, --bytes              print SIZE in bytes rather than in human readable format\n"
-msgstr " -b, --bytes          可読性の高い形式ではなく、バイト単位でサイズを表示します\n"
+msgstr " -b, --bytes              可読性の高い形式ではなく、バイト単位でサイズを表示します\n"
 
 #: sys-utils/lsipc.c:310
-#, fuzzy
-#| msgid " -c, --creator     show creator and owner\n"
 msgid " -c, --creator            show creator and owner\n"
-msgstr " -c, --creator     作成者と所有者を表示します\n"
+msgstr " -c, --creator            作成者と所有者を表示します\n"
 
 #: sys-utils/lsipc.c:312
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " -J, --json               use the JSON output format\n"
-msgstr " -J, --json                    JSON --list 形式で出力します\n"
+msgstr " -J, --json               JSON 形式で出力します\n"
 
 #: sys-utils/lsipc.c:314
-#, fuzzy
-#| msgid " -l, --list             use list format output\n"
 msgid " -l, --list               force list output format (for example with --id)\n"
-msgstr " -l, --list             一覧形式で出力します\n"
+msgstr " -l, --list               強制的に一覧形式で出力します (--id などで使用します)\n"
 
 #: sys-utils/lsipc.c:316
 msgid " -P, --numeric-perms      print numeric permissions (PERMS column)\n"
-msgstr ""
+msgstr " -P, --numeric-perms      パーミッションを数値で表示します (PERMS 列)\n"
 
 #: sys-utils/lsipc.c:318
-#, fuzzy
-#| msgid " -t, --time        show attach, detach and change times\n"
 msgid " -t, --time               show attach, detach and change times\n"
-msgstr " -t, --time        結合／分離／変更の各日時を表示します\n"
+msgstr " -t, --time               結合／分離／変更の各日時を表示します\n"
 
 #: sys-utils/lsipc.c:325
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "General Options:\n"
+#, c-format
 msgid ""
 "\n"
 "Generic columns:\n"
-msgstr "一般"
+msgstr ""
+"\n"
+"一般の列:\n"
 
 #: sys-utils/lsipc.c:329
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Shared memory Segment shmid=%d\n"
+#, c-format
 msgid ""
 "\n"
 "Shared-memory columns (--shmems):\n"
-msgstr " -m, --shmems      共有メモリセグメント\n"
+msgstr ""
+"\n"
+"共有メモリの列 (--shmems):\n"
 
 #: sys-utils/lsipc.c:333
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Message-queue columns (--queues):\n"
-msgstr "------ メッセージキュー --------\n"
+msgstr ""
+"\n"
+"メッセージキューの列 (--queues):\n"
 
 #: sys-utils/lsipc.c:337
-#, fuzzy, c-format
-#| msgid " -s, --semaphores  semaphores\n"
+#, c-format
 msgid ""
 "\n"
 "Semaphore columns (--semaphores):\n"
-msgstr ", セマフォ: "
+msgstr ""
+"\n"
+"セマフォの列 (--semaphores):\n"
 
 #: sys-utils/lsipc.c:341
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Summary columns (--global):\n"
-msgstr "概要"
+msgstr ""
+"\n"
+"概要の列 (--global):\n"
 
 #: sys-utils/lsipc.c:429
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Elements:\n"
 "\n"
-msgstr "char 配列初期化子内の要素が多すぎます"
+msgstr ""
+"要素:\n"
+"\n"
 
 #: sys-utils/lsipc.c:709 sys-utils/lsipc.c:875 sys-utils/lsipc.c:1074
 msgid "failed to set data"
 msgstr "データの設定に失敗しました"
 
 #: sys-utils/lsipc.c:736
-#, fuzzy
-#| msgid "unique storage identifier"
 msgid "Number of semaphore identifiers"
-msgstr ", セマフォ: "
+msgstr "セマフォ識別子数"
 
 #: sys-utils/lsipc.c:737
-#, fuzzy
-#| msgid "number of sectors"
 msgid "Total number of semaphores"
-msgstr "   長さ  個数        占有率      範囲\n"
+msgstr "セマフォの総数"
 
 #: sys-utils/lsipc.c:738
-#, fuzzy
-#| msgid " -s, --semaphores  semaphores\n"
 msgid "Max semaphores per semaphore set."
-msgstr "配列ごとの最大セマフォ数 = %d\n"
+msgstr "配列ごとの最大セマフォ数"
 
 #: sys-utils/lsipc.c:739
-#, fuzzy
-#| msgid "max number of open files"
 msgid "Max number of operations per semop(2)"
-msgstr "ファイルの最大オープン数"
+msgstr "semop(2) あたりの最大オペレーション数"
 
 #: sys-utils/lsipc.c:740
 msgid "Semaphore max value"
 msgstr "セマフォ最大値"
 
 #: sys-utils/lsipc.c:900
-#, fuzzy
-#| msgid "Number of heads"
 msgid "Number of message queues"
-msgstr "------ メッセージキュー --------\n"
+msgstr "メッセージキュー数"
 
 #: sys-utils/lsipc.c:901
-#, fuzzy
-#| msgid "max size of message"
 msgid "Max size of message (bytes)"
-msgstr "メッセージの最大サイズ"
+msgstr "メッセージの最大サイズ (バイト)"
 
 #: sys-utils/lsipc.c:902
-#, fuzzy
-#| msgid "default max size of queue"
 msgid "Default max size of queue (bytes)"
-msgstr "キューの既定最大値"
+msgstr "キューの既定最大サイズ (バイト)"
 
 #: sys-utils/lsipc.c:1016 sys-utils/lsipc.c:1035
 msgid "hugetlb"
-msgstr ""
+msgstr "hugetlb"
 
 #: sys-utils/lsipc.c:1017 sys-utils/lsipc.c:1042
-#, fuzzy
-#| msgid "Linux reserved"
 msgid "noreserve"
-msgstr "Linux 予約領域"
+msgstr "予約なし"
 
 #: sys-utils/lsipc.c:1099
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Shared memory Segment shmid=%d\n"
 msgid "Shared memory segments"
-msgstr " -m, --shmems      共有メモリセグメント\n"
+msgstr "共有メモリセグメント数"
 
 #: sys-utils/lsipc.c:1100
 msgid "Shared memory pages"
-msgstr "共有メモリページ"
+msgstr "共有メモリページ数"
 
 #: sys-utils/lsipc.c:1101
-#, fuzzy
-#| msgid " -m, --shmems      shared memory segments\n"
 msgid "Max size of shared memory segment (bytes)"
-msgstr " -m, --shmems      共有メモリセグメント\n"
+msgstr "共有メモリセグメントの最大サイズ (バイト)"
 
 #: sys-utils/lsipc.c:1102
-#, fuzzy
-#| msgid " -m, --shmems      shared memory segments\n"
 msgid "Min size of shared memory segment (bytes)"
-msgstr " -m, --shmems      共有メモリセグメント\n"
+msgstr "共有メモリセグメントの最小サイズ (バイト)"
 
 #: sys-utils/lsipc.c:1173
-#, fuzzy
-#| msgid "failed to parse id"
 msgid "failed to parse IPC identifier"
-msgstr "行数の解析に失敗"
+msgstr "IPC 識別子の解析に失敗"
 
 #: sys-utils/lsipc.c:1270
 msgid "--global is mutually exclusive with --creator, --id and --time"
-msgstr ""
+msgstr "-global は --creator, --id, --time と同時に指定できません"
 
 #: sys-utils/lsirq.c:53
-#, fuzzy
 msgid "Utility to display kernel interrupt information."
-msgstr " -k, --kernel                カーネルメッセージを表示します\n"
+msgstr "カーネルの割り込み情報を表示するユーティリティです。"
 
 #: sys-utils/lsmem.c:119
-#, fuzzy
 msgid "start and end address of the memory range"
-msgstr "エラー: 開始アドレスは終了アドレスより前でなければいけません"
+msgstr "メモリ範囲の開始および終了アドレス"
 
 #: sys-utils/lsmem.c:120
 msgid "size of the memory range"
 msgstr "メモリ範囲のサイズ"
 
 #: sys-utils/lsmem.c:121
-#, fuzzy
 msgid "online status of the memory range"
-msgstr "------ 共有メモリの状態 --------\n"
+msgstr "共有メモリのオンライン状態"
 
 #: sys-utils/lsmem.c:122
 msgid "memory is removable"
@@ -20704,19 +20217,15 @@ msgstr "メモリは取り外し可能"
 
 #: sys-utils/lsmem.c:123
 msgid "memory block number or blocks range"
-msgstr ""
+msgstr "メモリブロック番号またはブロック範囲"
 
 #: sys-utils/lsmem.c:124
-#, fuzzy
-#| msgid "not enough memory"
 msgid "numa node of memory"
-msgstr "NUMA ノード %d CPU:"
+msgstr "メモリの NUMA ノード"
 
 #: sys-utils/lsmem.c:125
-#, fuzzy
-#| msgid "size of the device"
 msgid "valid zones for the memory range"
-msgstr "メモリ範囲のサイズ"
+msgstr "メモリ範囲で有効なゾーン"
 
 #: sys-utils/lsmem.c:252
 msgid "online"
@@ -20727,24 +20236,20 @@ msgid "offline"
 msgstr "オフライン"
 
 #: sys-utils/lsmem.c:254
-#, fuzzy
 msgid "on->off"
-msgstr " 電源OFF"
+msgstr "on->off"
 
 #: sys-utils/lsmem.c:308 sys-utils/lsmem.c:315
 msgid "Memory block size:"
-msgstr "メモリブロックサイズ"
+msgstr "メモリブロックサイズ:"
 
 #: sys-utils/lsmem.c:309 sys-utils/lsmem.c:319
-#, fuzzy
-#| msgid "max total shared memory"
 msgid "Total online memory:"
-msgstr "共有メモリの最大合計値"
+msgstr "オンラインメモリの合計:"
 
 #: sys-utils/lsmem.c:310 sys-utils/lsmem.c:323
-#, fuzzy
 msgid "Total offline memory:"
-msgstr "共有メモリの最大合計値"
+msgstr "オフラインメモリの合計:"
 
 #: sys-utils/lsmem.c:336
 #, c-format
@@ -20761,7 +20266,7 @@ msgstr "このシステムはメモリブロックに対応していません"
 
 #: sys-utils/lsmem.c:515
 msgid "List the ranges of available memory with their online status.\n"
-msgstr ""
+msgstr "利用可能なメモリ範囲とそれらのオンライン状態を一覧表示します。\n"
 
 #: sys-utils/lsmem.c:520
 msgid " -a, --all            list each individual memory block\n"
@@ -20777,17 +20282,15 @@ msgstr " -S, --split <list>   指定した列で範囲を分割します\n"
 
 #: sys-utils/lsmem.c:527
 msgid " -s, --sysroot <dir>  use the specified directory as system root\n"
-msgstr " -s, --sysroot <dir>     指定したディレクトリをシステムの rootとして使用します\n"
+msgstr " -s, --sysroot <dir>  指定したディレクトリをシステムの rootとして使用します\n"
 
 #: sys-utils/lsmem.c:528
 msgid "     --summary[=when] print summary information (never,always or only)\n"
-msgstr ""
+msgstr "     --summary[=いつ] 概要情報を表示します (never,always,only)\n"
 
 #: sys-utils/lsmem.c:654
-#, fuzzy
-#| msgid "options --{shell,fast,command,session-command,login} and --user are mutually exclusive."
 msgid "options --{raw,json,pairs} and --summary=only are mutually exclusive"
-msgstr "--{shell,fast,command,session-command,login} と --user のオプションは、同時に使用することができません。"
+msgstr "オプション --{raw,json,pairs} と --summary=only は同時に指定できません"
 
 #: sys-utils/lsmem.c:662
 msgid "invalid argument to --sysroot"
@@ -20802,9 +20305,8 @@ msgid "namespace identifier (inode number)"
 msgstr "名前空間の識別子(inode 番号)"
 
 #: sys-utils/lsns.c:111
-#, fuzzy
 msgid "kind of namespace"
-msgstr "`無効なスケジュールの種類です"
+msgstr "名前空間の種類"
 
 #: sys-utils/lsns.c:112
 msgid "path to the namespace"
@@ -20815,49 +20317,40 @@ msgid "number of processes in the namespace"
 msgstr "名前空間内で実行中のプロセス数"
 
 #: sys-utils/lsns.c:114
-#, fuzzy
 msgid "lowest PID in the namespace"
-msgstr " -p, --pid         PID ネームスペースの共有を解除します\n"
+msgstr "名前空間内で最小の PID"
 
 #: sys-utils/lsns.c:115
-#, fuzzy
 msgid "PPID of the PID"
-msgstr "pid"
+msgstr "PID の PPID"
 
 #: sys-utils/lsns.c:116
-#, fuzzy
 msgid "command line of the PID"
-msgstr "PIDもコマンドも指定されていません"
+msgstr "PID のコマンドライン"
 
 #: sys-utils/lsns.c:117
-#, fuzzy
 msgid "UID of the PID"
-msgstr "uid"
+msgstr "PID の UID"
 
 #: sys-utils/lsns.c:118
-#, fuzzy
 msgid "username of the PID"
-msgstr "ユーザ名(_U):"
+msgstr "PID のユーザ名"
 
 #: sys-utils/lsns.c:119
 msgid "namespace ID as used by network subsystem"
-msgstr ""
+msgstr "ネットワークサブシステムで使用する名前空間 ID"
 
 #: sys-utils/lsns.c:120
 msgid "nsfs mountpoint (usually used network subsystem)"
-msgstr ""
+msgstr "nsfs マウントポイント(通常ネットワークサブシステムで使用)"
 
 #: sys-utils/lsns.c:121
-#, fuzzy
-#| msgid "namespace identifier (inode number)"
 msgid "parent namespace identifier (inode number)"
-msgstr "名前空間の識別子(inode 番号)"
+msgstr "親名前空間の識別子(inode 番号)"
 
 #: sys-utils/lsns.c:122
-#, fuzzy
-#| msgid "namespace identifier (inode number)"
 msgid "owner namespace identifier (inode number)"
-msgstr "名前空間の識別子(inode 番号)"
+msgstr "所有者名前空間の識別子(inode 番号)"
 
 #: sys-utils/lsns.c:1289
 #, c-format
@@ -20865,54 +20358,32 @@ msgid " %s [options] [<namespace>]\n"
 msgstr " %s [オプション] [<名前空間>]\n"
 
 #: sys-utils/lsns.c:1292
-#, fuzzy
-#| msgid "List local system locks.\n"
 msgid "List system namespaces.\n"
-msgstr "ローカルシステムのロックを表示します。\n"
+msgstr "システムの名前空間を一覧表示します。\n"
 
 #: sys-utils/lsns.c:1298 sys-utils/rfkill.c:642
-#, fuzzy
-#| msgid " -o, --output <list>  define which output columns to use\n"
 msgid " -o, --output <list>    define which output columns to use\n"
-msgstr " -o, --output <list> 出力する列を指定します\n"
+msgstr " -o, --output <リスト>  出力する列を指定します\n"
 
 #: sys-utils/lsns.c:1300
-#, fuzzy
-#| msgid " -q, --quiet               suppress extra info messages\n"
 msgid " -P, --persistent       namespaces without processes\n"
-msgstr ""
-" -a, --all           すべてのマジック文字列を消去します (注意してお使いください！)\n"
-" -b, --backup        署名のバックアップを $HOME に作成します\n"
-" -f, --force         強制的に消去します\n"
-" -h, --help          このヘルプテキストを表示します\n"
-" -n, --no-act        write() コール以外のすべての処理を行います\n"
-" -o, --offset <数値> 消去するオフセット値をバイト単位で指定します\n"
-" -p, --parsable      印字可能な形式ではなく、プログラムなどで処理しやすい形式で出力します\n"
-" -q, --quiet         出力されるメッセージを省略します\n"
-" -t, --types <リスト> 指定したファイルシステム (RAID, パーティション情報など) のみに制限します\n"
-" -V, --version       バージョン情報を表示して終了します\n"
+msgstr " -P, --persistent       プロセスのない名前空間\n"
 
 #: sys-utils/lsns.c:1301
-#, fuzzy
-#| msgid " -t, --target <pid>     target process to get namespaces from\n"
 msgid " -p, --task <pid>       print process namespaces\n"
-msgstr " -t, --target <pid>     ネームスペースを取得するプロセスを指定します\n"
+msgstr " -p, --task <pid>       プロセスの名前空間を表示します\n"
 
 #: sys-utils/lsns.c:1304
-#, fuzzy
-#| msgid " -n, --no-mtab           don't write to /etc/mtab\n"
 msgid " -W, --nowrap           don't use multi-line representation\n"
-msgstr " -n, --no-mtab           /etc/mtab に書き込まないようにします\n"
+msgstr " -W, --nowrap           複数行にしません\n"
 
 #: sys-utils/lsns.c:1305
 msgid " -t, --type <name>      namespace type (mnt, net, ipc, user, pid, uts, cgroup, time)\n"
-msgstr ""
+msgstr " -t, --type <名前>      名前空間のタイプ (mnt, net, ipc, user, pid, uts, cgroup, time)\n"
 
 #: sys-utils/lsns.c:1306
-#, fuzzy
-#| msgid "     --tree             enable tree format output if possible\n"
 msgid " -T, --tree <rel>       use tree format (parent, owner, or process)\n"
-msgstr "     --tree             可能ならツリー型の出力をします\n"
+msgstr " -T, --tree <タイプ>    ツリー形式で表示します (parent, owner, process)\n"
 
 #: sys-utils/lsns.c:1407
 #, c-format
@@ -20920,33 +20391,26 @@ msgid "unknown namespace type: %s"
 msgstr "未知の名前空間タイプ: %s"
 
 #: sys-utils/lsns.c:1427
-#, fuzzy, c-format
-#| msgid "unknown namespace type: %s"
+#, c-format
 msgid "unknown tree type: %s"
-msgstr "未知の名前空間タイプ: %s"
+msgstr "未知のツリータイプ: %s"
 
 #: sys-utils/lsns.c:1449
-#, fuzzy
-#| msgid "option --find is mutually exclusive with <device>"
 msgid "--task is mutually exclusive with <namespace>"
-msgstr "--nr と <パーティション> を両方指定することはできません"
+msgstr "--task と <名前空間> を両方指定することはできません"
 
 #: sys-utils/lsns.c:1450
-#, fuzzy
-#| msgid "invalid heads argument"
 msgid "invalid namespace argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "名前空間引数が正しくありません"
 
 #: sys-utils/lsns.c:1480
-#, fuzzy
-#| msgid "--pty is not supported for your system"
 msgid "--tree={parent|owner} is unsupported for your system"
-msgstr "--pty はあなたのシステムではサポートされていません"
+msgstr "--tree={parent|owner} はあなたのシステムではサポートされていません"
 
 #: sys-utils/lsns.c:1508
-#, fuzzy, c-format
+#, c-format
 msgid "not found namespace: %ju"
-msgstr "%s (%ju-%ju, 既定値 %ju): "
+msgstr "名前空間が見つかりません: %ju"
 
 #: sys-utils/mount.c:55 sys-utils/umount.c:126
 msgid "drop permissions failed."
@@ -21089,7 +20553,7 @@ msgid ""
 "                         add the specified GID map to an ID-mapped mount\n"
 msgstr ""
 "     --map-groups <inner>:<outer>:<count>\n"
-"                         指定された GID map を ID マップマウントに追加します\n"
+"                         指定された GID map を ID mapped マウントに追加します\n"
 
 #: sys-utils/mount.c:498
 msgid ""
@@ -21097,7 +20561,7 @@ msgid ""
 "                         add the specified UID map to an ID-mapped mount\n"
 msgstr ""
 "     --map-users <inner>:<outer>:<count>\n"
-"                         指定された UID map を ID マップマウントに追加します\n"
+"                         指定された UID map を ID mapped マウントに追加します\n"
 
 #: sys-utils/mount.c:500
 msgid ""
@@ -21105,7 +20569,7 @@ msgid ""
 "                         specify the user namespace for an ID-mapped mount\n"
 msgstr ""
 "     --map-users /proc/<pid>/ns/user\n"
-"                         ID マップマウントでユーザネームスペースを指定します\n"
+"                         ID mapped マウントでユーザネームスペースを指定します\n"
 
 #: sys-utils/mount.c:502
 msgid " -m, --mkdir[=<mode>]    alias to '-o X-mount.mkdir[=<mode>]'\n"
@@ -21332,181 +20796,132 @@ msgid "%s is a mountpoint\n"
 msgstr "%s はマウントポイントです\n"
 
 #: sys-utils/nsenter.c:82 sys-utils/setarch.c:144 sys-utils/unshare.c:733
-#, fuzzy, c-format
-#| msgid " %s [options] <program> [arguments ...]\n"
+#, c-format
 msgid " %s [options] [<program> [<argument>...]]\n"
-msgstr " %s [オプション] <プログラム> [<引数> ...]\n"
+msgstr " %s [オプション] [<プログラム> [<引数>...]]\n"
 
 #: sys-utils/nsenter.c:86
 msgid "Run a program with namespaces of other processes.\n"
-msgstr ""
+msgstr "他のプロセスのネームスペースでプログラムを実行します。\n"
 
 #: sys-utils/nsenter.c:89
-#, fuzzy
-#| msgid " -a, --all            print all devices\n"
 msgid " -a, --all              enter all namespaces\n"
-msgstr " -a, --all            すべてのデバイスを表示します\n"
+msgstr " -a, --all                 すべてのネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:90
 msgid " -t, --target <pid>     target process to get namespaces from\n"
-msgstr " -t, --target <pid>     ネームスペースを取得するプロセスを指定します\n"
+msgstr " -t, --target <pid>        ネームスペースを取得する対象のプロセスを指定します\n"
 
 #: sys-utils/nsenter.c:91
-#, fuzzy
-#| msgid " -m, --mount [=<file>]  enter mount namespace\n"
 msgid " -m, --mount[=<file>]   enter mount namespace\n"
-msgstr " -m, --mount[=<file>]      マウントネームスペースの共有を解除します\n"
+msgstr " -m, --mount[=<ファイル>]  マウントネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:92
-#, fuzzy
-#| msgid " -u, --uts   [=<file>]  enter UTS namespace (hostname etc)\n"
 msgid " -u, --uts[=<file>]     enter UTS namespace (hostname etc)\n"
-msgstr " -u, --uts[=<file>]        UTS ネームスペース (ホスト名など) の共有を解除します\n"
+msgstr " -u, --uts[=<ファイル>]    UTS ネームスペース (ホスト名など) を関連付けます\n"
 
 #: sys-utils/nsenter.c:93
-#, fuzzy
-#| msgid " -i, --ipc   [=<file>]  enter System V IPC namespace\n"
 msgid " -i, --ipc[=<file>]     enter System V IPC namespace\n"
-msgstr " -i, --ipc[=<file>]        System V IPC ネームスペースの共有を解除します\n"
+msgstr " -i, --ipc[=<ファイル>]    System V IPC ネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:94
-#, fuzzy
-#| msgid " -n, --net   [=<file>]  enter network namespace\n"
 msgid " -n, --net[=<file>]     enter network namespace\n"
-msgstr " -n, --net[=<file>]        ネットワークネームスペースの共有を解除します\n"
+msgstr " -n, --net[=<ファイル>]    ネットワークネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:95
-#, fuzzy
-#| msgid " -p, --pid   [=<file>]  enter pid namespace\n"
 msgid " -p, --pid[=<file>]     enter pid namespace\n"
-msgstr " -p, --pid[=<file>]        PID ネームスペースの共有を解除します\n"
+msgstr " -p, --pid[=<ファイル>]    PID ネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:96
-#, fuzzy
-#| msgid " -m, --mount [=<file>]  enter mount namespace\n"
 msgid " -C, --cgroup[=<file>]  enter cgroup namespace\n"
-msgstr " -C, --cgroup[=<file>]     cgroup ネームスペースの共有を解除します\n"
+msgstr " -C, --cgroup[=<ファイル>] cgroup ネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:97
-#, fuzzy
-#| msgid " -U, --user  [=<file>]  enter user namespace\n"
 msgid " -U, --user[=<file>]    enter user namespace\n"
-msgstr " -U, --user[=<file>]       ユーザネームスペースの共有を解除します\n"
+msgstr " -U, --user[=<ファイル>]   ユーザネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:98
-#, fuzzy
-#| msgid " -U, --user  [=<file>]  enter user namespace\n"
 msgid "     --user-parent      enter parent user namespace\n"
-msgstr " -U, --user[=<file>]       ユーザネームスペースの共有を解除します\n"
+msgstr "     --user-parent         親ユーザネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:99
-#, fuzzy
-#| msgid " -p, --pid   [=<file>]  enter pid namespace\n"
 msgid " -T, --time[=<file>]    enter time namespace\n"
-msgstr " -p, --pid         PID ネームスペースの共有を解除します\n"
+msgstr " -T, --time[=<ファイル>]   タイムネームスペースを関連付けます\n"
 
 #: sys-utils/nsenter.c:100
-#, fuzzy
-#| msgid " -S, --setuid <uid>     set uid in user namespace\n"
 msgid " -S, --setuid[=<uid>]   set uid in entered namespace\n"
-msgstr "%s は所有者が uid %d である必要があり、かつ setuid が設定されている必要があります"
+msgstr " -S, --setuid[=<uid>]      関連付けたネームスペースでの uid を設定します\n"
 
 #: sys-utils/nsenter.c:101
-#, fuzzy
-#| msgid " -G, --setgid <gid>     set gid in user namespace\n"
 msgid " -G, --setgid[=<gid>]   set gid in entered namespace\n"
-msgstr " -G, --setgid <gid>        ユーザネームスペースの gid をセットします\n"
+msgstr " -G, --setgid[=<gid>]      関連付けたネームスペースでの gid を設定します\n"
 
 #: sys-utils/nsenter.c:102
 msgid "     --preserve-credentials do not touch uids or gids\n"
-msgstr ""
+msgstr "     --preserve-credentials uid や gid を設定しません\n"
 
 #: sys-utils/nsenter.c:103
-#, fuzzy
-#| msgid " -U, --user                unshare user namespace\n"
 msgid "     --keep-caps        retain capabilities granted in user namespaces\n"
-msgstr " -U, --user        ユーザネームスペースの共有を解除します\n"
+msgstr "     --keep-caps           ユーザネームスペースで許可されたケーパビリティを維持します\n"
 
 #: sys-utils/nsenter.c:104
-#, fuzzy
-#| msgid " -r, --root  [=<dir>]   set the root directory\n"
 msgid " -r, --root[=<dir>]     set the root directory\n"
-msgstr " -r, --chroot <ディレクトリ> 指定したディレクトリをルートにします\n"
+msgstr " -r, --root[=<ディレクトリ>] 指定したディレクトリをルートにします\n"
 
 #: sys-utils/nsenter.c:105
-#, fuzzy
-#| msgid " -w, --wd    [=<dir>]   set the working directory\n"
 msgid " -w, --wd[=<dir>]       set the working directory\n"
-msgstr " -w, --wd    [=<dir>]      作業用のディレクトリを指定します\n"
+msgstr " -w, --wd[=<ディレクトリ>] 作業用のディレクトリを指定します\n"
 
 #: sys-utils/nsenter.c:106
-#, fuzzy
-#| msgid " -w, --wd    [=<dir>]   set the working directory\n"
 msgid " -W, --wdns <dir>       set the working directory in namespace\n"
-msgstr " -w, --wd    [=<dir>]      作業用のディレクトリを指定します\n"
+msgstr " -W, --wdns <ディレクトリ> ネームスペースでの作業用のディレクトリを指定します\n"
 
 #: sys-utils/nsenter.c:107
-#, fuzzy
-#| msgid " -m, -p, --preserve-environment  do not reset environment variables\n"
 msgid " -e, --env              inherit environment variables from target process\n"
-msgstr " -m, -p, --preserve-environment  環境変数をリセットしません\n"
+msgstr " -e, --env                 対象プロセスから環境変数を継承します\n"
 
 #: sys-utils/nsenter.c:108
 msgid " -F, --no-fork          do not fork before exec'ing <program>\n"
-msgstr " -F, --no-fork             <プログラム> を起動する際、                             fork せずに実行します\n"
+msgstr " -F, --no-fork             <プログラム> を起動する際、 fork せずに実行します\n"
 
 #: sys-utils/nsenter.c:109
-#, fuzzy
-#| msgid " -s, --symlink    act on the target of symlinks\n"
 msgid " -c, --join-cgroup      join the cgroup of the target process\n"
-msgstr " -s, --symlink    シンボリックリンクの示す先に対して実行します\n"
+msgstr " -c, --join-cgroup         対象プロセスの cgroup に参加します\n"
 
 #: sys-utils/nsenter.c:111
 msgid " -Z, --follow-context   set SELinux context according to --target PID\n"
-msgstr ""
+msgstr " -Z, --follow-context      --target PID にもとづいて SELinux コンテキストを設定します\n"
 
 #: sys-utils/nsenter.c:143
-#, fuzzy, c-format
-#| msgid "Failed to set personality to %s"
+#, c-format
 msgid "failed to open parent ns of %s"
-msgstr "ネームスペース '%s' の再割り当てに失敗しました"
+msgstr "%s の親ネームスペースが開けません"
 
 #: sys-utils/nsenter.c:149
-#, fuzzy
-#| msgid "unknown namespace type: %s"
 msgid "no namespaces to get parent of"
-msgstr "未知の名前空間タイプ: %s"
+msgstr "親ネームスペースを取得するネームスペースがありません"
 
 #: sys-utils/nsenter.c:166
 #, c-format
 msgid "neither filename nor target pid supplied for %s"
-msgstr "%s 向けのファイル名も、ターゲットの PID も指定されていません。"
+msgstr "%s 向けのファイル名も、対象の PID も指定されていません。"
 
 #: sys-utils/nsenter.c:211 sys-utils/nsenter.c:217
-#, fuzzy
-#| msgid "%s: failed to get device path"
 msgid "failed to get cgroup path"
-msgstr "%s: デバイスパスの取得に失敗しました"
+msgstr "cgroup パスの取得に失敗しました"
 
 #: sys-utils/nsenter.c:223
-#, fuzzy
-#| msgid "failed to open: %s"
 msgid "failed to open cgroup.procs"
-msgstr "開けません： %s"
+msgstr "cgroup.procs が開けません"
 
 #: sys-utils/nsenter.c:235
-#, fuzzy, c-format
-#| msgid "stat of %s failed"
+#, c-format
 msgid "statfs %s failed"
-msgstr "%s の stat に失敗しました"
+msgstr "%s の statfs に失敗しました"
 
 #: sys-utils/nsenter.c:248
-#, fuzzy
-#| msgid "setgroups failed"
 msgid "write cgroup.procs failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "cgroup.procs に書き込めません"
 
 #: sys-utils/nsenter.c:444 sys-utils/unshare.c:918 sys-utils/unshare.c:980
 msgid "failed to parse uid"
@@ -21518,34 +20933,30 @@ msgstr "gid の解釈に失敗しました"
 
 #: sys-utils/nsenter.c:506
 msgid "no target PID specified for --follow-context"
-msgstr ""
+msgstr "--follow-context で対象の PID が指定されていません"
 
 #: sys-utils/nsenter.c:508
-#, fuzzy, c-format
-#| msgid "unable to create new selinux context"
+#, c-format
 msgid "failed to get %d SELinux context"
-msgstr "新しいコンテキストの取得に失敗しました"
+msgstr "%d の SELinux コンテキストの取得に失敗しました"
 
 #: sys-utils/nsenter.c:511
-#, fuzzy, c-format
-#| msgid "Failed to set personality to %s"
+#, c-format
 msgid "failed to set exec context to '%s'"
-msgstr "実行コンテキストを %s に設定できません"
+msgstr "実行コンテキストを '%s' に設定できません"
 
 #: sys-utils/nsenter.c:518
-#, fuzzy
-#| msgid "You specified more cylinders than fit on disk"
 msgid "no target PID specified for --all"
-msgstr "PIDもコマンドも指定されていません"
+msgstr "--all で対象の PID が指定されていません"
 
 #: sys-utils/nsenter.c:546
 msgid "--join-cgroup is only supported in cgroup v2"
-msgstr ""
+msgstr "--join-cgroup は cgroup v2 でしか指定できません"
 
 #: sys-utils/nsenter.c:593
 #, c-format
 msgid "reassociate to namespace '%s' failed"
-msgstr "ネームスペース '%s' の再割り当てに失敗しました"
+msgstr "ネームスペース '%s' への再関連付けに失敗しました"
 
 #: sys-utils/nsenter.c:609 sys-utils/nsenter.c:632
 msgid "cannot open current working directory"
@@ -21564,22 +20975,16 @@ msgid "change directory by working directory file descriptor failed"
 msgstr "作業用のディレクトリのファイル記述子による、ディレクトリ変更に失敗しました"
 
 #: sys-utils/nsenter.c:648
-#, fuzzy
-#| msgid "failed to set the %s environment variable"
 msgid "failed to get environment variables"
-msgstr "%s 環境変数の設定に失敗しました"
+msgstr "環境変数の取得に失敗しました"
 
 #: sys-utils/nsenter.c:651
-#, fuzzy
-#| msgid "failed to set the %s environment variable"
 msgid "failed to set environment variables"
-msgstr "%s 環境変数の設定に失敗しました"
+msgstr "環境変数の設定に失敗しました"
 
 #: sys-utils/nsenter.c:664
-#, fuzzy
-#| msgid "cannot process %s"
 msgid "can not get process stat"
-msgstr "%s を処理できません"
+msgstr "プロセスの stat を取得できません"
 
 #: sys-utils/nsenter.c:680 sys-utils/setpriv.c:1041 sys-utils/setpriv.c:1048
 #: sys-utils/unshare.c:1183
@@ -21592,10 +20997,8 @@ msgid " %s [options] new_root put_old\n"
 msgstr " %s [オプション] 新しいルート 古いルートの移動先\n"
 
 #: sys-utils/pivot_root.c:33
-#, fuzzy
-#| msgid "Checking all file systems.\n"
 msgid "Change the root filesystem.\n"
-msgstr " dirname        ファイルシステムを圧縮する時のルートとなるディレクトリを指定します"
+msgstr "ルートファイルシステムを変更します。\n"
 
 #: sys-utils/pivot_root.c:70
 #, c-format
@@ -21631,10 +21034,8 @@ msgid "max number of file locks held"
 msgstr "保持可能な最大ファイルロック数"
 
 #: sys-utils/prlimit.c:74
-#, fuzzy
-#| msgid "blocks"
 msgid "locks"
-msgstr "保持可能な最大ファイルロック数"
+msgstr "ロック"
 
 #: sys-utils/prlimit.c:75
 msgid "max locked-in-memory address space"
@@ -21653,8 +21054,6 @@ msgid "max number of open files"
 msgstr "ファイルの最大オープン数"
 
 #: sys-utils/prlimit.c:78
-#, fuzzy
-#| msgid "file %s"
 msgid "files"
 msgstr "ファイル"
 
@@ -21683,9 +21082,8 @@ msgid "max number of pending signals"
 msgstr "遅延シグナルの最大数"
 
 #: sys-utils/prlimit.c:83
-#, fuzzy
 msgid "signals"
-msgstr "不明なシグナル %s です; 有効なシグナル:"
+msgstr "シグナル"
 
 #: sys-utils/prlimit.c:84
 msgid "max stack size"
@@ -21712,31 +21110,20 @@ msgid "units"
 msgstr "単位"
 
 #: sys-utils/prlimit.c:160
-#, fuzzy, c-format
-#| msgid " %s [options] [-p PID]\n"
+#, c-format
 msgid " %s [options] [--<resource>=<limit>] [-p PID]\n"
-msgstr " %s [オプション] [-p PID]\n"
+msgstr " %s [オプション] [--<リソース>=<制限値>] [-p PID]\n"
 
 #: sys-utils/prlimit.c:162
-#, fuzzy, c-format
-#| msgid " %s [options] COMMAND\n"
+#, c-format
 msgid " %s [options] [--<resource>=<limit>] COMMAND\n"
-msgstr " %s [オプション] コマンド\n"
+msgstr " %s [オプション] [--<リソース>=<制限値>] コマンド\n"
 
 #: sys-utils/prlimit.c:165
 msgid "Show or change the resource limits of a process.\n"
 msgstr "リソースの制限値を表示または変更します。\n"
 
 #: sys-utils/prlimit.c:168
-#, fuzzy
-#| msgid ""
-#| " -p, --pid <pid>        process id\n"
-#| " -o, --output <list>    define which output columns to use\n"
-#| "     --noheadings       don't print headings\n"
-#| "     --raw              use the raw output format\n"
-#| "     --verbose          verbose output\n"
-#| " -h, --help             display this help and exit\n"
-#| " -V, --version          output version information and exit\n"
 msgid ""
 " -p, --pid <pid>        process id\n"
 " -o, --output <list>    define which output columns to use\n"
@@ -21745,20 +21132,18 @@ msgid ""
 "     --verbose          verbose output\n"
 msgstr ""
 " -p, --pid <pid>        プロセス ID を指定します\n"
-" -o, --output <list>    出力する列を指定します\n"
+" -o, --output <リスト>  出力する列を指定します\n"
 "     --noheadings       ヘッダを表示しません\n"
 "     --raw              加工を行なわずに出力します\n"
 "     --verbose          冗長な出力を行います\n"
-" -h, --help             このヘルプを表示して終了します\n"
-" -V, --version          バージョン情報を表示して終了します\n"
 
 #: sys-utils/prlimit.c:176
-#, fuzzy
-#| msgid "Resource"
 msgid ""
 "\n"
 "Resources:\n"
-msgstr "リソース"
+msgstr ""
+"\n"
+"リソース:\n"
 
 #: sys-utils/prlimit.c:177
 msgid ""
@@ -21803,6 +21188,8 @@ msgid ""
 " <limit> is defined as a range soft:hard, soft:, :hard or a value to\n"
 "         define both limits (e.g. -e=0:10 -r=:10).\n"
 msgstr ""
+" <制限値> は、soft:hard, soft:, :hard の形でソフトリミット値・ハードリミット値を\n"
+"         指定するか、両方を一つの数値で指定します(例: -e=0:10 -r=:10)。\n"
 
 #: sys-utils/prlimit.c:248 sys-utils/prlimit.c:254 sys-utils/prlimit.c:371
 #: sys-utils/prlimit.c:376
@@ -21820,10 +21207,9 @@ msgid "the soft limit %s cannot exceed the hard limit"
 msgstr "%s のソフトリミット値は、ハードリミットの値より大きくすることはできません"
 
 #: sys-utils/prlimit.c:368
-#, fuzzy, c-format
-#| msgid "New %s limit: "
+#, c-format
 msgid "New %s limit for pid %d: "
-msgstr "プロセス ID %d の新しい親和性リスト: %s\n"
+msgstr "プロセス ID %2$d の新しい %1$s 制限値: "
 
 #: sys-utils/prlimit.c:383
 #, c-format
@@ -21849,9 +21235,8 @@ msgid "options --pid and COMMAND are mutually exclusive"
 msgstr "--pid とコマンドは同時に指定することはできません"
 
 #: sys-utils/readprofile.c:98
-#, fuzzy
 msgid "Display kernel profiling information.\n"
-msgstr "バージョン情報を表示して終了する"
+msgstr "カーネルプロファイル情報を表示します。\n"
 
 #: sys-utils/readprofile.c:102
 #, c-format
@@ -21901,10 +21286,8 @@ msgid " -n, --no-auto             disable byte order auto-detection\n"
 msgstr " -n, --no-auto             バイト順序の自動検出を無効化します\n"
 
 #: sys-utils/readprofile.c:193
-#, fuzzy
-#| msgid "failed to parse pid"
 msgid "failed to parse multiplier"
-msgstr "pid の解析に失敗しました"
+msgstr "multiplier の解析に失敗しました"
 
 #: sys-utils/readprofile.c:231
 #, c-format
@@ -21920,10 +21303,9 @@ msgid "Assuming reversed byte order. Use -n to force native byte order."
 msgstr "バイト順序が逆であるものと仮定します。 -n を使用すると、ネイティブなバイト順序に設定することができます。"
 
 #: sys-utils/readprofile.c:279
-#, fuzzy, c-format
-#| msgid "Sampling_step: %i\n"
+#, c-format
 msgid "Sampling_step: %u\n"
-msgstr "サンプリングステップ: %i\n"
+msgstr "サンプリングステップ: %u\n"
 
 #: sys-utils/readprofile.c:295 sys-utils/readprofile.c:316
 #, c-format
@@ -21952,78 +21334,55 @@ msgid "process group ID"
 msgstr "プロセスグループ ID"
 
 #: sys-utils/renice.c:64
-#, fuzzy, c-format
-#| msgid ""
-#| " %1$s [-n] <priority> [-p|--pid] <pid>...\n"
-#| " %1$s [-n] <priority>  -g|--pgrp <pgid>...\n"
-#| " %1$s [-n] <priority>  -u|--user <user>...\n"
+#, c-format
 msgid ""
 " %1$s [-n|--priority|--relative] <priority> [-p|--pid] <pid>...\n"
 " %1$s [-n|--priority|--relative] <priority>  -g|--pgrp <pgid>...\n"
 " %1$s [-n|--priority|--relative] <priority>  -u|--user <user>...\n"
 msgstr ""
-" %1$s [-n] <優先順位> [-p|--pid] <pid>...\n"
-" %1$s [-n] <優先順位>  -g|--pgrp <pgid>...\n"
-" %1$s [-n] <優先順位>  -u|--user <ユーザ>...\n"
+" %1$s [-n]--priority|--relative] <優先順位> [-p|--pid] <pid>...\n"
+" %1$s [-n]--priority|--relative] <優先順位>  -g|--pgrp <pgid>...\n"
+" %1$s [-n]--priority|--relative] <優先順位>  -u|--user <ユーザ>...\n"
 
 #: sys-utils/renice.c:70
-#, fuzzy
 msgid "Alter the priority of running processes.\n"
-msgstr "実行中のプロセス"
+msgstr "実行中のプロセスの優先順位を変更します。\n"
 
 #: sys-utils/renice.c:73
-#, fuzzy
-#| msgid " -C, --cylinders <number>      specify the number of cylinders\n"
 msgid " -n <num>               specify the nice value\n"
-msgstr " -C, --cylinders <数値>        シリンダ数を指定します\n"
+msgstr " -n <数値>              nice 値を指定します。\n"
 
 #: sys-utils/renice.c:74
-#, fuzzy
-#| msgid "                                   set vesa powersaving features\n"
 msgid "                          If POSIXLY_CORRECT flag is set in environment\n"
-msgstr "                                   VESA の省電力機能設定\n"
+msgstr "                          環境変数 POSIXLY_CORRECT flag が設定されている場合は\n"
 
 #: sys-utils/renice.c:75
-#, fuzzy
-#| msgid "                                   set vesa powersaving features\n"
 msgid "                          then the priority is 'relative' to current\n"
-msgstr "                                   VESA の省電力機能設定\n"
+msgstr "                          優先順位はプロセスの現在の優先順位からの相対値で\n"
 
 #: sys-utils/renice.c:76
-#, fuzzy
-#| msgid " --store                           save current terminal settings as default\n"
 msgid "                          process priority. Otherwise it is 'absolute'.\n"
-msgstr " --store                           現在の端末設定をデフォルトとして保存します\n"
+msgstr "                          指定します。それ以外の場合は絶対値で指定します。\n"
 
 #: sys-utils/renice.c:77
-#, fuzzy
-#| msgid " -C, --cylinders <number>      specify the number of cylinders\n"
 msgid " --priority <num>       specify the 'absolute' nice value\n"
-msgstr " -C, --cylinders <数値>        シリンダ数を指定します\n"
+msgstr " --priority <数値>      nice 値を絶対値で指定します\n"
 
 #: sys-utils/renice.c:78
-#, fuzzy
-#| msgid " -C, --cylinders <number>      specify the number of cylinders\n"
 msgid " --relative <num>       specify the 'relative' nice value\n"
-msgstr " -C, --cylinders <数値>        シリンダ数を指定します\n"
+msgstr " --relative <数値>      nice 値を相対値で指定します\n"
 
 #: sys-utils/renice.c:79
-#, fuzzy
-#| msgid " -i, --id              log the process ID too\n"
 msgid " -p, --pid              interpret arguments as process ID (default)\n"
-msgstr " -i, --id                プロセス ID についてもログを記録します\n"
+msgstr " -p, --pid              引数をプロセス ID として解釈します (既定値)\n"
 
 #: sys-utils/renice.c:80
-#, fuzzy
-#| msgid " -t, --target <pid>     target process to get namespaces from\n"
 msgid " -g, --pgrp             interpret arguments as process group ID\n"
-msgstr " -t, --target <pid>     ネームスペースを取得するプロセスを指定します\n"
+msgstr " -g, --pgrp             引数をプロセスグループ ID として解釈します\n"
 
 #: sys-utils/renice.c:81
-#, fuzzy
-#| msgid " -t, --target <pid>     target process to get namespaces from\n"
 msgid " -u, --user             interpret arguments as username or user ID\n"
-msgstr " -t, --target <pid>     ネームスペースを取得するプロセスを指定します\n"
+msgstr " -u, --user             引数をユーザ名またはユーザ ID として解釈します\n"
 
 #: sys-utils/renice.c:93
 #, c-format
@@ -22041,10 +21400,9 @@ msgid "%d (%s) old priority %d, new priority %d\n"
 msgstr "%d (%s) 従来の優先順位は %d で, 新しい優先順位は %d です\n"
 
 #: sys-utils/renice.c:183
-#, fuzzy, c-format
-#| msgid "invalid id: %s"
+#, c-format
 msgid "invalid priority '%s'"
-msgstr "優先順位の指定が正しくありません"
+msgstr "優先順位 '%s' の指定が正しくありません"
 
 #: sys-utils/renice.c:210
 #, c-format
@@ -22054,78 +21412,60 @@ msgstr "不明なユーザ %s です"
 #. TRANSLATORS: The first %s is one of the above
 #. * three ID names. Read: "bad value for %s: %s"
 #: sys-utils/renice.c:219
-#, fuzzy, c-format
-#| msgid "bad value %s"
+#, c-format
 msgid "bad %s value: %s"
-msgstr "-mcmodel= スイッチ用の誤った値 %s です"
+msgstr "%s の値が誤っています: %s"
 
 #: sys-utils/rfkill.c:132
-#, fuzzy
-#| msgid "internal kernel device name"
 msgid "kernel device name"
-msgstr "親のカーネル内部デバイス名"
+msgstr "カーネルデバイス名"
 
 #: sys-utils/rfkill.c:133
-#, fuzzy
-#| msgid "device identifier"
 msgid "device identifier value"
-msgstr "デバイス識別子"
+msgstr "デバイス識別子の値"
 
 #: sys-utils/rfkill.c:134
 msgid "device type name that can be used as identifier"
-msgstr ""
+msgstr "識別子として利用可能なデバイスタイプ名"
 
 #: sys-utils/rfkill.c:135
-#, fuzzy
-#| msgid "resource description"
 msgid "device type description"
-msgstr "デバイスの種類"
+msgstr "デバイスタイプの説明"
 
 #: sys-utils/rfkill.c:136
-#, fuzzy
-#| msgid "size of the lock"
 msgid "status of software block"
-msgstr "状態:"
+msgstr "ソフトウェアブロックの状態"
 
 #: sys-utils/rfkill.c:137
-#, fuzzy
 msgid "status of hardware block"
-msgstr "ハードウェアウォッチドッグの状態を表示します。\n"
+msgstr "ハードウェアブロックの状態"
 
 #: sys-utils/rfkill.c:201
-#, fuzzy, c-format
-#| msgid "cannot lock %s"
+#, c-format
 msgid "cannot set non-blocking %s"
-msgstr "%s に対する制限時間を設定することができません"
+msgstr "%s を非ブロッキングに設定できません"
 
 #: sys-utils/rfkill.c:222
 #, c-format
 msgid "wrong size of rfkill event: %zu < %zu"
-msgstr ""
+msgstr "rfkill イベントのサイズが間違っています: %zu < %zu"
 
 #: sys-utils/rfkill.c:260
-#, fuzzy, c-format
-#| msgid "failed to parse %s"
+#, c-format
 msgid "failed to poll %s"
-msgstr "poll() に失敗しました"
+msgstr "%s の poll に失敗しました"
 
 #: sys-utils/rfkill.c:329
-#, fuzzy
-#| msgid "device identifier"
 msgid "invalid identifier"
-msgstr "無効な識別子: %s"
+msgstr "無効な識別子"
 
 #: sys-utils/rfkill.c:409 sys-utils/rfkill.c:412
-#, fuzzy
-#| msgid "locked"
 msgid "blocked"
-msgstr "ロック"
+msgstr "ブロック中"
 
 #: sys-utils/rfkill.c:409 sys-utils/rfkill.c:412
-#, fuzzy
-#| msgid "locked"
 msgid "unblocked"
-msgstr "ロック"
+msgstr "ブロックなし"
 
 #: sys-utils/rfkill.c:431 sys-utils/rfkill.c:506 sys-utils/rfkill.c:547
 #: sys-utils/rfkill.c:583 sys-utils/rfkill.c:604
@@ -22134,14 +21474,13 @@ msgid "invalid identifier: %s"
 msgstr "無効な識別子: %s"
 
 #: sys-utils/rfkill.c:634
-#, fuzzy, c-format
-#| msgid " %s [options] [<device> ...]\n"
+#, c-format
 msgid " %s [options] command [identifier ...]\n"
-msgstr " %s [オプション] -u <ユーザ> <コマンド>\n"
+msgstr " %s [オプション] コマンド [識別子 ...]\n"
 
 #: sys-utils/rfkill.c:637
 msgid "Tool for enabling and disabling wireless devices.\n"
-msgstr ""
+msgstr "無線デバイスを有効化・無効化するツールです。\n"
 
 #. TRANSLATORS: command names should not be translated, explaining
 #. them as additional field after identifier is fine, for example
@@ -22149,44 +21488,32 @@ msgstr ""
 #. list   [identifier]   (lista [tarkenne])
 #.
 #: sys-utils/rfkill.c:661
-#, fuzzy
 msgid " help\n"
-msgstr ""
-"\n"
-"ヘルプ:\n"
+msgstr " help\n"
 
 #: sys-utils/rfkill.c:662
-#, fuzzy
 msgid " event\n"
-msgstr "イベント"
+msgstr " event\n"
 
 #: sys-utils/rfkill.c:663
-#, fuzzy
-#| msgid "Disk identifier"
 msgid " list   [identifier]\n"
-msgstr "識別子が期待されています"
+msgstr " list   [識別子]\n"
 
 #: sys-utils/rfkill.c:664
-#, fuzzy
-#| msgid "Disk identifier"
 msgid " block   identifier\n"
-msgstr "識別子が予期されます"
+msgstr " block   識別子\n"
 
 #: sys-utils/rfkill.c:665
-#, fuzzy
-#| msgid "Disk identifier"
 msgid " unblock identifier\n"
-msgstr "識別子が予期されます"
+msgstr " unblock 識別子\n"
 
 #: sys-utils/rfkill.c:666
-#, fuzzy
-#| msgid "Disk identifier"
 msgid " toggle  identifier\n"
-msgstr "ディスク識別子"
+msgstr " toggle  識別子\n"
 
 #: sys-utils/rtcwake.c:111
 msgid "Enter a system sleep state until a specified wakeup time.\n"
-msgstr ""
+msgstr "指定した復帰時刻までシステムスリープ状態に入ります。\n"
 
 #: sys-utils/rtcwake.c:114
 msgid " -a, --auto               reads the clock mode from adjust file (default)\n"
@@ -22202,14 +21529,12 @@ msgstr ""
 "                            既定値: %s\n"
 
 #: sys-utils/rtcwake.c:118
-#, fuzzy
-#| msgid " -t, --time <time_t>      time to wake\n"
 msgid "     --date <timestamp>   date time of timestamp to wake\n"
-msgstr " -t, --time <time_t>      復帰する時刻を指定します\n"
+msgstr "     --date <タイムスタンプ> 復帰するタイムスタンプの日時を指定します\n"
 
 #: sys-utils/rtcwake.c:119
 msgid " -d, --device <device>    select rtc device (rtc0|rtc1|...)\n"
-msgstr " -d, --device <デバイス> RTC デバイスを指定します (rtc0|rtc1|...)\n"
+msgstr " -d, --device <デバイス>  RTC デバイスを指定します (rtc0|rtc1|...)\n"
 
 #: sys-utils/rtcwake.c:120
 msgid " -n, --dry-run            does everything, but suspend\n"
@@ -22220,9 +21545,8 @@ msgid " -l, --local              RTC uses local timezone\n"
 msgstr " -l, --local              RTC がローカル時刻になっているものとみなします\n"
 
 #: sys-utils/rtcwake.c:122
-#, fuzzy
 msgid "     --list-modes         list available modes\n"
-msgstr "    利用可能な辞書/フィルタ/フィルタモード の一覧を表示する"
+msgstr "     --list-modes         利用可能なモードの一覧を表示します\n"
 
 #: sys-utils/rtcwake.c:123
 msgid " -m, --mode <mode>        standby|mem|... sleep mode\n"
@@ -22261,16 +21585,13 @@ msgid "set rtc wake alarm failed"
 msgstr "RTC 復帰アラームの設定に失敗しました"
 
 #: sys-utils/rtcwake.c:289
-#, fuzzy
-#| msgid "discard alignment offset"
 msgid "discarding stdin"
-msgstr "新しい UID リストを破棄しています。\n"
+msgstr "標準入力を破棄します"
 
 #: sys-utils/rtcwake.c:340
-#, fuzzy, c-format
-#| msgid "unexpected end of file on %s"
+#, c-format
 msgid "unexpected third line in: %s: %s"
-msgstr "タイミングファイル %s: %lu: 予期しない書式が使われています"
+msgstr "%s の 3 行目が正しくありません: %s"
 
 #: sys-utils/rtcwake.c:354 sys-utils/rtcwake.c:684
 msgid "read rtc alarm failed"
@@ -22296,10 +21617,9 @@ msgid "%s: unable to find device"
 msgstr "%s: デバイスを検出できません"
 
 #: sys-utils/rtcwake.c:422
-#, fuzzy, c-format
-#| msgid "Couldn't read %s"
+#, c-format
 msgid "could not read: %s"
-msgstr "ディレクトリ %s を読み込むことができませんでした"
+msgstr "%s を読み込むことができませんでした"
 
 #: sys-utils/rtcwake.c:502
 #, c-format
@@ -22328,10 +21648,8 @@ msgid "Using local time.\n"
 msgstr "ローカル時刻を使用します。\n"
 
 #: sys-utils/rtcwake.c:550
-#, fuzzy
-#| msgid "must provide wake time (see -t and -s options)"
 msgid "must provide wake time (see --seconds, --time and --date options)"
-msgstr "復帰時刻を指定しなければなりません (-t および -s オプションで指定できます)"
+msgstr "復帰時刻を指定しなければなりません (--seconds, --time, --date オプションで指定できます)"
 
 #: sys-utils/rtcwake.c:556
 #, c-format
@@ -22339,10 +21657,9 @@ msgid "%s not enabled for wakeup events"
 msgstr "%s は復帰イベントとして有効ではありません"
 
 #: sys-utils/rtcwake.c:563
-#, fuzzy, c-format
-#| msgid "alarm %ld, sys_time %ld, rtc_time %ld, seconds %u\n"
+#, c-format
 msgid "alarm %<PRId64>, sys_time %<PRId64>, rtc_time %<PRId64>, seconds %<PRIu64>\n"
-msgstr "アラーム %ld, システム時刻 %ld, RTC 時刻 %ld, 秒数 %u\n"
+msgstr "アラーム %<PRId64>, システム時刻 %<PRId64>, RTC 時刻 %<PRId64>, 秒数 %<PRIu64>\n"
 
 #: sys-utils/rtcwake.c:576
 #, c-format
@@ -22370,10 +21687,8 @@ msgid "suspend mode: off; executing %s\n"
 msgstr "サスペンドモード: off; %s を実行しています\n"
 
 #: sys-utils/rtcwake.c:637
-#, fuzzy
-#| msgid "failed to read from: %s"
 msgid "failed to find shutdown command"
-msgstr "フロッピィディスクの排出コマンドが失敗しました"
+msgstr "shutdown コマンドが見つかりません"
 
 #: sys-utils/rtcwake.c:647
 #, c-format
@@ -22409,14 +21724,13 @@ msgid "Switching on %s.\n"
 msgstr "%s を有効にしています。\n"
 
 #: sys-utils/setarch.c:142
-#, fuzzy, c-format
-#| msgid " %s [options] <program> [arguments ...]\n"
+#, c-format
 msgid " %s [<arch>] [options] [<program> [<argument>...]]\n"
-msgstr " %s [オプション] <プログラム> [<引数> ...]\n"
+msgstr " %s [<アーキテクチャ>] [オプション] [<プログラム> [<引数>...]]\n"
 
 #: sys-utils/setarch.c:147
 msgid "Change the reported architecture and set personality flags.\n"
-msgstr ""
+msgstr "報告されるアーキテクチャを変更し、パーソナリティフラグを設定します。\n"
 
 #: sys-utils/setarch.c:150
 msgid " -B, --32bit              turns on ADDR_LIMIT_32BIT\n"
@@ -22467,10 +21781,8 @@ msgid "     --uname-2.6          turns on UNAME26\n"
 msgstr "     --uname-2.6          UNAME26 を有効にします\n"
 
 #: sys-utils/setarch.c:162
-#, fuzzy
-#| msgid " -v, --verbose            says what options are being switched on\n"
 msgid " -v, --verbose            say what options are being switched on\n"
-msgstr " -v, --verbose           何が行われるのかを表示します\n"
+msgstr " -v, --verbose            どのオプションが有効になるかを表示します\n"
 
 #: sys-utils/setarch.c:165
 msgid "     --list               list settable architectures, and exit\n"
@@ -22478,17 +21790,16 @@ msgstr "     --list               設定可能なアーキテクチャを表示�
 
 #: sys-utils/setarch.c:166
 msgid "     --show[=personality] show current or specific personality and exit\n"
-msgstr ""
+msgstr "     --show[=パーソナリティ] 現在または特定のパーソナリティを表示して終了します\n"
 
 #: sys-utils/setarch.c:352
-#, fuzzy, c-format
-#| msgid "cannot set timeout for %s"
+#, c-format
 msgid "Kernel cannot set architecture to %s"
-msgstr "出力ファイルはアーキテクチャ `%s' を表すことができません"
+msgstr "カーネルでアーキテクチャを %s に設定できません"
 
 #: sys-utils/setarch.c:417
 msgid "Can not get current kernel personality"
-msgstr ""
+msgstr "現在のカーネルパーソナリティを取得できません"
 
 #: sys-utils/setarch.c:470
 msgid "Not enough arguments"
@@ -22496,25 +21807,19 @@ msgstr "引数が不足しています"
 
 #: sys-utils/setarch.c:538
 msgid "unrecognized option '--list'"
-msgstr "認識できないオプション '--list' です"
+msgstr "'--list' オプションが認識できません"
 
 #: sys-utils/setarch.c:547
-#, fuzzy
-#| msgid "mount parent ID"
 msgid "could not parse personality"
-msgstr "マウント親ID"
+msgstr "パーソナリティを解釈できません"
 
 #: sys-utils/setarch.c:551
-#, fuzzy
-#| msgid "unrecognized option '--list'"
 msgid "unrecognized option '--show'"
-msgstr "認識できないオプション '--list' です"
+msgstr "'--show' オプションが認識できません"
 
 #: sys-utils/setarch.c:565
-#, fuzzy
-#| msgid "no length argument specified"
 msgid "no architecture argument or personality flags specified"
-msgstr "アーキテクチャ:"
+msgstr "アーキテクチャ引数もパーソナリティフラグも指定されていません"
 
 #: sys-utils/setarch.c:577
 #, c-format
@@ -22522,8 +21827,7 @@ msgid "%s: Unrecognized architecture"
 msgstr " %s: 認識できないアーキテクチャです"
 
 #: sys-utils/setarch.c:595
-#, fuzzy, c-format
-#| msgid "Failed to set personality to %s"
+#, c-format
 msgid "failed to set personality to %s"
 msgstr "パーソナリティを %s に設定する処理が失敗しました"
 
@@ -22538,44 +21842,28 @@ msgid " %s [options] <program> [arguments ...]\n"
 msgstr " %s [オプション] <プログラム> [引数 ...]\n"
 
 #: sys-utils/setpgid.c:24
-#, fuzzy
-#| msgid "Run a program in a new session.\n"
 msgid "Run a program in a new process group.\n"
-msgstr "新しいセッションでプログラムを実行します。\n"
+msgstr "新しいプロセスグループでプログラムを実行します。\n"
 
 #: sys-utils/setpgid.c:27
-#, fuzzy
-#| msgid " -f, --force      force check\n"
 msgid " -f, --foregound     Make a foreground process group\n"
-msgstr " -f, --force      チェックを強制します\n"
+msgstr " -f, --foregound     フォアグラウンドプロセスグループにします\n"
 
 #: sys-utils/setpgid.c:71
-#, fuzzy
-#| msgid "setgid failed"
 msgid "setpgid failed"
-msgstr "setgid に失敗しました"
+msgstr "setpgid に失敗しました"
 
 #: sys-utils/setpgid.c:77
-#, fuzzy
-#| msgid "seek failed"
 msgid "sigemptyset failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigemptyset に失敗しました"
 
 #: sys-utils/setpgid.c:79
-#, fuzzy
-#| msgid "seek failed"
 msgid "sigaddset failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigaddset に失敗しました"
 
 #: sys-utils/setpgid.c:83
-#, fuzzy
-#| msgid "tcsetattr failed"
 msgid "tcsetpgrp failed"
-msgstr "tcsetattr に失敗しました"
+msgstr "tcsetpgrp に失敗しました"
 
 #: sys-utils/setpriv.c:121
 #, c-format
@@ -22584,141 +21872,111 @@ msgstr " %s [オプション] <プログラム> [<引数> ...]\n"
 
 #: sys-utils/setpriv.c:125
 msgid "Run a program with different privilege settings.\n"
-msgstr ""
+msgstr "異なる権限設定でプログラムを実行します。\n"
 
 #: sys-utils/setpriv.c:128
-#, fuzzy
-#| msgid " -d, --dump               show current state (and do not exec anything)\n"
 msgid " -d, --dump                  show current state (and do not exec)\n"
-msgstr " -d, --dump               現在の状態を表示します (何も行いません)\n"
+msgstr " -d, --dump                  現在の状態を表示します (何も行いません)\n"
 
 #: sys-utils/setpriv.c:129
-#, fuzzy
-#| msgid " --nnp, --no-new-privs    disallow granting new privileges\n"
 msgid " --nnp, --no-new-privs       disallow granting new privileges\n"
-msgstr " --nnp, --no-new-privs    新しい権限の許可を禁止します\n"
+msgstr " --nnp, --no-new-privs       新しい権限の許可を禁止します\n"
 
 #: sys-utils/setpriv.c:130
-#, fuzzy
-#| msgid " --inh-caps <caps,...>    set inheritable capabilities\n"
 msgid " --ambient-caps <caps,...>   set ambient capabilities\n"
-msgstr " --inh-caps <caps,...>    継承可能なケーパビリティ (capability) を設定します\n"
+msgstr " --ambient-caps <caps,...>   環境ケーパビリティを設定します\n"
 
 #: sys-utils/setpriv.c:131
-#, fuzzy
-#| msgid " --inh-caps <caps,...>    set inheritable capabilities\n"
 msgid " --inh-caps <caps,...>       set inheritable capabilities\n"
-msgstr " --inh-caps <caps,...>    継承可能なケーパビリティ (capability) を設定します\n"
+msgstr " --inh-caps <caps,...>       継承可能なケーパビリティを設定します\n"
 
 #: sys-utils/setpriv.c:132
-#, fuzzy
-#| msgid " --bounding-set <caps>    set capability bounding set\n"
 msgid " --bounding-set <caps>       set capability bounding set\n"
-msgstr " --bounding-set <caps>    ケーパビリティ (capability) のバウンディングセットを設定します\n"
+msgstr " --bounding-set <caps>       ケーパビリティのバウンディングセットを設定します\n"
 
 #: sys-utils/setpriv.c:133
 msgid " --ruid <uid|user>           set real uid\n"
-msgstr " --ruid <uiduser>           実際の UID を設定します\n"
+msgstr " --ruid <uid|user>           実際の UID を設定します\n"
 
 #: sys-utils/setpriv.c:134
-#, fuzzy
-#| msgid " --euid <uid>             set effective uid\n"
 msgid " --euid <uid|user>           set effective uid\n"
-msgstr " --euid <uid>             実効 UID を設定します\n"
+msgstr " --euid <uid|user>           実効 UID を設定します\n"
 
 #: sys-utils/setpriv.c:135
-#, fuzzy
-#| msgid " --rgid <gid|user>           set real gid\n"
 msgid " --rgid <gid|group>          set real gid\n"
-msgstr " --rgid <giduser>           実際の GID を設定します\n"
+msgstr " --rgid <gid|group>          実際の GID を設定します\n"
 
 #: sys-utils/setpriv.c:136
-#, fuzzy
-#| msgid " --egid <gid>             set effective gid\n"
 msgid " --egid <gid|group>          set effective gid\n"
-msgstr " --egid <gid>             実効 GID を設定します\n"
+msgstr " --egid <gid|group>          実効 GID を設定します\n"
 
 #: sys-utils/setpriv.c:137
-#, fuzzy
-#| msgid " --reuid <uid>            set real and effective uid\n"
 msgid " --reuid <uid|user>          set real and effective uid\n"
-msgstr " --reuid <uid>            実際の UID と実効 UID の両方を設定します\n"
+msgstr " --reuid <uid|user>          実際の UID と実効 UID の両方を設定します\n"
 
 #: sys-utils/setpriv.c:138
-#, fuzzy
-#| msgid " --regid <gid>            set real and effective gid\n"
 msgid " --regid <gid|group>         set real and effective gid\n"
-msgstr " --regid <gid>            実際の GID と実効 GID の両方を設定します\n"
+msgstr " --regid <gid|group>         実際の GID と実効 GID の両方を設定します\n"
 
 #: sys-utils/setpriv.c:139
-#, fuzzy
-#| msgid " --clear-groups           clear supplementary groups\n"
 msgid " --clear-groups              clear supplementary groups\n"
-msgstr " --clear-groups           補助グループを消去します\n"
+msgstr " --clear-groups              補助グループを消去します\n"
 
 #: sys-utils/setpriv.c:140
-#, fuzzy
-#| msgid " --keep-groups            keep supplementary groups\n"
 msgid " --keep-groups               keep supplementary groups\n"
-msgstr " --keep-groups            補助グループを維持します\n"
+msgstr " --keep-groups               補助グループを維持します\n"
 
 #: sys-utils/setpriv.c:141
-#, fuzzy
-#| msgid " --keep-groups            keep supplementary groups\n"
 msgid " --init-groups               initialize supplementary groups\n"
-msgstr " --clear-groups           補助グループを消去します\n"
+msgstr " --init-groups               補助グループを初期化します\n"
 
 #: sys-utils/setpriv.c:142
-#, fuzzy
-#| msgid " --groups <group,...>     set supplementary groups\n"
 msgid " --groups <group,...>        set supplementary groups by UID or name\n"
-msgstr " --groups <group,...>     補助グループを設定します\n"
+msgstr " --groups <group,...>        UID または名前で補助グループを設定します\n"
 
 #: sys-utils/setpriv.c:143
 msgid " --securebits <bits>         set securebits\n"
-msgstr " --securebits <ビット>    secure bit を設定します\n"
+msgstr " --securebits <ビット>       secure bit を設定します\n"
 
 #: sys-utils/setpriv.c:144
-#, fuzzy
-#| msgid " --store                           save current terminal settings as default\n"
 msgid ""
 " --pdeathsig keep|clear|<signame>\n"
 "                             set or clear parent death signal\n"
-msgstr " --store                           現在の端末設定をデフォルトとして保存します\n"
+msgstr ""
+" --pdeathsig keep|clear|<signame>\n"
+"                             親プロセス死亡シグナルの設定または消去を行います\n"
 
 #: sys-utils/setpriv.c:146
 msgid " --selinux-label <label>     set SELinux label\n"
-msgstr " --selinux-label <ラベル> SELinux のラベルを設定します\n"
+msgstr " --selinux-label <ラベル>    SELinux のラベルを設定します\n"
 
 #: sys-utils/setpriv.c:147
-#, fuzzy
-#| msgid " --apparmor-profile <pr>  set AppArmor profile\n"
 msgid " --apparmor-profile <pr>     set AppArmor profile\n"
-msgstr " --apparmor-profile <pr>  AppArmor プロファイルを設定します\n"
+msgstr " --apparmor-profile <pr>     AppArmor プロファイルを設定します\n"
 
 #: sys-utils/setpriv.c:148
 msgid " --landlock-access <access>  add Landlock access\n"
-msgstr ""
+msgstr " --landlock-access <access>  ランドロックアクセスを追加します\n"
 
 #: sys-utils/setpriv.c:149
 msgid " --landlock-rule <rule>      add Landlock rule\n"
-msgstr ""
+msgstr " --landlock-rule <rule>      ランドロックルールを追加します\n"
 
 #: sys-utils/setpriv.c:150
 msgid ""
 " --reset-env                 clear all environment and initialize\n"
 "                               HOME, SHELL, USER, LOGNAME and PATH\n"
 msgstr ""
+" --reset-env                 環境変数をすべてクリアして\n"
+"                               HOME, SHELL, USER, LOGNAME, PATH を初期化します\n"
 
 #: sys-utils/setpriv.c:156
 msgid " This tool can be dangerous.  Read the manpage, and be careful.\n"
 msgstr " このツールは危険なツールです。マニュアルページをお読みの上、注意して使用してください。\n"
 
 #: sys-utils/setpriv.c:176
-#, fuzzy
-#| msgid "bad capability string"
 msgid "invalid capability type"
-msgstr "無効なデフォルトの指定です: %s"
+msgstr "無効なケーパビリティタイプです"
 
 #: sys-utils/setpriv.c:199 sys-utils/setpriv.c:418
 #, c-format
@@ -22756,16 +22014,13 @@ msgid "[none]"
 msgstr "[なし]"
 
 #: sys-utils/setpriv.c:323
-#, fuzzy
-#| msgid "getresuid failed"
 msgid "get pdeathsig failed"
-msgstr "%s: サイズの取得に失敗しました"
+msgstr "pdeathsig の取得に失敗しました"
 
 #: sys-utils/setpriv.c:327
-#, fuzzy, c-format
-#| msgid "set rtc wake alarm failed"
+#, c-format
 msgid "Parent death signal: "
-msgstr "死の剣"
+msgstr "親プロセス死亡シグナル: "
 
 #: sys-utils/setpriv.c:343
 #, c-format
@@ -22806,10 +22061,9 @@ msgid "Inheritable capabilities: "
 msgstr "継承可能なケーパビリティ: "
 
 #: sys-utils/setpriv.c:385
-#, fuzzy, c-format
-#| msgid "Permitted capabilities: "
+#, c-format
 msgid "Ambient capabilities: "
-msgstr "可能性"
+msgstr "環境ケーパビリティ: "
 
 #: sys-utils/setpriv.c:390
 #, c-format
@@ -22834,10 +22088,8 @@ msgid "Invalid supplementary group id"
 msgstr "補助グループ ID が正しくありません"
 
 #: sys-utils/setpriv.c:450
-#, fuzzy
-#| msgid "failed to parse mount table"
 msgid "failed to get parent death signal"
-msgstr "マウントテーブルの解釈に失敗しました"
+msgstr "親プロセス死亡シグナルの取得に失敗しました"
 
 #: sys-utils/setpriv.c:470
 msgid "setresuid failed"
@@ -22848,10 +22100,8 @@ msgid "setresgid failed"
 msgstr "setresgid が失敗しました"
 
 #: sys-utils/setpriv.c:517
-#, fuzzy
-#| msgid "unsupported argument: %s"
 msgid "unsupported capability type"
-msgstr "サポートされてない 認証方式 %d です: %s"
+msgstr "サポートされてないケーパビリティタイプです"
 
 #: sys-utils/setpriv.c:534
 msgid "bad capability string"
@@ -22956,30 +22206,24 @@ msgid "duplicate --keep-groups option"
 msgstr "--keep-groups オプションが重複しています"
 
 #: sys-utils/setpriv.c:892
-#, fuzzy
-#| msgid "duplicate --groups option"
 msgid "duplicate --init-groups option"
-msgstr "--keep-groups オプションが重複しています"
+msgstr "--init-groups オプションが重複しています"
 
 #: sys-utils/setpriv.c:898
 msgid "duplicate --groups option"
 msgstr "--groups オプションが重複しています"
 
 #: sys-utils/setpriv.c:904
-#, fuzzy
-#| msgid "duplicate --keep-groups option"
 msgid "duplicate --keep-pdeathsig option"
-msgstr "--keep-groups オプションが重複しています"
+msgstr "--keep-pdeathsig オプションが重複しています"
 
 #: sys-utils/setpriv.c:913
 msgid "duplicate --inh-caps option"
 msgstr "--inh-caps オプションが重複しています"
 
 #: sys-utils/setpriv.c:919
-#, fuzzy
-#| msgid "duplicate --inh-caps option"
 msgid "duplicate --ambient-caps option"
-msgstr "--inh-caps オプションが重複しています"
+msgstr "--ambient-caps オプションが重複しています"
 
 #: sys-utils/setpriv.c:925
 msgid "duplicate --bounding-set option"
@@ -23010,19 +22254,17 @@ msgid "No program specified"
 msgstr "プログラムが指定されていません"
 
 #: sys-utils/setpriv.c:988
-#, fuzzy
-#| msgid "--[re]gid requires --keep-groups, --clear-groups, or --groups"
 msgid "--[re]gid requires --keep-groups, --clear-groups, --init-groups, or --groups"
-msgstr "--[re]gid は --keep-groups, --clear-groups, --groups のいずれかを必要とします"
+msgstr "--[re]gid には --keep-groups, --clear-groups, --init-groups, --groups のいずれかが必要です"
 
 #: sys-utils/setpriv.c:992
 msgid "--init-groups requires --ruid or --reuid"
-msgstr ""
+msgstr "--init-groups には --ruid または --reuid が必要です"
 
 #: sys-utils/setpriv.c:996
 #, c-format
 msgid "uid %ld not found, --init-groups requires an user that can be found on the system"
-msgstr ""
+msgstr "ユーザ ID %ld が見つかりません。--init-groups にはシステムに登録されたユーザが必要です"
 
 #: sys-utils/setpriv.c:1011
 msgid "disallow granting new privileges failed"
@@ -23041,12 +22283,8 @@ msgid "reactivate capabilities"
 msgstr "ケーパビリティの再有効化"
 
 #: sys-utils/setpriv.c:1044
-#, fuzzy
-#| msgid "setgroups failed"
 msgid "initgroups failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "initgroups に失敗しました"
 
 #: sys-utils/setpriv.c:1052
 msgid "set process securebits failed"
@@ -23061,62 +22299,48 @@ msgid "apply capabilities"
 msgstr "ケーパビリティの適用"
 
 #: sys-utils/setpriv.c:1073
-#, fuzzy
-#| msgid "set rtc wake alarm failed"
 msgid "set parent death signal failed"
-msgstr "RTC 復帰アラームの設定に失敗しました"
+msgstr "親プロセス死亡シグナルの設定に失敗しました"
 
 #: sys-utils/setpriv-landlock.c:106
-#, fuzzy, c-format
-#| msgid "Couldn't read %s"
+#, c-format
 msgid "could not parse landlock fs access: %s"
-msgstr "ディレクトリ %s を読み込むことができませんでした"
+msgstr "ランドロック fs アクセスが解釈できません: %s"
 
 #: sys-utils/setpriv-landlock.c:137 sys-utils/setpriv-landlock.c:140
-#, fuzzy, c-format
-#| msgid "invalid argument: %s"
+#, c-format
 msgid "invalid landlock rule: %s"
-msgstr "引数が正しくありません: %s"
+msgstr "ランドロックルールが正しくありません: %s"
 
 #: sys-utils/setpriv-landlock.c:151
-#, fuzzy, c-format
-#| msgid "Couldn't read %s"
+#, c-format
 msgid "could not open file for landlock: %s"
-msgstr "ディレクトリ %s を読み込むことができませんでした"
+msgstr "ランドロックのファイルを開けません: %s"
 
 #: sys-utils/setpriv-landlock.c:178
-#, fuzzy
-#| msgid "fallocate failed"
 msgid "landlock_create_ruleset failed"
-msgstr "fallocate が失敗"
+msgstr "landlock_create_ruleset に失敗しました"
 
 #: sys-utils/setpriv-landlock.c:187
-#, fuzzy
-#| msgid "fallocate failed"
 msgid "adding landlock rule failed"
-msgstr "fallocate が失敗"
+msgstr "ランドロックルールの追加に失敗しました"
 
 #: sys-utils/setpriv-landlock.c:191
-#, fuzzy
-#| msgid "disallow granting new privileges failed"
 msgid "disallow granting new privileges for landlock failed"
-msgstr "新しい権限の許可禁止に失敗しました"
+msgstr "ランドロックの新しい権限の許可禁止に失敗しました"
 
 #: sys-utils/setpriv-landlock.c:194
 msgid "landlock_restrict_self faild"
-msgstr ""
+msgstr "landlock_restrict_self に失敗しました"
 
 #: sys-utils/setpriv-landlock.c:202
-#, fuzzy, c-format
-#| msgid "lock access mode"
+#, c-format
 msgid "Landlock accesses:\n"
-msgstr "ロックのアクセスモード"
+msgstr "ランドロックアクセス:\n"
 
 #: sys-utils/setpriv-landlock.h:44
-#, fuzzy
-#| msgid "unsupported command"
 msgid "no support for landlock"
-msgstr "未対応のコマンドです"
+msgstr "ランドロックは未対応です"
 
 #: sys-utils/setsid.c:39
 msgid "Run a program in a new session.\n"
@@ -23127,10 +22351,8 @@ msgid " -c, --ctty     set the controlling terminal to the current one\n"
 msgstr " -c, --ctty     制御端末を現在の端末に設定します\n"
 
 #: sys-utils/setsid.c:43
-#, fuzzy
-#| msgid " -f, --force      force check\n"
 msgid " -f, --fork     always fork\n"
-msgstr " -f, --fork        fork してから <プログラム> を起動します\n"
+msgstr " -f, --fork     常に fork します\n"
 
 #: sys-utils/setsid.c:44
 msgid " -w, --wait     wait program to exit, and use the same return\n"
@@ -23493,7 +22715,7 @@ msgstr " %s [オプション] <新しいルートディレクトリ> <init> <arg
 
 #: sys-utils/switch_root.c:230
 msgid "Switch to another filesystem as the root of the mount tree.\n"
-msgstr ""
+msgstr "マウントツリーのルートを別のファイルシステムに切り替えます。\n"
 
 #: sys-utils/switch_root.c:275
 msgid "failed. Sorry."
@@ -23506,7 +22728,7 @@ msgstr "%s にアクセスできません"
 
 #: sys-utils/tunelp.c:98
 msgid "Set various parameters for the line printer.\n"
-msgstr ""
+msgstr "ラインプリンタの様々なパラメータを設定します。\n"
 
 #: sys-utils/tunelp.c:101
 msgid " -i, --irq <num>              specify parallel port irq\n"
@@ -23723,16 +22945,13 @@ msgid "write failed %s"
 msgstr "書き込みに失敗しました %s"
 
 #: sys-utils/unshare.c:157
-#, fuzzy, c-format
-#| msgid "unsupported option format: %s"
+#, c-format
 msgid "unsupported propagation mode: %s"
-msgstr "未対応のロックモードです: %s"
+msgstr "未対応の伝播モードです: %s"
 
 #: sys-utils/unshare.c:166
-#, fuzzy
-#| msgid "Checking all file systems.\n"
 msgid "cannot change root filesystem propagation"
-msgstr "ルートディレクトリを '%s' に変更できません"
+msgstr "ルートファイルシステム伝播を変更できません"
 
 #: sys-utils/unshare.c:197
 #, c-format
@@ -23740,72 +22959,58 @@ msgid "mount %s on %s failed"
 msgstr "%s を %s にマウントする処理が失敗しました"
 
 #: sys-utils/unshare.c:224
-#, fuzzy
-#| msgid "failed to parse offset"
 msgid "failed to open /proc/self/timens_offsets"
-msgstr "開始位置の解釈に失敗しました"
+msgstr "/proc/self/timens_offsets が開けません"
 
 #: sys-utils/unshare.c:227
-#, fuzzy
-#| msgid "failed to parse offset"
 msgid "failed to write to /proc/self/timens_offsets"
-msgstr "開始位置の解釈に失敗しました"
+msgstr "/proc/self/timens_offsets への書き込みに失敗しました"
 
 #: sys-utils/unshare.c:294
-#, fuzzy
-#| msgid "reset failed"
 msgid "eventfd failed"
-msgstr "リセットに失敗しました"
+msgstr "eventfd に失敗しました"
 
 #: sys-utils/unshare.c:304
-#, fuzzy
-#| msgid "failed to read speed"
 msgid "failed to read eventfd"
-msgstr "速度の読み込みに失敗しました"
+msgstr "eventfd の読み込みに失敗しました"
 
 #: sys-utils/unshare.c:408
-#, fuzzy, c-format
-#| msgid "invalid date '%s'"
+#, c-format
 msgid "invalid mapping '%s'"
-msgstr "無効な日付 '%s'"
+msgstr "無効なマッピング '%s'"
 
 #: sys-utils/unshare.c:433 sys-utils/unshare.c:493
-#, fuzzy, c-format
-#| msgid "Couldn't read %s"
+#, c-format
 msgid "could not open '%s'"
-msgstr "ディレクトリ %s を読み込むことができませんでした"
+msgstr "'%s' を開けませんでした"
 
 #: sys-utils/unshare.c:458 sys-utils/unshare.c:464
-#, fuzzy
-#| msgid "failed to parse uid"
 msgid "failed to parse subid map"
-msgstr "uid の解釈に失敗しました"
+msgstr "subid マップの解釈に失敗しました"
 
 #: sys-utils/unshare.c:473
 #, c-format
 msgid "no line matching user \"%s\" in %s"
-msgstr ""
+msgstr "ユーザ \"%s\" に該当する行が %s にありません"
 
 #: sys-utils/unshare.c:661
 #, c-format
 msgid "%s too large for kernel 4k limit"
-msgstr ""
+msgstr "%s がカーネルの 4k 上限に収まりません"
 
 #: sys-utils/unshare.c:667
-#, fuzzy, c-format
-#| msgid "failed to open: %s"
+#, c-format
 msgid "failed to open %s"
-msgstr "開けません： %s"
+msgstr "%s を開けません"
 
 #: sys-utils/unshare.c:669
-#, fuzzy, c-format
-#| msgid "failed to parse %s"
+#, c-format
 msgid "failed to write %s"
-msgstr "%s の処理に失敗しました"
+msgstr "%s の書き込みに失敗しました"
 
 #: sys-utils/unshare.c:737
 msgid "Run a program with some namespaces unshared from the parent.\n"
-msgstr ""
+msgstr "親プロセスのネームスペースの一部の共有を解除してプログラムを実行します。\n"
 
 #: sys-utils/unshare.c:740
 msgid " -m, --mount[=<file>]      unshare mounts namespace\n"
@@ -23836,181 +23041,147 @@ msgid " -C, --cgroup[=<file>]     unshare cgroup namespace\n"
 msgstr " -C, --cgroup[=<file>]     cgroup ネームスペースの共有を解除します\n"
 
 #: sys-utils/unshare.c:747
-#, fuzzy
-#| msgid " -p, --pid[=<file>]        unshare pid namespace\n"
 msgid " -T, --time[=<file>]       unshare time namespace\n"
-msgstr " -p, --pid[=<file>]        PID ネームスペースの共有を解除します\n"
+msgstr " -T, --time[=<file>]       タイムネームスペースの共有を解除します\n"
 
 #: sys-utils/unshare.c:749
 msgid " -f, --fork                fork before launching <program>\n"
-msgstr " -f, --fork        fork してから <プログラム> を起動します\n"
+msgstr " -f, --fork                fork してから <プログラム> を起動します\n"
 
 #: sys-utils/unshare.c:750
 msgid " --map-user=<uid>|<name>   map current user to uid (implies --user)\n"
-msgstr ""
+msgstr " --map-user=<uid>|<name>   現在のユーザを uid にマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:751
 msgid " --map-group=<gid>|<name>  map current group to gid (implies --user)\n"
-msgstr ""
+msgstr " --map-group=<gid>|<name>  現在のグループを gid にマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:752
 msgid " -r, --map-root-user       map current user to root (implies --user)\n"
-msgstr ""
+msgstr " -r, --map-root-user       現在のユーザを root にマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:753
 msgid " -c, --map-current-user    map current user to itself (implies --user)\n"
-msgstr ""
+msgstr " -c, --map-current-user    現在のユーザを同じユーザにマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:754
-#, fuzzy
-#| msgid " -r, --raw              use raw output format\n"
 msgid " --map-auto                map users and groups automatically (implies --user)\n"
-msgstr "     --raw              --list の結果を特に加工を行わずに出力します\n"
+msgstr " --map-auto                ユーザとグループを自動的にマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:755
 msgid ""
 " --map-users=<inneruid>:<outeruid>:<count>\n"
 "                           map count users from outeruid to inneruid (implies --user)\n"
 msgstr ""
+" --map-users=<inneruid>:<outeruid>:<count>\n"
+"                           count 人のユーザを outeruid から inneruid にマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:757
 msgid ""
 " --map-groups=<innergid>:<outergid>:<count>\n"
 "                           map count groups from outergid to innergid (implies --user)\n"
 msgstr ""
+" --map-groups=<innergid>:<outergid>:<count>\n"
+"                           count 個のグループを outergid から innergid にマップします(--user の意味を含みます)\n"
 
 #: sys-utils/unshare.c:760
 msgid ""
 " --kill-child[=<signame>]  when dying, kill the forked child (implies --fork)\n"
 "                             defaults to SIGKILL\n"
 msgstr ""
+" --kill-child[=<signame>]  終了時に、fork した子プロセスにシグナルを送ります(--fork の意味を含みます)\n"
+"                             既定値は SIGKILL です\n"
 
 #: sys-utils/unshare.c:762
-#, fuzzy
-#| msgid "     --mount-proc[=<dir>]  mount proc filesystem first (implies --mount)\n"
 msgid " --mount-proc[=<dir>]      mount proc filesystem first (implies --mount)\n"
 msgstr ""
-"     --mount-proc[=<ディレクトリ>]\n"
-"                   proc ファイルシステムを最初にマウントします\n"
-"                     (これには --mount の意味を含みます)\n"
+" --mount-proc[=<ディレクトリ>]\n"
+"                           proc ファイルシステムを最初にマウントします\n"
+"                             (これには --mount の意味を含みます)\n"
 
 #: sys-utils/unshare.c:763
 msgid ""
 " --propagation slave|shared|private|unchanged\n"
 "                           modify mount propagation in mount namespace\n"
 msgstr ""
+" --propagation slave|shared|private|unchanged\n"
+"                           マウントネームスペースでマウント伝播を変更します\n"
 
 #: sys-utils/unshare.c:765
-#, fuzzy
-#| msgid " -G, --setgid <gid>     set gid in user namespace\n"
 msgid " --setgroups allow|deny    control the setgroups syscall in user namespaces\n"
-msgstr " -G, --setgid <gid>        ユーザネームスペースの gid をセットします\n"
+msgstr " --setgroups allow|deny    ユーザネームスペースで setgroups システムコールを制御します\n"
 
 #: sys-utils/unshare.c:766
-#, fuzzy
-#| msgid " -U, --user                unshare user namespace\n"
 msgid " --keep-caps               retain capabilities granted in user namespaces\n"
-msgstr " -U, --user        ユーザネームスペースの共有を解除します\n"
+msgstr " --keep-caps               ユーザネームスペースで許可されたケーパビリティを維持します\n"
 
 #: sys-utils/unshare.c:768
-#, fuzzy
-#| msgid " -r, --root  [=<dir>]   set the root directory\n"
 msgid " -R, --root=<dir>          run the command with root directory set to <dir>\n"
-msgstr " -r, --chroot <ディレクトリ> 指定したディレクトリをルートにします\n"
+msgstr " -R, --root=<ディレクトリ> ルートディレクトリを <ディレクトリ> にしてコマンドを実行します\n"
 
 #: sys-utils/unshare.c:769
-#, fuzzy
-#| msgid " -w, --wd    [=<dir>]   set the working directory\n"
 msgid " -w, --wd=<dir>            change working directory to <dir>\n"
-msgstr " -w, --wd    [=<dir>]      作業用のディレクトリを指定します\n"
+msgstr " -w, --wd=<ディレクトリ>   作業用のディレクトリを <ディレクトリ> に変更します\n"
 
 #: sys-utils/unshare.c:770
-#, fuzzy
-#| msgid " -S, --setuid <uid>     set uid in user namespace\n"
 msgid " -S, --setuid <uid>        set uid in entered namespace\n"
-msgstr "%s は所有者が uid %d である必要があり、かつ setuid が設定されている必要があります"
+msgstr " -S, --setuid <uid>        関連付けたネームスペースで uid を設定します\n"
 
 #: sys-utils/unshare.c:771
-#, fuzzy
-#| msgid " -G, --setgid <gid>     set gid in user namespace\n"
 msgid " -G, --setgid <gid>        set gid in entered namespace\n"
-msgstr " -G, --setgid <gid>        ユーザネームスペースの gid をセットします\n"
+msgstr " -G, --setgid <gid>        関連付けたネームスペースで gid を設定します\n"
 
 #: sys-utils/unshare.c:772
 msgid " --monotonic <offset>      set clock monotonic offset (seconds) in time namespaces\n"
-msgstr ""
+msgstr " --monotonic <オフセット>  タイムネームスペースでクロックの単調増加オフセット(秒単位)を設定します\n"
 
 #: sys-utils/unshare.c:773
 msgid " --boottime <offset>       set clock boottime offset (seconds) in time namespaces\n"
-msgstr ""
+msgstr " --boottime <オフセット>   タイムネームスペースでクロックのブート時刻オフセット(秒単位)を設定します\n"
 
 #: sys-utils/unshare.c:994
-#, fuzzy
-#| msgid "failed to parse zone offset"
 msgid "failed to parse monotonic offset"
-msgstr "ゾーンオフセットの解釈に失敗しました"
+msgstr "単調増加オフセットの解釈に失敗しました"
 
 #: sys-utils/unshare.c:998
-#, fuzzy
-#| msgid "failed to parse zone offset"
 msgid "failed to parse boottime offset"
-msgstr "ゾーンオフセットの解釈に失敗しました"
+msgstr "ブート時刻オフセットの解釈に失敗しました"
 
 #: sys-utils/unshare.c:1012
 msgid "options --monotonic and --boottime require unsharing of a time namespace (-T)"
-msgstr ""
+msgstr "--monotonic および --boottime オプションにはタイムネームスペースの共有解除(-T)が必要です"
 
 #: sys-utils/unshare.c:1026
 msgid "unshare failed"
 msgstr "共有の解除に失敗しました"
 
 #: sys-utils/unshare.c:1043
-#, fuzzy
-#| msgid "setgroups failed"
 msgid "sigprocmask block failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigprocmask によるブロックに失敗しました"
 
 #: sys-utils/unshare.c:1049
-#, fuzzy
-#| msgid "operation failed: %m"
 msgid "pidfd_open failed"
-msgstr "snd_pcm_open() 失敗しました:%d:%s\n"
+msgstr "pidfd_open に失敗しました"
 
 #: sys-utils/unshare.c:1062
-#, fuzzy
-#| msgid "setgroups failed"
 msgid "sigprocmask restore failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigprocmask の復元に失敗しました"
 
 #: sys-utils/unshare.c:1095
-#, fuzzy
-#| msgid "seek failed"
 msgid "signal handler reset failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "シグナルハンドラのリセットに失敗しました"
 
 #: sys-utils/unshare.c:1100
-#, fuzzy
-#| msgid "setgroups failed"
 msgid "sigprocmask unblock failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "sigprocmask によるブロック解除に失敗しました"
 
 #: sys-utils/unshare.c:1104
 msgid "child exit failed"
 msgstr "子プロセスの終了に失敗しました"
 
 #: sys-utils/unshare.c:1143
-#, fuzzy
-#| msgid "options --{shell,fast,command,session-command,login} and --user are mutually exclusive."
 msgid "options --setgroups=allow and --map-group are mutually exclusive"
-msgstr "--{shell,fast,command,session-command,login} と --user のオプションは、同時に使用することができません。"
+msgstr "--setgroups=allow と --map-group のオプションは、同時に使用することができません"
 
 #: sys-utils/unshare.c:1158
 #, c-format
@@ -24023,10 +23194,9 @@ msgid "cannot chdir to '%s'"
 msgstr "ディレクトリを '%s' に変更できません"
 
 #: sys-utils/unshare.c:1174
-#, fuzzy, c-format
-#| msgid "Checking all file systems.\n"
+#, c-format
 msgid "cannot change %s filesystem propagation"
-msgstr "警告: ディレクトリを %s に変更できません"
+msgstr "%s のファイルシステム伝播を変更できません"
 
 #: sys-utils/unshare.c:1178
 #, c-format
@@ -24035,7 +23205,7 @@ msgstr "%s のマウントに失敗しました"
 
 #: sys-utils/wdctl.c:73
 msgid "Card previously reset the CPU"
-msgstr "直近に CPU をリセットしたカード"
+msgstr "直近にカードが CPU をリセット"
 
 #: sys-utils/wdctl.c:74
 msgid "External relay 1"
@@ -24111,18 +23281,6 @@ msgid "Show the status of the hardware watchdog.\n"
 msgstr "ハードウェアウォッチドッグの状態を表示します。\n"
 
 #: sys-utils/wdctl.c:236
-#, fuzzy
-#| msgid ""
-#| " -f, --flags <list>     print selected flags only\n"
-#| " -F, --noflags          don't print information about flags\n"
-#| " -I, --noident          don't print watchdog identity information\n"
-#| " -n, --noheadings       don't print headings for flags table\n"
-#| " -O, --oneline          print all information on one line\n"
-#| " -o, --output <list>    output columns of the flags\n"
-#| " -r, --raw              use raw output format for flags table\n"
-#| " -T, --notimeouts       don't print watchdog timeouts\n"
-#| " -s, --settimeout <sec> set watchdog timeout\n"
-#| " -x, --flags-only       print only flags table (same as -I -T)\n"
 msgid ""
 " -f, --flags <list>     print selected flags only\n"
 " -F, --noflags          don't print information about flags\n"
@@ -24143,6 +23301,8 @@ msgstr ""
 " -n, --noheadings       フラグ表でヘッダを表示しません\n"
 " -O, --oneline          全ての情報を 1 行で表示するようにします\n"
 " -o, --output <リスト>  表示すべきフラグ列を指定します\n"
+" -p, --setpretimeout <秒> ウオッチドッグのプレタイムアウト時間を指定します\n"
+" -g, --setpregovernor <名前> プレタイムアウトガバナーを指定します\n"
 " -r, --raw              フラグ表について、加工を行なわない形式で出力します\n"
 " -T, --notimeouts       ウオッチドッグの制限時間を表示しません\n"
 " -s, --settimeout <秒>  ウオッチドッグの制限時間を指定します\n"
@@ -24154,10 +23314,9 @@ msgid "The default device is %s.\n"
 msgstr "既定のデバイスは %s です。\n"
 
 #: sys-utils/wdctl.c:256
-#, fuzzy, c-format
-#| msgid "The default device is %s.\n"
+#, c-format
 msgid "No default device is available.\n"
-msgstr "既定のデバイスは %s です。\n"
+msgstr "利用できる既定のデバイスがありません。\n"
 
 #: sys-utils/wdctl.c:384
 #, c-format
@@ -24186,24 +23345,19 @@ msgid_plural "Timeout has been set to %d seconds.\n"
 msgstr[0] "制限時間は %d 秒にセットされています。\n"
 
 #: sys-utils/wdctl.c:454
-#, fuzzy, c-format
-#| msgid "cannot set timeout for %s"
+#, c-format
 msgid "cannot set pretimeout for %s"
-msgstr "%s に対する制限時間を設定することができません"
+msgstr "%s に対するプレタイムアウト時間を設定することができません"
 
 #: sys-utils/wdctl.c:456
-#, fuzzy, c-format
-#| msgid "Timeout has been set to %d second.\n"
-#| msgid_plural "Timeout has been set to %d seconds.\n"
+#, c-format
 msgid "Pre-timeout has been set to %d second.\n"
 msgid_plural "Pre-timeout has been set to %d seconds.\n"
-msgstr[0] "制限時間は %d 秒にセットされています。\n"
+msgstr[0] "プレタイムアウト時間は %d 秒にセットされています。\n"
 
 #: sys-utils/wdctl.c:475
-#, fuzzy
-#| msgid "cannot set timeout for %s"
 msgid "cannot set pre-timeout governor"
-msgstr "%s に対する制限時間を設定することができません"
+msgstr "プレタイムアウトガバナーを設定できません"
 
 #: sys-utils/wdctl.c:505
 #, c-format
@@ -24211,10 +23365,9 @@ msgid "%s: failed to get information about watchdog"
 msgstr "%s: ウオッチドッグに関する情報の取得に失敗しました"
 
 #: sys-utils/wdctl.c:637
-#, fuzzy, c-format
-#| msgid "cannot create directory %s"
+#, c-format
 msgid "cannot read information about %s"
-msgstr "%s を読み込むことができません"
+msgstr "%s の情報を読み込むことができません"
 
 #: sys-utils/wdctl.c:648 sys-utils/wdctl.c:651 sys-utils/wdctl.c:654
 #, c-format
@@ -24235,27 +23388,17 @@ msgid "Pre-timeout:"
 msgstr "プレタイムアウト:"
 
 #: sys-utils/wdctl.c:661 sys-utils/wdctl.c:666
-#, fuzzy, c-format
-#| msgid "%-14s %2i second\n"
-#| msgid_plural "%-14s %2i seconds\n"
+#, c-format
 msgid "%-14s %s\n"
-msgstr "%-14s %2i 秒\n"
+msgstr "%-14s %s\n"
 
 #: sys-utils/wdctl.c:661
-#, fuzzy
-#| msgid "Pre-timeout:"
 msgid "Pre-timeout governor:"
-msgstr "プレタイムアウト:"
+msgstr "プレタイムアウトガバナー:"
 
 #: sys-utils/wdctl.c:667
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Available output columns:\n"
 msgid "Available pre-timeout governors:"
-msgstr ""
-"\n"
-"利用可能な出力の列:\n"
+msgstr "利用可能なプレタイムアウトガバナー:"
 
 #: sys-utils/wdctl.c:725
 msgid "Device:"
@@ -24270,16 +23413,12 @@ msgid "version"
 msgstr "バージョン"
 
 #: sys-utils/wdctl.c:796
-#, fuzzy
-#| msgid "invalid timeout argument"
 msgid "invalid pretimeout argument"
-msgstr "時間切れの引数が間違っています"
+msgstr "プレタイムアウトの引数が間違っています"
 
 #: sys-utils/wdctl.c:850
-#, fuzzy
-#| msgid "The default device is %s.\n"
 msgid "No default device is available."
-msgstr "既定のデバイスは %s です。\n"
+msgstr "利用できる既定のデバイスがありません。"
 
 #: sys-utils/zramctl.c:75
 msgid "zram device name"
@@ -24306,38 +23445,28 @@ msgid "number of concurrent compress operations"
 msgstr "並行して実行される圧縮オペレーションの数"
 
 #: sys-utils/zramctl.c:81
-#, fuzzy
-#| msgid "failed to allocate memory: %m"
 msgid "empty pages with no allocated memory"
-msgstr "メモリ内のファイルデータサイズ（ページ数）"
+msgstr "メモリ未割当の空のページ"
 
 #: sys-utils/zramctl.c:82
 msgid "all memory including allocator fragmentation and metadata overhead"
-msgstr ""
+msgstr "割当時のフラグメンテーションおよびメタデータオーバーヘッドを含む全メモリ"
 
 #: sys-utils/zramctl.c:83
-#, fuzzy
-#| msgid "limit on the uncompressed amount of data"
 msgid "memory limit used to store compressed data"
-msgstr "圧縮前のデータ容量による制限"
+msgstr "圧縮データ格納メモリの上限"
 
 #: sys-utils/zramctl.c:84
-#, fuzzy
-#| msgid "limit on the uncompressed amount of data"
 msgid "memory zram have been consumed to store compressed data"
-msgstr "圧縮前のデータ容量による制限"
+msgstr "zram が圧縮データ格納に消費したメモリ"
 
 #: sys-utils/zramctl.c:85
-#, fuzzy
-#| msgid "number of concurrent compress operations"
 msgid "number of objects migrated by compaction"
-msgstr "並行して実行される圧縮オペレーションの数"
+msgstr "圧縮時に移動されたオブジェクトの数"
 
 #: sys-utils/zramctl.c:378
-#, fuzzy
-#| msgid "failed to parse start"
 msgid "Failed to parse mm_stat"
-msgstr "%s の stat に失敗しました"
+msgstr "mm_stat の解釈に失敗しました"
 
 #: sys-utils/zramctl.c:541
 #, c-format
@@ -24355,10 +23484,8 @@ msgid "Set up and control zram devices.\n"
 msgstr "zram デバイスの設定と制御を行います。\n"
 
 #: sys-utils/zramctl.c:550
-#, fuzzy
-#| msgid " -a, --algorithm lzo|lz4|lz4hc|deflate|842   compression algorithm to use\n"
 msgid " -a, --algorithm <alg>     compression algorithm to use\n"
-msgstr " -a, --algorithm lzo|lz4|lz4hc|deflate|842   使用する圧縮アルゴリズム\n"
+msgstr " -a, --algorithm <alg>     使用する圧縮アルゴリズム\n"
 
 #: sys-utils/zramctl.c:551
 msgid " -b, --bytes               print sizes in bytes rather than in human readable format\n"
@@ -24377,10 +23504,8 @@ msgid " -o, --output <list>       columns to use for status output\n"
 msgstr " -o, --output <list>       状態を出力するのに使用する列を指定します\n"
 
 #: sys-utils/zramctl.c:555
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid "     --output-all          output all columns\n"
-msgstr "     --output-all         すべての列を出力します\n"
+msgstr "     --output-all          すべての列を出力します\n"
 
 #: sys-utils/zramctl.c:556
 msgid "     --raw                 use raw status output format\n"
@@ -24392,25 +23517,23 @@ msgstr " -r, --reset               すべての指定したデバイスをリセ
 
 #: sys-utils/zramctl.c:558
 msgid " -s, --size <size>         device size\n"
-msgstr ""
-" -s, --size <サイズ>       デバイスのサイズ\n"
-"\n"
+msgstr " -s, --size <サイズ>       デバイスのサイズ\n"
 
 #: sys-utils/zramctl.c:559
 msgid " -t, --streams <number>    number of compression streams\n"
-msgstr " -t, --streams <number>    圧縮ストリームの番号\n"
+msgstr " -t, --streams <数値>      圧縮ストリーム数\n"
 
 #: sys-utils/zramctl.c:567
 msgid " <alg> specify algorithm, supported are:\n"
-msgstr ""
+msgstr " <alg> にはアルゴリズムを指定します。以下に対応:\n"
 
 #: sys-utils/zramctl.c:568
 msgid "   lzo, lz4, lz4hc, deflate, 842 and zstd\n"
-msgstr ""
+msgstr "   lzo, lz4, lz4hc, deflate, 842, zstd\n"
 
 #: sys-utils/zramctl.c:569
 msgid "   (List may be inaccurate, consult man page.)\n"
-msgstr ""
+msgstr "   (リストは不正確なおそれがあります。マニュアルページを参照してください。)\n"
 
 #: sys-utils/zramctl.c:658
 msgid "failed to parse streams"
@@ -24418,11 +23541,11 @@ msgstr "ストリームの解釈に失敗しました"
 
 #: sys-utils/zramctl.c:680
 msgid "option --find is mutually exclusive with <device>"
-msgstr "オプション --find は <device> と同時に指定することができません"
+msgstr "オプション --find は <デバイス> と同時に指定することができません"
 
 #: sys-utils/zramctl.c:686
 msgid "only one <device> at a time is allowed"
-msgstr "1度に1つのデバイスのみを指定できます"
+msgstr "1度に1つの <デバイス> のみを指定できます"
 
 #: sys-utils/zramctl.c:689
 msgid "options --algorithm and --streams must be combined with --size"
@@ -24440,7 +23563,7 @@ msgstr "空きのある zram デバイスがありません"
 #: sys-utils/zramctl.c:755
 #, c-format
 msgid "%s: failed to set number of streams"
-msgstr "%s: ストリームの番号の設定に失敗しました"
+msgstr "%s: ストリーム数の設定に失敗しました"
 
 #: sys-utils/zramctl.c:759
 #, c-format
