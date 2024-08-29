@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-08-22 16:34+0900\n"
+"PO-Revision-Date: 2024-08-29 10:16+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -536,14 +536,12 @@ msgid "-------      -------"
 msgstr "-------      -------"
 
 #: disk-utils/cfdisk.c:2262
-#, fuzzy
-#| msgid "  b          Toggle bootable flag of the current partition"
 msgid "  b          Toggle bootable flag of the current partition;"
-msgstr "  b          カーソル上のパーティションの起動可能フラグを切り替えます"
+msgstr "  b          カーソル上のパーティションの起動可能フラグを切り替えます。"
 
 #: disk-utils/cfdisk.c:2263
 msgid "               implemented for DOS (MBR) and SGI labels only"
-msgstr ""
+msgstr "               DOS (MBR) および SGI ラベルでのみ実装されています"
 
 #: disk-utils/cfdisk.c:2264
 msgid "  d          Delete the current partition"
@@ -696,16 +694,13 @@ msgid "Note that partition table entries are not in disk order now."
 msgstr "パーティション情報の項目順がディスク上の順序と一致しません。"
 
 #: disk-utils/cfdisk.c:2597
-#, fuzzy, c-format
-#| msgid "Device %s already contains a %s signature."
+#, c-format
 msgid "Device already contains a %s signature."
-msgstr "デバイス %s には既に %s 署名が書き込まれています。"
+msgstr "デバイスには既に %s 署名が書き込まれています。"
 
 #: disk-utils/cfdisk.c:2603
-#, fuzzy
-#| msgid "Do you want to remove the signature?"
 msgid "Do you want to remove it? [Y]es/[N]o: "
-msgstr "署名を削除しますか？"
+msgstr "署名を削除しますか？ [Y]es/[N]o: "
 
 #: disk-utils/cfdisk.c:2615
 msgid "failed to create a new disklabel"
@@ -898,7 +893,7 @@ msgstr "ユーザーが定義した終了トラックがメディアの最大値
 
 #: disk-utils/fdformat.c:254
 msgid "user defined start track exceeds the user defined end track"
-msgstr "ユーザーが定義した終了トラックが開始トラックを超えています"
+msgstr "ユーザーが定義した開始トラックが終了トラックを超えています"
 
 #: disk-utils/fdformat.c:262 misc-utils/logger.c:1050
 msgid "close failed"
@@ -993,25 +988,21 @@ msgstr "DOS 互換フラグは設定されていません"
 #: disk-utils/fdisk.c:690
 #, c-format
 msgid "New <size>{K,M,G,T,P} in bytes or <size>S in sectors (default %s)"
-msgstr ""
+msgstr "<サイズ>{K,M,G,T,P} (バイト数) または <サイズ>S (セクタ数) で表した新しいサイズ (既定値 %s)"
 
 #: disk-utils/fdisk.c:701 disk-utils/mkswap.c:623
-#, fuzzy
-#| msgid "invalid id"
 msgid "Invalid size"
-msgstr "ID が正しくありません"
+msgstr "サイズが正しくありません"
 
 #: disk-utils/fdisk.c:717
-#, fuzzy, c-format
-#| msgid "Partition %zu has been deleted."
+#, c-format
 msgid "Partition %zu has been resized."
-msgstr "パーティション %zu を削除しました。"
+msgstr "パーティション %zu のサイズを変更しました。"
 
 #: disk-utils/fdisk.c:729
-#, fuzzy, c-format
-#| msgid "Could not create partition %zu"
+#, c-format
 msgid "Could not resize partition %zu: %s"
-msgstr "パーティション %zu を作成できませんでした"
+msgstr "パーティション %zu のサイズを変更できませんでした: %s"
 
 #: disk-utils/fdisk.c:748 disk-utils/fdisk.c:786
 #, c-format
@@ -1431,10 +1422,8 @@ msgid "print information about a partition"
 msgstr "パーティションの情報を表示します"
 
 #: disk-utils/fdisk-menu.c:114
-#, fuzzy
-#| msgid "delete a partition"
 msgid "resize a partition"
-msgstr "パーティションを削除します"
+msgstr "パーティションのサイズを変更します"
 
 #: disk-utils/fdisk-menu.c:116
 msgid "print the raw data of the first sector from the device"
@@ -1458,7 +1447,7 @@ msgstr "このメニューを表示します"
 
 #: disk-utils/fdisk-menu.c:122
 msgid "change display/entry units"
-msgstr "表示項目の単位を変更します"
+msgstr "表示や入力の単位を変更します"
 
 #: disk-utils/fdisk-menu.c:123
 msgid "extra functionality (experts only)"
@@ -3124,7 +3113,7 @@ msgstr "ファイルシステムが大きすぎます。終了します。"
 #: disk-utils/mkfs.cramfs.c:607
 #, c-format
 msgid "AIEEE: block \"compressed\" to > 2*blocklength (%ld)\n"
-msgstr "AIEEE: ブロック \"compressed\" が 2*ブロック長 (%ld) を超えました\n"
+msgstr "AIEEE: ブロックを圧縮しようとしたら、サイズが 2*ブロック長 (%ld) を超えました\n"
 
 #: disk-utils/mkfs.cramfs.c:626
 #, c-format
@@ -3221,7 +3210,7 @@ msgstr "警告: gid を %u ビットに切り詰めました (セキュリティ
 msgid ""
 "WARNING: device numbers truncated to %u bits.  This almost certainly means\n"
 "that some device files will be wrong."
-msgstr "警告: デバイス番号を %u ビットに切り詰めました。これは主に、いくつかのデバイスが正しくないことを示しています。"
+msgstr "警告: デバイス番号を %u ビットに切り詰めました。これは主に、いくつかのデバイスファイルが正しくないことを示しています。"
 
 #: disk-utils/mkfs.minix.c:143
 #, c-format
@@ -3508,7 +3497,7 @@ msgstr " -U, --uuid UUID           使用する uuid を指定します\n"
 #: disk-utils/mkswap.c:206
 #, c-format
 msgid " -e, --endianness=<value>  specify the endianness to use (%s, %s or %s)\n"
-msgstr ""
+msgstr " -e, --endianness=<値>     使用するエンディアンを指定します (%s, %s, %s)\n"
 
 #: disk-utils/mkswap.c:208
 msgid " -o, --offset OFFSET       specify the offset in the device\n"
@@ -3552,6 +3541,8 @@ msgid ""
 "mkswap: %s contains holes or other unsupported extents.\n"
 "        This swap file can be rejected by kernel on swap activation!\n"
 msgstr ""
+"mkswap: %s にはホールまたは未対応のエクステントがあります。\n"
+"        このスワップファイルは有効化時にカーネルに拒否されるおそれがあります!\n"
 
 #: disk-utils/mkswap.c:279
 #, c-format
@@ -3566,17 +3557,17 @@ msgstr "オフセット %ju にホールが検出されました"
 #: disk-utils/mkswap.c:328
 #, c-format
 msgid "data inline extent at offset %ju"
-msgstr ""
+msgstr "オフセット %ju にデータインラインエクステントがあります"
 
 #: disk-utils/mkswap.c:331
-#, fuzzy, c-format
+#, c-format
 msgid "shared extent at offset %ju"
-msgstr ", オフセット %ju"
+msgstr "オフセット %ju に共有エクステントがあります"
 
 #: disk-utils/mkswap.c:334
-#, fuzzy, c-format
+#, c-format
 msgid "unallocated extent at offset %ju"
-msgstr ", オフセット %ju"
+msgstr "オフセット %ju に未割り当てエクステントがあります"
 
 #: disk-utils/mkswap.c:367
 msgid "offset larger than file size"
@@ -3601,10 +3592,9 @@ msgid "cannot set permissions on swap file %s"
 msgstr "スワップファイル %s のパーミッションを設定できません"
 
 #: disk-utils/mkswap.c:409 disk-utils/mkswap.c:413 disk-utils/mkswap.c:416
-#, fuzzy, c-format
-#| msgid "could not read directory %s"
+#, c-format
 msgid "couldn't allocate swap file %s"
-msgstr "  [f]          - 挿入されたファイル名を切り詰める\n"
+msgstr "スワップファイル %s の割り当てに失敗しました"
 
 #: disk-utils/mkswap.c:426
 #, c-format
@@ -3668,10 +3658,9 @@ msgid "warning: ignoring -U (UUIDs are unsupported by %s)"
 msgstr "警告: -U を無視します (UUID は %s でサポートしていないため)"
 
 #: disk-utils/mkswap.c:615
-#, fuzzy, c-format
-#| msgid "swapspace version %d is not supported"
+#, c-format
 msgid "invalid endianness %s is not supported"
-msgstr "スワップ領域バージョン %d は未対応です"
+msgstr "不正なエンディアン %s は未対応です"
 
 #: disk-utils/mkswap.c:620 misc-utils/lsclocks.c:275
 msgid "Invalid offset"
@@ -3714,16 +3703,14 @@ msgid "error: %s is mounted; will not make swapspace"
 msgstr "エラー: %s はマウントされています; スワップ領域を作成できません"
 
 #: disk-utils/mkswap.c:715
-#, fuzzy, c-format
-#| msgid "%s: insecure permissions %04o, %04o suggested."
+#, c-format
 msgid "%s: insecure permissions %04o, fix with: chmod %04o %s"
-msgstr "%s: パーミッション %04o は安全な値ではありません。 %04o をお勧めします。"
+msgstr "%s: パーミッション %04o は安全な値ではありません。 chmod %04o %s で修正してください。"
 
 #: disk-utils/mkswap.c:720
-#, fuzzy, c-format
-#| msgid "%s: insecure file owner %d, 0 (root) suggested."
+#, c-format
 msgid "%s: insecure file owner %d, fix with: chown 0:0 %s"
-msgstr "%s: ファイルの所有者 %d が安全な値ではありません。 0 (root) をお勧めします。"
+msgstr "%s: ファイルの所有者 %d が安全な値ではありません。 chown 0:0 %s で修正してください。"
 
 #: disk-utils/mkswap.c:739
 msgid "Unable to set up swap-space: unreadable"
@@ -4270,17 +4257,17 @@ msgstr "オフセット: %ju で fsync 不可; 継続します"
 #: disk-utils/sfdisk.c:595
 #, c-format
 msgid "Moved %ju from %ju sectors (%.3f%%, %.1f MiB/s)."
-msgstr ""
+msgstr "%ju を %ju セクタから移動しました (%.3f%%, %.1f MiB/s)。"
 
 #: disk-utils/sfdisk.c:600
 #, c-format
 msgid "Moved %ju from %ju sectors (%.3f%%)."
-msgstr ""
+msgstr "%ju を %ju セクタから移動しました (%.3f%%)。"
 
 #: disk-utils/sfdisk.c:624
 #, c-format
 msgid "Moved %ju from %ju sectors (%.0f%%)."
-msgstr ""
+msgstr "%ju を %ju セクタから移動しました (%.0f%%)。"
 
 #: disk-utils/sfdisk.c:637
 msgid "Your data has not been moved (--no-act)."
@@ -4933,7 +4920,7 @@ msgstr "UUID の処理に失敗しました: %s"
 #: disk-utils/swaplabel.c:80
 #, c-format
 msgid "%s: failed to seek to swap UUID"
-msgstr "%s: スワップ UUID を取得できませんでした"
+msgstr "%s: スワップ UUID へシークできませんでした"
 
 #: disk-utils/swaplabel.c:84
 #, c-format
@@ -4943,7 +4930,7 @@ msgstr "%s: UUID の書き込みに失敗しました"
 #: disk-utils/swaplabel.c:95
 #, c-format
 msgid "%s: failed to seek to swap label "
-msgstr "%s: スワップラベルを取得できませんでした"
+msgstr "%s: スワップラベルへシークできませんでした"
 
 #: disk-utils/swaplabel.c:102
 #, c-format
