@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-08-30 08:32+0900\n"
+"PO-Revision-Date: 2024-08-31 08:03+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -6788,10 +6788,9 @@ msgid "Partition %zu: cylinder %d greater than maximum %ju"
 msgstr "パーティション %zu: シリンダ %d は最大値 %ju よりも大きい値になっています"
 
 #: libfdisk/src/dos.c:1616
-#, fuzzy, c-format
-#| msgid "Partition %zu: previous sectors %u disagrees with total %u"
+#, c-format
 msgid "Partition %zu: LBA sector %u disagrees with C/H/S calculated sector %u"
-msgstr "パーティション %zu: 直前のセクタ %u は合計値 %u と一致しません"
+msgstr "パーティション %zu: LBA セクタ %u は C/H/S で計算したセクタ %u と一致しません"
 
 #: libfdisk/src/dos.c:1675
 #, c-format
@@ -6826,7 +6825,7 @@ msgstr "パーティション %zu: 空き領域。"
 #: libfdisk/src/dos.c:1808
 #, c-format
 msgid "Logical partition %zu: not entirely in partition %zu."
-msgstr "論理パーティション %zu: パーティション %zu の全部ではありません。"
+msgstr "論理パーティション %zu: パーティション %zu 内に収まっていません。"
 
 #: libfdisk/src/dos.c:1817 libfdisk/src/gpt.c:2316
 msgid "No errors detected."
@@ -6838,10 +6837,9 @@ msgid "Total allocated sectors %ju greater than the maximum %ju."
 msgstr "割り当て済みセクタの合計値 %ju が、最大値 %ju よりも大きい値になっています。"
 
 #: libfdisk/src/dos.c:1822
-#, fuzzy, c-format
-#| msgid "Remaining %lld unallocated %ld-byte sectors."
+#, c-format
 msgid "Remaining %ju unallocated %ld-byte sectors."
-msgstr "未割り当ての %2$ld バイトセクタが %1$lld 個あります。"
+msgstr "未割り当ての %2$ld バイトセクタが %1$ju 個あります。"
 
 #: libfdisk/src/dos.c:1826 libfdisk/src/gpt.c:2336
 #, c-format
@@ -6936,7 +6934,7 @@ msgstr "新規データ開始位置"
 
 #: libfdisk/src/dos.c:2745
 msgid "The new beginning of the partition overlaps the disk label area. Be very careful when using the partition. You can lose all your partitions on the disk."
-msgstr ""
+msgstr "変更後のパーティション開始位置はディスクラベル領域と重なっています。このパーティションはよく注意して使ってください。ディスク上のすべてのパーティションを失う可能性があります。"
 
 #: libfdisk/src/dos.c:2791
 #, c-format
@@ -7084,7 +7082,7 @@ msgstr "パーティション UUID を `%s' から `%s' に変更しました。
 
 #: libfdisk/src/gpt.c:1973
 msgid "Failed to translate partition name, name not changed."
-msgstr "パーティション名の翻訳に失敗しました、名前は変更していません。"
+msgstr "パーティション名の変換に失敗しました、名前は変更していません。"
 
 #: libfdisk/src/gpt.c:1975
 #, c-format
@@ -7121,11 +7119,11 @@ msgstr "パーティション項目のチェックサムが正しくありませ
 
 #: libfdisk/src/gpt.c:2259
 msgid "Invalid primary header LBA sanity checks."
-msgstr "プライマリヘッダの LBA がチェックに合格しませんでた。"
+msgstr "プライマリヘッダの LBA がチェックに合格しませんでした。"
 
 #: libfdisk/src/gpt.c:2263
 msgid "Invalid backup header LBA sanity checks."
-msgstr "バックアップヘッダの LBA がチェックに合格しませんでた。"
+msgstr "バックアップヘッダの LBA がチェックに合格しませんでした。"
 
 #: libfdisk/src/gpt.c:2268
 msgid "MyLBA mismatch with real position at primary header."
@@ -7246,7 +7244,7 @@ msgstr "パーティション入力サイズが 0 です。"
 #: libfdisk/src/gpt.c:2865
 #, c-format
 msgid "The number of the partition has to be smaller than %zu."
-msgstr "パーティション番号は %zu より小さい数です。"
+msgstr "パーティション数は %zu より小さい必要があります。"
 
 #: libfdisk/src/gpt.c:2889
 msgid "Cannot allocate memory!"
@@ -7333,23 +7331,23 @@ msgstr "不明"
 
 #: libfdisk/src/script.c:820
 msgid "The script and device sector size differ; the sizes will be recalculated to match the device."
-msgstr ""
+msgstr "スクリプトとデバイスでセクタサイズが異なります。デバイスに合わせてサイズを再計算します。"
 
 #: libfdisk/src/script.c:1037
 msgid "Can't recalculate partition start to the device sectors"
-msgstr ""
+msgstr "パーティション開始位置をデバイスセクタで再計算できません"
 
 #: libfdisk/src/script.c:1095
 msgid "Can't recalculate partition size to the device sectors"
-msgstr ""
+msgstr "パーティションサイズをデバイスセクタで再計算できません"
 
 #: libfdisk/src/script.c:1554
 msgid "Ignore \"first-lba\" header due to sector size mismatch."
-msgstr ""
+msgstr "セクタサイズが異なるため \"first-lba\" ヘッダを無視します。"
 
 #: libfdisk/src/script.c:1558
 msgid "Ignore \"last-lba\" header due to sector size mismatch."
-msgstr ""
+msgstr "セクタサイズが異なるため \"last-lba\" ヘッダを無視します。"
 
 #: libfdisk/src/sgi.c:46
 msgid "SGI volhdr"
@@ -7557,7 +7555,7 @@ msgstr "新しい SGI ディスクラベルを作成しました。"
 
 #: libfdisk/src/sgi.c:1078
 msgid "Sorry, only for non-empty partitions you can change the tag."
-msgstr "申し訳ありません。何も書かれていないパーティションのタグを変更することはできません。"
+msgstr "申し訳ありません。空のパーティションのタグを変更することはできません。"
 
 #: libfdisk/src/sgi.c:1084
 msgid "Consider leaving partition 9 as volume header (0), and partition 11 as entire volume (6), as IRIX expects it."
@@ -7565,7 +7563,7 @@ msgstr "IRIX ではパーティション 9 をボリュームヘッダ (0) に�
 
 #: libfdisk/src/sgi.c:1093
 msgid "It is highly recommended that the partition at offset 0 is of type \"SGI volhdr\", the IRIX system will rely on it to retrieve from its directory standalone tools like sash and fx. Only the \"SGI volume\" entire disk section may violate this. Are you sure about tagging this partition differently?"
-msgstr "領域のオフセット位置 0 は \"SGI volhdr\" 形式にしておくことを強く推奨します。これは IRIX システムで sash や fx のようなツールを利用する際、ここからディレクトリ情報を読み出すようになっているためです。なお、 \"SGI ボリューム\" 全体ディスクセクションを設定した場合にのみ影響があります。本当にこのパーティションのタグを変更しますか?"
+msgstr "オフセット位置 0 のパーティションは \"SGI volhdr\" 形式にしておくことを強く推奨します。これは IRIX システムで sash や fx のようなツールを利用する際、ここからディレクトリ情報を読み出すようになっているためです。なお、 \"SGI ボリューム\" 全体ディスクセクションを設定した場合にのみ影響があります。本当にこのパーティションのタグを変更しますか?"
 
 #: libfdisk/src/sun.c:39
 msgid "Unassigned"
