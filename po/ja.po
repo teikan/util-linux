@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-08-29 10:16+0900\n"
+"PO-Revision-Date: 2024-08-30 08:32+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -5012,16 +5012,12 @@ msgstr ""
 "利用可能な出力の列:\n"
 
 #: include/c.h:463
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Available columns:\n"
 msgid ""
 "\n"
 "Default columns:\n"
 msgstr ""
 "\n"
-"利用可能な列:\n"
+"既定の列:\n"
 
 #: include/c.h:466
 msgid "display this help"
@@ -5050,19 +5046,18 @@ msgstr ""
 "詳しくは %s をお読みください。\n"
 
 #: include/c.h:482
-#, fuzzy, c-format
+#, c-format
 msgid "%s from %s\n"
-msgstr "%s from %s\n"
+msgstr "%2$s の %1$s\n"
 
 #: include/c.h:504 misc-utils/kill.c:237 term-utils/agetty.c:693
-#, fuzzy, c-format
-#| msgid "%s from %s\n"
+#, c-format
 msgid "%s from %s"
-msgstr "%s from %s\n"
+msgstr "%2$s の %1$s"
 
 #: include/c.h:508
 msgid "features:"
-msgstr ""
+msgstr "対応機能:"
 
 #: include/closestream.h:74 include/closestream.h:76 login-utils/vipw.c:272
 #: login-utils/vipw.c:291 sys-utils/rtcwake.c:313 term-utils/setterm.c:833
@@ -5826,10 +5821,8 @@ msgid "ChromeOS miniOS"
 msgstr "ChromeOS miniOS"
 
 #: include/pt-gpt-partnames.h:237
-#, fuzzy
-#| msgid "ChromeOS kernel"
 msgid "ChromeOS hibernate"
-msgstr "ChromeOS カーネル"
+msgstr "ChromeOS ハイバネーション"
 
 #: include/pt-gpt-partnames.h:240
 msgid "MidnightBSD data"
@@ -5912,68 +5905,60 @@ msgid "Plan 9 partition"
 msgstr "Plan 9 パーティション"
 
 #: include/pt-gpt-partnames.h:272
-#, fuzzy
-#| msgid "HiFive Unleashed FSBL"
 msgid "HiFive FSBL"
-msgstr "HiFive Unleashed FSBL"
+msgstr "HiFive FSBL"
 
 #: include/pt-gpt-partnames.h:273
-#, fuzzy
-#| msgid "HiFive Unleashed BBL"
 msgid "HiFive BBL"
-msgstr "HiFive Unleashed BBL"
+msgstr "HiFive BBL"
 
 #: include/pt-gpt-partnames.h:276
 msgid "Haiku BFS"
-msgstr ""
+msgstr "Haiku BFS"
 
 #: include/pt-gpt-partnames.h:279
 msgid "Marvell Armada 3700 Boot partition"
-msgstr ""
+msgstr "Marvell Armada 3700 ブートパーティション"
 
 #: include/pt-gpt-partnames.h:283
 msgid "DragonFlyBSD Label32"
-msgstr ""
+msgstr "DragonFlyBSD Label32"
 
 #: include/pt-gpt-partnames.h:284
 msgid "DragonFlyBSD Swap"
-msgstr ""
+msgstr "DragonFlyBSD スワップ"
 
 #: include/pt-gpt-partnames.h:285
 msgid "DragonFlyBSD UFS1"
-msgstr ""
+msgstr "DragonFlyBSD UFS1"
 
 #: include/pt-gpt-partnames.h:286
-#, fuzzy
-#| msgid "FreeBSD Vinum"
 msgid "DragonFlyBSD Vinum"
-msgstr "FreeBSD Vinum"
+msgstr "DragonFlyBSD Vinum"
 
 #: include/pt-gpt-partnames.h:287
 msgid "DragonFlyBSD CCD"
-msgstr ""
+msgstr "DragonFlyBSD CCD"
 
 #: include/pt-gpt-partnames.h:288
 msgid "DragonFlyBSD Label64"
-msgstr ""
+msgstr "DragonFlyBSD Label64"
 
 #: include/pt-gpt-partnames.h:289
 msgid "DragonFlyBSD Legacy"
-msgstr ""
+msgstr "DragonFlyBSD レガシー"
 
 #: include/pt-gpt-partnames.h:290
 msgid "DragonFlyBSD HAMMER"
-msgstr ""
+msgstr "DragonFlyBSD HAMMER"
 
 #: include/pt-gpt-partnames.h:291
 msgid "DragonFlyBSD HAMMER2"
-msgstr ""
+msgstr "DragonFlyBSD HAMMER2"
 
 #: include/pt-gpt-partnames.h:294
-#, fuzzy
-#| msgid "Windows recovery environment"
 msgid "U-Boot environment"
-msgstr "Windows リカバリ環境"
+msgstr "U-Boot 環境"
 
 #: include/pt-mbr-partnames.h:5
 msgid "Empty"
@@ -6326,7 +6311,7 @@ msgstr "DOS セカンダリ"
 
 #: include/pt-mbr-partnames.h:108
 msgid "EBBR protective"
-msgstr ""
+msgstr "EBBR 保護領域"
 
 #: include/pt-mbr-partnames.h:110
 msgid "VMware VMKCORE"
