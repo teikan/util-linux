@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-11-29 15:05+0900\n"
+"PO-Revision-Date: 2024-11-29 16:35+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -1571,7 +1571,7 @@ msgstr "必須パーティションフラグを切り替えます"
 
 #: disk-utils/fdisk-menu.c:188
 msgid "toggle the GUID specific bits"
-msgstr "GUID の指定ビットを切り替えます"
+msgstr "GUID 固有ビットを切り替えます"
 
 #: disk-utils/fdisk-menu.c:198
 msgid "Sun"
@@ -7262,7 +7262,7 @@ msgstr "パーティション %zu の属性を 0x%016<PRIx64> に変更しまし
 
 #: libfdisk/src/gpt.c:3078
 msgid "Enter GUID specific bit"
-msgstr "GUIDの指定ビットを入力してください"
+msgstr "GUID 固有ビットを入力してください"
 
 #: libfdisk/src/gpt.c:3093
 #, c-format
@@ -7272,12 +7272,12 @@ msgstr "サポートされていないビット %lu を変更できませんで�
 #: libfdisk/src/gpt.c:3106
 #, c-format
 msgid "The GUID specific bit %d on partition %zu is enabled now."
-msgstr "GUIDの指定ビット %d をパーティション %zu で有効にしました。"
+msgstr "GUID 固有ビット %d をパーティション %zu で有効にしました。"
 
 #: libfdisk/src/gpt.c:3107
 #, c-format
 msgid "The GUID specific bit %d on partition %zu is disabled now."
-msgstr "GUIDの指定ビット %d をパーティション %zu で無効にしました。"
+msgstr "GUID 固有ビット %d をパーティション %zu で無効にしました。"
 
 #: libfdisk/src/gpt.c:3111
 #, c-format
