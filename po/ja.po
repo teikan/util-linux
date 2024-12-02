@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-11-29 16:35+0900\n"
+"PO-Revision-Date: 2024-12-02 16:20+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -1075,7 +1075,7 @@ msgstr " -b, --sector-size <サイズ>    物理および論理セクタサイ�
 
 #: disk-utils/fdisk.c:956
 msgid " -B, --protect-boot            don't erase bootbits when creating a new label\n"
-msgstr " -B, --protect-boot            boot　ビットを消さずに新しいラベルを作成します\n"
+msgstr " -B, --protect-boot            boot ビットを消さずに新しいラベルを作成します\n"
 
 #: disk-utils/fdisk.c:957
 msgid " -c, --compatibility[=<mode>]  mode is 'dos' or 'nondos' (default)\n"
@@ -2842,7 +2842,7 @@ msgstr "ISO-9660 ファイルシステムの長さを表示します。\n"
 
 #: disk-utils/isosize.c:113
 msgid " -d, --divisor=<number>  divide the amount of bytes by <number>\n"
-msgstr "  -d, --divisor=<数値>  <数値> で指定したバイト数のサイズで分割した数を出力します\n"
+msgstr "  -d, --divisor=<数値>   バイト数を <数値> で割って出力します\n"
 
 #: disk-utils/isosize.c:114
 msgid " -x, --sectors           show sector count and size\n"
@@ -3983,7 +3983,7 @@ msgstr " -n, --nr <n:m>       パーティションを範囲で指定します (
 
 #: disk-utils/partx.c:776 sys-utils/irqtop.c:264 sys-utils/lsirq.c:59
 msgid " -o, --output <list>  define which output columns to use\n"
-msgstr " -o, --output <list> 出力する列を指定します\n"
+msgstr " -o, --output <list>  出力する列を指定します\n"
 
 #: disk-utils/partx.c:777 sys-utils/lsmem.c:524
 msgid "     --output-all     output all columns\n"
@@ -6355,30 +6355,21 @@ msgid "%s: failed to get lock"
 msgstr "%s: ロックの取得に失敗しました"
 
 #: lib/blkdev.c:423
-#, fuzzy, c-format
-#| msgid "OK"
+#, c-format
 msgid "OK\n"
-msgstr "完了"
+msgstr "完了\n"
 
 #: lib/caputils.c:104
-#, fuzzy
-#| msgid "crypt failed"
 msgid "capget failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "capget に失敗しました"
 
 #: lib/caputils.c:112
-#, fuzzy
-#| msgid "reset failed"
 msgid "capset failed"
-msgstr ""
-" 使用中\n"
-"\n"
+msgstr "capset に失敗しました"
 
 #: lib/caputils.c:124
 msgid "prctl(PR_CAP_AMBIENT) failed"
-msgstr ""
+msgstr "prctl(PR_CAP_AMBIENT) に失敗しました"
 
 #: libfdisk/src/ask.c:509 libfdisk/src/ask.c:521
 #, c-format
@@ -7928,10 +7919,9 @@ msgid "filesystem was mounted, but failed to change mode: %m"
 msgstr "ファイルシステムをマウントしましたが、モードを変更できませんでした: %m"
 
 #: libmount/src/context_mount.c:1557
-#, fuzzy, c-format
-#| msgid "filesystem was mounted, but failed to switch namespace back"
+#, c-format
 msgid "filesystem was mounted, but failed to attach idmapping"
-msgstr "ファイルシステムをマウントしましたが、名前空間を元に戻せませんでした"
+msgstr "ファイルシステムをマウントしましたが、idmapping を設定できませんでした"
 
 #: libmount/src/context_mount.c:1563
 #, c-format
@@ -8184,15 +8174,14 @@ msgid "libc pseudo-random functions"
 msgstr "libc 擬似乱数関数"
 
 #: lib/shells.c:27
-#, fuzzy, c-format
-#| msgid "cannot open lock file %s"
+#, c-format
 msgid "Cannot parse shells files: %s"
-msgstr "ロックファイル %s を開くことができません"
+msgstr "シェルファイルの解釈に失敗しました: %s"
 
 #: lib/shells.c:54 lib/shells.c:97
 #, c-format
 msgid "Cannot evaluate entries in shells files: %s"
-msgstr ""
+msgstr "シェルファイルの項目の評価に失敗しました: %s"
 
 #: lib/swapprober.c:22 lib/swapprober.c:35
 #, c-format
