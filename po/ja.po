@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-12-02 16:20+0900\n"
+"PO-Revision-Date: 2024-12-03 06:42+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -8491,7 +8491,7 @@ msgstr " -t, --until <時刻>       指定した時刻以前の行を表示し�
 
 #: login-utils/last.c:591
 msgid " -T, --tab-separated\tuse tabs as delimiters\n"
-msgstr ""
+msgstr " -T, --tab-separated      タブを区切りとして扱います\n"
 
 #: login-utils/last.c:592
 msgid " -p, --present <time> display who were present at the specified time\n"
@@ -8744,10 +8744,8 @@ msgid " -H             suppress hostname in the login prompt"
 msgstr " -H             ホスト名をログインプロンプトに出さない"
 
 #: login-utils/login.c:1305 term-utils/agetty.c:3011
-#, fuzzy
-#| msgid "failed to initialize loopcxt"
 msgid "failed to initialize path context"
-msgstr "loopcxt の準備に失敗しました"
+msgstr "パスコンテキストの準備に失敗しました"
 
 #. TRANSLATORS: The standard value for %u is 60.
 #: login-utils/login.c:1337
@@ -8930,7 +8928,7 @@ msgstr "前回ホスト名"
 
 #: login-utils/lslogins.c:244
 msgid "date of last failed login"
-msgstr "前回のの失敗したログインの日付"
+msgstr "前回の失敗したログインの日付"
 
 #: login-utils/lslogins.c:244
 msgid "Failed login"
@@ -9055,37 +9053,31 @@ msgstr " -a, --acc-expiration     パスワードの期限切れについて情�
 
 #: login-utils/lslogins.c:1449
 msgid " -c, --colon-separate     display data in a format similar to /etc/passwd\n"
-msgstr ""
+msgstr " -c, --colon-separate     データを /etc/passwd のような形式で表示します\n"
 
 #: login-utils/lslogins.c:1450 sys-utils/lsipc.c:311
 msgid " -e, --export             display in an export-able output format\n"
 msgstr " -e, --export             エクスポート可能な出力形式で表示します\n"
 
 #: login-utils/lslogins.c:1451
-#, fuzzy
-#| msgid " -u, --userspace             display userspace messages\n"
 msgid " -f, --failed             display data about the users' last failed logins\n"
-msgstr " -u, --userspace             ユーザスペースのメッセージを出力します\n"
+msgstr " -f, --failed             そのユーザの前回の失敗したログインのデータを表示します\n"
 
 #: login-utils/lslogins.c:1452
-#, fuzzy
-#| msgid " -h, --help           usage information (this)\n"
 msgid " -G, --supp-groups        display information about groups\n"
-msgstr " -h, --help           使用法 (これ) を表示します\n"
+msgstr " -G, --supp-groups        グループの情報を表示します\n"
 
 #: login-utils/lslogins.c:1453
 msgid " -g, --groups=<groups>    display users belonging to a group in <groups>\n"
-msgstr ""
+msgstr " -g, --groups=<groups>    <groups> のグループに属するユーザを表示します\n"
 
 #: login-utils/lslogins.c:1454
 msgid " -L, --last               show info about the users' last login sessions\n"
 msgstr " -L, --last               ユーザの前回のログインセッションについて表示します\n"
 
 #: login-utils/lslogins.c:1455
-#, fuzzy
-#| msgid " -w, --fullnames      display full user and domain names\n"
 msgid " -l, --logins=<logins>    display only users from <logins>\n"
-msgstr " -w, --fullnames          ユーザ名とドメイン名を完全な形式で表示します\n"
+msgstr " -l, --logins=<logins>    <logins> のユーザのみ表示します\n"
 
 #: login-utils/lslogins.c:1456 sys-utils/lsipc.c:313
 msgid " -n, --newline            display each piece of information on a new line\n"
@@ -9108,60 +9100,48 @@ msgid "     --output-all         output all columns\n"
 msgstr "     --output-all         すべての列を出力します\n"
 
 #: login-utils/lslogins.c:1461
-#, fuzzy
-#| msgid " -h, --help           usage information (this)\n"
 msgid " -p, --pwd                display information related to login by password\n"
-msgstr " -h, --help           使用法 (これ) を表示します\n"
+msgstr " -p, --pwd                パスワードによるログインに関する情報を表示します\n"
 
 #: login-utils/lslogins.c:1462 sys-utils/lsipc.c:317
 msgid " -r, --raw                display in raw mode\n"
 msgstr " -r, --raw                加工を行なわない出力形式を使用します\n"
 
 #: login-utils/lslogins.c:1463
-#, fuzzy
-#| msgid " -a, --hostlast       display hostnames in the last column\n"
 msgid " -s, --system-accs        display system accounts\n"
-msgstr " -a, --hostlast           最後の列に表示するホスト名\n"
+msgstr " -s, --system-accs        システムアカウントを表示します\n"
 
 #: login-utils/lslogins.c:1464 sys-utils/lsipc.c:308
 msgid "     --time-format=<type> display dates in short, full or iso format\n"
 msgstr "     --time-format=<タイプ> 日付を short, full, iso のいずれかの形式で表示します\n"
 
 #: login-utils/lslogins.c:1465
-#, fuzzy
-#| msgid " -u, --userspace             display userspace messages\n"
 msgid " -u, --user-accs          display user accounts\n"
-msgstr " -u, --userspace             ユーザスペースのメッセージを出力します\n"
+msgstr " -u, --user-accs          ユーザアカウントを表示します\n"
 
 #: login-utils/lslogins.c:1466 sys-utils/lsipc.c:319
 msgid " -y, --shell              use column names to be usable as shell variable identifiers\n"
 msgstr " -y, --shell              列の名前をシェル変数名として利用できる形式にします\n"
 
 #: login-utils/lslogins.c:1467
-#, fuzzy
-#| msgid " -k, --kernel                display kernel messages\n"
 msgid " -Z, --context            display SELinux contexts\n"
-msgstr " -k, --kernel                カーネルメッセージを表示します\n"
+msgstr " -Z, --context            SELinux コンテキストを表示します\n"
 
 #: login-utils/lslogins.c:1468
-#, fuzzy
-#| msgid " -p, --pid              print pids without signaling them\n"
 msgid " -z, --print0             delimit user entries with a nul character\n"
-msgstr " -p, --pid              シグナルを送信せず、 PID を表示します\n"
+msgstr " -z, --print0             ユーザエントリを nul 文字で区切ります\n"
 
 #: login-utils/lslogins.c:1469
 msgid "     --wtmp-file <path>   set an alternate path for wtmp\n"
-msgstr ""
+msgstr "     --wtmp-file <パス>   wtmp に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1470
 msgid "     --btmp-file <path>   set an alternate path for btmp\n"
-msgstr ""
+msgstr "     --btmp-file <パス>   btmp に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1471
-#, fuzzy
-#| msgid " -f, --file <file>    use a specific file instead of %s\n"
 msgid "     --lastlog <path>     set an alternate path for lastlog\n"
-msgstr " -F, --file <ファイル>    %s ではなく、指定したファイルを使用して出力します\n"
+msgstr "     --lastlog <パス>     lastlog に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1664
 msgid "failed to request selinux state"
@@ -9299,10 +9279,8 @@ msgid "failed to initialize signals handler"
 msgstr "シグナルハンドラの初期化に失敗しました"
 
 #: login-utils/su-common.c:565
-#, fuzzy
-#| msgid "cannot set signal handler"
 msgid "cannot set child signal handler"
-msgstr "シグナルハンドラを設定できません"
+msgstr "子シグナルハンドラを設定できません"
 
 #: login-utils/su-common.c:575 term-utils/script.c:977
 #: term-utils/scriptlive.c:305
@@ -9338,10 +9316,9 @@ msgid "cannot set groups"
 msgstr "グループを設定できません"
 
 #: login-utils/su-common.c:811
-#, fuzzy, c-format
-#| msgid "failed to parse level '%s'"
+#, c-format
 msgid "failed to establish user credentials: %s"
-msgstr "ターゲットユーザーの PAM 資格情報による認証を試みる"
+msgstr "ユーザ認証情報の確立に失敗しました: %s"
 
 #: login-utils/su-common.c:821
 msgid "cannot set group id"
@@ -9404,10 +9381,8 @@ msgid " -P, --pty                       create a new pseudo-terminal\n"
 msgstr " -P, --pty                       新しい疑似端末を作成します\n"
 
 #: login-utils/su-common.c:904
-#, fuzzy
-#| msgid " -P, --pty                       create a new pseudo-terminal\n"
 msgid " -T, --no-pty                    do not create a new pseudo-terminal (bad security!)\n"
-msgstr " -P, --pty                       新しい疑似端末を作成します\n"
+msgstr " -T, --no-pty                    新しい疑似端末を作成しません (セキュリティ上危険です!)\n"
 
 #: login-utils/su-common.c:914
 #, c-format
@@ -9450,7 +9425,7 @@ msgstr ""
 #, c-format
 msgid "specifying more than %d supplemental group is not possible"
 msgid_plural "specifying more than %d supplemental groups is not possible"
-msgstr[0] "%d 個以上の補助グループを指定することはできません"
+msgstr[0] "%d 個を超える補助グループを指定することはできません"
 
 #: login-utils/su-common.c:1022
 #, c-format
@@ -9497,34 +9472,25 @@ msgid "warning: cannot change directory to %s"
 msgstr "警告: ディレクトリを %s に変更できません"
 
 #: login-utils/sulogin.c:131
-#, fuzzy
-#| msgid "failed to execute %s"
 msgid "failed to compute seuser"
-msgstr "%s の実行に失敗しました"
+msgstr "seuser の計算に失敗しました"
 
 #: login-utils/sulogin.c:136
-#, fuzzy
-#| msgid "couldn't compute selinux context"
 msgid "failed to compute default context"
-msgstr "selinux コンテキストを計算できません"
+msgstr "デフォールトコンテキストの計算に失敗しました"
 
 #: login-utils/sulogin.c:156
-#, fuzzy, c-format
-#| msgid "failed to set the controlling terminal"
+#, c-format
 msgid "failed to get context of terminal %s"
-msgstr "制御端末の設定に失敗しました"
+msgstr "端末 %s のコンテキストの取得に失敗しました"
 
 #: login-utils/sulogin.c:162
-#, fuzzy
-#| msgid "This account is currently not available.\n"
 msgid "security class chr_file not available"
-msgstr "このアカウントは現在利用できません。\n"
+msgstr "セキュリティクラス chr_file が利用できません。"
 
 #: login-utils/sulogin.c:169
-#, fuzzy
-#| msgid "failed to create pseudo-terminal"
 msgid "failed to compute relabel context of terminal"
-msgstr "疑似端末の作成に失敗しました"
+msgstr "端末の再ラベル付けコンテキストの計算に失敗しました"
 
 #: login-utils/sulogin.c:252 login-utils/sulogin.c:255
 #, c-format
@@ -9595,22 +9561,19 @@ msgid "change directory to system root failed"
 msgstr "システムルートにディレクトリを切り替える処理が失敗しました"
 
 #: login-utils/sulogin.c:927
-#, fuzzy, c-format
-#| msgid "failed to connect to %s port %s"
+#, c-format
 msgid "failed to set context to %s for terminal %s"
-msgstr "%s ポート %s に接続できませんでした"
+msgstr "端末 %2$s のコンテキストを %1$s に設定できませんでした"
 
 #: login-utils/sulogin.c:932
-#, fuzzy, c-format
-#| msgid "Failed to set personality to %s"
+#, c-format
 msgid "failed to set exec context to %s"
-msgstr "実行コンテキストを %s に設定できません"
+msgstr "実行コンテキストを %s に設定できませんでした"
 
 #: login-utils/sulogin.c:963
-#, fuzzy, c-format
-#| msgid "failed to connect to %s port %s"
+#, c-format
 msgid "failed to reset context to %s for terminal %s"
-msgstr "%s ポート %s に接続できませんでした"
+msgstr "端末 %2$s のコンテキストを %1$s にリセットできませんでした"
 
 #: login-utils/sulogin.c:976
 #, c-format
