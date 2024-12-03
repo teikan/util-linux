@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-12-03 06:42+0900\n"
+"PO-Revision-Date: 2024-12-03 15:12+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -13063,7 +13063,7 @@ msgstr " %s [オプション] <パス名>...\n"
 
 #: misc-utils/namei.c:362
 msgid "Follow a pathname until a terminal point is found.\n"
-msgstr ""
+msgstr "終端が見つかるまでパス名を追跡します。\n"
 
 #: misc-utils/namei.c:366
 msgid ""
@@ -13967,7 +13967,7 @@ msgstr "--backup オプションはこの処理では無意味です"
 
 #: schedutils/chrt.c:60
 msgid "Show or change the real-time scheduling attributes of a process.\n"
-msgstr ""
+msgstr "プロセスのリアルタイムスケジューリング属性を表示または変更します。\n"
 
 #: schedutils/chrt.c:62
 msgid ""
@@ -13984,178 +13984,78 @@ msgid ""
 "Get policy:\n"
 " chrt [options] -p <pid>\n"
 msgstr ""
+"ポリシーの表示:\n"
+" chrt [オプション] -p <プロセス ID>\n"
 
 #: schedutils/chrt.c:70
 msgid "Policy options:\n"
 msgstr "ポリシーオプション:\n"
 
 #: schedutils/chrt.c:71
-#, fuzzy
-#| msgid " -n, --noparity          set parity to none\n"
 msgid " -b, --batch          set policy to SCHED_BATCH\n"
-msgstr ""
-"\n"
-"スケジュールに関連するポリシー:\n"
-"  -b | --batch         ポリシーを SCHED_BATCH に設定します\n"
-"  -f | --fifo          ポリシーを SCHED_FIFO に設定します\n"
-"  -i | --idle          ポリシーを SCHED_IDLE に設定します\n"
-"  -o | --other         ポリシーを SCHED_OTHER に設定します\n"
-"  -r | --rr            ポリシーを SCHED_RR (既定値) に設定します\n"
+msgstr " -b, --batch          ポリシーを SCHED_BATCH に設定します\n"
 
 #: schedutils/chrt.c:72
-#, fuzzy
-#| msgid " -n, --noparity          set parity to none\n"
 msgid " -d, --deadline       set policy to SCHED_DEADLINE\n"
-msgstr " -n, --noparity          パリティ制御を \"なし\" に設定します\n"
+msgstr " -d, --deadline       ポリシーを SCHED_DEADLINE に設定します\n"
 
 #: schedutils/chrt.c:73
-#, fuzzy
-#| msgid " -n, --noparity          set parity to none\n"
 msgid " -f, --fifo           set policy to SCHED_FIFO\n"
-msgstr ""
-"\n"
-"スケジュールに関連するポリシー:\n"
-"  -b | --batch         ポリシーを SCHED_BATCH に設定します\n"
-"  -f | --fifo          ポリシーを SCHED_FIFO に設定します\n"
-"  -i | --idle          ポリシーを SCHED_IDLE に設定します\n"
-"  -o | --other         ポリシーを SCHED_OTHER に設定します\n"
-"  -r | --rr            ポリシーを SCHED_RR (既定値) に設定します\n"
+msgstr " -f, --fifo           ポリシーを SCHED_FIFO に設定します\n"
 
 #: schedutils/chrt.c:74
-#, fuzzy
-#| msgid " -n, --noparity          set parity to none\n"
 msgid " -i, --idle           set policy to SCHED_IDLE\n"
-msgstr ""
-"\n"
-"スケジュールに関連するポリシー:\n"
-"  -b | --batch         ポリシーを SCHED_BATCH に設定します\n"
-"  -f | --fifo          ポリシーを SCHED_FIFO に設定します\n"
-"  -i | --idle          ポリシーを SCHED_IDLE に設定します\n"
-"  -o | --other         ポリシーを SCHED_OTHER に設定します\n"
-"  -r | --rr            ポリシーを SCHED_RR (既定値) に設定します\n"
+msgstr " -i, --idle           ポリシーを SCHED_IDLE に設定します\n"
 
 #: schedutils/chrt.c:75
-#, fuzzy
-#| msgid " -o, --oddparity         set parity to odd\n"
 msgid " -o, --other          set policy to SCHED_OTHER\n"
-msgstr ""
-"\n"
-"スケジュールに関連するポリシー:\n"
-"  -b | --batch         ポリシーを SCHED_BATCH に設定します\n"
-"  -f | --fifo          ポリシーを SCHED_FIFO に設定します\n"
-"  -i | --idle          ポリシーを SCHED_IDLE に設定します\n"
-"  -o | --other         ポリシーを SCHED_OTHER に設定します\n"
-"  -r | --rr            ポリシーを SCHED_RR (既定値) に設定します\n"
+msgstr " -o, --other          ポリシーを SCHED_OTHER に設定します\n"
 
 #: schedutils/chrt.c:76
-#, fuzzy
-#| msgid " -1, --one             show only a single month (default)\n"
 msgid " -r, --rr             set policy to SCHED_RR (default)\n"
-msgstr ""
-"\n"
-"スケジュールに関連するポリシー:\n"
-"  -b | --batch         ポリシーを SCHED_BATCH に設定します\n"
-"  -f | --fifo          ポリシーを SCHED_FIFO に設定します\n"
-"  -i | --idle          ポリシーを SCHED_IDLE に設定します\n"
-"  -o | --other         ポリシーを SCHED_OTHER に設定します\n"
-"  -r | --rr            ポリシーを SCHED_RR (既定値) に設定します\n"
+msgstr " -r, --rr             ポリシーを SCHED_RR (既定値) に設定します\n"
 
 #: schedutils/chrt.c:79
-#, fuzzy
-#| msgid "Output format:\n"
 msgid "Scheduling options:\n"
-msgstr "不明なスケジュールポリシーです"
+msgstr "スケジュールオプション:\n"
 
 #: schedutils/chrt.c:80
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Scheduling flags:\n"
-#| "  -R | --reset-on-fork set SCHED_RESET_ON_FORK for FIFO or RR\n"
 msgid " -R, --reset-on-fork       set reset-on-fork flag\n"
-msgstr ""
-"\n"
-"スケジュールに関連するフラグ:\n"
-"  -R | --reset-on-fork FIFO や RR に対して、 SCHED_RESET_ON_FORK を設定します\n"
+msgstr " -R, --reset-on-fork       reset-on-fork フラグを設定します\n"
 
 #: schedutils/chrt.c:81
 msgid " -T, --sched-runtime <ns>  runtime parameter for DEADLINE\n"
-msgstr ""
+msgstr " -T, --sched-runtime <ns>  DEADLINE のランタイムパラメータ\n"
 
 #: schedutils/chrt.c:82
 msgid " -P, --sched-period <ns>   period parameter for DEADLINE\n"
-msgstr ""
+msgstr " -P, --sched-period <ns>   DEADLINE のピリオドパラメータ\n"
 
 #: schedutils/chrt.c:83
 msgid " -D, --sched-deadline <ns> deadline parameter for DEADLINE\n"
-msgstr ""
+msgstr " -D, --sched-deadline <ns> DEADLINE のデッドラインパラメータ\n"
 
 #: schedutils/chrt.c:86
 msgid "Other options:\n"
 msgstr "その他のオプション:\n"
 
 #: schedutils/chrt.c:87 schedutils/uclampset.c:66
-#, fuzzy
 msgid " -a, --all-tasks      operate on all the tasks (threads) for a given pid\n"
 msgstr ""
-"\n"
-"オプション:\n"
-"  -a | --all-tasks     指定したプロセス ID のすべてのタスク (スレッド) に対して、\n"
-"                       操作を行います\n"
-"  -h | --help          このヘルプを表示します\n"
-"  -m | --max           優先順位の最小値と最大値を表示します\n"
-"  -p | --pid           指定した既存のプロセス ID に対して処理を行います\n"
-"  -v | --verbose       状態を表示します\n"
-"  -V | --version       バージョン情報を表示します\n"
-"\n"
+" -a, --all-tasks      指定したプロセス ID のすべてのタスク (スレッド) に対して、\n"
+"                      操作を行います\n"
 
 #: schedutils/chrt.c:88
-#, fuzzy
-#| msgid " -T, --ctime                 show human readable timestamp\n"
 msgid " -m, --max            show min and max valid priorities\n"
-msgstr ""
-"\n"
-"オプション:\n"
-"  -a | --all-tasks     指定したプロセス ID のすべてのタスク (スレッド) に対して、\n"
-"                       操作を行います\n"
-"  -h | --help          このヘルプを表示します\n"
-"  -m | --max           優先順位の最小値と最大値を表示します\n"
-"  -p | --pid           指定した既存のプロセス ID に対して処理を行います\n"
-"  -v | --verbose       状態を表示します\n"
-"  -V | --version       バージョン情報を表示します\n"
-"\n"
+msgstr " -m, --max            優先順位に指定できる最小値と最大値を表示します\n"
 
 #: schedutils/chrt.c:89
-#, fuzzy
-#| msgid " -z --zero               start with zeroed partition table\n"
 msgid " -p, --pid            operate on existing given pid\n"
-msgstr ""
-"\n"
-"オプション:\n"
-"  -a | --all-tasks     指定したプロセス ID のすべてのタスク (スレッド) に対して、\n"
-"                       操作を行います\n"
-"  -h | --help          このヘルプを表示します\n"
-"  -m | --max           優先順位の最小値と最大値を表示します\n"
-"  -p | --pid           指定した既存のプロセス ID に対して処理を行います\n"
-"  -v | --verbose       状態を表示します\n"
-"  -V | --version       バージョン情報を表示します\n"
-"\n"
+msgstr " -p, --pid            指定した既存のプロセス ID に対して操作を行います\n"
 
 #: schedutils/chrt.c:90 schedutils/uclampset.c:70
-#, fuzzy
-#| msgid " -v, --verbose           say what is being done\n"
 msgid " -v, --verbose        display status information\n"
-msgstr ""
-"\n"
-"オプション:\n"
-"  -a | --all-tasks     指定したプロセス ID のすべてのタスク (スレッド) に対して、\n"
-"                       操作を行います\n"
-"  -h | --help          このヘルプを表示します\n"
-"  -m | --max           優先順位の最小値と最大値を表示します\n"
-"  -p | --pid           指定した既存のプロセス ID に対して処理を行います\n"
-"  -v | --verbose       状態を表示します\n"
-"  -V | --version       バージョン情報を表示します\n"
-"\n"
+msgstr " -v, --verbose        状態を表示します\n"
 
 #: schedutils/chrt.c:153 schedutils/chrt.c:175
 #, c-format
@@ -14190,13 +14090,12 @@ msgstr "プロセス ID %d の現在のスケジュール優先順位: %d\n"
 #: schedutils/chrt.c:204
 #, c-format
 msgid "pid %d's new runtime/deadline/period parameters: %ju/%ju/%ju\n"
-msgstr ""
+msgstr "プロセス ID %d の新しいランタイム/デッドライン/ピリオドパラメータ: %ju/%ju/%ju\n"
 
 #: schedutils/chrt.c:207
-#, fuzzy, c-format
-#| msgid "pid %d's current scheduling priority: %d\n"
+#, c-format
 msgid "pid %d's current runtime/deadline/period parameters: %ju/%ju/%ju\n"
-msgstr "プロセス ID %d の現在のスケジュール優先順位: %d\n"
+msgstr "プロセス ID %d の現在のランタイム/デッドライン/ピリオドパラメータ: %ju/%ju/%ju\n"
 
 #: schedutils/chrt.c:227 schedutils/chrt.c:331 schedutils/chrt.c:339
 #: schedutils/uclampset.c:142 schedutils/uclampset.c:184
@@ -14204,16 +14103,14 @@ msgid "cannot obtain the list of tasks"
 msgstr "タスクの一覧を取得できません"
 
 #: schedutils/chrt.c:257
-#, fuzzy, c-format
-#| msgid "SCHED_%s min/max priority\t: %d/%d\n"
+#, c-format
 msgid "%s min/max priority\t: %d/%d\n"
-msgstr "SCHED_%s での優先順位最小値／最大値\t: %d/%d\n"
+msgstr "%s での優先順位最小値/最大値\t: %d/%d\n"
 
 #: schedutils/chrt.c:260
-#, fuzzy, c-format
-#| msgid "SCHED_%s not supported?\n"
+#, c-format
 msgid "%s not supported?\n"
-msgstr "ターゲット特有のダンプ '%s' はサポートされていません"
+msgstr "%s がサポートされていない可能性があります\n"
 
 #: schedutils/chrt.c:335
 #, c-format
@@ -14226,30 +14123,24 @@ msgid "failed to set pid %d's policy"
 msgstr "プロセス ID %d のポリシー設定に失敗しました"
 
 #: schedutils/chrt.c:422
-#, fuzzy
-#| msgid "invalid time argument"
 msgid "invalid runtime argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "ランタイム引数が正しくありません"
 
 #: schedutils/chrt.c:425
-#, fuzzy
-#| msgid "invalid speed argument"
 msgid "invalid period argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "ピリオド引数が正しくありません"
 
 #: schedutils/chrt.c:428
-#, fuzzy
-#| msgid "invalid heads argument"
 msgid "invalid deadline argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "デッドライン引数が正しくありません"
 
 #: schedutils/chrt.c:453
 msgid "invalid priority argument"
-msgstr "優先順位の指定が正しくありません"
+msgstr "優先順位引数が正しくありません"
 
 #: schedutils/chrt.c:457
 msgid "--sched-{runtime,deadline,period} options are supported for SCHED_DEADLINE only"
-msgstr ""
+msgstr "--sched-{runtime,deadline,period} オプションは SCHED_DEADLINE にしか対応していません"
 
 #: schedutils/chrt.c:472
 msgid "SCHED_DEADLINE is unsupported"
@@ -14258,7 +14149,7 @@ msgstr "SCHED_DEADLINE には対応していません"
 #: schedutils/chrt.c:479
 #, c-format
 msgid "unsupported priority value for the policy: %d: see --max for valid range"
-msgstr ""
+msgstr "ポリシーで対応していない優先順位の値です: %d: 有効範囲は --max を参照してください"
 
 #: schedutils/ionice.c:78
 msgid "ioprio_get failed"
@@ -14274,46 +14165,45 @@ msgid "ioprio_set failed"
 msgstr "ioprio_set が失敗しました"
 
 #: schedutils/ionice.c:107
-#, fuzzy, c-format
-#| msgid ""
-#| " %1$s [options]\n"
-#| " %1$s [options] <device> | <mountpoint>\n"
-#| " %1$s [options] <device> <mountpoint>\n"
-#| " %1$s [options] [--source <device>] [--target <mountpoint>]\n"
+#, c-format
 msgid ""
 " %1$s [options] -p <pid>...\n"
 " %1$s [options] -P <pgid>...\n"
 " %1$s [options] -u <uid>...\n"
 " %1$s [options] <command>\n"
 msgstr ""
-" %1$s [オプション]\n"
-" %1$s [オプション] <デバイス> | <マウントポイント>\n"
-" %1$s [オプション] <デバイス> <マウントポイント>\n"
-" %1$s [オプション] [--source <デバイス>] [--target <マウントポイント>]\n"
+" %1$s [オプション] -p <PID>...\n"
+" %1$s [オプション] -P <PGID>...\n"
+" %1$s [オプション] -u <UID>...\n"
+" %1$s [オプション] <コマンド>\n"
 
 #: schedutils/ionice.c:113
 msgid "Show or change the I/O-scheduling class and priority of a process.\n"
-msgstr ""
+msgstr "プロセスの I/O スケジューリングクラスと優先順位を表示または変更します。\n"
 
 #: schedutils/ionice.c:116
 msgid ""
 " -c, --class <class>    name or number of scheduling class,\n"
 "                          0: none, 1: realtime, 2: best-effort, 3: idle\n"
 msgstr ""
+" -c, --class <クラス>   スケジューリングクラスの名前または数値\n"
+"                          0: none, 1: realtime, 2: best-effort, 3: idle\n"
 
 #: schedutils/ionice.c:118
 msgid ""
 " -n, --classdata <num>  priority (0..7) in the specified scheduling class,\n"
 "                          only for the realtime and best-effort classes\n"
 msgstr ""
+" -n, --classdata <数値> 指定したスケジューリングクラスでの優先順位 (0..7)、\n"
+"                          realtime と best-effort でのみ有効\n"
 
 #: schedutils/ionice.c:120
 msgid " -p, --pid <pid>...     act on these already running processes\n"
-msgstr ""
+msgstr " -p, --pid <PID>...     すでに実行中のプロセスに対して実行します\n"
 
 #: schedutils/ionice.c:121
 msgid " -P, --pgid <pgrp>...   act on already running processes in these groups\n"
-msgstr ""
+msgstr " -P, --pgid <PGRP>...   グループ内のすでに実行中のプロセスに対して実行します\n"
 
 #: schedutils/ionice.c:122
 msgid " -t, --ignore           ignore failures\n"
@@ -14321,7 +14211,7 @@ msgstr " -t, --ignore           失敗を無視します\n"
 
 #: schedutils/ionice.c:123
 msgid " -u, --uid <uid>...     act on already running processes owned by these users\n"
-msgstr ""
+msgstr " -u, --uid <UID>...     ユーザが所有するすでに実行中のプロセスに対して実行します\n"
 
 #: schedutils/ionice.c:159
 msgid "invalid class data argument"
@@ -14371,20 +14261,11 @@ msgstr ""
 "\n"
 
 #: schedutils/taskset.c:60
-#, fuzzy
 msgid "Show or change the CPU affinity of a process.\n"
-msgstr "リソースの制限値を表示または変更します。\n"
+msgstr "プロセスの CPU 親和性を表示または変更します。\n"
 
 #: schedutils/taskset.c:64
-#, fuzzy, c-format
-#| msgid ""
-#| "Options:\n"
-#| " -a, --all-tasks         operate on all the tasks (threads) for a given pid\n"
-#| " -p, --pid               operate on existing given pid\n"
-#| " -c, --cpu-list          display and specify cpus in list format\n"
-#| " -h, --help              display this help\n"
-#| " -V, --version           output version information\n"
-#| "\n"
+#, c-format
 msgid ""
 "Options:\n"
 " -a, --all-tasks         operate on all the tasks (threads) for a given pid\n"
@@ -14394,11 +14275,8 @@ msgstr ""
 "オプション:\n"
 " -a, --all-tasks         指定したプロセス ID のすべてのタスク (スレッド) に対して、\n"
 "                         操作を行います\n"
-" -p, --pid               既に実行中のプロセスに対して処理を行います\n"
-" -c, --cpu-list          一覧形式で CPU を表示および設定します\n"
-" -h, --help              このヘルプを表示します\n"
-" -V, --version           バージョン情報を表示します\n"
-"\n"
+" -p, --pid               指定した既存のプロセス ID に対して操作を行います\n"
+" -c, --cpu-list          一覧形式で CPU を表示および指定します\n"
 
 #: schedutils/taskset.c:73
 #, c-format
@@ -14461,7 +14339,7 @@ msgstr "プロセス ID %d の親和性情報の取得に失敗しました"
 
 #: schedutils/taskset.c:142
 msgid "affinity cannot be set due to PF_NO_SETAFFINITY flag set"
-msgstr ""
+msgstr "PF_NO_SETAFFINITY が設定されているため親和性を設定できません"
 
 #: schedutils/taskset.c:213 sys-utils/chcpu.c:300 sys-utils/irqtop.c:319
 msgid "cannot determine NR_CPUS; aborting"
@@ -14483,133 +14361,86 @@ msgid "failed to parse CPU mask: %s"
 msgstr "CPU マスクの処理に失敗しました: %s"
 
 #: schedutils/uclampset.c:56
-#, fuzzy, c-format
-#| msgid ""
-#| " %1$s [options]\n"
-#| " %1$s [options] <device> | <mountpoint>\n"
-#| " %1$s [options] <device> <mountpoint>\n"
-#| " %1$s [options] [--source <device>] [--target <mountpoint>]\n"
+#, c-format
 msgid ""
 " %1$s [options]\n"
 " %1$s [options] --pid <pid> | --system | <command> <arg>...\n"
 msgstr ""
 " %1$s [オプション]\n"
-" %1$s [オプション] <デバイス> | <マウントポイント>\n"
-" %1$s [オプション] <デバイス> <マウントポイント>\n"
-" %1$s [オプション] [--source <デバイス>] [--target <マウントポイント>]\n"
+" %1$s [オプション] --pid <PID> | --system | <コマンド> <引数>...\n"
 
 #: schedutils/uclampset.c:61
-#, fuzzy
-#| msgid "Show or change the resource limits of a process.\n"
 msgid "Show or change the utilization clamping attributes.\n"
-msgstr "リソースの制限値を表示または変更します。\n"
+msgstr "利用率制限属性を表示または変更します。\n"
 
 #: schedutils/uclampset.c:64
-#, fuzzy
-#| msgid " -<number>            how many lines to show\n"
 msgid " -m <value>           util_min value to set\n"
-msgstr " -<数値>                  表示する行数\n"
+msgstr " -m <値>              設定する util_min の値\n"
 
 #: schedutils/uclampset.c:65
-#, fuzzy
-#| msgid " -<number>            how many lines to show\n"
 msgid " -M <value>           util_max value to set\n"
-msgstr " -<数値>                  表示する行数\n"
+msgstr " -M <値>              設定する util_max の値\n"
 
 #: schedutils/uclampset.c:67
-#, fuzzy
-#| msgid " -z --zero               start with zeroed partition table\n"
 msgid " -p, --pid <pid>      operate on existing given pid\n"
-msgstr " -z, --zero               パーティションテーブルを最初から作成します\n"
+msgstr " -p, --pid <PID>      指定した既存のプロセス ID に対して操作を行います\n"
 
 #: schedutils/uclampset.c:68
-#, fuzzy
-#| msgid " -a, --hostlast       display hostnames in the last column\n"
 msgid " -s, --system         operate on system\n"
-msgstr "システムをサスペンド(_U)"
+msgstr " -s, --system         システムに対して操作を行います\n"
 
 #: schedutils/uclampset.c:69
 msgid " -R, --reset-on-fork  set reset-on-fork flag\n"
-msgstr ""
+msgstr " -R, --reset-on-fork  reset-on-fork フラグを設定します\n"
 
 #: schedutils/uclampset.c:75
 msgid "Utilization value range is [0:1024]. Use special -1 value to reset to system's default.\n"
-msgstr ""
+msgstr "利用率の値の範囲は [0:1024] です。-1 はシステムの既定値にリセットする特別な値です。\n"
 
 #: schedutils/uclampset.c:92 schedutils/uclampset.c:158
-#, fuzzy, c-format
-#| msgid "failed to get pid %d's attributes"
+#, c-format
 msgid "failed to get pid %d's uclamp values"
-msgstr "プロセス ID %d のポリシーの取得に失敗しました"
+msgstr "プロセス ID %d の uclamp 値の取得に失敗しました"
 
 #: schedutils/uclampset.c:99
-#, fuzzy, c-format
+#, c-format
 msgid "%s (%d) util_clamp: min: %d max: %d\n"
-msgstr "SCHED_%s での優先順位最小値／最大値\t: %d/%d\n"
+msgstr "%s (%d) util_clamp: 最小: %d 最大: %d\n"
 
 #: schedutils/uclampset.c:129
 #, c-format
 msgid "System util_clamp: min: %u max: %u\n"
-msgstr ""
+msgstr "システム util_clamp: 最小: %u 最大: %u\n"
 
 #: schedutils/uclampset.c:188
-#, fuzzy, c-format
-#| msgid "failed to set tid %d's policy"
+#, c-format
 msgid "failed to set tid %d's uclamp values"
-msgstr "タスク ID %d のポリシー設定に失敗しました"
+msgstr "タスク ID %d の uclamp 値の設定に失敗しました"
 
 #: schedutils/uclampset.c:193
-#, fuzzy, c-format
-#| msgid "failed to set pid %d's policy"
+#, c-format
 msgid "failed to set pid %d's uclamp values"
-msgstr "プロセス ID %d の親和性情報の設定に失敗しました"
+msgstr "プロセス ID %d の uclamp 値の設定に失敗しました"
 
 #: schedutils/uclampset.c:207
 msgid "util_min must be <= util_max"
-msgstr ""
+msgstr "util_min は <= util_max である必要があります"
 
 #: schedutils/uclampset.c:261
-#, fuzzy
-#| msgid "invalid time argument"
 msgid "invalid util_min argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "util_min 引数が正しくありません"
 
 #: schedutils/uclampset.c:265
-#, fuzzy
-#| msgid "invalid time argument"
 msgid "invalid util_max argument"
-msgstr "無効な最大待機時間です: %s"
+msgstr "util_max 引数が正しくありません"
 
 #: schedutils/uclampset.c:286
-#, fuzzy
-#| msgid "missing optstring argument"
 msgid "missing -p option"
-msgstr "オプションがありません"
+msgstr "-p オプションがありません"
 
 #: schedutils/uclampset.c:304
-#, fuzzy
-#| msgid "failed to execute %s"
 msgid "no cmd to execute"
-msgstr ""
-"<space>                 次の k 行分のテキストを表示します [現在の画面サイズ]\n"
-"z                       次の k 行分のテキストを表示します [現在の画面サイズ]*\n"
-"<return>                次の k 行分のテキストを表示します [1]*\n"
-"d または ctrl-D         k 行分スクロールします [現在のスクロールサイズ, 初期値は 11]*\n"
-"q または Q または <interrupt> more を終了します\n"
-"s                       k 行先に移動します [1]\n"
-"f                       k 回画面を先に移動します [1]\n"
-"b または ctrl-B         k 回画面を前に移動します [1]\n"
-"'                       直近に検索を開始した地点に移動します\n"
-"=                       現在の行番号を表示します\n"
-"/<正規表現>             正規表現に該当する k 番目の位置に移動します [1]\n"
-"n                       前回の正規表現を利用し、 k 番目の該当位置に移動します [1]\n"
-"!<コマンド> または :!<コマンド> サブシェルで <コマンド> を実行します\n"
-"v                       現在の行で /usr/bin/vi を起動します\n"
-"ctrl-L                  画面を再描画します\n"
-":n                      k 個分だけ先のファイルに移動します [1]\n"
-":p                      k 個分だけ前のファイルに移動します [1]\n"
-":f                      現在のファイル名と行番号を表示します\n"
-".                       直前のコマンドを繰り返します\n"
+msgstr "実行するコマンドがありません"
 
 #: sys-utils/blkdiscard.c:76
 #, c-format
