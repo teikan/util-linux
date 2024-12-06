@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-12-03 15:12+0900\n"
+"PO-Revision-Date: 2024-12-06 10:15+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -22466,10 +22466,9 @@ msgid "invalid nice argument"
 msgstr "nice の引数が間違っています"
 
 #: term-utils/agetty.c:931
-#, fuzzy, c-format
-#| msgid "could not set terminal attributes"
+#, c-format
 msgid "could not get terminal name: %d"
-msgstr "端末属性を設定できませんでした"
+msgstr "端末名を取得できませんでした: %d"
 
 #: term-utils/agetty.c:958
 #, c-format
@@ -22540,10 +22539,9 @@ msgid "failed to create reload file: %s: %m"
 msgstr "リロードファイル %s の作成に失敗しました: %m"
 
 #: term-utils/agetty.c:2013
-#, fuzzy, c-format
-#| msgid "%s: failed to get terminal attributes: %m"
+#, c-format
 msgid "failed to get terminal attributes: %m"
-msgstr "%s: 端末の属性取得に失敗しました: %m"
+msgstr "端末の属性取得に失敗しました: %m"
 
 #: term-utils/agetty.c:2035
 msgid "[press ENTER to login]"
@@ -22629,16 +22627,12 @@ msgid " -E, --remote               use -r <hostname> for login(1)\n"
 msgstr " -E, --remote               login(1) に対して -r <ホスト名> を設定します\n"
 
 #: term-utils/agetty.c:2461
-#, fuzzy
-#| msgid " -f, --issue-file <file>    display issue file\n"
 msgid " -f, --issue-file <list>    display issue files or directories\n"
-msgstr " -f, --issue-file <file>    issue ファイルを表示します\n"
+msgstr " -f, --issue-file <リスト>  issue ファイルまたはディレクトリを表示します\n"
 
 #: term-utils/agetty.c:2462
-#, fuzzy
-#| msgid " -i, --noissue              do not display issue file\n"
 msgid "     --show-issue           display issue file and exit\n"
-msgstr " -f, --issue-file <file>    issue ファイルを表示します\n"
+msgstr "     --show-issue           issue ファイルを表示して終了します\n"
 
 #: term-utils/agetty.c:2463
 msgid " -h, --flow-control         enable hardware flow control\n"
@@ -22657,10 +22651,8 @@ msgid " -I, --init-string <string> set init string\n"
 msgstr " -I, --init-string <文字列> 初期化文字列を指定します\n"
 
 #: term-utils/agetty.c:2467
-#, fuzzy
-#| msgid " -J  --noclear              do not clear the screen before prompt\n"
 msgid " -J, --noclear              do not clear the screen before prompt\n"
-msgstr " -J  --noclear              プロンプトの表示前に画面消去を行いません\n"
+msgstr " -J, --noclear              プロンプトの表示前に画面消去を行いません\n"
 
 #: term-utils/agetty.c:2468
 msgid " -l, --login-program <file> specify login program\n"
@@ -22679,10 +22671,8 @@ msgid " -n, --skip-login           do not prompt for login\n"
 msgstr " -n, --skip-login           ログインプロンプトを表示しないようにします\n"
 
 #: term-utils/agetty.c:2472
-#, fuzzy
-#| msgid " -N  --nonewline            do not print a newline before issue\n"
 msgid " -N, --nonewline            do not print a newline before issue\n"
-msgstr " -N  --nonewline            issue を表示する前に、改行を表示しないようにします\n"
+msgstr " -N, --nonewline            issue を表示する前に、改行を表示しないようにします\n"
 
 #: term-utils/agetty.c:2473
 msgid " -o, --login-options <opts> options that are passed to login\n"
@@ -22777,10 +22767,8 @@ msgid "--reload is unsupported on your system"
 msgstr "--reload はあなたのシステムではサポートされていません"
 
 #: term-utils/agetty.c:3017
-#, fuzzy
-#| msgid "failed to open directory"
 msgid "failed to open credentials directory"
-msgstr "ディレクトリを開く処理に失敗しました"
+msgstr "認証情報ディレクトリを開けませんでした"
 
 #: term-utils/mesg.c:78
 #, c-format
@@ -22802,7 +22790,7 @@ msgstr "tty がありません"
 #: term-utils/mesg.c:139
 #, c-format
 msgid "ttyname() failed, attempting to go around using: %s"
-msgstr ""
+msgstr "ttyname() が失敗しました、 %s を使って回避を試みます"
 
 #: term-utils/mesg.c:146
 msgid "is y"
@@ -22835,164 +22823,95 @@ msgid "Make a typescript of a terminal session.\n"
 msgstr "端末操作と表示の写しを作成します。\n"
 
 #: term-utils/script.c:199
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -I, --log-in <file>           log stdin to file\n"
-msgstr "%s へ I/O ログを書き込むことができません"
+msgstr " -I, --log-in <ファイル>       標準入力をファイルに記録します\n"
 
 #: term-utils/script.c:200
-#, fuzzy
-#| msgid " -a, --all         all (default)\n"
 msgid " -O, --log-out <file>          log stdout to file (default)\n"
-msgstr " -a, --all         全て (既定値)\n"
+msgstr " -O, --log-out <ファイル>      標準出力をファイルに記録します (既定値)\n"
 
 #: term-utils/script.c:201
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -B, --log-io <file>           log stdin and stdout to file\n"
-msgstr " -f, ---file <ファイル>   指定したファイルの内容をログに記録します\n"
+msgstr " -B, --log-io <ファイル>       標準入力と標準出力をファイルに記録します\n"
 
 #: term-utils/script.c:204
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -T, --log-timing <file>       log timing information to file\n"
-msgstr " -f, ---file <ファイル>   指定したファイルの内容をログに記録します\n"
+msgstr " -T, --log-timing <ファイル>   タイミング情報をファイルに記録します\n"
 
 #: term-utils/script.c:205
 msgid " -t[<file>], --timing[=<file>] deprecated alias to -T (default file is stderr)\n"
-msgstr ""
+msgstr " -t[<ファイル>], --timing[=<ファイル>] -T の非推奨の別名 (既定のファイルは標準エラー)\n"
 
 #: term-utils/script.c:206
 msgid " -m, --logging-format <name>   force to 'classic' or 'advanced' format\n"
-msgstr ""
+msgstr " -m, --logging-format <名前>   'classic' または 'advanced' 形式を強制します\n"
 
 #: term-utils/script.c:209
-#, fuzzy
-#| msgid " -a, --append              append partitions to existing partition table\n"
 msgid " -a, --append                  append to the log file\n"
-msgstr "ファイルの末尾に追加"
+msgstr " -a, --append                  ログファイルに追記します\n"
 
 #: term-utils/script.c:210
-#, fuzzy
-#| msgid " -c, --command <command>  run a single command string through the shell\n"
 msgid " -c, --command <command>       run command rather than interactive shell\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr " -c, --command <コマンド>      対話的なシェルではなく、指定したコマンドを実行します\n"
 
 #: term-utils/script.c:211
-#, fuzzy
-#| msgid " -r, --reset                  reset the port\n"
 msgid " -e, --return                  return exit code of the child process\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr " -e, --return                  子プロセスの終了コードを返します\n"
 
 #: term-utils/script.c:212
-#, fuzzy
-#| msgid " -t, --table                      create a table\n"
 msgid " -f, --flush                   run flush after each write\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr " -f, --flush                   書き込みごとに flush します\n"
 
 #: term-utils/script.c:213
-#, fuzzy
-#| msgid "     --raw                 use raw status output format\n"
 msgid "     --force                   use output file even when it is a link\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr "     --force                   出力ファイルがリンクであった場合も、そのまま使用します\n"
 
 #: term-utils/script.c:214
-#, fuzzy
-#| msgid " -L, --color[=<when>]          colorize output (auto, always or never)\n"
 msgid " -E, --echo <when>             echo input in session (auto, always or never)\n"
-msgstr " -L, --color[=<いつ>]          メッセージを色づけします(auto、always、never のどれか)\n"
+msgstr ""
+" -E, --echo <いつ>             セッションの入力をエコーバックします\n"
+"                                 (auto、always、never のどれか)\n"
 
 #: term-utils/script.c:215
-#, fuzzy
-#| msgid " -o, --output <list>  define which output columns to use\n"
 msgid " -o, --output-limit <size>     terminate if output files exceed size\n"
-msgstr " -o, --output <list> 出力する列を指定します\n"
+msgstr " -o, --output-limit <サイズ>   出力ファイルがサイズを超えたら打ち切ります\n"
 
 #: term-utils/script.c:216
-#, fuzzy
-#| msgid " -q, --quiet             turn on quiet mode\n"
 msgid " -q, --quiet                   be quiet\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr " -q, --quiet                   静寂モードを指定します\n"
 
 #: term-utils/script.c:299
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script done on %s\n"
+#, c-format
 msgid ""
 "\n"
 "Script done on %s [<%s>]\n"
-msgstr "スクリプトを終了しました。ファイルは %s です\n"
+msgstr "\nスクリプトを %s に終了 [<%s>]\n"
 
 #: term-utils/script.c:301
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script done on %s\n"
+#, c-format
 msgid ""
 "\n"
 "Script done on %s [COMMAND_EXIT_CODE=\"%d\"]\n"
-msgstr ""
-"\n"
-"スクリプト終了 %s\n"
+msgstr "\nスクリプトを %s に終了 [COMMAND_EXIT_CODE=\"%d\"]\n"
 
 #: term-utils/script.c:399
-#, fuzzy, c-format
-#| msgid "Script started on %s\n"
+#, c-format
 msgid "Script started on %s ["
-msgstr "スクリプト開始 %s\n"
+msgstr "スクリプトを %s に開始 ["
 
 #: term-utils/script.c:415
-#, fuzzy, c-format
+#, c-format
 msgid "%*s<not executed on terminal>"
-msgstr "命令は決して実行されません"
+msgstr "%*s<端末で実行されていません>"
 
 #: term-utils/script.c:689
 #, c-format
 msgid "Script terminated, max output files size %<PRIu64> exceeded.\n"
-msgstr ""
+msgstr "スクリプトを打ち切りました、最大出力ファイルサイズ %<PRIu64> を超えました。\n"
 
-# Translator's NOTE: 意味不明
 #: term-utils/script.c:691
-#, fuzzy
-#| msgid "preallocation size exceeded"
 msgid "max output size exceeded"
-msgstr "ファイルサイズ制限を越えました"
+msgstr "最大出力サイズを超えました"
 
 #: term-utils/script.c:752
 #, c-format
@@ -23006,171 +22925,117 @@ msgstr ""
 "プログラムの起動を中止しました。"
 
 #: term-utils/script.c:833
-#, fuzzy, c-format
-#| msgid "unsupported color mode"
+#, c-format
 msgid "unssuported echo mode: '%s'"
-msgstr "  -s, --silent, --quiet       レシピを表示しない.\n"
+msgstr "未対応のエコーモードです: '%s'"
 
 #: term-utils/script.c:858
-#, fuzzy
-#| msgid "failed to parse %s limit"
 msgid "failed to parse output limit size"
-msgstr "%s リミットの解釈に失敗しました"
+msgstr "出力サイズ制限の解釈に失敗しました"
 
 #: term-utils/script.c:869
-#, fuzzy, c-format
-#| msgid "unsupported option format: %s"
+#, c-format
 msgid "unsupported logging format: '%s'"
-msgstr "未対応のオプション形式です: %s"
+msgstr "未対応のログ形式です: '%s'"
 
 #: term-utils/script.c:922
-#, fuzzy
-#| msgid "option --find is mutually exclusive with <device>"
 msgid "log multiple streams is mutually exclusive with 'classic' format"
-msgstr "オプション --find は <device> と同時に指定することができません"
+msgstr "複数ストリームのログは 'classic' 形式と同時に指定することができません"
 
 #: term-utils/script.c:949
-#, fuzzy, c-format
-#| msgid "Script started on %s\n"
+#, c-format
 msgid "Script started"
-msgstr "スクリプト開始: %s"
+msgstr "スクリプトを開始しました"
 
 #: term-utils/script.c:951
-#, fuzzy, c-format
-#| msgid "Script done, file is %s\n"
+#, c-format
 msgid ", output log file is '%s'"
-msgstr "%s: 無効なログファイルのパス"
+msgstr "、出力ログファイルは '%s' です"
 
 #: term-utils/script.c:953
-#, fuzzy, c-format
-#| msgid "Script done, file is %s\n"
+#, c-format
 msgid ", input log file is '%s'"
-msgstr "入力ファイル '%s' が読み込み可能ではありません\n"
+msgstr "、入力ログファイルは '%s' です"
 
 #: term-utils/script.c:955
-#, fuzzy, c-format
-#| msgid "failed to read timing file %s"
+#, c-format
 msgid ", timing file is '%s'"
-msgstr "無効なタイミングファイルの行です: %s"
+msgstr "、タイミングファイルは '%s' です"
 
 #: term-utils/script.c:956
-#, fuzzy, c-format
-#| msgid "\n"
+#, c-format
 msgid ".\n"
-msgstr "\n"
+msgstr "。\n"
 
 #: term-utils/script.c:1065
-#, fuzzy, c-format
-#| msgid "Script done, file is %s\n"
+#, c-format
 msgid "Script done.\n"
-msgstr ""
-"\n"
-"スクリプト終了: %s"
+msgstr "スクリプトを終了しました。\n"
 
 #: term-utils/scriptlive.c:60
-#, fuzzy, c-format
-#| msgid " %s [-t] timingfile [typescript] [divisor]\n"
+#, c-format
 msgid " %s [-t] timingfile [-I|-B] typescript\n"
-msgstr " %s [-t] タイミングファイル [タイプスクリプト] [除数]\n"
+msgstr " %s [-t] タイミングファイル [-I|-B] タイプスクリプト]\n"
 
 #: term-utils/scriptlive.c:64
-#, fuzzy
 msgid "Execute terminal typescript.\n"
-msgstr "端末操作と表示の写しを作成します。\n"
+msgstr "端末のタイプスクリプトを実行します。\n"
 
 #: term-utils/scriptlive.c:67 term-utils/scriptreplay.c:57
-#, fuzzy
-#| msgid " -t, --time <time_t>      time to wake\n"
 msgid " -t, --timing <file>     script timing log file\n"
-msgstr " -t, --time <time_t>      復帰する時刻を指定します\n"
+msgstr " -t, --timing <ファイル> script でタイミングを記録したファイル\n"
 
 #: term-utils/scriptlive.c:68 term-utils/scriptreplay.c:58
 msgid " -T, --log-timing <file> alias to -t\n"
-msgstr ""
+msgstr " -T, --log-timing <ファイル> -t の別名\n"
 
 #: term-utils/scriptlive.c:69 term-utils/scriptreplay.c:59
-#, fuzzy
-#| msgid " -f, --issue-file <file>    display issue file\n"
 msgid " -I, --log-in <file>     script stdin log file\n"
-msgstr "%s へ I/O ログを書き込むことができません"
+msgstr " -I, --log-in <ファイル> script で標準入力を記録したファイル\n"
 
 #: term-utils/scriptlive.c:70 term-utils/scriptreplay.c:61
 msgid " -B, --log-io <file>     script stdin and stdout log file\n"
-msgstr ""
+msgstr " -B, --log-io <ファイル> script で標準入出力を記録したファイル\n"
 
 #: term-utils/scriptlive.c:73
-#, fuzzy
-#| msgid " -c, --command <command>  run a single command string through the shell\n"
 msgid " -c, --command <command> run command rather than interactive shell\n"
-msgstr ""
-" -a, --append            出力先に追記します\n"
-" -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
-" -e, --return            子プロセスの終了コードを返します\n"
-" -f, --flush             それぞれの書き込み処理で flush します\n"
-"     --force             出力ファイルがリンクであった場合も、そのまま使用します\n"
-" -q, --quiet             静寂モードを指定します\n"
-" -t[<ファイル>], --timing[=<ファイル>] タイミングデータを標準エラー出力 または ファイル に出力します\n"
+msgstr " -c, --command <コマンド> 対話的なシェルではなく、指定したコマンドを実行します\n"
 
 #: term-utils/scriptlive.c:74 term-utils/scriptreplay.c:67
-#, fuzzy
 msgid " -d, --divisor <num>     speed up or slow down execution with time divisor\n"
-msgstr ""
-" -t, --timing <ファイル> スクリプトのタイミングデータファイルを指定します\n"
-" -s, --typescript <ファイル> スクリプトの端末セッションからの出力ファイルを指定します\n"
-" -d, --divisor <除数>    指定した割合で実行速度を増加または減少させます\n"
-" -m, --maxdelay <秒数>   更新の間に最大で指定した秒数まで待ちます\n"
-" -V, --version           バージョン情報を表示して終了します\n"
-" -h, --help              このヘルプを表示して終了します\n"
-"\n"
+msgstr " -d, --divisor <除数>    指定した割合で実行速度を増加または減少させます\n"
 
 #: term-utils/scriptlive.c:75 term-utils/scriptreplay.c:68
-#, fuzzy
-#| msgid "     --delay <number>       sleep seconds before prompt\n"
 msgid " -m, --maxdelay <num>    wait at most this many seconds between updates\n"
-msgstr ""
-" -t, --timing <ファイル> スクリプトのタイミングデータファイルを指定します\n"
-" -s, --typescript <ファイル> スクリプトの端末セッションからの出力ファイルを指定します\n"
-" -d, --divisor <除数>    指定した割合で実行速度を増加または減少させます\n"
-" -m, --maxdelay <秒数>   更新の間に最大で指定した秒数まで待ちます\n"
-" -V, --version           バージョン情報を表示して終了します\n"
-" -h, --help              このヘルプを表示して終了します\n"
-"\n"
+msgstr " -m, --maxdelay <秒数>   更新の間に最大で指定した秒数まで待ちます\n"
 
 #: term-utils/scriptlive.c:226 term-utils/scriptreplay.c:234
-#, fuzzy
-#| msgid "failed to parse argument"
 msgid "failed to parse maximal delay argument"
-msgstr "引数の処理に失敗しました"
+msgstr "最大待ち時間引数の解釈に失敗しました"
 
 #: term-utils/scriptlive.c:249 term-utils/scriptreplay.c:275
-#, fuzzy
-#| msgid "no file specified"
 msgid "timing file not specified"
-msgstr "無効なタイミングファイルの行です: %s"
+msgstr "タイミングファイルが指定されていません"
 
 #: term-utils/scriptlive.c:251
-#, fuzzy
-#| msgid "no input file specified"
 msgid "stdin typescript file not specified"
-msgstr "タイプスクリプトファイル %s の読み込みに失敗しました"
+msgstr "標準入力タイプスクリプトファイルが指定されていません"
 
 #: term-utils/scriptlive.c:277
 #, c-format
 msgid ">>> scriptlive: Starting your typescript execution by %s.\n"
-msgstr ""
+msgstr ">>> scriptlive: タイプスクリプトの %s での実行を開始します。\n"
 
 #: term-utils/scriptlive.c:284
-#, fuzzy
-#| msgid "failed to allocate script handler"
 msgid "failed to allocate PTY handler"
-msgstr "pty ハンドラの割り当てに失敗しました"
+msgstr "PTY ハンドラの割り当てに失敗しました"
 
 #: term-utils/scriptlive.c:365
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 ">>> scriptlive: done.\n"
-msgstr "終了。\n"
+msgstr "\n>>> scriptlive: 終了しました。\n"
 
 #: term-utils/scriptreplay.c:50
 #, c-format
@@ -23182,63 +23047,52 @@ msgid "Play back terminal typescripts, using timing information.\n"
 msgstr "端末の typescript の出力をタイミング情報も使って再生します。\n"
 
 #: term-utils/scriptreplay.c:60
-#, fuzzy
-#| msgid " -f, --from <N>    start at the track N (default 0)\n"
 msgid " -O, --log-out <file>    script stdout log file (default)\n"
-msgstr " -f, --from <N>    トラック N より開始します (既定値 0)\n"
+msgstr " -O, --log-out <ファイル> script で標準出力を記録したファイル (既定値)\n"
 
 #: term-utils/scriptreplay.c:63
 msgid " -s, --typescript <file> deprecated alias to -O\n"
-msgstr ""
+msgstr " -s, --typescript <ファイル> -O の非推奨の別名\n"
 
 #: term-utils/scriptreplay.c:66
-#, fuzzy
-#| msgid " -V          display version information and exit\n"
 msgid "     --summary           display overview about recorded session and exit\n"
-msgstr " -V          バージョン情報を表示して終了します\n"
+msgstr "     --summary           記録されたセッションの概要を表示して終了します\n"
 
 #: term-utils/scriptreplay.c:69
 msgid " -x, --stream <name>     stream type (out, in, signal or info)\n"
-msgstr ""
+msgstr " -x, --stream <名前>     ストリームタイプ (out, in, signal, info)\n"
 
 #: term-utils/scriptreplay.c:70
 msgid " -c, --cr-mode <type>    CR char mode (auto, never, always)\n"
-msgstr ""
+msgstr " -c, --cr-mode <タイプ>  復帰文字の変換モード (auto, never, always)\n"
 
 #: term-utils/scriptreplay.c:131
-#, fuzzy
-#| msgid "tcgetattr failed"
 msgid "unexpected tcgetattr failure"
-msgstr "tcgetattr に失敗しました"
+msgstr "tcgetattr で予期しないエラーが発生しました"
 
 #: term-utils/scriptreplay.c:213
-#, fuzzy, c-format
-#| msgid "unsupported label '%s'"
+#, c-format
 msgid "unsupported mode name: '%s'"
-msgstr "未対応のロックモードです: %s"
+msgstr "未対応のモード名です: '%s'"
 
 #: term-utils/scriptreplay.c:246
-#, fuzzy, c-format
-#| msgid "unsupported argument: %s"
+#, c-format
 msgid "unsupported stream name: '%s'"
-msgstr "この名前の長さには未対応です: %d"
+msgstr "未対応のストリーム名です: '%s'"
 
 #: term-utils/scriptreplay.c:277
-#, fuzzy
-#| msgid "no file specified"
 msgid "data log file not specified"
-msgstr "%s: 無効なログファイルのパス"
+msgstr "データログファイルが指定されていません"
 
 #: term-utils/scriptreplay.c:331
-#, fuzzy, c-format
-#| msgid "klogctl error"
+#, c-format
 msgid "%s: log file error"
-msgstr "%s: 無効なログファイルのパス"
+msgstr "%s: ログファイルのエラー"
 
 #: term-utils/scriptreplay.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "%s: line %d: timing file error"
-msgstr "タイミングファイルの読み込みエラー: %s"
+msgstr "%s: %d 行目: タイミングファイルのエラー"
 
 #: term-utils/setterm.c:237
 #, c-format
@@ -23254,206 +23108,148 @@ msgid "Set the attributes of a terminal.\n"
 msgstr "端末の属性を設定します。\n"
 
 #: term-utils/setterm.c:387
-#, fuzzy
-#| msgid " --term          <terminal_name>   override TERM environment variable\n"
 msgid " --term <terminal_name>        override TERM environment variable\n"
-msgstr " --term          <端末名>          TERM 環境変数で指定した端末ではなく、この端末名を使用します\n"
+msgstr " --term <端末名>               TERM 環境変数で指定した端末ではなく、この端末名を使用します\n"
 
 #: term-utils/setterm.c:388
-#, fuzzy
-#| msgid " --reset                           reset terminal to power-on state\n"
 msgid " --reset                       reset terminal to power-on state\n"
-msgstr " --reset                           端末を電源ON状態にリセットします\n"
+msgstr " --reset                       端末を電源ON状態にリセットします\n"
 
 #: term-utils/setterm.c:389
-#, fuzzy
-#| msgid " --resize                          reset terminal rows and columns\n"
 msgid " --resize                      reset terminal rows and columns\n"
-msgstr " --resize                          端末の行数と列数をリセットします\n"
+msgstr " --resize                      端末の行数と列数をリセットします\n"
 
 #: term-utils/setterm.c:390
-#, fuzzy
-#| msgid " -q, --stats                        display statistics about the tty\n"
 msgid " --initialize                  display init string, and use default settings\n"
-msgstr " -q, --stats                        tty に関する統計情報を表示します\n"
+msgstr " --initialize                  初期化文字列を表示し、既定の設定を使用します\n"
 
 #: term-utils/setterm.c:391
-#, fuzzy
-#| msgid " --default                         use default terminal settings\n"
 msgid " --default                     use default terminal settings\n"
-msgstr " --default                         端末のデフォルト設定を使用します\n"
+msgstr " --default                     端末のデフォルト設定を使用します\n"
 
 #: term-utils/setterm.c:392
-#, fuzzy
-#| msgid " --store                           save current terminal settings as default\n"
 msgid " --store                       save current terminal settings as default\n"
-msgstr " --store                           現在の端末設定をデフォルトとして保存します\n"
+msgstr " --store                       現在の端末設定をデフォルトとして保存します\n"
 
 #: term-utils/setterm.c:395
-#, fuzzy
-#| msgid " --cursor        [on|off]          display cursor\n"
 msgid " --cursor on|off               display cursor\n"
-msgstr " --cursor        [on|off]          カーソル表示/非表示を切り替えます\n"
+msgstr " --cursor on|off               カーソル表示/非表示を切り替えます\n"
 
 #: term-utils/setterm.c:396
-#, fuzzy
-#| msgid " --repeat        [on|off]          keyboard repeat\n"
 msgid " --repeat on|off               keyboard repeat\n"
-msgstr " --repeat        [on|off]          キーボードの自動リピートを切り替えます\n"
+msgstr " --repeat on|off               キーボードの自動リピートを切り替えます\n"
 
 #: term-utils/setterm.c:397
 msgid " --appcursorkeys on|off        cursor key application mode\n"
-msgstr ""
+msgstr " --appcursorkeys on|off        カーソルキーアプリケーションモード\n"
 
 #: term-utils/setterm.c:398
-#, fuzzy
-#| msgid " -, -l, --login                  make the shell a login shell\n"
 msgid " --linewrap on|off             continue on a new line when a line is full\n"
-msgstr "  -h, --help                     このちょっとした使い方を表示する\n"
+msgstr " --linewrap on|off             行がいっぱいになったら次の行へ続けます\n"
 
 #: term-utils/setterm.c:399
 msgid " --inversescreen on|off        swap colors for the whole screen\n"
-msgstr ""
+msgstr " --inversescreen on|off        画面全体で文字色と背景色を入れ替えます\n"
 
 #: term-utils/setterm.c:402
-#, fuzzy
-#| msgid " --msg           [on|off]          send kernel messages to console\n"
 msgid " --msg on|off                  send kernel messages to console\n"
-msgstr " --msg           [on|off]          カーネルメッセージをコンソールに送ります\n"
+msgstr " --msg on|off                  カーネルメッセージをコンソールに送ります\n"
 
 #: term-utils/setterm.c:403
-#, fuzzy
-#| msgid " --msglevel      0-8               kernel console log level\n"
 msgid " --msglevel <0-8>              kernel console log level\n"
-msgstr " --msglevel      0-8               カーネルコンソールログのレベル\n"
+msgstr " --msglevel <0-8>              カーネルコンソールログのレベル\n"
 
 #: term-utils/setterm.c:406
-#, fuzzy
-#| msgid " --foreground    default|<color>   set foreground color\n"
 msgid " --foreground default|<color>  set foreground color\n"
-msgstr " --foreground    default|<color>   文字の色を設定します\n"
+msgstr " --foreground default|<color>   文字の色を設定します\n"
 
 #: term-utils/setterm.c:407
-#, fuzzy
-#| msgid " --background    default|<color>   set background color\n"
 msgid " --background default|<color>  set background color\n"
-msgstr " --background    default|<color>   背景色を設定します\n"
+msgstr " --background default|<color>  背景色を設定します\n"
 
 #: term-utils/setterm.c:408
-#, fuzzy
-#| msgid " --ulcolor       [bright] <color>  set underlined text color\n"
 msgid " --ulcolor [bright] <color>    set underlined text color\n"
-msgstr " --ulcolor       [bright] <color>  下線付き文字の色を設定します\n"
+msgstr " --ulcolor [bright] <color>    下線付き文字の色を設定します\n"
 
 #: term-utils/setterm.c:409
-#, fuzzy
-#| msgid " --hbcolor       [bright] <color>  set bold text color\n"
 msgid " --hbcolor [bright] <color>    set half-bright text color\n"
-msgstr " --hbcolor       [bright] <color>  太字の文字色を設定します\n"
+msgstr " --hbcolor [bright] <color>    薄暗色の文字の色を設定します\n"
 
 #: term-utils/setterm.c:410
 msgid "        <color>: black blue cyan green grey magenta red white yellow\n"
 msgstr "        <color>: black blue cyan green grey magenta red white yellow\n"
 
 #: term-utils/setterm.c:413
-#, fuzzy
-#| msgid " --bold          [on|off]          bold\n"
 msgid " --bold on|off                 bold\n"
-msgstr " --bold          [on|off]          太字\n"
+msgstr " --bold on|off                 太字\n"
 
 #: term-utils/setterm.c:414
-#, fuzzy
-#| msgid " --half-bright   [on|off]          dim\n"
 msgid " --half-bright on|off          dim\n"
-msgstr " --half-bright   [on|off]          薄暗色 (半輝度) \n"
+msgstr " --half-bright on|off          薄暗色 (半輝度) \n"
 
 #: term-utils/setterm.c:415
-#, fuzzy
-#| msgid " --blink         [on|off]          blink\n"
 msgid " --blink on|off                blink\n"
-msgstr " --blink         [on|off]          点滅\n"
+msgstr " --blink on|off                点滅\n"
 
 #: term-utils/setterm.c:416
-#, fuzzy
-#| msgid " --underline     [on|off]          underline\n"
 msgid " --underline on|off            underline\n"
-msgstr " --underline     [on|off]          下線\n"
+msgstr " --underline on|off            下線\n"
 
 #: term-utils/setterm.c:417
-#, fuzzy
-#| msgid " --reverse       [on|off]          swap foreground and background colors\n"
 msgid " --reverse  on|off             swap foreground and background colors\n"
-msgstr " --reverse       [on|off]          文字色と背景色を入れ替える\n"
+msgstr " --reverse  on|off             文字色と背景色を入れ替えます\n"
 
 #: term-utils/setterm.c:420
-#, fuzzy
-#| msgid " --clear         [all|rest]        clear screen and set cursor position\n"
 msgid " --clear[=<all|rest>]          clear screen and set cursor position\n"
-msgstr " --clear         [all|rest]        画面を消去する範囲を指定。all:全画面、rest:カーソル以降\n"
+msgstr " --clear[=<all|rest>]          画面を消去してカーソル位置を設定します\n"
 
 #: term-utils/setterm.c:421
-#, fuzzy
-#| msgid " -<number>            how many lines to show\n"
 msgid " --tabs[=<number>...]          set these tab stop positions, or show them\n"
-msgstr " -<数値>                  表示する行数\n"
+msgstr " --tabs[=<数値>...]            タブの停止位置を設定または表示します\n"
 
 #: term-utils/setterm.c:422
 msgid " --clrtabs[=<number>...]       clear these tab stop positions, or all\n"
-msgstr ""
+msgstr " --clrtabs[=<数値>...]         指定の、またはすべてのタブの停止位置を消去します\n"
 
 #: term-utils/setterm.c:423
 msgid " --regtabs[=1-160]             set a regular tab stop interval\n"
-msgstr ""
+msgstr " --regtabs[=1-160]             規則的なタブ停止位置を設定します\n"
 
 #: term-utils/setterm.c:424
 msgid " --blank[=0-60|force|poke]     set time of inactivity before screen blanks\n"
-msgstr ""
+msgstr " --blank[=0-60|force|poke]     画面を消灯するまでの無動作時間を設定します\n"
 
 #: term-utils/setterm.c:427
 msgid " --dump[=<number>]             write vcsa<number> console dump to file\n"
-msgstr ""
+msgstr " --dump[=<数値>]               vcsa<数値> コンソールのダンプをファイルに書き込みます\n"
 
 #: term-utils/setterm.c:428
-#, fuzzy
-#| msgid " -a, --append              append partitions to existing partition table\n"
 msgid " --append <number>             append vcsa<number> console dump to file\n"
-msgstr " -a, --append              パーティションを既存のパーティションテーブルに追加します\n"
+msgstr " --append <数値>               vcsa<数値> コンソールのダンプをファイルに追記します\n"
 
 #: term-utils/setterm.c:429
-#, fuzzy
-#| msgid " --file          <filename>        name of the dump file\n"
 msgid " --file <filename>             name of the dump file\n"
-msgstr " --file          <ファイル名>      ダンプ先のファイル名\n"
+msgstr " --file <ファイル名>           ダンプ先のファイル名\n"
 
 #: term-utils/setterm.c:432
-#, fuzzy
-#| msgid " --powersave     [on|vsync|hsync|powerdown|off]\n"
 msgid " --powersave on|vsync|hsync|powerdown|off\n"
-msgstr " --powersave     [on|vsync|hsync|powerdown|off]\n"
+msgstr " --powersave on|vsync|hsync|powerdown|off\n"
 
 #: term-utils/setterm.c:433
-#, fuzzy
-#| msgid "                                   set vesa powersaving features\n"
 msgid "                               set vesa powersaving features\n"
-msgstr "                                   VESA の省電力機能設定\n"
+msgstr "                               VESA 省電力機能を設定します\n"
 
 #: term-utils/setterm.c:434
-#, fuzzy
-#| msgid " --powerdown     [0-60]            set vesa powerdown interval in minutes\n"
 msgid " --powerdown[=<0-60>]          set vesa powerdown interval in minutes\n"
-msgstr " --powerdown     [0-60]            VESA による電源OFF までの時間を分単位で指定します\n"
+msgstr " --powerdown[=<0-60>]          VESA による電源OFF までの時間を分単位で指定します\n"
 
 #: term-utils/setterm.c:437
-#, fuzzy
-#| msgid " --blength       [0-2000]          duration of the bell in milliseconds\n"
 msgid " --blength[=<0-2000>]          duration of the bell in milliseconds\n"
-msgstr " --blength       [0-2000]          ベル音の長さをミリ秒単位で指定します\n"
+msgstr " --blength[=<0-2000>]          ベル音の長さをミリ秒単位で指定します\n"
 
 #: term-utils/setterm.c:438
-#, fuzzy
-#| msgid " --bfreq         <number>          bell frequency in Hertz\n"
 msgid " --bfreq[=<number>]            bell frequency in Hertz\n"
-msgstr " --bfreq         <数値>            ベル音の周波数をヘルツで指定します\n"
+msgstr " --bfreq[=<数値>]              ベル音の周波数をヘルツで指定します\n"
 
 #: term-utils/setterm.c:451
 msgid "duplicate use of an option"
@@ -23482,16 +23278,12 @@ msgid "terminal %s does not support %s"
 msgstr "端末 %s は %s をサポートしていません"
 
 #: term-utils/setterm.c:851
-#, fuzzy
-#| msgid "ioctl failed"
 msgid "fcntl failed"
-msgstr "ioctl に失敗しました"
+msgstr "fcntl に失敗しました"
 
 #: term-utils/setterm.c:881
-#, fuzzy
-#| msgid "seek failed"
 msgid "select failed"
-msgstr "選択"
+msgstr "select に失敗しました"
 
 #: term-utils/setterm.c:907
 msgid "stdin does not refer to a terminal"
@@ -23571,10 +23363,8 @@ msgid "Write a message to all users.\n"
 msgstr "すべてのユーザーにメッセージを送ります。\n"
 
 #: term-utils/wall.c:100
-#, fuzzy
-#| msgid " -g, --group <group>             specify the primary group\n"
 msgid " -g, --group <group>     only send message to group\n"
-msgstr " -g, --group <グループ>          プライマリグループを指定します\n"
+msgstr " -g, --group <グループ>    グループにだけメッセージを送ります\n"
 
 #: term-utils/wall.c:101
 msgid " -n, --nobanner          do not print banner, works only for root\n"
@@ -23585,10 +23375,8 @@ msgid " -t, --timeout <timeout> write timeout in seconds\n"
 msgstr " -t, --timeout <制限時間>  書き込みの制限時間です (単位:秒)\n"
 
 #: term-utils/wall.c:130
-#, fuzzy
-#| msgid "invalid speed argument"
 msgid "invalid group argument"
-msgstr "引数が正しくありません - 終了トラック"
+msgstr "group 引数が正しくありません"
 
 #: term-utils/wall.c:132
 #, c-format
@@ -23597,7 +23385,7 @@ msgstr "%s: 未知のグループIDです"
 
 #: term-utils/wall.c:175
 msgid "getgrouplist found more groups than sysconf allows"
-msgstr ""
+msgstr "getgrouplist で見つかったグループの数が sysconf で許容できる数を超えています"
 
 #: term-utils/wall.c:221
 msgid "--nobanner is available only for root"
@@ -23609,16 +23397,14 @@ msgid "invalid timeout argument: %s"
 msgstr "制限時間の引数が正しくありません: %s"
 
 #: term-utils/wall.c:262 term-utils/write.c:144 term-utils/write.c:215
-#, fuzzy, c-format
-#| msgid "error writing %s: %s"
+#, c-format
 msgid "error getting sessions: %s"
-msgstr "%s への書き込み時にエラーが発生しました: %s"
+msgstr "セッション取得のエラー: %s"
 
 #: term-utils/wall.c:270 term-utils/write.c:153 term-utils/write.c:223
-#, fuzzy, c-format
-#| msgid "gethostname failed"
+#, c-format
 msgid "get user name failed: %s"
-msgstr "gethostname に失敗しました"
+msgstr "ユーザ名の取得に失敗しました: %s"
 
 #: term-utils/wall.c:333
 msgid "cannot get passwd uid"
@@ -23647,7 +23433,7 @@ msgstr "別のユーザーにメッセージを送ります。\n"
 #: term-utils/write.c:121
 #, c-format
 msgid "effective gid does not match group of %s"
-msgstr ""
+msgstr "実効 GID が %s のグループと一致しません"
 
 #: term-utils/write.c:309
 #, c-format
@@ -23669,16 +23455,14 @@ msgid "%s is logged in more than once; writing to %s"
 msgstr "%s は複数ログインしています; %s に書き込みます"
 
 #: term-utils/write.c:373
-#, fuzzy, c-format
-#| msgid "Message from %s@%s (as %s) on %s at %s ..."
+#, c-format
 msgid "Message from %s@%s (as %s) on %s at %02d:%02d ..."
-msgstr "%s@%s から流れてきた全体周知メッセージ (%s) (%s):"
+msgstr "%s@%s (ユーザ %s) が %s で %02d:%02d に流したメッセージ ..."
 
 #: term-utils/write.c:377
-#, fuzzy, c-format
-#| msgid "Message from %s@%s on %s at %s ..."
+#, c-format
 msgid "Message from %s@%s on %s at %02d:%02d ..."
-msgstr "%s@%s から流れてきた全体周知メッセージ (%s) (%s):"
+msgstr "%s@%s が %s で %02d:%02d に流したメッセージ ..."
 
 #: term-utils/write.c:388
 msgid "carefulputc failed"
