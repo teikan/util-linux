@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-12-08 10:29+0900\n"
+"PO-Revision-Date: 2024-12-08 10:34+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -23097,7 +23097,7 @@ msgstr "%s: %d 行目: タイミングファイルのエラー"
 #: term-utils/setterm.c:237
 #, c-format
 msgid "argument error: bright %s is not supported"
-msgstr "引数エラー: 明るさ %s はサポートされていません"
+msgstr "引数エラー: 明るい %s はサポートされていません"
 
 #: term-utils/setterm.c:328
 msgid "too many tabs"
