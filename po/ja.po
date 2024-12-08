@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2024-05-01 21:49+0200\n"
-"PO-Revision-Date: 2024-12-06 10:15+0900\n"
+"PO-Revision-Date: 2024-12-08 10:16+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -23483,10 +23483,8 @@ msgid "%s has messages disabled on %s"
 msgstr "%s は %s でメッセージを無効にしています"
 
 #: text-utils/col.c:174
-#, fuzzy
-#| msgid "Filter out reverse line feeds.\n"
 msgid "Filter out reverse line feeds from standard input.\n"
-msgstr "入力から逆改行を取り除くフィルタです。\n"
+msgstr "標準入力から逆改行を取り除くフィルタです。\n"
 
 #: text-utils/col.c:177
 #, c-format
@@ -23576,73 +23574,50 @@ msgid "second argument"
 msgstr "2 つ目の値"
 
 #: text-utils/column.c:282
-#, fuzzy
-#| msgid "failed to parse end"
 msgid "failed to parse column"
-msgstr "列の名前の解釈に失敗しました"
+msgstr "列の解釈に失敗しました"
 
 #: text-utils/column.c:291
-#, fuzzy, c-format
-#| msgid "undefined mountpoint"
+#, c-format
 msgid "undefined column name '%s'"
-msgstr ""
-"\n"
-"\n"
-"%s[%s] からの未定義シンボル:\n"
-"\n"
+msgstr "未定義の列の名前 '%s'"
 
 #: text-utils/column.c:403
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-order list"
-msgstr "一覧 '%s' の処理に失敗しました"
+msgstr "--table-order のリストの解釈に失敗しました"
 
 #: text-utils/column.c:481
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-hide list"
-msgstr "一覧 '%s' の処理に失敗しました"
+msgstr "--table-hide のリストの解釈に失敗しました"
 
 #: text-utils/column.c:485
-#, fuzzy
-#| msgid "failed to parse start"
 msgid "failed to parse --table-right list"
-msgstr "一覧 '%s' の処理に失敗しました"
+msgstr "--table-right のリストの解釈に失敗しました"
 
 #: text-utils/column.c:489
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-trunc list"
-msgstr "一覧 '%s' の処理に失敗しました"
+msgstr "--table-trunc のリストの解釈に失敗しました"
 
 #: text-utils/column.c:493
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-noextreme list"
-msgstr "一覧 '%s' の処理に失敗しました"
+msgstr "--table-noextreme のリストの解釈に失敗しました"
 
 #: text-utils/column.c:497
-#, fuzzy
-#| msgid "failed to parse start"
 msgid "failed to parse --table-wrap list"
-msgstr "一覧 '%s' の処理に失敗しました"
+msgstr "--table-wrap のリストの解釈に失敗しました"
 
 #: text-utils/column.c:527
-#, fuzzy
-#| msgid "failed to allocate output line"
 msgid "failed to allocate input line"
-msgstr "出力先への行追加に失敗しました"
+msgstr "入力行の割り当てに失敗しました"
 
 #: text-utils/column.c:545
 #, c-format
 msgid "line %zu: for JSON the name of the column %zu is required"
-msgstr ""
+msgstr "%zu 行目: JSON では %zu 列目の名前が必要です"
 
 #: text-utils/column.c:560
-#, fuzzy
-#| msgid "failed to allocate output table"
 msgid "failed to allocate output data"
-msgstr "出力先への行追加に失敗しました"
+msgstr "出力データの割り当てに失敗しました"
 
 #: text-utils/column.c:748
 msgid "Columnate lists.\n"
@@ -23653,113 +23628,80 @@ msgid " -t, --table                      create a table\n"
 msgstr " -t, --table                      表を作成します\n"
 
 #: text-utils/column.c:752
-#, fuzzy
-#| msgid " -n, --name <progname>        The name under which errors are reported\n"
 msgid " -n, --table-name <name>          table name for JSON output\n"
-msgstr " -n, --name <プログラム名>    エラーが報告された場合に使用する名前を指定します\n"
+msgstr " -n, --table-name <名前>          JSON 出力のテーブル名\n"
 
 #: text-utils/column.c:753
-#, fuzzy
-#| msgid " -o, --output <list>  output columns\n"
 msgid " -O, --table-order <columns>      specify order of output columns\n"
-msgstr " -o, --output <list>  出力する列を指定します\n"
+msgstr " -O, --table-order <列>           出力する列の順序を指定します\n"
 
 #: text-utils/column.c:754
-#, fuzzy
-#| msgid " -n, --noheadings       don't print column headings\n"
 msgid " -C, --table-column <properties>  define column\n"
-msgstr " -n, --noheadings       ヘッダを表示しません\n"
+msgstr " -C, --table-column <プロパティ>  列を定義します\n"
 
 #: text-utils/column.c:755
-#, fuzzy
-#| msgid " -O, --options <list>   limit the set of filesystems by mount options\n"
 msgid " -N, --table-columns <names>      comma separated columns names\n"
-msgstr " -O, --options <list>   マウントオプションでファイルシステムの出力を制限します\n"
+msgstr " -N, --table-columns <名前>       列の名前をカンマ区切りで指定します\n"
 
 #: text-utils/column.c:756
-#, fuzzy
-#| msgid " -s, --sectors <number>    set the number of sectors to use\n"
 msgid " -l, --table-columns-limit <num>  maximal number of input columns\n"
-msgstr " -s, --sectors <数値>   利用するセクタの数をセットします\n"
+msgstr " -l, --table-columns-limit <数値> 入力列の最大数\n"
 
 #: text-utils/column.c:757
 msgid " -E, --table-noextreme <columns>  don't count long text from the columns to column width\n"
-msgstr ""
+msgstr " -E, --table-noextreme <列>       これらの列の長いテキストは列幅にカウントしません\n"
 
 #: text-utils/column.c:758
-#, fuzzy
-#| msgid " -n, --noheadings          don't print headings\n"
 msgid " -d, --table-noheadings           don't print header\n"
-msgstr "     --noheadings         --show での表示の際、ヘッダを表示しません\n"
+msgstr " -d, --table-noheadings           ヘッダを表示しません\n"
 
 #: text-utils/column.c:759
-#, fuzzy
-#| msgid " -a, --all            print all devices\n"
 msgid " -m, --table-maxout               fill all available space\n"
-msgstr " -a, --all            すべてのデバイスを表示します\n"
+msgstr " -m, --table-maxout               利用可能なスペースをすべて埋めます\n"
 
 #: text-utils/column.c:760
 msgid " -e, --table-header-repeat        repeat header for each page\n"
-msgstr ""
+msgstr " -e, --table-header-repeat        ページごとにヘッダをつけます\n"
 
 #: text-utils/column.c:761
-#, fuzzy
-#| msgid " -n, --noheadings       don't print column headings\n"
 msgid " -H, --table-hide <columns>       don't print the columns\n"
-msgstr " -n, --noheadings       ヘッダを表示しません\n"
+msgstr " -H, --table-hide <列>            これらの列を表示しません\n"
 
 #: text-utils/column.c:762
 msgid " -R, --table-right <columns>      right align text in these columns\n"
-msgstr ""
+msgstr " -R, --table-right <列>           これらの列のテキストを右揃えします\n"
 
 #: text-utils/column.c:763
-#, fuzzy
-#| msgid " -n, --no-mtab           don't write to /etc/mtab\n"
 msgid " -T, --table-truncate <columns>   truncate text in the columns when necessary\n"
-msgstr ""
-" -p, --pid <pid>        プロセス ID\n"
-" -o, --output <一覧>    出力する列を指定します\n"
-" -n, --noheadings       ヘッダを表示しません\n"
-" -r, --raw              加工を行なわない形式で出力します\n"
-" -u, --notruncate       テキストを列方向に切り詰めないようにします\n"
-" -h, --help             このヘルプを表示して終了します\n"
-" -V, --version          バージョン情報を表示して終了します\n"
+msgstr " -T, --table-truncate <列>        これらの列のテキストを必要に応じて切り詰めます\n"
 
 #: text-utils/column.c:764
 msgid " -W, --table-wrap <columns>       wrap text in the columns when necessary\n"
-msgstr ""
+msgstr " -W, --table-wrap <列>            これらの列のテキストを必要に応じて折り返します\n"
 
 #: text-utils/column.c:765
-#, fuzzy
-#| msgid " -n, --noheadings          don't print headings\n"
 msgid " -L, --keep-empty-lines           don't ignore empty lines\n"
-msgstr " -n, --noheadings          ヘッダを表示しません\n"
+msgstr " -L, --keep-empty-lines           空の行を無視しません\n"
 
 #: text-utils/column.c:766
 msgid " -J, --json                       use JSON output format for table\n"
 msgstr " -J, --json                       表をJSON形式で出力します\n"
 
 #: text-utils/column.c:769
-#, fuzzy
-#| msgid " -O, --output <cols>           specify columns to output for --list\n"
 msgid " -r, --tree <column>              column to use tree-like output for the table\n"
-msgstr " -O, --output <cols>    --list で表示する列を指定します\n"
+msgstr " -r, --tree <列>                  ツリー形式で表を出力する列\n"
 
 #: text-utils/column.c:770
-#, fuzzy
-#| msgid " -i, --irq <num>              specify parallel port irq\n"
 msgid " -i, --tree-id <column>           line ID to specify child-parent relation\n"
-msgstr " -i, --irq <番号>             パラレルポートの IRQ を指定します\n"
+msgstr " -i, --tree-id <列>               親子関係を指定する行 ID の列\n"
 
 #: text-utils/column.c:771
-#, fuzzy
-#| msgid " -H, --heads <number>          specify the number of heads\n"
 msgid " -p, --tree-parent <column>       parent to specify child-parent relation\n"
-msgstr " -H, --heads <数値>            ヘッド数を指定します\n"
+msgstr " -p, --tree-parent <列>           親子関係を指定する親の行 ID の列\n"
 
 #: text-utils/column.c:774
 msgid " -c, --output-width <width>       width of output in number of characters\n"
-msgstr " -c, --output-width <幅>       出力幅を文字数で指定します\n"
+msgstr " -c, --output-width <幅>          出力幅を文字数で指定します\n"
 
 #: text-utils/column.c:775
 msgid " -o, --output-separator <string>  columns separator for table output (default is two spaces)\n"
@@ -23778,36 +23720,32 @@ msgid "invalid columns argument"
 msgstr "列の引数が正しくありません"
 
 #: text-utils/column.c:884
-#, fuzzy
-#| msgid "invalid columns argument"
 msgid "invalid columns limit argument"
-msgstr "列の引数が正しくありません"
+msgstr "列数の上限が正しくありません"
 
 #: text-utils/column.c:886
 msgid "columns limit must be greater than zero"
-msgstr ""
+msgstr "列数の上限は 1 以上である必要があります"
 
 #: text-utils/column.c:889
 msgid "failed to parse column names"
 msgstr "列の名前の解釈に失敗しました"
 
 #: text-utils/column.c:916
-#, fuzzy
-#| msgid "failed to allocate iterator"
 msgid "failed to use input separator"
-msgstr "列挙子の割り当てに失敗しました"
+msgstr "区切り文字列の使用に失敗しました"
 
 #: text-utils/column.c:949
 msgid "options --tree-id and --tree-parent are required for tree formatting"
-msgstr ""
+msgstr "ツリー形式では --tree-id および --tree-parent オプションが必要です"
 
 #: text-utils/column.c:957
 msgid "option --table required for all --table-*"
-msgstr ""
+msgstr "--table-* ではすべて --table オプションが必要です"
 
 #: text-utils/column.c:960
 msgid "option --table-columns or --table-column required for --json"
-msgstr ""
+msgstr "--json では --table-columns または --table-column オプションが必要です"
 
 #: text-utils/hexdump.c:167 text-utils/more.c:238
 #, c-format
@@ -23823,10 +23761,8 @@ msgid " -b, --one-byte-octal      one-byte octal display\n"
 msgstr " -b, --one-byte-octal          1バイトごとに8進表示\n"
 
 #: text-utils/hexdump.c:174
-#, fuzzy
-#| msgid " -x, --two-bytes-hex       two-byte hexadecimal display\n"
 msgid " -X, --one-byte-hex        one-byte hexadecimal display\n"
-msgstr " -x, --two-bytes-hex           2バイトごとに16進表示\n"
+msgstr " -X, --one-bytes-hex           1バイトごとに16進表示\n"
 
 #: text-utils/hexdump.c:175
 msgid " -c, --one-byte-char       one-byte character display\n"
@@ -23873,11 +23809,8 @@ msgid " -v, --no-squeezing        output identical lines\n"
 msgstr " -v, --no-squeezing         同一行を出力\n"
 
 #: text-utils/hexdump.c:193
-#, fuzzy
 msgid "<length> and <offset>"
-msgstr ""
-"\n"
-"    アドレス   長さ\n"
+msgstr "<長さ> と <オフセット>"
 
 #: text-utils/hexdump-display.c:374
 msgid "all input file arguments failed"
@@ -23912,92 +23845,64 @@ msgid "Read one line.\n"
 msgstr "1行を読み込みます。\n"
 
 #: text-utils/more.c:241
-#, fuzzy
-#| msgid "Discard the content of sectors on a device.\n"
 msgid "Display the contents of a file in a terminal."
-msgstr "デバイスのセクタの内容を破棄します。\n"
+msgstr "ファイルの内容を端末に表示します。"
 
 #: text-utils/more.c:244
-#, fuzzy
-#| msgid " -d          display help instead of ringing bell\n"
 msgid " -d, --silent          display help instead of ringing bell"
-msgstr " -d          ベルを鳴らす代わりにヘルプを表示します\n"
+msgstr " -d, --silent          ベルを鳴らす代わりにヘルプを表示します"
 
 #: text-utils/more.c:245
-#, fuzzy
-#| msgid " -f          count logical rather than screen lines\n"
 msgid " -f, --logical         count logical rather than screen lines"
-msgstr " -f          画面表示の行ではなく、論理行を数えます\n"
+msgstr " -f, --logical         画面表示の行ではなく、論理行を数えます"
 
 #: text-utils/more.c:246
-#, fuzzy
-#| msgid " -l          suppress pause after form feed\n"
 msgid " -l, --no-pause        suppress pause after form feed"
-msgstr " -l          改ページ記号の後で一時停止しません\n"
+msgstr " -l, --no-pause        改ページ記号の後で一時停止しません"
 
 #: text-utils/more.c:247
-#, fuzzy
-#| msgid " -c          do not scroll, display text and clean line ends\n"
 msgid " -c, --print-over      do not scroll, display text and clean line ends"
-msgstr " -c          スクロールせず、テキストを上書きして行末をクリアします\n"
+msgstr " -c, --print-over      スクロールせず、テキストを上書きして行末をクリアします"
 
 #: text-utils/more.c:248
-#, fuzzy
-#| msgid " -p          do not scroll, clean screen and display text\n"
 msgid " -p, --clean-print     do not scroll, clean screen and display text"
-msgstr " -p          スクロールせず、次のページを表示する前に画面を消去します\n"
+msgstr " -p, --clean-print     スクロールせず、次のページを表示する前に画面を消去します"
 
 #: text-utils/more.c:249
 msgid " -e, --exit-on-eof     exit on end-of-file"
-msgstr ""
+msgstr " -e, --exit-on-eof     ファイルの末尾で終了します"
 
 #: text-utils/more.c:250
-#, fuzzy
-#| msgid " -s          squeeze multiple blank lines into one\n"
 msgid " -s, --squeeze         squeeze multiple blank lines into one"
-msgstr " -s          連続した空行を1行にまとめます\n"
+msgstr " -s, --squeeze         連続した空行を1行にまとめます"
 
 #: text-utils/more.c:251
-#, fuzzy
-#| msgid " -u          suppress underlining\n"
 msgid " -u, --plain           suppress underlining and bold"
-msgstr " -u          下線を引きません\n"
+msgstr " -u, --plain           下線を引かず、太字にもしません"
 
 #: text-utils/more.c:252
-#, fuzzy
-#| msgid " -<number>   the number of lines per screenful\n"
 msgid " -n, --lines <number>  the number of lines per screenful"
-msgstr " -<number>   1 画面あたりの行数を指定します\n"
+msgstr " -n, --lines <数値>    1 画面あたりの行数を指定します"
 
 #: text-utils/more.c:253
-#, fuzzy
-#| msgid " -<number>              same as '-n <number>'\n"
 msgid " -<number>             same as --lines"
-msgstr " -<数値>                '-n <数値>' と同じ\n"
+msgstr " -<数値>               --lines と同じ"
 
 #: text-utils/more.c:254
-#, fuzzy
-#| msgid " +<number>   display file beginning from line number\n"
 msgid " +<number>             display file beginning from line number"
-msgstr " +<数値>     <数値>行目からファイルを表示します\n"
+msgstr " +<数値>               <数値> 行目からファイルを表示します"
 
 #: text-utils/more.c:255
-#, fuzzy
-#| msgid " +/<string>  display file beginning from search string match\n"
 msgid " +/<pattern>           display file beginning from pattern match"
-msgstr " +/<文字列>  文字列を検索し、見つかった場所から表示します\n"
+msgstr " +/<パターン>          パターンが一致した場所から表示します"
 
 #: text-utils/more.c:358
-#, fuzzy
-#| msgid "failed to set the %s environment variable"
 msgid "MORE environment variable"
-msgstr "%s 環境変数の設定に失敗しました"
+msgstr "MORE 環境変数"
 
 #: text-utils/more.c:411
-#, fuzzy
-#| msgid "mkdir failed: %s"
 msgid "magic failed"
-msgstr "magic_load() が失敗しました: %s"
+msgstr "magic が失敗しました"
 
 #: text-utils/more.c:415 text-utils/more.c:434
 #, c-format
@@ -24034,7 +23939,7 @@ msgstr "(次のファイル: %s)"
 #: text-utils/more.c:734 text-utils/more.c:740
 #, c-format
 msgid "(END)"
-msgstr ""
+msgstr "(終了)"
 
 #: text-utils/more.c:745
 #, c-format
@@ -24095,41 +24000,15 @@ msgid "Pattern not found"
 msgstr "パターンが見つかりません"
 
 #: text-utils/more.c:1539
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Most commands optionally preceded by integer argument k.  Defaults in brackets.\n"
-#| "Star (*) indicates argument becomes new default.\n"
 msgid ""
 "Most commands optionally preceded by integer argument k.  Defaults in brackets.\n"
 "Star (*) indicates argument becomes new default.\n"
 msgstr ""
-"\n"
 "ほとんどのコマンドの前には、整数を指定することができます (下記の説明では、 k と表記しています) 。整数を指定しない場合の既定値は、 [] 内に書かれた値です。\n"
 "また、アスタリスク (*) が書かれている場合は、引数が新しい既定値になることを表わしています。\n"
 
 #: text-utils/more.c:1545
-#, fuzzy, c-format
-#| msgid ""
-#| "<space>                 Display next k lines of text [current screen size]\n"
-#| "z                       Display next k lines of text [current screen size]*\n"
-#| "<return>                Display next k lines of text [1]*\n"
-#| "d or ctrl-D             Scroll k lines [current scroll size, initially 11]*\n"
-#| "q or Q or <interrupt>   Exit from more\n"
-#| "s                       Skip forward k lines of text [1]\n"
-#| "f                       Skip forward k screenfuls of text [1]\n"
-#| "b or ctrl-B             Skip backwards k screenfuls of text [1]\n"
-#| "'                       Go to place where previous search started\n"
-#| "=                       Display current line number\n"
-#| "/<regular expression>   Search for kth occurrence of regular expression [1]\n"
-#| "n                       Search for kth occurrence of last r.e [1]\n"
-#| "!<cmd> or :!<cmd>       Execute <cmd> in a subshell\n"
-#| "v                       Start up /usr/bin/vi at current line\n"
-#| "ctrl-L                  Redraw screen\n"
-#| ":n                      Go to kth next file [1]\n"
-#| ":p                      Go to kth previous file [1]\n"
-#| ":f                      Display current file name and line number\n"
-#| ".                       Repeat previous command\n"
+#, c-format
 msgid ""
 "<space>                 Display next k lines of text [current screen size]\n"
 "z                       Display next k lines of text [current screen size]*\n"
@@ -24164,7 +24043,7 @@ msgstr ""
 "/<正規表現>             正規表現に該当する k 番目の位置に移動します [1]\n"
 "n                       前回の正規表現を利用し、 k 番目の該当位置に移動します [1]\n"
 "!<コマンド> または :!<コマンド> サブシェルで <コマンド> を実行します\n"
-"v                       現在の行で /usr/bin/vi を起動します\n"
+"v                       現在の行で '%s' を起動します\n"
 "ctrl-L                  画面を再描画します\n"
 ":n                      k 個分だけ先のファイルに移動します [1]\n"
 ":p                      k 個分だけ前のファイルに移動します [1]\n"
