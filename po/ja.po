@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2024-12-08 10:34+0900\n"
+"PO-Revision-Date: 2025-03-20 16:11+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -747,10 +747,8 @@ msgid " -r, --read-only          forced open cfdisk in read-only mode\n"
 msgstr " -r, --read-only          cfdisk を強制的に読み込み専用で開きます\n"
 
 #: disk-utils/cfdisk.c:2734
-#, fuzzy
-#| msgid " -b, --sector-size <size>      physical and logical sector size\n"
 msgid " -b, --sector-size <size> physical and logical sector size\n"
-msgstr " -b, --sector-size <サイズ>    物理および論理セクタサイズ\n"
+msgstr " -b, --sector-size <サイズ> 物理および論理セクタサイズ\n"
 
 #: disk-utils/cfdisk.c:2774 disk-utils/cfdisk.c:2777 disk-utils/fdisk.c:1191
 #: disk-utils/fdisk.c:1193 disk-utils/partx.c:889 disk-utils/sfdisk.c:2469
@@ -1039,13 +1037,11 @@ msgstr "パーティション %zu のタイプは変更していません: %s。
 #: disk-utils/fdisk.c:798
 #, c-format
 msgid "All data in the region (%<PRIu64>-%<PRIu64>) will be lost! Continue?"
-msgstr ""
+msgstr "(%<PRIu64>-%<PRIu64>) の範囲のデータはすべて失われます。続けますか?"
 
 #: disk-utils/fdisk.c:811 disk-utils/sfdisk.c:1428
-#, fuzzy
-#| msgid "%s: BLKDISCARD ioctl failed"
 msgid "BLKDISCARD ioctl failed"
-msgstr "%s: BLKDISCARD ioctl に失敗しました"
+msgstr "BLKDISCARD ioctl に失敗しました"
 
 #: disk-utils/fdisk.c:822
 msgid ""
@@ -1053,24 +1049,23 @@ msgid ""
 "The partition sectors will be immediately discarded.\n"
 "You can exit this dialog by pressing CTRL+C.\n"
 msgstr ""
+"\n"
+"パーティションセクタがただちに破棄されます。\n"
+"このダイアログは CTRL+C で終了できます。\n"
 
 #: disk-utils/fdisk.c:833
-#, fuzzy, c-format
-#| msgid "Partition %zu has been resized."
+#, c-format
 msgid "Partition %zu has an unspecified range."
-msgstr "パーティション %zu のサイズを変更しました。"
+msgstr "パーティション %zu の範囲が指定されていません。"
 
 #: disk-utils/fdisk.c:838
-#, fuzzy, c-format
-#| msgid "Failed to resize partition #%zu."
+#, c-format
 msgid "Discarded sectors on partition %zu."
-msgstr "パーティション #%zu のサイズ変更に失敗しました。"
+msgstr "パーティション %zu のセクタを破棄しました。"
 
 #: disk-utils/fdisk.c:853
-#, fuzzy
-#| msgid "Free space"
 msgid "No free space."
-msgstr "空き領域"
+msgstr "空き領域がありません。"
 
 #: disk-utils/fdisk.c:856
 msgid ""
@@ -1078,53 +1073,42 @@ msgid ""
 "The unused sectors will be immediately discarded.\n"
 "You can exit this dialog by pressing CTRL+C.\n"
 msgstr ""
+"\n"
+"未使用セクタがただちに破棄されます。\n"
+"このダイアログは CTRL+C で終了できます。\n"
 
 #: disk-utils/fdisk.c:860
-#, fuzzy
-#| msgid "Free space"
 msgid "Free space number"
-msgstr "空き領域"
+msgstr "空き領域番号"
 
 #: disk-utils/fdisk.c:868
 #, c-format
 msgid "Free space %<PRIu64>has an unspecified range"
-msgstr ""
+msgstr "空き領域 %<PRIu64> の範囲が指定されていません"
 
 #: disk-utils/fdisk.c:873
-#, fuzzy
-#| msgid "Discard the content of sectors on a device.\n"
 msgid "Discarded sectors on free space."
-msgstr "デバイスのセクタの内容を破棄します。\n"
+msgstr "空き領域のセクタを破棄しました。"
 
 #: disk-utils/fdisk.c:883
-#, fuzzy
-#| msgid "Device is open in read-only mode."
 msgid "Discarding sectors is not possible in read-only mode."
-msgstr "デバイスは読み込み専用でオープンされています。"
+msgstr "読み込み専用モードではセクタを破棄できません。"
 
 #: disk-utils/fdisk.c:887
-#, fuzzy
-#| msgid "type of the device"
 msgid "Type of area to be discarded"
-msgstr "デバイスの種類"
+msgstr "破棄する領域の種類"
 
 #: disk-utils/fdisk.c:888
-#, fuzzy
-#| msgid "partition number"
 msgid "partition sectors"
-msgstr "パーティション番号"
+msgstr "パーティションのセクタ"
 
 #: disk-utils/fdisk.c:889
-#, fuzzy
-#| msgid "Free space"
 msgid "free space sectros"
-msgstr "空き領域"
+msgstr "空き領域のセクタ"
 
 #: disk-utils/fdisk.c:905 disk-utils/sfdisk.c:1441
-#, fuzzy
-#| msgid "--reload is unsupported on your system"
 msgid "Discard unsupported on your system."
-msgstr "--reload はあなたのシステムではサポートされていません"
+msgstr "discard はあなたのシステムではサポートされていません。"
 
 #: disk-utils/fdisk.c:998
 #, c-format
@@ -1476,7 +1460,7 @@ msgstr "サイズ"
 #: disk-utils/fdisk-list.c:350
 #, c-format
 msgid "Unpartitioned space %s: %s, %ju bytes, %ju sectors"
-msgstr "パーティションのない領域 %s: %s, %ju バイト, %ju セクタ"
+msgstr "パーティション未割当領域 %s: %s, %ju バイト, %ju セクタ"
 
 #: disk-utils/fdisk-list.c:558
 #, c-format
@@ -1493,7 +1477,7 @@ msgstr "パーティションを削除します"
 
 #: disk-utils/fdisk-menu.c:107
 msgid "list free unpartitioned space"
-msgstr "パーティションのない領域を一覧表示します"
+msgstr "パーティション未割当領域を一覧表示します"
 
 #: disk-utils/fdisk-menu.c:108
 msgid "list known partition types"
@@ -1524,10 +1508,8 @@ msgid "resize a partition"
 msgstr "パーティションのサイズを変更します"
 
 #: disk-utils/fdisk-menu.c:115
-#, fuzzy
-#| msgid "discard max bytes"
 msgid "discard (trim) sectors"
-msgstr "discard 最大バイト"
+msgstr "セクタを破棄 (trim) します"
 
 #: disk-utils/fdisk-menu.c:117
 msgid "print the raw data of the first sector from the device"
@@ -2029,10 +2011,9 @@ msgid "Finished with %s (exit status %d)\n"
 msgstr "%s が完了しました (終了ステータス %d)\n"
 
 #: disk-utils/fsck.c:933
-#, fuzzy, c-format
-#| msgid "%s is not logged in on %s"
+#, c-format
 msgid "fsck.%s not found; ignore %s"
-msgstr "%s は %s にログインしていません"
+msgstr "fsck.%s が見つかりません。%s を無視します"
 
 #: disk-utils/fsck.c:948
 #, c-format
@@ -3704,10 +3685,8 @@ msgid "cannot set permissions on swap file %s"
 msgstr "スワップファイル %s のパーミッションを設定できません"
 
 #: disk-utils/mkswap.c:429
-#, fuzzy
-#| msgid "failed to get terminal attributes"
 msgid "failed to set 'nocow' attribute"
-msgstr "端末の属性取得に失敗しました"
+msgstr "'nocow' 属性設定に失敗しました"
 
 #: disk-utils/mkswap.c:433 disk-utils/mkswap.c:437 disk-utils/mkswap.c:440
 #, c-format
@@ -4482,10 +4461,8 @@ msgid "%s: partition %zu: failed to delete"
 msgstr "%s: パーティション %zu: 削除できませんでした"
 
 #: disk-utils/sfdisk.c:1014
-#, fuzzy
-#| msgid "partition number as read from the partition table"
 msgid "partition number must be a positive number"
-msgstr "パーティションテーブルから読み込んだパーティション番号"
+msgstr "パーティション番号は正の数である必要があります"
 
 #: disk-utils/sfdisk.c:1064 disk-utils/sfdisk.c:1098
 #, c-format
@@ -4572,16 +4549,13 @@ msgid "%s: partition %zu: failed to set partition attributes"
 msgstr "%s: パーティション %zu: パーティションの属性を設定できませんでした"
 
 #: disk-utils/sfdisk.c:1404
-#, fuzzy
-#| msgid "failed to allocate partition name"
 msgid "failed to gather unpartitioned space"
-msgstr "パーティション名の割り当てに失敗しました"
+msgstr "パーティション未割当領域の拾集に失敗しました"
 
 #: disk-utils/sfdisk.c:1418
-#, fuzzy, c-format
-#| msgid "%s (%<PRIu64>-%<PRIu64>): "
+#, c-format
 msgid "Discarding region %<PRIu64>-%<PRIu64>"
-msgstr "%s (%<PRIu64>-%<PRIu64>): "
+msgstr "%<PRIu64>-%<PRIu64> の範囲を破棄します"
 
 #: disk-utils/sfdisk.c:1475
 #, c-format
@@ -4813,10 +4787,8 @@ msgid "Ignoring partition."
 msgstr "パーティションを無視します。"
 
 #: disk-utils/sfdisk.c:2004
-#, fuzzy
-#| msgid "failed to set script header"
 msgid "Ignoring last-lba script header."
-msgstr "スクリプトヘッダーの設定に失敗しました"
+msgstr "last-lba スクリプトヘッダーを無視します。"
 
 #: disk-utils/sfdisk.c:2014
 msgid "Failed to apply script headers, disk label not created"
@@ -4890,7 +4862,7 @@ msgstr " -l, --list [<dev> ...]            それぞれのデバイスのパー�
 
 #: disk-utils/sfdisk.c:2132
 msgid " -F, --list-free [<dev> ...]       list unpartitioned free areas of each device\n"
-msgstr " -F, --list-free [<dev> ...]       それぞれのデバイスの未割り当てエリアの一覧を表示します\n"
+msgstr " -F, --list-free [<dev> ...]       それぞれのデバイスのパーティション未割当空きエリアの一覧を表示します\n"
 
 #: disk-utils/sfdisk.c:2133
 msgid " -r, --reorder <dev>               fix partitions order (by start offset)\n"
@@ -4929,10 +4901,8 @@ msgid " --part-attrs <dev> <part> [<str>] print or change partition attributes\n
 msgstr " --part-attrs <dev> <part> [<文字列>] パーティションの属性を表示または変更します\n"
 
 #: disk-utils/sfdisk.c:2146
-#, fuzzy
-#| msgid " -F, --list-free [<dev> ...]       list unpartitioned free areas of each device\n"
 msgid " --discard-free <dev>              discard (trim) unpartitioned areas\n"
-msgstr " -F, --list-free [<dev> ...]       それぞれのデバイスの未割り当てエリアの一覧を表示します\n"
+msgstr " --discard-free <dev>              パーティション未割当領域を破棄 (trim) します\n"
 
 #: disk-utils/sfdisk.c:2147
 msgid " --disk-id <dev> [<str>]           print or change disk label ID (UUID)\n"
@@ -4984,10 +4954,8 @@ msgid "     --color[=<when>]      colorize output (%s, %s or %s)\n"
 msgstr "     --color[=<いつ>]      メッセージを色づけします(%s, %s, %s のどれか)\n"
 
 #: disk-utils/sfdisk.c:2167
-#, fuzzy
-#| msgid " -b, --sector-size <size>      physical and logical sector size\n"
 msgid "     --sector-size <size>  physical and logical sector size\n"
-msgstr " -b, --sector-size <サイズ>    物理および論理セクタサイズ\n"
+msgstr "     --sector-size <サイズ> 物理および論理セクタサイズ\n"
 
 #: disk-utils/sfdisk.c:2171
 msgid " -N, --partno <num>        specify partition number\n"
@@ -7625,10 +7593,8 @@ msgid "The current boot file is: %s"
 msgstr "現在の起動ファイル: %s"
 
 #: libfdisk/src/sgi.c:446
-#, fuzzy
-#| msgid "Enter of the new boot file"
 msgid "Enter full path of the new boot file"
-msgstr "新たな起動ファイル名を入力してください"
+msgstr "新たな起動ファイルのフルパスを入力してください"
 
 #: libfdisk/src/sgi.c:451
 msgid "Boot file is unchanged."
