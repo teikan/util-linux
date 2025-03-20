@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2025-03-20 16:11+0900\n"
+"PO-Revision-Date: 2025-03-20 19:15+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -8888,10 +8888,8 @@ msgid "TIOCSCTTY failed: %m"
 msgstr "TIOCSCTTY に失敗しました: %m"
 
 #: login-utils/login.c:1207
-#, fuzzy
-#| msgid "failed to set the %s environment variable"
 msgid "failed to set the environment variables"
-msgstr "%s 環境変数の設定に失敗しました"
+msgstr "環境変数の設定に失敗しました"
 
 #: login-utils/login.c:1289
 #, c-format
@@ -9321,10 +9319,8 @@ msgid "     --lastlog <path>     set an alternate path for lastlog\n"
 msgstr "     --lastlog <パス>     lastlog に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1546
-#, fuzzy
-#| msgid "     --lastlog <path>     set an alternate path for lastlog\n"
 msgid "     --lastlog2 <path>    set an alternate path for lastlog2\n"
-msgstr "     --lastlog <パス>     lastlog に別のパスを設定します\n"
+msgstr "     --lastlog2 <パス>    lastlog2 に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1759
 msgid "failed to request selinux state"
@@ -9351,14 +9347,13 @@ msgid "crypt failed"
 msgstr "crypt に失敗しました"
 
 #: login-utils/newgrp.c:175
-#, fuzzy, c-format
-#| msgid " %s [options] -- <command>\n"
+#, c-format
 msgid " %s <group> [[-c] <command>]\n"
-msgstr " %s [オプション] -- <コマンド>\n"
+msgstr " %s <グループ> [[-c] <コマンド>]\n"
 
 #: login-utils/newgrp.c:178
 msgid "Log in to a new group; optionally executing a shell command.\n"
-msgstr ""
+msgstr "新しいグループにログインし、オプションでシェルコマンドを実行します。\n"
 
 #: login-utils/newgrp.c:218
 msgid "who are you?"
@@ -9710,10 +9705,9 @@ msgstr ""
 "続けるには Enter を押してください。\n"
 
 #: login-utils/sulogin.c:670
-#, fuzzy, c-format
-#| msgid "Give root password for login: "
+#, c-format
 msgid "Enter root password for login: "
-msgstr "root のパスワードを入力してください: "
+msgstr "ログインするには root のパスワードを入力してください: "
 
 #: login-utils/sulogin.c:672
 #, c-format
@@ -9721,16 +9715,14 @@ msgid "Press Enter for login: "
 msgstr "ログインするには Enter を押してください: "
 
 #: login-utils/sulogin.c:675
-#, fuzzy, c-format
-#| msgid "Give root password for maintenance\n"
+#, c-format
 msgid "Enter root password for system maintenance\n"
-msgstr "メンテナンスを行います。 root のパスワードを入力してください\n"
+msgstr "システムメンテナンスを行うには root のパスワードを入力してください\n"
 
 #: login-utils/sulogin.c:677
-#, fuzzy, c-format
-#| msgid "Press Enter for maintenance\n"
+#, c-format
 msgid "Press Enter for system maintenance\n"
-msgstr "メンテナンスを行うには Enter を押してください\n"
+msgstr "システムメンテナンスを行うには Enter を押してください\n"
 
 #: login-utils/sulogin.c:678
 #, c-format
