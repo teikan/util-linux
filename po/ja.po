@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2025-03-20 19:15+0900\n"
+"PO-Revision-Date: 2025-03-28 14:31+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -2934,7 +2934,7 @@ msgstr "ISO-9660 ファイルシステムの長さを表示します。\n"
 
 #: disk-utils/isosize.c:113
 msgid " -d, --divisor=<number>  divide the amount of bytes by <number>\n"
-msgstr "  -d, --divisor=<数値>   バイト数を <数値> で割って出力します\n"
+msgstr " -d, --divisor=<数値>    バイト数を <数値> で割って出力します\n"
 
 #: disk-utils/isosize.c:114
 msgid " -x, --sectors           show sector count and size\n"
@@ -3154,20 +3154,20 @@ msgstr " -e エディション エディション番号 (fsid の一部) を指�
 #: disk-utils/mkfs.cramfs.c:140
 #, c-format
 msgid " -N endian      set cramfs endianness (%s|%s|%s), default %s\n"
-msgstr "-N エンディアン  cramfs のエンディアン (%s|%s|%s) を指定します。既定値は %s です\n"
+msgstr " -N エンディアン cramfs のエンディアン (%s|%s|%s) を指定します。既定値は %s です\n"
 
 #: disk-utils/mkfs.cramfs.c:141
 msgid " -i file        insert a file image into the filesystem"
-msgstr " -i ファイル ファイルシステム内に、指定したファイルを挿入します"
+msgstr " -i ファイル    ファイルシステム内に、指定したファイルを挿入します"
 
 #: disk-utils/mkfs.cramfs.c:142
 msgid " -n name        set name of cramfs filesystem"
-msgstr "  -n 名前    cramfs ファイルシステムの名前を指定します"
+msgstr " -n 名前        cramfs ファイルシステムの名前を指定します"
 
 #: disk-utils/mkfs.cramfs.c:143
 #, c-format
 msgid " -p             pad by %d bytes for boot code\n"
-msgstr " -p         ブートコード用に %d バイトでパディングします\n"
+msgstr " -p             ブートコード用に %d バイトでパディングします\n"
 
 #: disk-utils/mkfs.cramfs.c:144
 msgid " -s             sort directory entries (old option, ignored)"
@@ -3175,11 +3175,11 @@ msgstr " -s             ディレクトリエントリを並べ替える (古い
 
 #: disk-utils/mkfs.cramfs.c:145
 msgid " -z             make explicit holes"
-msgstr "-z         明示的なホールを指定します"
+msgstr " -z             明示的なホールを指定します"
 
 #: disk-utils/mkfs.cramfs.c:146
 msgid " -l[=<mode>]    use exclusive device lock (yes, no or nonblock)"
-msgstr " -l[=<モード>]      排他的デバイスロックを使用します(yes, no, nonblock のどれか)"
+msgstr " -l[=<モード>]  排他的デバイスロックを使用します(yes, no, nonblock のどれか)"
 
 #: disk-utils/mkfs.cramfs.c:148
 msgid " dirname        root of the filesystem to be compressed"
@@ -8632,7 +8632,7 @@ msgstr " -d, --dns                IP アドレスからホスト名に逆引き�
 #: login-utils/last.c:597
 #, c-format
 msgid " -f, --file <file>    use a specific file instead of %s\n"
-msgstr " -F, --file <ファイル>    %s ではなく、指定したファイルを使用して出力します\n"
+msgstr " -f, --file <ファイル>    %s ではなく、指定したファイルを使用して出力します\n"
 
 #: login-utils/last.c:598
 msgid " -F, --fulltimes      print full login and logout times and dates\n"
@@ -12642,7 +12642,7 @@ msgstr "     --id[=<id>]          指定があれば <id>、なければ PID を
 
 #: misc-utils/logger.c:1084
 msgid " -f, --file <file>        log the contents of this file\n"
-msgstr " -f, ---file <ファイル>   指定したファイルの内容をログに記録します\n"
+msgstr " -f, --file <ファイル>    指定したファイルの内容をログに記録します\n"
 
 #: misc-utils/logger.c:1085
 msgid " -e, --skip-empty         do not log empty lines when processing files\n"
@@ -13505,7 +13505,7 @@ msgstr "xauth 用のマジッククッキーを生成します。\n"
 
 #: misc-utils/mcookie.c:94
 msgid " -f, --file <file>     use file as a cookie seed\n"
-msgstr " -F, --file <ファイル> ファイルを cookie シードとして使用します\n"
+msgstr " -f, --file <ファイル> ファイルを cookie シードとして使用します\n"
 
 #: misc-utils/mcookie.c:95
 msgid " -m, --max-size <num>  limit how much is read from seed files\n"
@@ -15629,12 +15629,12 @@ msgid ""
 " -p, --dispatch <mode>         set dispatching mode\n"
 " -r, --rescan                  trigger rescan of cpus\n"
 msgstr ""
-"  -e, --enable <CPU リスト>     CPU を有効化します\n"
-"  -d, --disable <CPU リスト>    CPU を無効化します\n"
-"  -c, --configure <CPU リスト>  CPU を設定します\n"
-"  -g, --deconfigure <CPU リスト> CPU を設定解除します\n"
-"  -p, --dispatch <モード>       ディスパッチモードを設定します\n"
-"  -r, --rescan                  CPU を再スキャンします\n"
+" -e, --enable <CPU リスト>     CPU を有効化します\n"
+" -d, --disable <CPU リスト>    CPU を無効化します\n"
+" -c, --configure <CPU リスト>  CPU を設定します\n"
+" -g, --deconfigure <CPU リスト> CPU を設定解除します\n"
+" -p, --dispatch <モード>       ディスパッチモードを設定します\n"
+" -r, --rescan                  CPU を再スキャンします\n"
 
 #: sys-utils/chcpu.c:296
 msgid "failed to initialize sysfs handler"
@@ -25198,7 +25198,7 @@ msgstr " -b, --one-byte-octal          1バイトごとに8進表示\n"
 
 #: text-utils/hexdump.c:174
 msgid " -X, --one-byte-hex        one-byte hexadecimal display\n"
-msgstr " -X, --one-bytes-hex           1バイトごとに16進表示\n"
+msgstr " -X, --one-byte-hex            1バイトごとに16進表示\n"
 
 #: text-utils/hexdump.c:175
 msgid " -c, --one-byte-char       one-byte character display\n"
