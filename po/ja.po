@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2025-04-07 08:57+0900\n"
+"PO-Revision-Date: 2025-04-07 14:08+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -14491,19 +14491,19 @@ msgstr " -v, --verbose        状態を表示します\n"
 
 #: schedutils/chrt.c:153
 msgid "SCHED_OTHER, SCHED_BATCH and SCHED_DEADLINE"
-msgstr ""
+msgstr "SCHED_OTHER, SCHED_BATCH, SCHED_DEADLINE"
 
 #: schedutils/chrt.c:155
 msgid "SCHED_OTHER and SCHED_BATCH"
-msgstr ""
+msgstr "SCHED_OTHER, SCHED_BATCH"
 
 #: schedutils/chrt.c:158
 msgid "SCHED_OTHER and SCHED_DEADLINE"
-msgstr ""
+msgstr "SCHED_OTHER, SCHED_DEADLINE"
 
 #: schedutils/chrt.c:160
 msgid "SCHED_OTHER"
-msgstr ""
+msgstr "SCHED_OTHER"
 
 #: schedutils/chrt.c:188 schedutils/chrt.c:212
 #, c-format
@@ -14536,16 +14536,14 @@ msgid "pid %d's current scheduling priority: %d\n"
 msgstr "プロセス ID %d の現在のスケジュール優先順位: %d\n"
 
 #: schedutils/chrt.c:240
-#, fuzzy, c-format
-#| msgid "pid %d's new runtime/deadline/period parameters: %ju/%ju/%ju\n"
+#, c-format
 msgid "pid %d's new runtime parameter: %ju\n"
-msgstr "プロセス ID %d の新しいランタイム/デッドライン/ピリオドパラメータ: %ju/%ju/%ju\n"
+msgstr "プロセス ID %d の新しいランタイムパラメータ: %ju\n"
 
 #: schedutils/chrt.c:242
-#, fuzzy, c-format
-#| msgid "pid %d's current runtime/deadline/period parameters: %ju/%ju/%ju\n"
+#, c-format
 msgid "pid %d's current runtime parameter: %ju\n"
-msgstr "プロセス ID %d の現在のランタイム/デッドライン/ピリオドパラメータ: %ju/%ju/%ju\n"
+msgstr "プロセス ID %d の現在のランタイムパラメータ: %ju\n"
 
 #: schedutils/chrt.c:248
 #, c-format
@@ -14599,16 +14597,13 @@ msgid "invalid priority argument"
 msgstr "優先順位引数が正しくありません"
 
 #: schedutils/chrt.c:500
-#, fuzzy, c-format
-#| msgid "--sched-{runtime,deadline,period} options are supported for SCHED_DEADLINE only"
+#, c-format
 msgid "--sched-runtime option is supported for %s"
-msgstr "--sched-{runtime,deadline,period} オプションは SCHED_DEADLINE にしか対応していません"
+msgstr "--sched-runtime オプションは %s のみ対応しています"
 
 #: schedutils/chrt.c:504
-#, fuzzy
-#| msgid "--sched-{runtime,deadline,period} options are supported for SCHED_DEADLINE only"
 msgid "--sched-{deadline,period} options are supported for SCHED_DEADLINE only"
-msgstr "--sched-{runtime,deadline,period} オプションは SCHED_DEADLINE にしか対応していません"
+msgstr "--sched-{deadline,period} オプションは SCHED_DEADLINE にしか対応していません"
 
 #: schedutils/chrt.c:519
 msgid "SCHED_DEADLINE is unsupported"
@@ -14620,46 +14615,45 @@ msgid "unsupported priority value for the policy: %d: see --max for valid range"
 msgstr "ポリシーで対応していない優先順位の値です: %d: 有効範囲は --max を参照してください"
 
 #: schedutils/coresched.c:69
-#, fuzzy, c-format
-#| msgid " %s [options] [--<resource>=<limit>] [-p PID]\n"
+#, c-format
 msgid " %s [get] [--source <PID>]\n"
-msgstr " %s [オプション] [--<リソース>=<制限値>] [-p PID]\n"
+msgstr " %s [get] [--source <PID>]\n"
 
 #: schedutils/coresched.c:71
 #, c-format
 msgid " %s new [-t <TYPE>] --dest <PID>\n"
-msgstr ""
+msgstr " %s new [-t <タイプ>] --dest <PID>\n"
 
 #: schedutils/coresched.c:73
 #, c-format
 msgid " %s new [-t <TYPE>] -- PROGRAM [ARGS...]\n"
-msgstr ""
+msgstr " %s new [-t <タイプ>] -- PROGRAM [引数...]\n"
 
 #: schedutils/coresched.c:76
 #, c-format
 msgid " %s copy [--source <PID>] [-t <TYPE>] --dest <PID>\n"
-msgstr ""
+msgstr " %s copy [--source <PID>] [-t <タイプ>] --dest <PID>\n"
 
 #: schedutils/coresched.c:79
 #, c-format
 msgid " %s copy [--source <PID>] [-t <TYPE>] -- PROGRAM [ARGS...]\n"
-msgstr ""
+msgstr " %s copy [--source <PID>] [-t <タイプ>] -- PROGRAM [引数...]\n"
 
 #: schedutils/coresched.c:83
 msgid "Manage core scheduling cookies for tasks."
-msgstr ""
+msgstr "タスクのコアスケジューリングクッキーを管理します。"
 
 #: schedutils/coresched.c:86
-#, fuzzy
-#| msgid "     --set                       set the RTC according to --date"
 msgid " get                      retrieve the core scheduling cookie of a PID"
-msgstr "     --set                       --date にもとづいて RTC を設定します"
+msgstr " get                      PID のコアスケジューリングクッキーを取得します"
 
 #: schedutils/coresched.c:88
 msgid ""
 " new                      assign a new core scheduling cookie to an existing\n"
 "                            PID or execute a program with a new cookie"
 msgstr ""
+" new                      新しいコアスケジューリングクッキーを既存 PID に割り\n"
+"                            当てるか、プログラムを新しいクッキーで実行します"
 
 #: schedutils/coresched.c:91
 msgid ""
@@ -14667,6 +14661,9 @@ msgid ""
 "                            to another PID, or execute a program with that\n"
 "                            copied cookie"
 msgstr ""
+" copy                     既存 PID のコアスケジューリングクッキーを\n"
+"                            他の PID にコピーするか、コピーしたクッキーで\n"
+"                            プログラムを実行します"
 
 #: schedutils/coresched.c:98
 #, c-format
@@ -14674,10 +14671,12 @@ msgid ""
 " -s, --source <PID>       which PID to get the cookie from\n"
 "                            If omitted, it is the PID of %s itself\n"
 msgstr ""
+" -s, --source <PID>       クッキーを読み出す PID\n"
+"                            省略時は %s 自身の PID\n"
 
 #: schedutils/coresched.c:101
 msgid " -d, --dest <PID>         which PID to modify the cookie of\n"
-msgstr ""
+msgstr " -d, --dest <PID>         クッキーを書き換える PID\n"
 
 #: schedutils/coresched.c:103
 msgid ""
@@ -14686,98 +14685,90 @@ msgid ""
 "                            Can be one of the following: pid, tgid or pgid.\n"
 "                            The default is tgid."
 msgstr ""
+" -t, --dest-type <タイプ> 対象 PID または新しいコアスケジューリング\n"
+"                            クッキーを作成する PID のタイプ。\n"
+"                            pid, tgid, pgid のいずれかを指定する。\n"
+"                            既定値は tgid。"
 
 #: schedutils/coresched.c:109
-#, fuzzy
-#| msgid " -v, --verbose    be verbose\n"
 msgid " -v, --verbose      verbose"
-msgstr " -v, --verbose    冗長出力モードを指定します\n"
+msgstr " -v, --verbose      冗長出力"
 
 #: schedutils/coresched.c:126
-#, fuzzy, c-format
-#| msgid "failed to get child fs of %s"
+#, c-format
 msgid "Failed to get cookie from PID %d"
-msgstr "%s の子ファイルシステムの取得に失敗しました"
+msgstr "PID %d からのクッキーの取得に失敗しました"
 
 #: schedutils/coresched.c:133
-#, fuzzy, c-format
-#| msgid "failed to setup loop device for %s"
+#, c-format
 msgid "Failed to create cookie for PID %d"
-msgstr "%s 用のループバックデバイスの設定に失敗しました"
+msgstr "PID %d のクッキーの作成に失敗しました"
 
 #: schedutils/coresched.c:140
-#, fuzzy, c-format
-#| msgid "failed to read from: %s"
+#, c-format
 msgid "Failed to pull cookie from PID %d"
-msgstr "%s からの読み込みに失敗しました"
+msgstr "PID %d からのクッキーの読み出しに失敗しました"
 
 #: schedutils/coresched.c:146
-#, fuzzy, c-format
-#| msgid "Failed to parse your UUID."
+#, c-format
 msgid "Failed to push cookie to PID %d"
-msgstr "UUID の解析に失敗しました。"
+msgstr "PID %d へのクッキーの書き込みに失敗しました"
 
 #: schedutils/coresched.c:157
 #, c-format
 msgid "copied cookie 0x%llx from PID %d to PID %d"
-msgstr ""
+msgstr "クッキー 0x%llx を PID %d から PID %d へコピーしました"
 
 #: schedutils/coresched.c:166
 #, c-format
 msgid "set cookie of PID %d to 0x%llx"
-msgstr ""
+msgstr "PID %d のクッキーを 0x%llx に設定しました"
 
 #: schedutils/coresched.c:220
 #, c-format
 msgid "'%s' is an invalid option. Must be one of pid/tgid/pgid"
-msgstr ""
+msgstr "'%s' は無効なオプションです。pid/tgid/pgid のいずれかである必要があります"
 
 #: schedutils/coresched.c:243
-#, fuzzy
-#| msgid "Failed to parse size"
 msgid "Failed to parse PID for -s/--source"
-msgstr "サイズの解釈に失敗しました"
+msgstr "-s/--source の PID の解釈に失敗しました"
 
 #: schedutils/coresched.c:247
-#, fuzzy
-#| msgid "Failed to parse start address"
 msgid "Failed to parse PID for -d/--dest"
-msgstr "開始アドレスの解析に失敗しました"
+msgstr "-d/--dest の PID の解釈に失敗しました"
 
 #: schedutils/coresched.c:273
-#, fuzzy
-#| msgid "unknown action: %s"
 msgid "Unknown function"
-msgstr "不明な動作です: %s"
+msgstr "不明な機能です"
 
 #: schedutils/coresched.c:281
 msgid "get does not accept the --dest option"
-msgstr ""
+msgstr "get では --dest オプションは指定できません"
 
 #: schedutils/coresched.c:284
 msgid "new does not accept the --source option"
-msgstr ""
+msgstr "new では --source オプションは指定できません"
 
 #: schedutils/coresched.c:296
 msgid "bad usage of the get function"
-msgstr ""
+msgstr "get 機能の指定が間違っています"
 
 #: schedutils/coresched.c:301 schedutils/coresched.c:316
 msgid "new requires either a -d/--dest or a command"
-msgstr ""
+msgstr "new には -d/--dest かコマンドかが必要です"
 
 #: schedutils/coresched.c:308 schedutils/coresched.c:319
 msgid "copy requires either a -d/--dest or a command"
-msgstr ""
+msgstr "copy には -d/--dest かコマンドかが必要です"
 
 #: schedutils/coresched.c:336
 msgid "Core scheduling is not supported on this system. Either SMT is unavailable or your kernel does not support CONFIG_SCHED_CORE."
-msgstr ""
+msgstr "このシステムはコアスケジューリングに対応していません。SMT が利用できないか、カーネルが CONFIG_SCHED_CORE に対応していません。"
 
 #: schedutils/coresched.c:344
 #, c-format
 msgid "cookie of pid %d is 0x%llx\n"
-msgstr ""
+msgstr "pid %d のクッキーは 0x%llx です\n"
 
 #: schedutils/ionice.c:78
 msgid "ioprio_get failed"
