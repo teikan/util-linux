@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2025-04-09 08:05+0900\n"
+"PO-Revision-Date: 2025-04-09 08:58+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -23893,8 +23893,7 @@ msgstr ""
 "プログラムの起動を中止しました。"
 
 #: term-utils/script.c:836 term-utils/scriptlive.c:220
-#, fuzzy, c-format
-#| msgid "unssuported echo mode: '%s'"
+#, c-format
 msgid "unsupported echo mode: '%s'"
 msgstr "未対応のエコーモードです: '%s'"
 
@@ -23942,10 +23941,9 @@ msgid "Script done.\n"
 msgstr "スクリプトを終了しました。\n"
 
 #: term-utils/scriptlive.c:57
-#, fuzzy, c-format
-#| msgid " %s [-t] timingfile [-I|-B] typescript\n"
+#, c-format
 msgid " %s [options] <timingfile> <typescript>\n"
-msgstr " %s [-t] タイミングファイル [-I|-B] タイプスクリプト]\n"
+msgstr " %s [オプション] <タイミングファイル> <タイプスクリプト>\n"
 
 #: term-utils/scriptlive.c:61
 msgid "Execute terminal typescript.\n"
@@ -23976,12 +23974,10 @@ msgid " -d, --divisor <num>     speed up or slow down execution with time diviso
 msgstr " -d, --divisor <除数>    指定した割合で実行速度を増加または減少させます\n"
 
 #: term-utils/scriptlive.c:72
-#, fuzzy
-#| msgid " -E, --echo <when>             echo input in session (auto, always or never)\n"
 msgid " -E, --echo <when>       echo input in session (auto, always or never)\n"
 msgstr ""
-" -E, --echo <いつ>             セッションの入力をエコーバックします\n"
-"                                 (auto、always、never のどれか)\n"
+" -E, --echo <いつ>       セッションの入力をエコーバックします\n"
+"                           (auto、always、never のどれか)\n"
 
 #: term-utils/scriptlive.c:73 term-utils/scriptreplay.c:68
 msgid " -m, --maxdelay <num>    wait at most this many seconds between updates\n"
@@ -24018,10 +24014,9 @@ msgstr ""
 ">>> scriptlive: 終了しました。\n"
 
 #: term-utils/scriptreplay.c:50
-#, fuzzy, c-format
-#| msgid " %s [-t] timingfile [typescript] [divisor]\n"
+#, c-format
 msgid " %s [options] <timingfile> [<typescript> [<divisor>]]\n"
-msgstr " %s [-t] タイミングファイル [タイプスクリプト] [除数]\n"
+msgstr " %s [オプション] <タイミングファイル> [<タイプスクリプト> [<除数>]]\n"
 
 #: term-utils/scriptreplay.c:54
 msgid "Play back terminal typescripts, using timing information.\n"
@@ -24049,25 +24044,23 @@ msgstr " -c, --cr-mode <タイプ>  復帰文字の変換モード (auto, never,
 
 #: term-utils/scriptreplay.c:76
 msgid "Key bindings:\n"
-msgstr ""
+msgstr "キーバインディング:\n"
 
 #: term-utils/scriptreplay.c:77
 msgid " space        toggles between pause and play\n"
-msgstr ""
+msgstr " スペースキー 一時停止と再生を切り替えます\n"
 
 #: term-utils/scriptreplay.c:78
 msgid " up-arrow     increases playback speed with ten percent\n"
-msgstr ""
+msgstr " 上矢印キー   再生速度を10%上げます\n"
 
 #: term-utils/scriptreplay.c:79
 msgid " down-arrow   decreases playback speed with ten percent\n"
-msgstr ""
+msgstr " 下矢印キー   再生速度を10%下げます\n"
 
 #: term-utils/scriptreplay.c:145
-#, fuzzy
-#| msgid "unexpected tcgetattr failure"
 msgid "unexpected fcntl failure"
-msgstr "tcgetattr で予期しないエラーが発生しました"
+msgstr "fcntl で予期しないエラーが発生しました"
 
 #: term-utils/scriptreplay.c:150
 msgid "unexpected tcgetattr failure"
@@ -24098,8 +24091,7 @@ msgid "%s: line %d: timing file error"
 msgstr "%s: %d 行目: タイミングファイルのエラー"
 
 #: term-utils/setterm.c:238
-#, fuzzy, c-format
-#| msgid "argument error: bright %s is not supported"
+#, c-format
 msgid "argument error: bright color %s is not supported"
 msgstr "引数エラー: 明るい %s はサポートされていません"
 
@@ -24236,12 +24228,12 @@ msgid " --file <filename>             name of the dump file\n"
 msgstr " --file <ファイル名>           ダンプ先のファイル名\n"
 
 #: term-utils/setterm.c:433
-#, fuzzy
-#| msgid "                               set vesa powersaving features\n"
 msgid ""
 " --powersave on|vsync|hsync|powerdown|off\n"
 "                               set vesa powersaving features\n"
-msgstr "                               VESA 省電力機能を設定します\n"
+msgstr ""
+" --powersave on|vsync|hsync|powerdown|off\n"
+"                               VESA 省電力機能を設定します\n"
 
 #: term-utils/setterm.c:435
 msgid " --powerdown[=<0-60>]          set vesa powerdown interval in minutes\n"
@@ -24411,10 +24403,8 @@ msgid "get user name failed: %s"
 msgstr "ユーザ名の取得に失敗しました: %s"
 
 #: term-utils/wall.c:296 term-utils/wall.c:328
-#, fuzzy
-#| msgid "failed to allocate input line"
 msgid "failed to allocate lines list"
-msgstr "入力行の割り当てに失敗しました"
+msgstr "回線リストの割り当てに失敗しました"
 
 #: term-utils/wall.c:361
 msgid "cannot get passwd uid"
