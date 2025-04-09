@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2025-04-09 08:58+0900\n"
+"PO-Revision-Date: 2025-04-09 09:34+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -24484,87 +24484,80 @@ msgstr "%s は %s でメッセージを無効にしています"
 
 #: text-utils/bits.c:57 text-utils/bits.c:75
 msgid "error: cannot allocate bit mask"
-msgstr ""
+msgstr "エラー: ビットマスクの割り当てに失敗しました"
 
 #: text-utils/bits.c:63
-#, fuzzy, c-format
-#| msgid "invalid id: %s"
+#, c-format
 msgid "error: invalid bit mask: %s"
-msgstr "ID が正しくありません: %s"
+msgstr "エラー: ビットマスクが正しくありません: %s"
 
 #: text-utils/bits.c:66
-#, fuzzy, c-format
-#| msgid "invalid id: %s"
+#, c-format
 msgid "error: invalid bit list: %s"
-msgstr "ID が正しくありません: %s"
+msgstr "エラー: ビットリストが正しくありません: %s"
 
 #: text-utils/bits.c:208
-#, fuzzy, c-format
-#| msgid " %s [options] [<file>...]\n"
+#, c-format
 msgid " %s [options] [<mask_or_list>...]\n"
-msgstr " %s [オプション] [<ファイル>...]\n"
+msgstr " %s [オプション] [<マスクまたはリスト>...]\n"
 
 #: text-utils/bits.c:212
 msgid "Convert bit masks from/to various formats."
-msgstr ""
+msgstr "ビットマスクとさまざまな形式との間で変換を行います。"
 
 #: text-utils/bits.c:215
 msgid ""
 " <mask_or_list>      bits specified as a hex mask (e.g. 0xeec2)\n"
 "                       or as a comma-separated list of bit IDs"
 msgstr ""
+" <マスクまたはリスト> 16 進数のマスクで指定されたビット(例: 0xeec2)\n"
+"                       またはビット ID のカンマ区切りリスト"
 
 #: text-utils/bits.c:219
 msgid " If not specified, arguments will be read from stdin."
-msgstr ""
+msgstr " 指定がない場合は、引数は標準入力から読み込まれます。"
 
 #: text-utils/bits.c:224
 msgid ""
 " -w <num>, --width <num>\n"
 "                     maximum width of bit masks (default 8192)"
 msgstr ""
+" -w <数値>, --width <数値>\n"
+"                     ビットマスクの最大幅(既定値 8192)"
 
 #: text-utils/bits.c:228
-#, fuzzy
-#| msgid "Output options:\n"
 msgid ""
 "\n"
 "Output modes:\n"
-msgstr "出力オプション:\n"
+msgstr ""
+"\n"
+"出力モード:\n"
 
 #: text-utils/bits.c:229
-#, fuzzy
-#| msgid " -u, --units[=<unit>]          display units: 'cylinders' or 'sectors' (default)\n"
 msgid " -m, --mask          display bits as a hex mask value (default)"
-msgstr " -u, --units[=<単位>]          表示単位: 'cylinders' または 'sectors' (既定値)\n"
+msgstr " -m, --mask          ビットを 16 進数のマスク値で表示します (既定値)"
 
 #: text-utils/bits.c:231
 msgid ""
 " -g, --grouped-mask  display bits as a hex mask value in 32bit\n"
 "                       comma separated groups"
 msgstr ""
+" -g, --grouped-mask  ビットを 32 ビットの 16 進数マスク値の\n"
+"                       カンマ区切りグループで表示します"
 
 #: text-utils/bits.c:233
-#, fuzzy
-#| msgid " -v, --verbose        display status information\n"
 msgid " -b, --binary        display bits as a binary mask value"
-msgstr " -v, --verbose        状態を表示します\n"
+msgstr " -b, --binary        ビットを 2 進数のマスク値で表示します"
 
 #: text-utils/bits.c:235
-#, fuzzy
-#| msgid " -l, --list             use list format output\n"
 msgid " -l, --list          display bits as a compressed list of bit IDs"
-msgstr " -l, --list             一覧形式で出力します\n"
+msgstr " -l, --list          ビットをビット ID の圧縮リストで表示します"
 
 #: text-utils/bits.c:285
-#, fuzzy
-#| msgid "invalid id"
 msgid "invalid --width"
-msgstr "ID が正しくありません"
+msgstr "--width が正しくありません"
 
 #: text-utils/bits.c:306 text-utils/bits.c:315
-#, fuzzy
-#| msgid "Cannot allocate memory!"
 msgid "cannot allocate memory"
 msgstr "メモリの割り当てに失敗しました!"
 
@@ -24639,10 +24632,8 @@ msgstr ""
 " %s [開始桁 [終了桁]]\n"
 
 #: text-utils/colrm.c:66
-#, fuzzy
-#| msgid "Filter out reverse line feeds from standard input.\n"
 msgid "Filter out the specified columns from standard input.\n"
-msgstr "標準入力から逆改行を取り除くフィルタです。\n"
+msgstr "標準入力から指定した列を取り除くフィルタです。\n"
 
 #: text-utils/colrm.c:183
 msgid "first argument"
@@ -24795,10 +24786,8 @@ msgid " -x, --fillrows                   fill rows before columns\n"
 msgstr " -x, --fillrows                   列の前に行を埋めます\n"
 
 #: text-utils/column.c:924
-#, fuzzy
-#| msgid " -N, --table-columns <names>      comma separated columns names\n"
 msgid " -S, --use-spaces <number>        minimal whitespaces between columns (no tabs)\n"
-msgstr " -N, --table-columns <名前>       列の名前をカンマ区切りで指定します\n"
+msgstr " -S, --use-spaces <数値>          列間の最小ホワイトスペース (タブなし)\n"
 
 #: text-utils/column.c:1006
 msgid "invalid columns argument"
@@ -24817,16 +24806,12 @@ msgid "failed to parse column names"
 msgstr "列の名前の解釈に失敗しました"
 
 #: text-utils/column.c:1062
-#, fuzzy
-#| msgid "invalid namespace argument"
 msgid "invalid spaces argument"
-msgstr "名前空間引数が正しくありません"
+msgstr "スペース引数が正しくありません"
 
 #: text-utils/column.c:1068
-#, fuzzy
-#| msgid "failed to use input separator"
 msgid "failed to parse input separator"
-msgstr "区切り文字列の使用に失敗しました"
+msgstr "区切り文字列の解釈に失敗しました"
 
 #: text-utils/column.c:1101
 msgid "options --tree-id and --tree-parent are required for tree formatting"
