@@ -2540,7 +2540,7 @@ msgstr "読み込みエラー: ファイル '%s' 内のブロックへ seek で�
 #: disk-utils/fsck.minix.c:374
 #, c-format
 msgid "Read error: bad block in file '%s'\n"
-msgstr "読み込みエラー: ファイル '%s' に不正ブロックがあります\n"
+msgstr "読み込みエラー: ファイル '%s' に不良ブロックがあります\n"
 
 #: disk-utils/fsck.minix.c:386
 #, c-format
@@ -2548,7 +2548,7 @@ msgid ""
 "Internal error: trying to write bad block\n"
 "Write request ignored\n"
 msgstr ""
-"内部エラー: 不正ブロックへの書き込み\n"
+"内部エラー: 不良ブロックへの書き込み\n"
 "書き込み要求は無視されます\n"
 
 #: disk-utils/fsck.minix.c:392
@@ -2558,7 +2558,7 @@ msgstr "書き込みブロック内の seek に失敗しました"
 #: disk-utils/fsck.minix.c:395
 #, c-format
 msgid "Write error: bad block in file '%s'\n"
-msgstr "書き込みエラー: ファイルの中 '%s' に不正ブロックがあります\n"
+msgstr "書き込みエラー: ファイルの中 '%s' に不良ブロックがあります\n"
 
 #: disk-utils/fsck.minix.c:429
 #, c-format
@@ -3392,7 +3392,7 @@ msgstr "%s: write_block で書き込みに失敗しました"
 #: disk-utils/mkfs.minix.c:354
 #, c-format
 msgid "%s: too many bad blocks"
-msgstr "%s: 不正ブロックが多すぎます"
+msgstr "%s: 不良ブロックが多すぎます"
 
 #: disk-utils/mkfs.minix.c:238
 #, c-format
@@ -3452,23 +3452,23 @@ msgstr "%s: check_blocks でシークに失敗しました"
 #: disk-utils/mkfs.minix.c:641
 #, c-format
 msgid "%s: bad blocks before data-area: cannot make fs"
-msgstr "%s: データ領域の前に不正なブロックがあります: ファイルシステムを作成できません"
+msgstr "%s: データ領域の前に不良ブロックがあります: ファイルシステムを作成できません"
 
 #: disk-utils/mkfs.minix.c:648 disk-utils/mkfs.minix.c:672
 #, c-format
 msgid "%d bad block\n"
 msgid_plural "%d bad blocks\n"
-msgstr[0] "%d 個の不正ブロック\n"
+msgstr[0] "%d 個の不良ブロック\n"
 
 #: disk-utils/mkfs.minix.c:657
 #, c-format
 msgid "%s: can't open file of bad blocks"
-msgstr "%s: 不正ブロックのファイルを開くことができません"
+msgstr "%s: 不良ブロックのファイルを開くことができません"
 
 #: disk-utils/mkfs.minix.c:662
 #, c-format
 msgid "badblock number input error on line %d\n"
-msgstr "不正ブロックの番号が正しくありません (%d 行目)\n"
+msgstr "不良ブロックの番号が正しくありません (%d 行目)\n"
 
 #: disk-utils/mkfs.minix.c:663
 #, c-format
@@ -3561,7 +3561,7 @@ msgstr "Linux のスワップ領域を設定します。\n"
 
 #: disk-utils/mkswap.c:209
 msgid " -c, --check               check bad blocks before creating the swap area\n"
-msgstr " -c, --check               スワップ領域を作成する前に、不正ブロックをチェックします\n"
+msgstr " -c, --check               スワップ領域を作成する前に、不良ブロックをチェックします\n"
 
 #: disk-utils/mkswap.c:210
 msgid " -f, --force               allow swap size area be larger than device\n"
@@ -7165,16 +7165,16 @@ msgstr "代替 LBA"
 #. TRANSLATORS: The start of the array of partition entries.
 #: libfdisk/src/gpt.c:1316
 msgid "Partition entries starting LBA"
-msgstr "パーティションエントリーが始まる LBA"
+msgstr "パーティション項目が始まる LBA"
 
 #. TRANSLATORS: The end of the array of partition entries.
 #: libfdisk/src/gpt.c:1322
 msgid "Partition entries ending LBA"
-msgstr "パーティションエントリーが終わる LBA"
+msgstr "パーティション項目が終わる LBA"
 
 #: libfdisk/src/gpt.c:1329
 msgid "Allocated partition entries"
-msgstr "割り当てたパーティションエントリー"
+msgstr "割り当てたパーティション項目"
 
 #: libfdisk/src/gpt.c:1671
 msgid "The backup GPT table is corrupt, but the primary appears OK, so that will be used."
@@ -7370,7 +7370,7 @@ msgstr "パーティション #%zu の範囲が間違っています（最大終
 
 #: libfdisk/src/gpt.c:2863
 msgid "The partition entry size is zero."
-msgstr "パーティション入力サイズが 0 です。"
+msgstr "パーティション項目サイズが 0 です。"
 
 #: libfdisk/src/gpt.c:2865
 #, c-format
@@ -18554,7 +18554,7 @@ msgstr " -2, --twostopbits       ストップビットを 2 に設定します\n
 
 #: sys-utils/ldattach.c:214
 msgid " -i, --iflag [-]<iflag>  set input mode flag\n"
-msgstr " -i, --iflag [-]<フラグ> 入力モードフラグを設定します\n"
+msgstr " -i, --iflag [-]<iflag> 入力モードフラグを設定します\n"
 
 #: sys-utils/ldattach.c:219
 msgid ""
@@ -18562,7 +18562,7 @@ msgid ""
 "Known <ldisc> names:\n"
 msgstr ""
 "\n"
-"既知の <回線制御> 名称:\n"
+"既知の <回線制御> 名:\n"
 
 #: sys-utils/ldattach.c:223
 msgid ""
@@ -18570,7 +18570,7 @@ msgid ""
 "Known <iflag> names:\n"
 msgstr ""
 "\n"
-"既知の <フラグ> 名称:\n"
+"既知の <iflag> 名:\n"
 
 #: sys-utils/ldattach.c:341
 msgid "invalid speed argument"
@@ -25781,7 +25781,7 @@ msgstr "端末 `%s' は不明な端末です。 `dumb' として処理します"
 #~ msgstr ""
 #~ "\n"
 #~ "オプション:\n"
-#~ " -c, --check               スワップ領域を作成する前に、不正ブロックをチェックします\n"
+#~ " -c, --check               スワップ領域を作成する前に、不良ブロックをチェックします\n"
 #~ " -f, --force               デバイスよりも大きなスワップ領域を許可します\n"
 #~ " -p, --pagesize SIZE       ページサイズを指定します (バイト単位)\n"
 #~ " -L, --label LABEL         ラベルを指定します\n"
