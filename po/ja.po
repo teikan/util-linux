@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.40.1-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-03-06 10:21+0100\n"
-"PO-Revision-Date: 2025-04-09 09:34+0900\n"
+"PO-Revision-Date: 2025-04-09 09:55+0900\n"
 "Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -5152,16 +5152,13 @@ msgid "display version"
 msgstr "バージョンを表示します"
 
 #: include/c.h:477
-#, fuzzy, c-format
-#| msgid ""
-#| " %s arguments may be followed by the suffixes for\n"
-#| "   GiB, TiB, PiB, EiB, ZiB, and YiB (the \"iB\" is optional)\n"
+#, c-format
 msgid ""
 " Values for %s may be followed by a suffix: KiB, MiB,\n"
 " GiB, TiB, PiB, EiB, ZiB, or YiB (where the \"iB\" is optional).\n"
 msgstr ""
-" %s 引数の後には単位を表すための\n"
-"   GiB, TiB, PiB, EiB, ZiB, YiB を加えることができます (\"iB\" はなくても同じ)\n"
+" %s の値の後には KiB, MiB, GiB, TiB, PiB, EiB, ZiB, YiB を\n"
+" 加えることができます(\"iB\" はなくても同じ)。\n"
 
 #: include/c.h:480
 #, c-format
@@ -5206,10 +5203,8 @@ msgid "failed to set the %s environment variable"
 msgstr "%s 環境変数の設定に失敗しました"
 
 #: include/fgetwc_or_err.h:18
-#, fuzzy
-#| msgid "getline() failed"
 msgid "fgetwc() failed"
-msgstr "getline() 失敗"
+msgstr "fgetwc() に失敗しました"
 
 #: include/optutils.h:89
 #, c-format
@@ -6094,20 +6089,16 @@ msgid "U-Boot environment"
 msgstr "U-Boot 環境"
 
 #: include/pt-gpt-partnames.h:297
-#, fuzzy
-#| msgid "Microsoft basic data"
 msgid "Atari TOS basic data"
-msgstr "Microsoft 基本データ"
+msgstr "Atari TOS 基本データ"
 
 #: include/pt-gpt-partnames.h:298
 msgid "Atari TOS raw data (XHDI)"
-msgstr ""
+msgstr "Atari TOS 生データ (XHDI)"
 
 #: include/pt-gpt-partnames.h:301
-#, fuzzy
-#| msgid "Linux filesystem"
 msgid "Minix filesystem"
-msgstr "Linux ファイルシステム"
+msgstr "Minix ファイルシステム"
 
 #: include/pt-mbr-partnames.h:5
 msgid "Empty"
@@ -8078,10 +8069,9 @@ msgid "filesystem was mounted, but any subsequent operation failed: %m"
 msgstr "ファイルシステムをマウントしましたが、続く操作が失敗しました: %m"
 
 #: libmount/src/context_mount.c:1667
-#, fuzzy, c-format
-#| msgid "%s failed"
+#, c-format
 msgid "%s() failed: "
-msgstr "%s に失敗しました"
+msgstr "%s() に失敗しました: "
 
 #: libmount/src/context_mount.c:1686 login-utils/newgrp.c:232
 #, c-format
@@ -8234,10 +8224,9 @@ msgid "cannot mount; probably corrupted filesystem on %s"
 msgstr "マウントできません; おそらく %s のファイルシステムが壊れています"
 
 #: libmount/src/context_mount.c:1842
-#, fuzzy, c-format
-#| msgid "%s failed"
+#, c-format
 msgid "%s() failed: %m"
-msgstr "%s に失敗しました"
+msgstr "%s() に失敗しました: %m"
 
 #: libmount/src/context_umount.c:1280 libmount/src/context_umount.c:1334
 #, c-format
@@ -8301,16 +8290,15 @@ msgstr "umount(2) システムコールが失敗しました: %m"
 
 #. TRANSLATORS: Don't translate "e ". It's a message classifier.
 #: libmount/src/hook_idmap.c:348 libmount/src/hook_idmap.c:363
-#, fuzzy, c-format
-#| msgid "cannot set non-blocking %s"
+#, c-format
 msgid "e cannot set ID-mapping: %m"
-msgstr "%s を非ブロッキングに設定できません"
+msgstr "e ID マッピングを設定できません: %m"
 
 #. TRANSLATORS: Do not translate "e ". It is a message classifier.
 #: libmount/src/hook_loopdev.c:285
 #, c-format
 msgid "e device node %s (%u:%u) is lost"
-msgstr ""
+msgstr "e デバイスノード %s (%u:%u) がありません"
 
 #: lib/plymouth-ctrl.c:73
 msgid "cannot open UNIX socket"
@@ -9955,10 +9943,8 @@ msgid "bpf program id associated with the fd"
 msgstr "fd に関連付けられた bpf プログラム ID"
 
 #: lsfd-cmd/lsfd.c:203
-#, fuzzy
-#| msgid "bpf program type (raw)"
 msgid "bpf program tag"
-msgstr "bpf プログラムタイプ (無加工)"
+msgstr "bpf プログラムタグ"
 
 #: lsfd-cmd/lsfd.c:206
 msgid "bpf program type (decoded)"
@@ -10273,38 +10259,28 @@ msgid "user of the process"
 msgstr "プロセスのユーザ"
 
 #: lsfd-cmd/lsfd.c:440
-#, fuzzy
-#| msgid " block   identifier\n"
 msgid "local VSOCK context identifier"
-msgstr " block   識別子\n"
+msgstr "ローカル VSOCK コンテキスト識別子"
 
 #: lsfd-cmd/lsfd.c:443
 msgid "remote VSOCK context identifier"
-msgstr ""
+msgstr "リモート VSOCK コンテキスト識別子"
 
 #: lsfd-cmd/lsfd.c:446
-#, fuzzy
-#| msgid "local TCP port"
 msgid "local VSOCK port"
-msgstr "ローカル TCP ポート"
+msgstr "ローカル VSOCK ポート"
 
 #: lsfd-cmd/lsfd.c:449
-#, fuzzy
-#| msgid "remote TCP port"
 msgid "remote VSOCK port"
-msgstr "リモート TCP ポート"
+msgstr "リモート VSOCK ポート"
 
 #: lsfd-cmd/lsfd.c:452
-#, fuzzy
-#| msgid "local IP address"
 msgid "local VSOCK address (CID:PORT)"
-msgstr "ローカル IP アドレス"
+msgstr "ローカル VSOCK アドレス (CID:ポート)"
 
 #: lsfd-cmd/lsfd.c:455
-#, fuzzy
-#| msgid "remote IP address"
 msgid "remote VSOCK address (CID:PORT)"
-msgstr "リモート IP アドレス"
+msgstr "リモート VSOCK アドレス (CID:ポート)"
 
 #: lsfd-cmd/lsfd.c:458
 msgid "extended version of MODE (rwxD[Ll]m)"
@@ -10469,7 +10445,7 @@ msgstr "     --dump-counters          カウンタの定義を出力します\n"
 
 #: lsfd-cmd/lsfd.c:2195
 msgid "     --hyperlink[=mode]       print paths as terminal hyperlinks (always, never, or auto)\n"
-msgstr ""
+msgstr "     --hyperlink[=モード]     パスを端末ハイパーリンクとして表示します (always, never, auto)\n"
 
 #: lsfd-cmd/lsfd.c:2196
 msgid "     --summary[=<when>]       print summary information (only, append, or never)\n"
@@ -10477,7 +10453,7 @@ msgstr "     --summary[=<いつ>]       概要情報を表示します (only, ap
 
 #: lsfd-cmd/lsfd.c:2197
 msgid "     --_drop-privilege        (testing purpose) do setuid(1) just after starting\n"
-msgstr ""
+msgstr "     --_drop-privilege        (テスト用) 開始直後に setuid(1) を行います\n"
 
 #: lsfd-cmd/lsfd.c:2200
 msgid " -H, --list-columns           list the available columns\n"
