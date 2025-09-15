@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2025-09-15 14:32+0200\n"
-"PO-Revision-Date: 2025-09-16 08:07+0900\n"
+"PO-Revision-Date: 2025-09-16 08:47+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -804,10 +804,9 @@ msgid "Read: "
 msgstr "読込: "
 
 #: disk-utils/fdformat.c:122
-#, fuzzy, c-format
-#| msgid "Problem reading track/head %u/%u, expected %d, read %d\n"
+#, c-format
 msgid "Problem reading track/head %u/%u, expected %zu, read %zd\n"
-msgstr "読込み中に問題発生、トラック/ヘッド %u/%u で %d の筈なのに %d を読込みました\n"
+msgstr "読込み中に問題発生、トラック/ヘッド %u/%u で %zu のはずなのに %zd を読込みました\n"
 
 #: disk-utils/fdformat.c:139
 #, c-format
@@ -2376,10 +2375,8 @@ msgid "filename length is zero"
 msgstr "ファイル名の長さがゼロです"
 
 #: disk-utils/fsck.cramfs.c:511
-#, fuzzy
-#| msgid "filename length is zero"
 msgid "filename length is too large"
-msgstr "ファイル名の長さがゼロです"
+msgstr "ファイル名が長すぎます"
 
 #: disk-utils/fsck.cramfs.c:516
 msgid "bad filename length"
@@ -10105,10 +10102,8 @@ msgid "net interface associated with the packet socket"
 msgstr "パケットソケットに関連付けられた net インタフェース"
 
 #: lsfd-cmd/lsfd.c:315
-#, fuzzy
-#| msgid "L3 protocol associated with the packet socket"
 msgid "L2 protocol associated with the packet socket"
-msgstr "パケットソケットに関連付けられた L3 プロトコル"
+msgstr "パケットソケットに関連付けられた L2 プロトコル"
 
 #: lsfd-cmd/lsfd.c:318
 msgid "block device name resolved by /proc/partition"
@@ -11367,21 +11362,15 @@ msgstr ""
 "                          (ユーザー空間のマウントオプションを含む)\n"
 
 #: misc-utils/findmnt.c:1536
-#, fuzzy
-#| msgid "     --iso             alias for --reform=iso\n"
 msgid " -k                     an alias for '--kernel=mountinfo'\n"
-msgstr "     --iso             --reform=iso と同じ\n"
+msgstr " -k                     '--kernel=mountinfo' と同じ\n"
 
 #: misc-utils/findmnt.c:1537
-#, fuzzy
-#| msgid ""
-#| " -k, --kernel[=<method>] search in kernel mount table (default)\n"
-#| "                          <method> is mountinfo or listmount\n"
 msgid ""
 " --kernel[=<method>]    search in kernel mount table (default behavior);\n"
 "                          <method> is mountinfo or listmount\n"
 msgstr ""
-" -k, --kernel[=<方式>]   カーネルマウントテーブル内を検索します (既定値)\n"
+" --kernel[=<方式>]      カーネルマウントテーブル内を検索します (既定の動作)\n"
 "                          <方式> には mountinfo または listmount を指定します\n"
 
 #: misc-utils/findmnt.c:1539
@@ -12694,10 +12683,8 @@ msgid "invalid structured data parameter: '%s'"
 msgstr "構造化データパラメータ が正しくありません: '%s'"
 
 #: misc-utils/logger.c:1301
-#, fuzzy
-#| msgid "--file <file> and <message> are mutually exclusive, message is ignored"
 msgid "--file <file> and <message> are mutually exclusive; file is ignored"
-msgstr "--file <ファイル> は <メッセージ> と同時に指定できません。メッセージを無視します"
+msgstr "--file <ファイル> は <メッセージ> と同時に指定できません。ファイルを無視します"
 
 #: misc-utils/logger.c:1308
 msgid "journald entry could not be written"
@@ -23263,10 +23250,8 @@ msgid "memory limit used to store compressed data"
 msgstr "圧縮データ格納メモリの上限"
 
 #: sys-utils/zramctl.c:86
-#, fuzzy
-#| msgid "memory limit used to store compressed data"
 msgid "peak memory usage to store compressed data"
-msgstr "圧縮データ格納メモリの上限"
+msgstr "圧縮データ格納メモリのピーク使用量"
 
 #: sys-utils/zramctl.c:87
 msgid "number of objects migrated by compaction"
@@ -25371,7 +25356,7 @@ msgstr "行の内容を文字単位で逆順に並べ替えます。\n"
 
 #: text-utils/rev.c:83
 msgid " -0, --zero     use the NUL byte as line separator\n"
-msgstr ""
+msgstr " -0, --zero     行を NUL バイトで区切ります\n"
 
 #: text-utils/ul.c:127
 msgid "Do underlining.\n"
