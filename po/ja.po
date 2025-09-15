@@ -1,6 +1,12 @@
 # Japanese messages for util-linux
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # This file is distributed under the same license as the util-linux package.
+#
+# Permission is granted to freely copy and distribute
+# this file and modified versions, provided that this
+# header is not removed and modified versions are marked
+# as such.
+#
 # includes cfdisk original translation by
 # Hidenobu NABETANI <nabetani@kern.phys.sci.osaka-u.ac.jp>
 # Daisuke Yamashita <yamad@mb.infoweb.ne.jp>, 1999-2001.
@@ -8,7 +14,7 @@
 # Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2011, 2013.
 # victory <victory.deb@gmail.com>, 2013.
 # Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
-# Hideki Yoshida <hideki@acm.org>, 2024.
+# YOSHIDA Hideki <hideki@acm.org>, 2024, 2025.
 #
 # (Additional History)
 #  Once util-linux-ng was forked from util-linux,
@@ -16,11 +22,11 @@
 #  Work in 2013 is by courtesy of Yasuhiko Kamata <belphegor@belbel.or.jp>.
 msgid ""
 msgstr ""
-"Project-Id-Version: util-linux 2.40.1-rc1\n"
+"Project-Id-Version: util-linux 2.41-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
-"POT-Creation-Date: 2025-03-06 10:21+0100\n"
+"POT-Creation-Date: 2025-03-06 12:25+0100\n"
 "PO-Revision-Date: 2025-04-09 09:55+0900\n"
-"Last-Translator: Hideki Yoshida <hideki@acm.org>\n"
+"Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +35,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Generator: Poedit 3.2.2\n"
-"X-Poedit-Basepath: util-linux-2.36-rc2\n"
+"X-Poedit-Basepath: util-linux-2.41-rc2\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: disk-utils/addpart.c:25
