@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
-"POT-Creation-Date: 2026-03-24 11:53+0100\n"
+"POT-Creation-Date: 2026-03-24 12:20+0100\n"
 "PO-Revision-Date: 2025-09-16 08:47+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -11117,9 +11117,9 @@ msgstr "     --color[=<いつ>]  メッセージを色づけします (%s, %s or
 
 #: misc-utils/copyfilerange.c:58
 #, fuzzy, c-format
-#| msgid " %s [options] [-] [<user> [<argument>...]]\n"
+#| msgid " %s [options] <string> [<file>...]\n"
 msgid " %1$s [options] <source> <destination> <range>...\n"
-msgstr " %s [オプション] [-] [<ユーザ> [<引数>...]]\n"
+msgstr " %s [オプション] <文字列> [<ファイル>...]\n"
 
 #: misc-utils/copyfilerange.c:62
 msgid "Copy the specified range(s) from source to destination file."
@@ -11146,9 +11146,9 @@ msgstr ""
 
 #: misc-utils/copyfilerange.c:136
 #, fuzzy, c-format
-#| msgid "%s: Zero-filled %<PRIu64> bytes from the offset %<PRIu64>\n"
+#| msgid "%s: offset %<PRIu64> is not aligned to zone size %lu"
 msgid "%s offset %<PRId64> is beyond file size of %<PRId64>"
-msgstr "%1$s: 開始位置 %3$<PRIu64> から %2$<PRIu64> バイトを 0で埋めました\n"
+msgstr "%s: オフセット %<PRIu64> はゾーンサイズ %lu の倍数ではありません"
 
 #: misc-utils/copyfilerange.c:149
 #, c-format
@@ -26798,36 +26798,6 @@ msgstr "terminfo の読み込み中にトラブルが発生しました"
 msgid "terminal `%s' is not known, defaulting to `dumb'"
 msgstr "端末 `%s' は不明な端末です。 `dumb' として処理します"
 
-#, fuzzy
-#~| msgid "                        available namespaces: %s\n"
-#~ msgid " source                      source filename"
-#~ msgstr "                        利用可能な名前空間: %s\n"
-
-#, fuzzy
-#~| msgid " <part>                    partition number\n"
-#~ msgid " destination                 destination filename"
-#~ msgstr " <part>                    パーティション番号\n"
-
-#, fuzzy
-#~| msgid "                          then the priority is 'relative' to current\n"
-#~ msgid "                             when the offset is omitted the last file position is used"
-#~ msgstr "                          優先順位はプロセスの現在の優先順位からの相対値で\n"
-
-#, fuzzy
-#~| msgid " -v, --verbose                 verbose mode\n"
-#~ msgid " --verbose, -v               verbose mode"
-#~ msgstr " -v, --verbose                 冗長モードを設定します\n"
-
-#, fuzzy
-#~| msgid "no file specified"
-#~ msgid "source file is required"
-#~ msgstr "ファイルが指定されていません"
-
-#, fuzzy, c-format
-#~| msgid "failed to initialize %s handler"
-#~ msgid "failed to initialized %s handler"
-#~ msgstr "%s ハンドラの準備に失敗しました"
-
 #, c-format
 #~ msgid " %s [-h] [-v] [-b blksize] [-e edition] [-N endian] [-i file] [-n name] dirname outfile\n"
 #~ msgstr " %s [-h] [-v] [-b ブロックサイズ] [-e エディション番号] [-N エンディアン] [-i ファイル] [-n 名前] dirname outfile\n"
@@ -26915,6 +26885,9 @@ msgstr "端末 `%s' は不明な端末です。 `dumb' として処理します"
 
 #~ msgid "terminal setting retrieval"
 #~ msgstr "端末の設定を取得します"
+
+#~ msgid " -v, --verbose                 verbose mode\n"
+#~ msgstr " -v, --verbose                 冗長モードを設定します\n"
 
 #~ msgid " -b, --bytes              print SIZE in bytes rather\n"
 #~ msgstr " -b, --bytes              バイト単位でサイズを表示します\n"
@@ -27034,6 +27007,9 @@ msgstr "端末 `%s' は不明な端末です。 `dumb' として処理します"
 
 #~ msgid "                          If POSIXLY_CORRECT flag is set in environment\n"
 #~ msgstr "                          環境変数 POSIXLY_CORRECT flag が設定されている場合は\n"
+
+#~ msgid "                          then the priority is 'relative' to current\n"
+#~ msgstr "                          優先順位はプロセスの現在の優先順位からの相対値で\n"
 
 #~ msgid "                          process priority. Otherwise it is 'absolute'.\n"
 #~ msgstr "                          指定します。それ以外の場合は絶対値で指定します。\n"
