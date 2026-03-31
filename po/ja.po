@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2025-09-16 08:47+0900\n"
+"PO-Revision-Date: 2026-03-31 18:20+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -111,10 +111,8 @@ msgstr "開始位置の引数が間違っています"
 
 #: disk-utils/addpart.c:72 disk-utils/resizepart.c:121 misc-utils/fadvise.c:115
 #: sys-utils/fallocate.c:471 sys-utils/fallocate.c:477
-#, fuzzy
-#| msgid "invalid length argument"
 msgid "invalid length"
-msgstr "長さの引数が間違っています"
+msgstr "長さが正しくありません"
 
 #: disk-utils/addpart.c:73
 msgid "failed to add partition"
@@ -1107,8 +1105,6 @@ msgid "partition sectors"
 msgstr "パーティションのセクタ"
 
 #: disk-utils/fdisk.c:893
-#, fuzzy
-#| msgid "free space sectros"
 msgid "free space sectors"
 msgstr "空き領域のセクタ"
 
@@ -1146,7 +1142,7 @@ msgstr "%s に対する BLKGETSIZE ioctl が失敗しました"
 #: disk-utils/fdisk.c:1072 disk-utils/sfdisk.c:1756
 #, c-format
 msgid "The device contains a '%s' signature in the first sector; it will not be wiped unless you create a new partition table. Alternatively, use wipefs(8)."
-msgstr ""
+msgstr "デバイスの最初のセクタに '%s' 署名が書き込まれており、新しいパーティションテーブルを作成しないかぎり wipe されません。wipefs(8) を使うこともできます。"
 
 #: disk-utils/fdisk.c:1077
 #, c-format
@@ -1976,8 +1972,7 @@ msgid "Unlocking %s.\n"
 msgstr "アンロックしています。%s\n"
 
 #: disk-utils/fsck.c:446
-#, fuzzy, c-format
-#| msgid "failed to setup description for %s"
+#, c-format
 msgid "failed to set up description for %s"
 msgstr "%s に対するディスクリプションの設定に失敗しました"
 
@@ -2172,10 +2167,8 @@ msgid "too many arguments"
 msgstr "引数が多すぎます"
 
 #: disk-utils/fsck.c:1510 disk-utils/fsck.c:1594 disk-utils/fsck.c:1602
-#, fuzzy
-#| msgid "too many partitions"
 msgid "too many options"
-msgstr "パーティションが多すぎます"
+msgstr "オプションが多すぎます"
 
 #: disk-utils/fsck.c:1560 disk-utils/fsck.c:1563
 msgid "invalid argument of -r"
@@ -3010,7 +3003,7 @@ msgstr "inode 数の数値が正しくありません"
 
 #: disk-utils/mkfs.bfs.c:162
 msgid "more than one volume"
-msgstr ""
+msgstr "ボリュームが複数指定されています"
 
 #: disk-utils/mkfs.bfs.c:165
 msgid "volume name too long"
@@ -3018,7 +3011,7 @@ msgstr "ボリューム名が長すぎます"
 
 #: disk-utils/mkfs.bfs.c:171
 msgid "more than one fsname"
-msgstr ""
+msgstr "ファイルシステムが複数指定されています"
 
 #: disk-utils/mkfs.bfs.c:174
 msgid "fsname name too long"
@@ -3053,16 +3046,14 @@ msgid "Device: %s\n"
 msgstr "デバイス: %s\n"
 
 #: disk-utils/mkfs.bfs.c:278
-#, fuzzy, c-format
-#| msgid "Volume: <%-6s>\n"
+#, c-format
 msgid "Volume: <%.6s>\n"
-msgstr "ボリューム: <%-6s>\n"
+msgstr "ボリューム: <%.6s>\n"
 
 #: disk-utils/mkfs.bfs.c:279
-#, fuzzy, c-format
-#| msgid "FSname: <%-6s>\n"
+#, c-format
 msgid "FSname: <%.6s>\n"
-msgstr "ファイルシステム名: <%-6s>\n"
+msgstr "ファイルシステム名: <%.6s>\n"
 
 #: disk-utils/mkfs.bfs.c:280
 #, c-format
@@ -3165,14 +3156,11 @@ msgid "failed to execute %s"
 msgstr "%s の実行に失敗しました"
 
 #: disk-utils/mkfs.cramfs.c:130
-#, fuzzy, c-format
-#| msgid " %s [options] file\n"
+#, c-format
 msgid " %s [options] dirname outfile\n"
-msgstr " %s [オプション] ファイル\n"
+msgstr " %s [オプション] dirname outfile\n"
 
 #: disk-utils/mkfs.cramfs.c:133
-#, fuzzy
-#| msgid "Make compressed ROM file system."
 msgid "Make a compressed ROM file system."
 msgstr "圧縮ROM ファイルシステムを作成します。"
 
@@ -3251,10 +3239,9 @@ msgid "%6.2f%% (%+ld bytes)\t%s\n"
 msgstr "%6.2f%% (%+ld バイト)\t%s\n"
 
 #: disk-utils/mkfs.cramfs.c:667
-#, fuzzy, c-format
-#| msgid "cannot mmap: %s"
+#, c-format
 msgid "cannot map %s"
-msgstr "mmap に失敗しました: %s"
+msgstr "%s のマッピングに失敗しました"
 
 #: disk-utils/mkfs.cramfs.c:671
 #, c-format
@@ -3804,14 +3791,10 @@ msgstr "不正なエンディアン %s は未対応です"
 
 #: disk-utils/mkswap.c:644 misc-utils/blkid.c:809 misc-utils/fadvise.c:119
 #: misc-utils/lsclocks.c:300 misc-utils/wipefs.c:740 sys-utils/fallocate.c:480
-#, fuzzy
-#| msgid "Invalid offset"
 msgid "invalid offset"
 msgstr "オフセットが正しくありません"
 
 #: disk-utils/mkswap.c:647 misc-utils/blkid.c:822 misc-utils/pipesz.c:272
-#, fuzzy
-#| msgid "Invalid size"
 msgid "invalid size"
 msgstr "サイズが正しくありません"
 
