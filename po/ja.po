@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-03-31 18:20+0900\n"
+"PO-Revision-Date: 2026-04-01 09:18+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -5180,10 +5180,8 @@ msgstr ""
 "既定の列:\n"
 
 #: include/c.h:532
-#, fuzzy
-#| msgid " -H, --list-columns   list the available columns\n"
 msgid "list the available columns"
-msgstr " -H, --list-columns   利用可能な列の一覧を表示します\n"
+msgstr "利用可能な列の一覧を表示します"
 
 #: include/c.h:533
 msgid "display this help"
@@ -5250,7 +5248,7 @@ msgstr "fgetwc() に失敗しました"
 #: include/optutils.h:109
 #, c-format
 msgid "options %s%s and %s%s cannot be combined"
-msgstr ""
+msgstr "オプション %s%s と %s%s は同時に指定できません"
 
 #: include/pt-gpt-partnames.h:15
 msgid "EFI System"
@@ -5903,7 +5901,7 @@ msgstr "Solaris ルート"
 
 #: include/pt-gpt-partnames.h:206
 msgid "ZFS pool member"
-msgstr ""
+msgstr "ZFS プールメンバー"
 
 #: include/pt-gpt-partnames.h:207
 msgid "Solaris swap"
@@ -6553,10 +6551,9 @@ msgid "prctl(PR_CAP_AMBIENT) failed"
 msgstr "prctl(PR_CAP_AMBIENT) に失敗しました"
 
 #: lib/colors.c:763
-#, fuzzy, c-format
-#| msgid "unsupported color mode"
+#, c-format
 msgid "unsupported color mode: %s"
-msgstr "未対応の色モードです"
+msgstr "未対応の色モードです: %s"
 
 #: libfdisk/src/ask.c:511 libfdisk/src/ask.c:523
 #, c-format
@@ -6740,10 +6737,9 @@ msgid "Bootstrap installed on %s."
 msgstr "ブートストラップを %s にインストールしました。"
 
 #: libfdisk/src/bsd.c:862
-#, fuzzy, c-format
-#| msgid "Too many partitions"
+#, c-format
 msgid "Too many partitions (%d, maximum is %d)."
-msgstr "パーティションが多すぎます"
+msgstr "パーティションが多すぎます (%d、最大値は %d)。"
 
 #: libfdisk/src/bsd.c:911
 #, c-format
@@ -8058,8 +8054,7 @@ msgid "failed to parse mount options"
 msgstr "マウントオプションの解釈に失敗しました"
 
 #: libmount/src/context_mount.c:1587
-#, fuzzy, c-format
-#| msgid "failed to setup loop device for %s"
+#, c-format
 msgid "failed to set up loop device for %s"
 msgstr "%s 用のループバックデバイスの設定に失敗しました"
 
@@ -8358,33 +8353,27 @@ msgstr "e デバイスノード %s (%u:%u) がありません"
 
 #. TRANSLATORS: Don't translate "e ". It's a message classifier.
 #: libmount/src/hook_veritydev.c:547
-#, fuzzy
-#| msgid "%s does not match with on-disk %s"
 msgid "e device's hash does not match with root hash"
-msgstr "%s はディスク上の %s と合致しません"
+msgstr "e デバイスのハッシュがルートハッシュと合致しません"
 
 #. TRANSLATORS: Don't translate "e ". It's a message classifier.
 #: libmount/src/hook_veritydev.c:566
 msgid "e device and mount have to either be both opened with signature or both without"
-msgstr ""
+msgstr "e デバイスとマウントはどちらも署名付きまたはどちらも署名なしで開く必要があります"
 
 #: lib/pidfd-utils.c:44
-#, fuzzy
-#| msgid "failed to parse pid"
 msgid "failed to statx() pidfd"
-msgstr "pid の解析に失敗しました"
+msgstr "pidfd の statx() に失敗しました"
 
 #: lib/pidfd-utils.c:75
-#, fuzzy, c-format
-#| msgid "failed to parse file descriptor"
+#, c-format
 msgid "failed to obtain a valid file descriptor for PID %d"
-msgstr "ファイルディスクリプタの解析に失敗しました"
+msgstr "PID の有効なファイルディスクリプタの取得に失敗しました"
 
 #: lib/pidutils.c:76
-#, fuzzy, c-format
-#| msgid "failed to parse argument"
+#, c-format
 msgid "failed to parse PID argument '%s'"
-msgstr "引数の処理に失敗しました"
+msgstr "PID 引数の解析に失敗しました"
 
 #: lib/plymouth-ctrl.c:71
 msgid "cannot open UNIX socket"
@@ -8427,16 +8416,14 @@ msgid "unsupported argument: %s"
 msgstr "未対応の引数です: %s"
 
 #: lib/strutils.c:552
-#, fuzzy, c-format
-#| msgid "invalid argument of -r: %d"
+#, c-format
 msgid "invalid argument of --hyperlink: %s"
-msgstr "-r の引数が正しくありません: %d"
+msgstr "--hyperlink の引数が正しくありません: %s"
 
 #: lib/strutils.c:566
-#, fuzzy, c-format
-#| msgid "invalid argument of -r: %d"
+#, c-format
 msgid "invalid argument of --annotate: %s"
-msgstr "-r の引数が正しくありません: %d"
+msgstr "--annotate の引数が正しくありません: %s"
 
 #: lib/strutils.c:1523 sys-utils/mount.c:522
 #, c-format
