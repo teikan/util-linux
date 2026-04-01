@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-01 09:18+0900\n"
+"PO-Revision-Date: 2026-04-01 10:49+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -8464,10 +8464,9 @@ msgid "format_reltime: buffer overflow."
 msgstr "format_reltime: バッファーオーバーフロー。"
 
 #: login-utils/chfn.c:105 login-utils/chsh.c:70
-#, fuzzy, c-format
-#| msgid " %s [options] [<username>]\n"
+#, c-format
 msgid " %s [options] [<username>|<UID>]\n"
-msgstr " %s [オプション] [<ユーザ名>]\n"
+msgstr " %s [オプション] [<ユーザ名>|<UID>]\n"
 
 #: login-utils/chfn.c:108
 msgid "Change your finger information.\n"
@@ -8518,10 +8517,8 @@ msgid "Home Phone"
 msgstr "自宅の電話"
 
 #: login-utils/chfn.c:214
-#, fuzzy
-#| msgid "cannot handle multiple usernames"
 msgid "cannot handle multiple usernames or UIDs"
-msgstr "複数のユーザー名を扱うことはできません"
+msgstr "複数のユーザー名や UID を扱うことはできません"
 
 #: login-utils/chfn.c:265
 msgid "Aborted."
@@ -8548,16 +8545,14 @@ msgid "Finger information changed.\n"
 msgstr "finger 情報を変更しました。\n"
 
 #: login-utils/chfn.c:448
-#, fuzzy, c-format
-#| msgid "you (user %d) don't exist."
+#, c-format
 msgid "your user %d does not exist"
-msgstr "あなた (ユーザ %d) が存在しません。"
+msgstr "あなたのユーザ ID %d が存在しません"
 
 #: login-utils/chfn.c:453
-#, fuzzy, c-format
-#| msgid "user \"%s\" does not exist."
+#, c-format
 msgid "user \"%s\" does not exist"
-msgstr "ユーザ \"%s\" が存在しません。"
+msgstr "ユーザ \"%s\" が存在しません"
 
 #: login-utils/chfn.c:460 login-utils/chsh.c:218
 msgid "can only change local entries"
@@ -8578,8 +8573,6 @@ msgid "can't set default context for %s"
 msgstr "%s に対して既定のコンテキストを設定することができません"
 
 #: login-utils/chfn.c:487
-#, fuzzy
-#| msgid "running UID doesn't match UID of user we're altering, change denied"
 msgid "running UID doesn't match UID of the user you are attempting to alter, change denied"
 msgstr "処理に使用している UID と、変更しようとしている UID が合致しません。変更は拒否されました"
 
@@ -8762,8 +8755,6 @@ msgid " -t, --until <time>   display the lines until the specified time\n"
 msgstr " -t, --until <時刻>       指定した時刻以前の行を表示します\n"
 
 #: login-utils/last.c:604
-#, fuzzy
-#| msgid " -T, --tab-separated\tuse tabs as delimiters\n"
 msgid " -T, --tab-separated  use tabs as delimiters\n"
 msgstr " -T, --tab-separated      タブを区切りとして扱います\n"
 
@@ -8998,44 +8989,33 @@ msgid "failed to set the PATH environment variable"
 msgstr "PATH 環境変数の設定に失敗しました"
 
 #: login-utils/login.c:1347
-#, fuzzy, c-format
-#| msgid " %s [-p] [-h <host>] [-H] [[-f] <username>]\n"
+#, c-format
 msgid " %s [-p] [-s <shell>] [-h <host>] [-H] [[-f] <username|UID>]\n"
-msgstr " %s [-p] [-h <ホスト>] [-H] [[-f] <ユーザ名>]\n"
+msgstr " %s [-p] [-s <シェル>] [-h <ホスト>] [-H] [[-f] <ユーザ名|UID>]\n"
 
 #: login-utils/login.c:1349
 msgid "Begin a session on the system.\n"
 msgstr "システムでセッションを開始します。\n"
 
 #: login-utils/login.c:1352
-#, fuzzy
-#| msgid " -p             do not destroy the environment"
 msgid " -p                  do not destroy the environment"
-msgstr " -p             環境を破壊しません"
+msgstr " -p                  環境を破壊しません"
 
 #: login-utils/login.c:1353
-#, fuzzy
-#| msgid " -f             skip a login authentication"
 msgid " -f                  skip a login authentication"
-msgstr " -f             ログイン認証をスキップします"
+msgstr " -f                  ログイン認証をスキップします"
 
 #: login-utils/login.c:1354
-#, fuzzy
-#| msgid " -h <host>      hostname to be used for utmp logging"
 msgid " -h <host>           hostname to be used for utmp logging"
-msgstr " -h <host>      utmp ログに使用するホスト名"
+msgstr " -h <host>           utmp ログに使用するホスト名"
 
 #: login-utils/login.c:1355
-#, fuzzy
-#| msgid " -H             suppress hostname in the login prompt"
 msgid " -H                  suppress hostname in the login prompt"
-msgstr " -H             ホスト名をログインプロンプトに出さない"
+msgstr " -H                  ホスト名をログインプロンプトに出さない"
 
 #: login-utils/login.c:1356
-#, fuzzy
-#| msgid " -s, --shell <shell>  specify login shell\n"
 msgid " -s, --shell <path>  define the shell to log in to"
-msgstr " -s, --shell <shell>  ログインシェルを設定します\n"
+msgstr " -s, --shell <パス>  ログインするシェルを設定します"
 
 #: login-utils/login.c:1375 term-utils/agetty.c:3138
 msgid "failed to initialize path context"
@@ -9043,10 +9023,9 @@ msgstr "パスコンテキストの準備に失敗しました"
 
 #. TRANSLATORS: The standard value for %u is 60.
 #: login-utils/login.c:1408
-#, fuzzy, c-format
-#| msgid "%s: timed out after %u seconds"
+#, c-format
 msgid "%s: timed out after %u seconds\n"
-msgstr "%s: %u 秒で時間切れになりました"
+msgstr "%s: %u 秒で時間切れになりました\n"
 
 #: login-utils/login.c:1437
 #, c-format
@@ -9084,10 +9063,8 @@ msgid "Logging in with home = \"/\".\n"
 msgstr "ホームディレクトリ \"/\" でログインします。\n"
 
 #: login-utils/login.c:1701
-#, fuzzy
-#| msgid "number of available inodes"
 msgid "no available shell"
-msgstr "使用可能な inode 数"
+msgstr "使用可能なシェルがありません"
 
 #: login-utils/login.c:1704
 msgid "couldn't exec shell script"
@@ -9330,10 +9307,9 @@ msgid "failed to get supplementary groups"
 msgstr "補助グループの取得に失敗しました"
 
 #: login-utils/lslogins.c:1185
-#, fuzzy, c-format
-#| msgid "cannot found '%s'"
+#, c-format
 msgid "cannot find '%s'"
-msgstr "%s が見つかりません"
+msgstr "'%s' が見つかりません"
 
 #: login-utils/lslogins.c:1383
 msgid "internal error: unknown column"
@@ -9419,10 +9395,8 @@ msgid " -r, --raw                display in raw mode\n"
 msgstr " -r, --raw                加工を行なわない出力形式を使用します\n"
 
 #: login-utils/lslogins.c:1575
-#, fuzzy
-#| msgid " -r, --raw                display in raw mode\n"
 msgid " -J, --json               display in JSON format mode\n"
-msgstr " -r, --raw                加工を行なわない出力形式を使用します\n"
+msgstr " -J, --json               JSON 形式で表示します\n"
 
 #: login-utils/lslogins.c:1576
 msgid " -s, --system-accs        display system accounts\n"
@@ -9457,26 +9431,24 @@ msgid "     --btmp-file <path>   set an alternate path for btmp\n"
 msgstr "     --btmp-file <パス>   btmp に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1584
-#, fuzzy
-#| msgid "     --lastlog <path>     set an alternate path for lastlog\n"
 msgid ""
 "     --lastlog-file <path>\n"
 "                          set an alternate path for lastlog\n"
-msgstr "     --lastlog <パス>     lastlog に別のパスを設定します\n"
+msgstr ""
+"     --lastlog-file <パス>\n"
+"                          lastlog に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1587
-#, fuzzy
-#| msgid "     --lastlog2 <path>    set an alternate path for lastlog2\n"
 msgid ""
 "     --lastlog2-file <path>\n"
 "                          set an alternate path for lastlog2\n"
-msgstr "     --lastlog2 <パス>    lastlog2 に別のパスを設定します\n"
+msgstr ""
+"     --lastlog2-file <パス>\n"
+"                          lastlog2 に別のパスを設定します\n"
 
 #: login-utils/lslogins.c:1592
-#, fuzzy
-#| msgid " -H, --list-columns     list the available columns\n"
 msgid " -H, --list-columns       list the available columns\n"
-msgstr " -H, --list-columns     利用可能な列の一覧を表示します\n"
+msgstr " -H, --list-columns       利用可能な列の一覧を表示します\n"
 
 #: login-utils/lslogins.c:1828
 msgid "failed to request selinux state"
@@ -9512,12 +9484,8 @@ msgid "Log in to a new group; optionally executing a shell command.\n"
 msgstr "新しいグループにログインし、オプションでシェルコマンドを実行します。\n"
 
 #: login-utils/newgrp.c:181
-#, fuzzy
-#| msgid " -c, --command <command>         pass a single command to the shell with -c\n"
 msgid " -c, --command <command>  pass a command to the user's shell with -c\n"
-msgstr ""
-" -c, --command <コマンド>        -c を利用して単一のコマンドを\n"
-"                                    シェルに渡します\n"
+msgstr " -c, --command <コマンド> -c を利用してコマンドをユーザのシェルに渡します\n"
 
 #: login-utils/newgrp.c:221
 msgid "who are you?"
@@ -9930,10 +9898,8 @@ msgstr ""
 #: login-utils/sulogin.c:1042 misc-utils/findmnt.c:2010
 #: misc-utils/waitpid.c:237 sys-utils/flock.c:279 sys-utils/wdctl.c:795
 #: term-utils/agetty.c:859 term-utils/wall.c:243
-#, fuzzy
-#| msgid "invalid timeout value"
 msgid "invalid timeout"
-msgstr "時間制限の値が正しくありません"
+msgstr "制限時間が正しくありません"
 
 #: login-utils/sulogin.c:1084
 msgid "only superuser can run this program"
@@ -10048,7 +10014,7 @@ msgstr "%s のコンテキストを設定できません"
 #: login-utils/vipw.c:175
 #, c-format
 msgid "cannot write %s: %s (your changes are still in %s)"
-msgstr ""
+msgstr "%s に書き込めません: %s (変更内容はまだ %s にあります)"
 
 #: login-utils/vipw.c:235
 #, c-format
