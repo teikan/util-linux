@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-01 10:49+0900\n"
+"PO-Revision-Date: 2026-04-01 14:16+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -10237,16 +10237,12 @@ msgid "net interface associated with the packet socket"
 msgstr "パケットソケットに関連付けられた net インタフェース"
 
 #: lsfd-cmd/lsfd.c:319
-#, fuzzy
-#| msgid "L2 protocol associated with the packet socket"
 msgid "L2 protocol name associated with the packet socket (decoded)"
-msgstr "パケットソケットに関連付けられた L2 プロトコル"
+msgstr "パケットソケットに関連付けられた L2 プロトコル名 (デコード済み)"
 
 #: lsfd-cmd/lsfd.c:322
-#, fuzzy
-#| msgid "L2 protocol associated with the packet socket"
 msgid "L2 protocol number associated with the packet socket (raw)"
-msgstr "パケットソケットに関連付けられた L2 プロトコル"
+msgstr "パケットソケットに関連付けられた L2 プロトコル番号(無加工)"
 
 #: lsfd-cmd/lsfd.c:325
 msgid "block device name resolved by /proc/partition"
@@ -10281,16 +10277,12 @@ msgid "tty index of the counterpart"
 msgstr "相手の tty インデックス"
 
 #: lsfd-cmd/lsfd.c:349
-#, fuzzy
-#| msgid "protocol number of the raw socket"
 msgid "protocol name of the raw socket (decoded)"
-msgstr "無加工ソケットのプロトコル番号"
+msgstr "無加工ソケットのプロトコル名 (デコード済み)"
 
 #: lsfd-cmd/lsfd.c:352
-#, fuzzy
-#| msgid "protocol number of the raw socket"
 msgid "protocol number of the raw socket (raw)"
-msgstr "無加工ソケットのプロトコル番号"
+msgstr "無加工ソケットのプロトコル番号 (無加工)"
 
 #: lsfd-cmd/lsfd.c:355
 msgid "device ID (if special file)"
@@ -10309,8 +10301,6 @@ msgid "listening socket"
 msgstr "待ち受け中のソケット"
 
 #: lsfd-cmd/lsfd.c:367
-#, fuzzy
-#| msgid "inode identifying network namespace where the socket belongs to"
 msgid "inode identifying network namespace where the socket belongs"
 msgstr "ソケットが属するネットワーク名前空間の iノード"
 
@@ -10371,10 +10361,8 @@ msgid "remaining time"
 msgstr "残り時間"
 
 #: lsfd-cmd/lsfd.c:412
-#, fuzzy
-#| msgid "inode identifying network namespace where the socket belongs to"
 msgid "inode identifying network namespace where the device belongs"
-msgstr "ソケットが属するネットワーク名前空間の iノード"
+msgstr "デバイスが属するネットワーク名前空間の iノード"
 
 #: lsfd-cmd/lsfd.c:415
 msgid "network interface behind the tun device"
@@ -10421,10 +10409,8 @@ msgid "user ID number of the process"
 msgstr "プロセスの数値ユーザ ID"
 
 #: lsfd-cmd/lsfd.c:448
-#, fuzzy
-#| msgid "filesystem pathname for UNIX domain socket"
 msgid "inode number for the peer of the UNIX domain socket"
-msgstr "UNIX ドメインソケットのファイルシステムパス名"
+msgstr "UNIX ドメインソケットのピアの inode 番号"
 
 #: lsfd-cmd/lsfd.c:451
 msgid "filesystem pathname for UNIX domain socket"
@@ -10596,10 +10582,8 @@ msgid " -u, --notruncate             don't truncate text in columns\n"
 msgstr " -u, --notruncate             テキストを列方向に切り詰めないようにします\n"
 
 #: lsfd-cmd/lsfd.c:2322
-#, fuzzy
-#| msgid " -p, --pid  <pid(s)>          collect information only specified processes\n"
 msgid " -p, --pid <list>             collect information only for specified processes\n"
-msgstr " -p, --pid  <pid(s)>          指定したプロセスの情報を集めます\n"
+msgstr " -p, --pid <リスト>           指定したプロセスの情報のみを集めます\n"
 
 #: lsfd-cmd/lsfd.c:2323
 msgid " -i[4|6], --inet[=4|=6]       list only IPv4 and/or IPv6 sockets\n"
@@ -10622,16 +10606,12 @@ msgid "     --dump-counters          dump counter definitions\n"
 msgstr "     --dump-counters          カウンタの定義を出力します\n"
 
 #: lsfd-cmd/lsfd.c:2328
-#, fuzzy
-#| msgid "     --hyperlink[=mode]       print paths as terminal hyperlinks (always, never, or auto)\n"
 msgid "     --hyperlink[=<when>]     print paths as hyperlinks (always|never|auto)\n"
-msgstr "     --hyperlink[=モード]     パスを端末ハイパーリンクとして表示します (always, never, auto)\n"
+msgstr "     --hyperlink[=<いつ>]     パスをハイパーリンクとして表示します (always|never|auto)\n"
 
 #: lsfd-cmd/lsfd.c:2329
-#, fuzzy
-#| msgid "     --summary[=<when>]       print summary information (only, append, or never)\n"
 msgid "     --summary[=<mode>]       print summary information (append|only|never)\n"
-msgstr "     --summary[=<いつ>]       概要情報を表示します (only, append, never)\n"
+msgstr "     --summary[=<モード>]     概要情報を表示します (append|only|never)\n"
 
 #: lsfd-cmd/lsfd.c:2330
 msgid "     --_drop-privilege        (testing purpose) do setuid(1) just after starting\n"
