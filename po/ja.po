@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-03 12:44+0900\n"
+"PO-Revision-Date: 2026-04-03 14:29+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -14694,31 +14694,22 @@ msgid "Show or change the real-time scheduling attributes of a process.\n"
 msgstr "プロセスのリアルタイムスケジューリング属性を表示または変更します。\n"
 
 #: schedutils/chrt.c:62
-#, fuzzy
-#| msgid ""
-#| "Set policy:\n"
-#| " chrt [options] <priority> <command> [<arg>...]\n"
-#| " chrt [options] --pid <priority> <pid>\n"
 msgid ""
 "Set policy:\n"
 " chrt [options] [<priority>] <command> [<argument>...]\n"
 " chrt --pid <policy-option> [options] [<priority>] <PID>\n"
 msgstr ""
 "ポリシーの設定:\n"
-" chrt [オプション] <優先順位> <コマンド> [<引数>...]]\n"
-" chrt [オプション] --pid <優先順位> <プロセス ID>\n"
+" chrt [オプション] [<優先順位>] <コマンド> [<引数>...]\n"
+" chrt --pid <ポリシーオプション> [オプション] [<優先順位>] <PID>\n"
 
 #: schedutils/chrt.c:66
-#, fuzzy
-#| msgid ""
-#| "Get policy:\n"
-#| " chrt [options] -p <pid>\n"
 msgid ""
 "Get policy:\n"
 " chrt --pid <PID>\n"
 msgstr ""
 "ポリシーの表示:\n"
-" chrt [オプション] -p <プロセス ID>\n"
+" chrt --pid <PID>\n"
 
 #: schedutils/chrt.c:70
 msgid "Policy options:\n"
@@ -14733,10 +14724,8 @@ msgid " -d, --deadline       set policy to SCHED_DEADLINE\n"
 msgstr " -d, --deadline       ポリシーを SCHED_DEADLINE に設定します\n"
 
 #: schedutils/chrt.c:73
-#, fuzzy
-#| msgid " -i, --idle           set policy to SCHED_IDLE\n"
 msgid " -e, --ext            set policy to SCHED_EXT\n"
-msgstr " -i, --idle           ポリシーを SCHED_IDLE に設定します\n"
+msgstr " -e, --ext            ポリシーを SCHED_EXT に設定します\n"
 
 #: schedutils/chrt.c:74
 msgid " -f, --fifo           set policy to SCHED_FIFO\n"
@@ -14900,10 +14889,9 @@ msgid "invalid deadline argument"
 msgstr "デッドライン引数が正しくありません"
 
 #: schedutils/chrt.c:514
-#, fuzzy, c-format
-#| msgid "%s requires an argument"
+#, c-format
 msgid "policy %s requires a priority argument"
-msgstr "%s には引数が必要です"
+msgstr "ポリシー %s に優先順位引数が必要です"
 
 #: schedutils/chrt.c:538
 msgid "invalid priority argument"
@@ -14958,66 +14946,49 @@ msgid " %s copy [--source <PID>] [-t <TYPE>] -- PROGRAM [ARGS...]\n"
 msgstr " %s copy [--source <PID>] [-t <タイプ>] -- PROGRAM [引数...]\n"
 
 #: schedutils/coresched.c:83
-#, fuzzy
-#| msgid "Manage core scheduling cookies for tasks."
 msgid "Manage core-scheduling cookies for tasks."
 msgstr "タスクのコアスケジューリングクッキーを管理します。"
 
 #: schedutils/coresched.c:86
-#, fuzzy
-#| msgid " get                      retrieve the core scheduling cookie of a PID"
 msgid " get      retrieve the core-scheduling cookie of a PID"
-msgstr " get                      PID のコアスケジューリングクッキーを取得します"
+msgstr " get      PID のコアスケジューリングクッキーを取得します"
 
 #: schedutils/coresched.c:87
-#, fuzzy
-#| msgid ""
-#| " new                      assign a new core scheduling cookie to an existing\n"
-#| "                            PID or execute a program with a new cookie"
 msgid ""
 " new      assign a new cookie to an existing PID,\n"
 "            or execute a program with a new cookie"
 msgstr ""
-" new                      新しいコアスケジューリングクッキーを既存 PID に割り\n"
-"                            当てるか、プログラムを新しいクッキーで実行します"
+" new      新しいクッキーを既存 PID に割り当てるか、\n"
+"            プログラムを新しいクッキーで実行します"
 
 #: schedutils/coresched.c:89
-#, fuzzy
-#| msgid ""
-#| " copy                     copy the core scheduling cookie from an existing PID\n"
-#| "                            to another PID, or execute a program with that\n"
-#| "                            copied cookie"
 msgid ""
 " copy     copy the cookie from an existing PID to another PID,\n"
 "            or execute a program with that copied cookie"
 msgstr ""
-" copy                     既存 PID のコアスケジューリングクッキーを\n"
-"                            他の PID にコピーするか、コピーしたクッキーで\n"
-"                            プログラムを実行します"
+" copy     既存 PID のクッキーを他の PID にコピーするか、\n"
+"            コピーしたクッキーでプログラムを実行します"
 
 #: schedutils/coresched.c:94
-#, fuzzy, c-format
-#| msgid ""
-#| " -s, --source <PID>       which PID to get the cookie from\n"
-#| "                            If omitted, it is the PID of %s itself\n"
+#, c-format
 msgid ""
 " -s, --source <PID>       which PID to get the cookie from; if this option\n"
 "                            is omitted, the PID of %s itself is used\n"
 msgstr ""
 " -s, --source <PID>       クッキーを読み出す PID\n"
-"                            省略時は %s 自身の PID\n"
+"                            省略時は %s 自身の PID を使用します\n"
 
 #: schedutils/coresched.c:97
-#, fuzzy
-#| msgid " -d, --dest <PID>         which PID to modify the cookie of\n"
 msgid " -d, --dest <PID>         which PID to modify the cookie of"
-msgstr " -d, --dest <PID>         クッキーを書き換える PID\n"
+msgstr " -d, --dest <PID>         クッキーを書き換える PID"
 
 #: schedutils/coresched.c:98
 msgid ""
 " -t, --dest-type <TYPE>   type of the new or destination PID; can be one\n"
 "                            of: pid, tgid, pgid; default: tgid"
 msgstr ""
+" -t, --dest-type <タイプ> 新規または対象の PID。pid, tgid, pgid の\n"
+"                            いずれかを指定する。既定値: tgid"
 
 #: schedutils/coresched.c:102
 msgid " -v, --verbose      verbose"
@@ -15059,16 +15030,12 @@ msgid "'%s' is an invalid option. Must be one of pid/tgid/pgid"
 msgstr "'%s' は無効なオプションです。pid/tgid/pgid のいずれかである必要があります"
 
 #: schedutils/coresched.c:235
-#, fuzzy
-#| msgid "Failed to parse PID for -s/--source"
 msgid "invalid PID for -s/--source"
-msgstr "-s/--source の PID の解釈に失敗しました"
+msgstr "-s/--source の PID が無効です"
 
 #: schedutils/coresched.c:239
-#, fuzzy
-#| msgid "Failed to parse PID for -d/--dest"
 msgid "invalid PID for -d/--dest"
-msgstr "-d/--dest の PID の解釈に失敗しました"
+msgstr "-d/--dest の PID が無効です"
 
 #: schedutils/coresched.c:265
 msgid "Unknown function"
@@ -15099,10 +15066,9 @@ msgid "Core scheduling is not supported on this system. Either SMT is unavailabl
 msgstr "このシステムはコアスケジューリングに対応していません。SMT が利用できないか、カーネルが CONFIG_SCHED_CORE に対応していません。"
 
 #: schedutils/coresched.c:336
-#, fuzzy, c-format
-#| msgid "cookie of pid %d is 0x%llx\n"
+#, c-format
 msgid "cookie of PID %d is 0x%llx\n"
-msgstr "pid %d のクッキーは 0x%llx です\n"
+msgstr "PID %d のクッキーは 0x%llx です\n"
 
 #: schedutils/ionice.c:79
 msgid "ioprio_get failed"
@@ -15316,30 +15282,21 @@ msgid "failed to parse CPU mask: %s"
 msgstr "CPU マスクの処理に失敗しました: %s"
 
 #: schedutils/uclampset.c:56
-#, fuzzy, c-format
-#| msgid ""
-#| " %1$s [options]\n"
-#| " %1$s [options] --pid <pid> | --system | <command> <arg>...\n"
+#, c-format
 msgid " %1$s [options] --pid <pid> | <command> [<arg>...] | --system\n"
-msgstr ""
-" %1$s [オプション]\n"
-" %1$s [オプション] --pid <PID> | --system | <コマンド> <引数>...\n"
+msgstr " %1$s [オプション] --pid <PID> | <コマンド> [<引数>...] | --system\n"
 
 #: schedutils/uclampset.c:60
 msgid "Show or change the utilization clamping attributes.\n"
 msgstr "利用率制限属性を表示または変更します。\n"
 
 #: schedutils/uclampset.c:63
-#, fuzzy
-#| msgid " -m <value>           util_min value to set\n"
 msgid " -m <value>           minimum utilization value to set\n"
-msgstr " -m <値>              設定する util_min の値\n"
+msgstr " -m <値>              設定する最小利用率の値\n"
 
 #: schedutils/uclampset.c:64
-#, fuzzy
-#| msgid " -M <value>           util_max value to set\n"
 msgid " -M <value>           maximum utilization value to set\n"
-msgstr " -M <値>              設定する util_max の値\n"
+msgstr " -M <値>              設定する最大利用率の値\n"
 
 #: schedutils/uclampset.c:66
 msgid " -p, --pid <pid>      operate on existing given pid\n"
