@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-01 14:16+0900\n"
+"PO-Revision-Date: 2026-04-03 12:44+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -11032,26 +11032,21 @@ msgid "     --color[=<when>]  colorize messages (%s, %s or %s)\n"
 msgstr "     --color[=<いつ>]  メッセージを色づけします (%s, %s or %s のどれか)\n"
 
 #: misc-utils/copyfilerange.c:58
-#, fuzzy, c-format
-#| msgid " %s [options] <string> [<file>...]\n"
+#, c-format
 msgid " %1$s [options] <source> <destination> <range>...\n"
-msgstr " %s [オプション] <文字列> [<ファイル>...]\n"
+msgstr " %1$s [オプション] <ソース> <ディスティネーション> <範囲>...\n"
 
 #: misc-utils/copyfilerange.c:62
 msgid "Copy the specified range(s) from source to destination file."
-msgstr ""
+msgstr "ソースファイルからディスティネーションファイルへ指定した範囲をコピーします"
 
 #: misc-utils/copyfilerange.c:65
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -r, --ranges <file>     read ranges separated by newlines from this file"
-msgstr " -f, --file <ファイル>    指定したファイルの内容をログに記録します\n"
+msgstr " -r, --ranges <ファイル> 改行で区切られた範囲をこのファイルから読み出します"
 
 #: misc-utils/copyfilerange.c:66
-#, fuzzy
-#| msgid " -v, --verbose            verbose mode\n"
 msgid " -v, --verbose           verbose mode"
-msgstr " -v, --verbose            冗長出力モードを指定します\n"
+msgstr " -v, --verbose           冗長出力モードを指定します"
 
 #: misc-utils/copyfilerange.c:72
 msgid ""
@@ -11059,34 +11054,34 @@ msgid ""
 " with all values in bytes. If <length> is 0, as much data as available\n"
 " is copied. When an offset is omitted, the last file position is used."
 msgstr ""
+" <範囲> の形式は <ソースオフセット>:<ディスティネーションオフセット>:<長さ> で、\n"
+" 値はすべてバイト単位です。<長さ> が 0 の場合は、利用可能なデータがすべてコピー\n"
+" されます。オフセットが省略された場合は、前回のファイル位置が使用されます。"
 
 #: misc-utils/copyfilerange.c:136
-#, fuzzy, c-format
-#| msgid "%s: offset %<PRIu64> is not aligned to zone size %lu"
+#, c-format
 msgid "%s offset %<PRId64> is beyond file size of %<PRId64>"
-msgstr "%s: オフセット %<PRIu64> はゾーンサイズ %lu の倍数ではありません"
+msgstr "%s: オフセット %<PRIu64> がファイルサイズ %<PRId64> を超えています"
 
 #: misc-utils/copyfilerange.c:149
 #, c-format
 msgid "failed to copy range %<PRId64>:%<PRId64>:%ju from %s to %s with %ju remaining: %m\n"
-msgstr ""
+msgstr "範囲 %<PRId64>:%<PRId64>:%ju の %s から %s へのコピーに失敗しました。残りは %ju です: %m\n"
 
 #: misc-utils/copyfilerange.c:163
-#, fuzzy, c-format
-#| msgid "invalid sigmask format: %s"
+#, c-format
 msgid "invalid range format: %s\n"
-msgstr "無効なシグナルマスク形式: %s"
+msgstr "範囲の形式が正しくありません: %s\n"
 
 #: misc-utils/copyfilerange.c:177
-#, fuzzy, c-format
-#| msgid "cannot open lock file %s"
+#, c-format
 msgid "cannot open range file %s"
-msgstr "ロックファイル %s を開くことができません"
+msgstr "範囲ファイル %s を開くことができません"
 
 #: misc-utils/copyfilerange.c:186
 #, c-format
 msgid "Empty line in range file %s is not allowed"
-msgstr ""
+msgstr "範囲ファイル %s では空行は使用できません"
 
 #: misc-utils/copyfilerange.c:246 misc-utils/exch.c:88 misc-utils/kill.c:424
 #: schedutils/chrt.c:507
@@ -11094,62 +11089,48 @@ msgid "too few arguments"
 msgstr "引数が少なすぎます"
 
 #: misc-utils/copyfilerange.c:250
-#, fuzzy, c-format
-#| msgid "cannot open %s: %s"
+#, c-format
 msgid "cannot open source %s"
-msgstr "%s を開くことができません: %s"
+msgstr "ソース %s を開けません"
 
 #: misc-utils/copyfilerange.c:253
-#, fuzzy, c-format
-#| msgid "cannot determine size of %s"
+#, c-format
 msgid "cannot determine size of source file %s"
-msgstr "%s のサイズを取得できません"
+msgstr "ソースファイル %s のサイズを取得できません"
 
 #: misc-utils/copyfilerange.c:258
-#, fuzzy, c-format
-#| msgid "cannot open session: %s"
+#, c-format
 msgid "cannot open destination %s"
-msgstr "セッションを開くことができません: %s"
+msgstr "ディスティネーションを開けません: %s"
 
 #: misc-utils/enosys.c:80
-#, fuzzy, c-format
-#| msgid " %s [options] -- <command>\n"
+#, c-format
 msgid " %s [options] <command>\n"
-msgstr " %s [オプション] -- <コマンド>\n"
+msgstr " %s [オプション] <コマンド>\n"
 
 #: misc-utils/enosys.c:83
 msgid "Block certain system calls while running a command.\n"
-msgstr ""
+msgstr "コマンドの実行中に特定のシステムコールをブロックします。\n"
 
 #: misc-utils/enosys.c:86
-#, fuzzy
-#| msgid " -s, --syscall           syscall to block\n"
 msgid " -s, --syscall <name>|<nr>    system call to block\n"
-msgstr " -s, --syscall           ブロックするシステムコール\n"
+msgstr " -s, --syscall <名前>|<番号>  ブロックするシステムコール\n"
 
 #: misc-utils/enosys.c:87
-#, fuzzy
-#| msgid " -i, --ioctl             ioctl to block\n"
 msgid " -i, --ioctl <name>|<nr>      ioctl to block\n"
-msgstr " -i, --ioctl             ブロックする ioctl\n"
+msgstr " -i, --ioctl <名前>|<番号>    ブロックする ioctl\n"
 
 #: misc-utils/enosys.c:88
-#, fuzzy
-#| msgid " -l, --list              list known syscalls\n"
 msgid " -l, --list                   list known system calls\n"
-msgstr " -l, --list              既知のシステムコールを一覧表示します\n"
+msgstr " -l, --list                   既知のシステムコールを一覧表示します\n"
 
 #: misc-utils/enosys.c:89
-#, fuzzy
-#| msgid " -l, --list              list known syscalls\n"
 msgid " -m, --list-ioctl             list known ioctls\n"
-msgstr " -l, --list              既知のシステムコールを一覧表示します\n"
+msgstr " -m, --list-ioctl             既知の ioctl を一覧表示します\n"
 
 #: misc-utils/enosys.c:90
-#, fuzzy
-#| msgid " -d, --dump[=<file>]     dump seccomp bytecode\n"
 msgid " -d, --dump[=<file>]          dump bytecode of seccomp filter\n"
-msgstr " -d, --dump[=<ファイル>] セキュアコンピューティングバイトコードをダンプします\n"
+msgstr " -d, --dump[=<ファイル>]      セキュアコンピューティングフィルタのバイトコードをダンプします\n"
 
 #: misc-utils/enosys.c:130
 msgid "Unknown errno"
@@ -11182,8 +11163,6 @@ msgid "Could not run prctl(PR_SET_NO_NEW_PRIVS)"
 msgstr "prctl(PR_SET_NO_NEW_PRIVS) が実行できません"
 
 #: misc-utils/enosys.c:305
-#, fuzzy
-#| msgid "Could not seccomp filter"
 msgid "Could not set seccomp filter"
 msgstr "セキュアコンピューティングのフィルタを設定できません"
 
@@ -11220,10 +11199,8 @@ msgid " -a, --advice <advice> applying advice to the file (default: \"dontneed\"
 msgstr " -a, --advice <advice> ファイルに advice を適用します (既定値: \"dontneed\")\n"
 
 #: misc-utils/fadvise.c:53
-#, fuzzy
-#| msgid " -n, --fd <num>     act on a file descriptor"
 msgid " -d, --fd <num>        applying advice to the file descriptor\n"
-msgstr " -n, --fd <数値>    ファイルディスクリプタに対して実行します"
+msgstr " -d, --fd <数値>       ファイルディスクリプタに advice を適用します\n"
 
 #: misc-utils/fadvise.c:54
 msgid " -l, --length <num>    length for range operations, in bytes\n"
@@ -11354,10 +11331,8 @@ msgid " -b, --bytes           print sizes in bytes rather than in human readable
 msgstr " -b, --bytes           可読性の高い形式ではなく、バイト単位でサイズを表示します\n"
 
 #: misc-utils/fincore.c:443
-#, fuzzy
-#| msgid " -c, --creator            show creator and owner\n"
 msgid " -c, --total           produce a grand total\n"
-msgstr " -c, --creator            作成者と所有者を表示します\n"
+msgstr " -c, --total           合計を計算します\n"
 
 #: misc-utils/fincore.c:444
 msgid " -n, --noheadings      don't print headings\n"
@@ -11376,32 +11351,24 @@ msgid " -r, --raw             use raw output format\n"
 msgstr " -r, --raw             特に加工を行わずに出力します\n"
 
 #: misc-utils/fincore.c:448
-#, fuzzy
-#| msgid " -R, --recursive         recursively unmount a target with all its children\n"
 msgid " -R, --recursive       recursively check all files in directories\n"
-msgstr " -R, --recursive         指定したものと、それ以下のディレクトリすべてをアンマウントします\n"
+msgstr " -R, --recursive       ディレクトリの下の全ファイルをチェックします\n"
 
 #: misc-utils/fincore.c:449
 msgid " -C, --cachestat       force usage of cachestat syscall\n"
-msgstr ""
+msgstr " -C, --cachestat       cachestat システムコールを強制的に使います\n"
 
 #: misc-utils/fincore.c:508
-#, fuzzy
-#| msgid "%s: the discard operation is not supported"
 msgid "cachestat option is not supported"
-msgstr "%s: 破棄の操作が未対応です"
+msgstr "cachestat オプションは未対応です"
 
 #: misc-utils/fincore.c:530
-#, fuzzy
-#| msgid "%s: the discard operation is not supported"
 msgid "recursive option is not supported"
-msgstr "%s: 破棄の操作が未対応です"
+msgstr "recursive オプションは未対応です"
 
 #: misc-utils/fincore.c:603
-#, fuzzy
-#| msgid "failed to get time"
 msgid "failed to iterate tree"
-msgstr "時刻の取得に失敗しました"
+msgstr "ツリーの列挙に失敗しました"
 
 #: misc-utils/findfs.c:28
 #, c-format
@@ -11760,12 +11727,12 @@ msgstr ""
 "                          デバイス名に変換します\n"
 
 #: misc-utils/findmnt.c:1579
-#, fuzzy
-#| msgid "     --hyperlink[=mode]       print paths as terminal hyperlinks (always, never, or auto)\n"
 msgid ""
 "     --hyperlink[=<when>]\n"
 "                        print paths as hyperlinks (always|never|auto)\n"
-msgstr "     --hyperlink[=モード]     パスを端末ハイパーリンクとして表示します (always, never, auto)\n"
+msgstr ""
+"     --hyperlink[=<いつ>]\n"
+"                        パスをハイパーリンクとして表示します (always|never|auto)\n"
 
 #: misc-utils/findmnt.c:1581
 msgid " -I, --dfi              imitate the output of df(1) with -i option\n"
@@ -12068,93 +12035,70 @@ msgstr "成功、エラーも警告も検出されませんでした\n"
 
 #: misc-utils/getino.c:83
 msgid "no appropriate ioctl for the desired namespace"
-msgstr ""
+msgstr "ネームスペースに適切な ioctl がありません"
 
 #: misc-utils/getino.c:87
-#, fuzzy, c-format
-#| msgid "failed to determine number of CPUs: %s"
+#, c-format
 msgid "failed to determine %s namespace for process %d"
-msgstr "CPU 数の判別に失敗しました: %s"
+msgstr "プロセス %2$d で %1$s ネームスペースの判別に失敗しました"
 
 #: misc-utils/getino.c:119
-#, fuzzy, c-format
-#| msgid " %s [options] pid...\n"
+#, c-format
 msgid " %s [options] PID[:inode]...\n"
-msgstr " %s [オプション] pid...\n"
+msgstr " %s [オプション] PID[:inode]...\n"
 
 #: misc-utils/getino.c:122
 msgid "Print the unique inode number of a process's file descriptor or namespace."
-msgstr ""
+msgstr "プロセスのファイルディスクリプタまたはネームスペースのユニークな inode 番号を表示します。"
 
 #: misc-utils/getino.c:125
 msgid " -p, --print-pid     enable PID:inode format printing"
-msgstr ""
+msgstr " -p, --print-pid     PID:inode 形式の表示を有効にします"
 
 #: misc-utils/getino.c:126
-#, fuzzy
-#| msgid " -C, --cgroup[=<file>]     unshare cgroup namespace\n"
 msgid "     --cgroupns      act on the cgroup namespace"
-msgstr " -C, --cgroup[=<file>]     cgroup ネームスペースの共有を解除します\n"
+msgstr "     --cgroupns      cgroup ネームスペースに対して実行します"
 
 #: misc-utils/getino.c:127
-#, fuzzy
-#| msgid " -a, --all              enter all namespaces\n"
 msgid "     --ipcns         act on the ipc namespace"
-msgstr " -a, --all                 すべてのネームスペースを関連付けます\n"
+msgstr "     --ipcns         IPC ネームスペースに対して実行します"
 
 #: misc-utils/getino.c:128
-#, fuzzy
-#| msgid " -m, --mount[=<file>]      unshare mounts namespace\n"
 msgid "     --mntns         act on the mount namespace"
-msgstr " -m, --mount[=<file>]      マウントネームスペースの共有を解除します\n"
+msgstr "     --mntns         マウントネームスペースに対して実行します"
 
 #: misc-utils/getino.c:129
-#, fuzzy
-#| msgid " -n, --net[=<file>]        unshare network namespace\n"
 msgid "     --netns         act on the net namespace"
-msgstr " -n, --net[=<file>]        ネットワークネームスペースの共有を解除します\n"
+msgstr "     --netns         ネットネームスペースに対して実行します"
 
 #: misc-utils/getino.c:130
-#, fuzzy
-#| msgid " -n, --fd <num>     act on a file descriptor"
 msgid "     --pidfs         act on the pidfs file descriptor (default)"
-msgstr " -n, --fd <数値>    ファイルディスクリプタに対して実行します"
+msgstr "     --pidfs         PIDFS ファイルディスクリプタに対して実行します (既定値)"
 
 #: misc-utils/getino.c:131
-#, fuzzy
-#| msgid " -p, --pid[=<file>]        unshare pid namespace\n"
 msgid "     --pidns         act on the pid namespace"
-msgstr " -p, --pid[=<file>]        PID ネームスペースの共有を解除します\n"
+msgstr "     --pidns         PID ネームスペースに対して実行します"
 
 #: misc-utils/getino.c:132
-#, fuzzy
-#| msgid " -T, --time[=<file>]       unshare time namespace\n"
 msgid "     --timens        act on the time namespace"
-msgstr " -T, --time[=<file>]       タイムネームスペースの共有を解除します\n"
+msgstr "     --timens        タイムネームスペースに対して実行します"
 
 #: misc-utils/getino.c:133
-#, fuzzy
-#| msgid "     --user-parent      enter parent user namespace\n"
 msgid "     --userns        act on the user namespace"
-msgstr "     --user-parent         親ユーザネームスペースを関連付けます\n"
+msgstr "     --userns        ユーザネームスペースに対して実行します"
 
 #: misc-utils/getino.c:134
-#, fuzzy
-#| msgid "     --user-parent      enter parent user namespace\n"
 msgid "     --utsns         act on the uts namespace"
-msgstr "     --user-parent         親ユーザネームスペースを関連付けます\n"
+msgstr "     --utsns         uts ネームスペースに対して実行します"
 
 #: misc-utils/getino.c:235
-#, fuzzy
-#| msgid "no device specified"
 msgid "no process specified"
-msgstr "デバイスが指定されていません"
+msgstr "プロセスが指定されていません"
 
 #: misc-utils/getino.c:243
-#, fuzzy, c-format
-#| msgid "invalid PID argument"
+#, c-format
 msgid "invalid PID argument '%s'"
-msgstr "PID 引数が正しくありません"
+msgstr "PID 引数 '%s' が正しくありません"
 
 #: misc-utils/getopt.c:329
 msgid "empty long option after -l or --long argument"
@@ -12216,10 +12160,8 @@ msgid " -u, --unquoted                do not quote the output\n"
 msgstr " -u, --unquoted                出力をクォートしません\n"
 
 #: misc-utils/getopt.c:375
-#, fuzzy
-#| msgid " -i, --info                 gather information about I/O limits\n"
 msgid " -U, --unknown                 leave unknown options as they are (implies -q)\n"
-msgstr " -i, --info                I/O 制限についての情報を集めます\n"
+msgstr " -U, --unknown                 不明なオプションを無視します (-q の意味を含みます)\n"
 
 #: misc-utils/getopt.c:427 misc-utils/getopt.c:487
 msgid "missing optstring argument"
@@ -12359,10 +12301,9 @@ msgid "cannot continue"
 msgstr "実行を継続できません"
 
 #: misc-utils/hardlink.c:1103
-#, fuzzy, c-format
-#| msgid "Skipped (content mismatch) %s"
+#, c-format
 msgid "Skipped (memory constraints) %s"
-msgstr "%s をスキップしました (内容が一致しません)"
+msgstr "%s をスキップしました (メモリ制約のため)"
 
 #: misc-utils/hardlink.c:1129
 #, c-format
@@ -12409,11 +12350,6 @@ msgid " -f, --respect-name         filenames have to be identical\n"
 msgstr " -f, --respect-name         ファイル名が同じかどうか確認します\n"
 
 #: misc-utils/hardlink.c:1202
-#, fuzzy
-#| msgid ""
-#| " -F, --prioritize-trees     files found in the earliest specified top-level\n"
-#| "                              directory have higher priority (lower precedence\n"
-#| "                              than minimize/maximize)\n"
 msgid ""
 " -F, --prioritize-trees     files found in the earliest specified top-level\n"
 "                              directory have higher priority (but this has\n"
@@ -12421,29 +12357,23 @@ msgid ""
 msgstr ""
 " -F, --prioritize-trees     最初に指定したトップレベルディレクトリで\n"
 "                              見つかったファイルの優先度を高くします\n"
-"                              (最小化・最大化が優先します)\n"
+"                              (ただし --maximize/--minimize が優先します)\n"
 
 #: misc-utils/hardlink.c:1205
 msgid " -i, --include <regex>      regular expression to include files/dirs\n"
 msgstr " -i, --include <正規表現>   含めるファイルやディレクトリの正規表現\n"
 
 #: misc-utils/hardlink.c:1206
-#, fuzzy
-#| msgid " -l, --list-duplicates      print every group of duplicate files\n"
 msgid " -l, --list-duplicates      just list paths of duplicates, don't link them\n"
-msgstr " -l, --list-duplicates      重複ファイルのグループをすべて表示します\n"
+msgstr " -l, --list-duplicates      重複ファイルはパスを一覧表示するだけでリンクしません\n"
 
 #: misc-utils/hardlink.c:1207
-#, fuzzy
-#| msgid " -M, --minimize             reverse the meaning of -m\n"
 msgid " -m, --maximize             keep the file with the most links\n"
-msgstr " -M, --minimize             -m と逆の意味です\n"
+msgstr " -m, --maximize             リンク数が最大のファイルを残します\n"
 
 #: misc-utils/hardlink.c:1208
-#, fuzzy
-#| msgid " -M, --minimize             reverse the meaning of -m\n"
 msgid " -M, --minimize             keep the file with the fewest links\n"
-msgstr " -M, --minimize             -m と逆の意味です\n"
+msgstr " -M, --minimize             リンク数が最小のファイルを残します\n"
 
 #: misc-utils/hardlink.c:1209
 msgid "     --mount                stay within the same filesystem\n"
@@ -12486,14 +12416,10 @@ msgid "     --skip-reflinks        skip already cloned files (enabled on --refli
 msgstr "     --skip-reflinks        クローン済みのファイルをスキップします (--reflink で有効化されます)\n"
 
 #: misc-utils/hardlink.c:1221
-#, fuzzy
-#| msgid " -s, --minimum-size <size>  minimum size for files.\n"
 msgid " -s, --minimum-size <size>  minimum size for files\n"
 msgstr " -s, --minimum-size <サイズ> ファイルの最小サイズ\n"
 
 #: misc-utils/hardlink.c:1222
-#, fuzzy
-#| msgid " -S, --maximum-size <size>  maximum size for files.\n"
 msgid " -S, --maximum-size <size>  maximum size for files\n"
 msgstr " -S, --maximum-size <サイズ> ファイルの最大サイズ\n"
 
@@ -12542,8 +12468,7 @@ msgid "failed to parse I/O size"
 msgstr "I/O サイズの解釈に失敗しました"
 
 #: misc-utils/hardlink.c:1391
-#, fuzzy, c-format
-#| msgid "unsupported reflink mode; %s"
+#, c-format
 msgid "unsupported reflink mode: %s"
 msgstr "未対応の参照リンクモードです: %s"
 
@@ -12619,10 +12544,9 @@ msgid "unknown signal %s; valid signals:"
 msgstr "不明なシグナル %s です; 有効なシグナル:"
 
 #: misc-utils/kill.c:290
-#, fuzzy, c-format
-#| msgid " %s [options] <pid>|<name>...\n"
+#, c-format
 msgid " %s [options] <pid>|<pid>:<pidfd_ino>|<name>...\n"
-msgstr " %s [オプション] <pid>|<name>...\n"
+msgstr " %s [オプション] <pid>|<pid>:<pidfd_ino>|<名前>...\n"
 
 #: misc-utils/kill.c:293
 msgid "Forcibly terminate a process.\n"
@@ -12657,11 +12581,6 @@ msgid " -p, --pid              print pids without signaling them\n"
 msgstr " -p, --pid              シグナルを送信せず、 PID を表示します\n"
 
 #: misc-utils/kill.c:307
-#, fuzzy
-#| msgid ""
-#| " -l, --list[=<signal>|=0x<sigmask>]\n"
-#| "                        list signal names, convert a signal number to a name,\n"
-#| "                         or convert a signal mask to names\n"
 msgid ""
 " -l, --list[=<signal>|=0x<sigmask>]\n"
 "                        list signal names, convert a signal number to a name,\n"
@@ -12669,7 +12588,7 @@ msgid ""
 msgstr ""
 " -l, --list[=<シグナル>|=0x<シグナルマスク>]\n"
 "                        シグナルの名前を一覧表示、もしくはシグナル番号または\n"
-"                         シグナルマスクを名前に変換します\n"
+"                          シグナルマスクを名前に変換します\n"
 
 #: misc-utils/kill.c:310
 msgid " -L, --table            list signal names and numbers\n"
@@ -13497,12 +13416,12 @@ msgid " -f, --fs             output info about filesystems\n"
 msgstr " -f, --fs             ファイルシステムに関する情報を出力します\n"
 
 #: misc-utils/lsblk.c:2341
-#, fuzzy
-#| msgid "     --hyperlink[=mode]       print paths as terminal hyperlinks (always, never, or auto)\n"
 msgid ""
 "     --hyperlink[=<when>]\n"
 "                      print paths as hyperlinks (always|never|auto)\n"
-msgstr "     --hyperlink[=モード]     パスを端末ハイパーリンクとして表示します (always, never, auto)\n"
+msgstr ""
+"     --hyperlink[=<いつ>]\n"
+"                      パスをハイパーリンクとして表示します (always|never|auto)\n"
 
 #: misc-utils/lsblk.c:2343
 msgid " -i, --ascii          use ascii characters only\n"
@@ -13656,10 +13575,8 @@ msgid " --no-discover-dynamic      do not try to discover dynamic clocks\n"
 msgstr " --no-discover-dynamic      ダイナミッククロックを検索しません\n"
 
 #: misc-utils/lsclocks.c:228
-#, fuzzy
-#| msgid " --no-discover-dynamic      do not try to discover dynamic clocks\n"
 msgid " --no-discover-rtc          do not try to discover RTCs"
-msgstr " --no-discover-dynamic      ダイナミッククロックを検索しません\n"
+msgstr " --no-discover-rtc          RTC を検索しません"
 
 #: misc-utils/lsclocks.c:229
 msgid " -d, --dynamic-clock <path> also display specified dynamic clock\n"
@@ -13670,10 +13587,8 @@ msgid " -c, --cpu-clock <pid>      also display CPU clock of specified process\n
 msgstr " -c, --cpu-clock <PID>      指定したプロセスの CPU クロックも表示します\n"
 
 #: misc-utils/lsclocks.c:231
-#, fuzzy
-#| msgid " -Q, --filter <expr>          apply display filter\n"
 msgid " -x, --rtc <path>           also display specified RTC\n"
-msgstr " -Q, --filter <式>            表示フィルタを適用します\n"
+msgstr " -x, --rtc <パス>           指定した RTC も表示します\n"
 
 #: misc-utils/lsclocks.c:273
 #, c-format
@@ -13920,14 +13835,9 @@ msgid " -g, --get          examine pipe buffers"
 msgstr " -g, --get          パイプバッファを調査します"
 
 #: misc-utils/pipesz.c:77
-#, fuzzy, c-format
-#| msgid ""
-#| " -s, --set <size>   set pipe buffer sizes\n"
-#| "                      size defaults to %s\n"
+#, c-format
 msgid " -s, --set <size>   the buffer size to be used (default: %u)\n"
-msgstr ""
-" -s, --set <サイズ> パイプバッファのサイズを設定します\n"
-"                      サイズの既定値は %s です\n"
+msgstr " -s, --set <size>   使用するバッファのサイズ (既定値: %u)\n"
 
 #: misc-utils/pipesz.c:80
 msgid " -f, --file <path>  act on a file"
@@ -14048,10 +13958,9 @@ msgid "%s: rename to %s failed"
 msgstr "%s: %s への名前変更に失敗しました"
 
 #: misc-utils/rename.c:254
-#, fuzzy, c-format
-#| msgid " %s [options] <expression> <replacement> <file>...\n"
+#, c-format
 msgid " %s [options] <substring> <replacement> <file>...\n"
-msgstr " %s [オプション] <式> <置換> <ファイル>...\n"
+msgstr " %s [オプション] <部分文字列> <置換> <ファイル>...\n"
 
 #: misc-utils/rename.c:258
 msgid "Rename files.\n"
@@ -14134,12 +14043,12 @@ msgid " -S, --socket-activation do not create listening socket\n"
 msgstr " -S, --socket-activation 待ち受けソケットを作成しないようにします\n"
 
 #: misc-utils/uuidd.c:111
-#, fuzzy
-#| msgid "                         activate continuous clock handling\n"
 msgid ""
 " -C, --cont-clock[=<number>[hd]]\n"
 "                         activate continuous clock handling\n"
-msgstr "                         連続クロック処理を有効にします\n"
+msgstr ""
+" -C, --cont-clock[=<数値>[hd]]\n"
+"                         連続クロック処理を有効にします\n"
 
 #: misc-utils/uuidd.c:113
 msgid " -d, --debug             run in debugging mode\n"
@@ -14401,8 +14310,6 @@ msgid "not a valid hex string"
 msgstr "正しい 16 進数ではありません"
 
 #: misc-utils/uuidgen.c:150 misc-utils/waitpid.c:243
-#, fuzzy
-#| msgid "Invalid count"
 msgid "invalid count"
 msgstr "count が正しくありません"
 
@@ -14519,7 +14426,7 @@ msgstr "出力カラムの準備に失敗しました"
 #: misc-utils/waitpid.c:77
 #, c-format
 msgid "pidfd inode %<PRIu64> not found for PID %d"
-msgstr ""
+msgstr "PID %2$d で pidfd inode %1$<PRIu64> が見つかりません"
 
 #: misc-utils/waitpid.c:94
 #, c-format
@@ -14527,10 +14434,9 @@ msgid "PID %d has exited, skipping"
 msgstr "PID %d は終了しました。飛ばします"
 
 #: misc-utils/waitpid.c:97
-#, fuzzy, c-format
-#| msgid "could not open pid %u"
+#, c-format
 msgid "could not open PID %d"
-msgstr "pid %u を開けませんでした"
+msgstr "PID %u を開けませんでした"
 
 #: misc-utils/waitpid.c:114
 msgid "could not create timerfd"
@@ -14563,10 +14469,9 @@ msgid "PID %d finished\n"
 msgstr "PID %d が完了しました\n"
 
 #: misc-utils/waitpid.c:194
-#, fuzzy, c-format
-#| msgid " %s [options] pid...\n"
+#, c-format
 msgid " %s [options] %s...\n"
-msgstr " %s [オプション] pid...\n"
+msgstr " %s [オプション] %s...\n"
 
 #: misc-utils/waitpid.c:197
 msgid " -v, --verbose           be more verbose\n"
