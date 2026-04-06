@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-06 14:08+0900\n"
+"PO-Revision-Date: 2026-04-06 14:30+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -25538,16 +25538,12 @@ msgid "Filter out the specified columns from standard input.\n"
 msgstr "標準入力から指定した列を取り除くフィルタです。\n"
 
 #: text-utils/colrm.c:183
-#, fuzzy
-#| msgid "invalid offset argument"
 msgid "invalid first argument"
-msgstr "オフセット値が間違っています"
+msgstr "1 番目の引数が正しくありません"
 
 #: text-utils/colrm.c:185
-#, fuzzy
-#| msgid "invalid seconds argument"
 msgid "invalid second argument"
-msgstr "秒数の指定が間違っています"
+msgstr "2 番目の引数が正しくありません"
 
 #: text-utils/column.c:464
 msgid "failed to parse column"
@@ -25583,10 +25579,8 @@ msgid "failed to parse --table-wrap list"
 msgstr "--table-wrap のリストの解釈に失敗しました"
 
 #: text-utils/column.c:747
-#, fuzzy
-#| msgid "failed to allocate counter"
 msgid "failed to allocate column name"
-msgstr "カウンタの割り当てに失敗しました"
+msgstr "列の名前の割り当てに失敗しました"
 
 #: text-utils/column.c:776
 msgid "failed to allocate input line"
@@ -25618,10 +25612,8 @@ msgid " -O, --table-order <columns>      specify order of output columns\n"
 msgstr " -O, --table-order <列>           出力する列の順序を指定します\n"
 
 #: text-utils/column.c:1029
-#, fuzzy
-#| msgid " -N, --table-columns <names>      comma separated columns names\n"
 msgid "     --table-colorscheme <name>   specify color scheme name\n"
-msgstr " -N, --table-columns <名前>       列の名前をカンマ区切りで指定します\n"
+msgstr "     --table-colorscheme <名前>   配色の名前を指定します\n"
 
 #: text-utils/column.c:1030
 msgid " -C, --table-column <properties>  define column\n"
@@ -25636,8 +25628,6 @@ msgid " -l, --table-columns-limit <num>  maximal number of input columns\n"
 msgstr " -l, --table-columns-limit <数値> 入力列の最大数\n"
 
 #: text-utils/column.c:1033
-#, fuzzy
-#| msgid " -E, --table-noextreme <columns>  don't count long text from the columns to column width\n"
 msgid ""
 " -E, --table-noextreme <columns>  don't count long text in these columns\n"
 "                                    to the column's width\n"
@@ -25657,7 +25647,7 @@ msgstr " -e, --table-header-repeat        ページごとにヘッダをつけ�
 
 #: text-utils/column.c:1038
 msgid " -K, --table-header-as-columns    use the first row as table header\n"
-msgstr ""
+msgstr " -K, --table-header-as-columns    最初の列を表のヘッダとして使用します\n"
 
 #: text-utils/column.c:1039
 msgid " -H, --table-hide <columns>       don't print the columns\n"
@@ -25678,6 +25668,8 @@ msgstr " -W, --table-wrap <列>            これらの列のテキストを必�
 #: text-utils/column.c:1043
 msgid "     --wrap-separator <string>    wrap at this separator (requires --table-wrap)\n"
 msgstr ""
+"     --wrap-separator <文字列>    この区切り文字列で折り返します\n"
+"                                    (--table-wrap が必要です)\n"
 
 #: text-utils/column.c:1044
 msgid " -L, --keep-empty-lines           don't ignore empty lines\n"
@@ -25704,20 +25696,20 @@ msgid " -c, --output-width <width>       width of output in number of characters
 msgstr " -c, --output-width <幅>          出力幅を文字数で指定します\n"
 
 #: text-utils/column.c:1054
-#, fuzzy
-#| msgid " -o, --output-separator <string>  columns separator for table output (default is two spaces)\n"
 msgid ""
 " -o, --output-separator <string>  columns separator for table output\n"
 "                                    (default is two spaces)\n"
-msgstr " -o, --output-separator <文字列>  表出力時の列区切りを指定します。(既定値はスペース 2 つ)\n"
+msgstr ""
+" -o, --output-separator <文字列>  表出力時の列区切りを指定します\n"
+"                                    (既定値はスペース 2 つ)\n"
 
 #: text-utils/column.c:1056
-#, fuzzy
-#| msgid " -s, --separator <string>         possible table delimiters\n"
 msgid ""
 " -s, --input-separator, --separator <string>\n"
 "                                    possible table delimiters\n"
-msgstr " -s, --separator <文字列>         表の区切り文字列を指定します\n"
+msgstr ""
+" -s, --input-separator, --separator <文字列>\n"
+"                                    表の区切り文字列を指定します\n"
 
 #: text-utils/column.c:1058
 msgid " -x, --fillrows                   fill rows before columns\n"
@@ -25728,10 +25720,9 @@ msgid " -S, --use-spaces <number>        minimal whitespaces between columns (no
 msgstr " -S, --use-spaces <数値>          列間の最小ホワイトスペース (タブなし)\n"
 
 #: text-utils/column.c:1062
-#, fuzzy, c-format
-#| msgid "     --color[=<when>]      colorize output (%s, %s or %s)\n"
+#, c-format
 msgid "     --color[=<when>]             colorize output (%s, %s or %s)\n"
-msgstr "     --color[=<いつ>]      メッセージを色づけします(%s, %s, %s のどれか)\n"
+msgstr "     --color[=<いつ>]             メッセージを色づけします(%s, %s, %s のどれか)\n"
 
 #: text-utils/column.c:1155
 msgid "invalid columns argument"
@@ -26109,10 +26100,8 @@ msgid "No previous regular expression"
 msgstr "以前に使用した正規表現はありません"
 
 #: text-utils/more.c:1833 text-utils/more.c:1870
-#, fuzzy
-#| msgid ": !command not allowed in rflag mode.\n"
 msgid "Command not available in secure mode"
-msgstr ": !command は rflag モードでは許可されません。\n"
+msgstr "セキュアモードではコマンドは使えません"
 
 #: text-utils/more.c:1884
 #, c-format
