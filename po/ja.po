@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux-2.42-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-09 16:16+0900\n"
+"PO-Revision-Date: 2026-04-09 16:49+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -11061,7 +11061,7 @@ msgstr ""
 #: misc-utils/copyfilerange.c:136
 #, c-format
 msgid "%s offset %<PRId64> is beyond file size of %<PRId64>"
-msgstr "%s オフセット %<PRIu64> がファイルサイズ %<PRId64> を超えています"
+msgstr "%s オフセット %<PRId64> がファイルサイズ %<PRId64> を超えています"
 
 #: misc-utils/copyfilerange.c:149
 #, c-format
@@ -14436,7 +14436,7 @@ msgstr "PID %d は終了しました。飛ばします"
 #: misc-utils/waitpid.c:97
 #, c-format
 msgid "could not open PID %d"
-msgstr "PID %u を開けませんでした"
+msgstr "PID %d を開けませんでした"
 
 #: misc-utils/waitpid.c:114
 msgid "could not create timerfd"
@@ -17121,7 +17121,9 @@ msgstr "%s: 読み込みに失敗しました"
 msgid ""
 "\n"
 "Summary:\n"
-msgstr "\n概要:\n"
+msgstr ""
+"\n"
+"概要:\n"
 
 #: sys-utils/fallocate.c:459 sys-utils/fsfreeze.c:106
 msgid "no filename specified"
@@ -18005,7 +18007,7 @@ msgstr "パラメータ値を数値に変換できませんでした"
 #: sys-utils/hwclock-rtc.c:536
 #, c-format
 msgid "skipping ioctl(%d, RTC_PARAM_SET, param) to %s: value unchanged\n"
-msgstr "ioctl(%d, RTC_PARAM_SET, param) を省略します: 値が変更されていません\n"
+msgstr "%2$s への ioctl(%1$d, RTC_PARAM_SET, param) を省略します: 値が変更されていません\n"
 
 #: sys-utils/hwclock-rtc.c:544
 #, c-format
@@ -19199,7 +19201,9 @@ msgstr " -i, --iflag [-]<iflag> 入力モードフラグを設定します\n"
 msgid ""
 "\n"
 "Options relevant to GSM0710:\n"
-msgstr "\nGSM0710 関連オプション:\n"
+msgstr ""
+"\n"
+"GSM0710 関連オプション:\n"
 
 #: sys-utils/ldattach.c:221
 msgid " -m, --mtu <value>  set CMUX maximum frame size\n"
