@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: util-linux 2.41.2-rc1\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2026-03-24 12:20+0100\n"
-"PO-Revision-Date: 2026-04-06 14:30+0900\n"
+"PO-Revision-Date: 2026-04-09 15:57+0900\n"
 "Last-Translator: YOSHIDA Hideki <hideki@acm.org>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -1142,7 +1142,7 @@ msgstr "%s に対する BLKGETSIZE ioctl が失敗しました"
 #: disk-utils/fdisk.c:1072 disk-utils/sfdisk.c:1756
 #, c-format
 msgid "The device contains a '%s' signature in the first sector; it will not be wiped unless you create a new partition table. Alternatively, use wipefs(8)."
-msgstr "デバイスの最初のセクタに '%s' 署名が書き込まれており、新しいパーティションテーブルを作成しないかぎり wipe されません。wipefs(8) を使うこともできます。"
+msgstr "デバイスの最初のセクタには '%s' 署名が書き込まれており、新しいパーティションテーブルを作成しないかぎり wipe されません。wipefs(8) を使うこともできます。"
 
 #: disk-utils/fdisk.c:1077
 #, c-format
@@ -3162,7 +3162,7 @@ msgstr " %s [オプション] dirname outfile\n"
 
 #: disk-utils/mkfs.cramfs.c:133
 msgid "Make a compressed ROM file system."
-msgstr "圧縮ROM ファイルシステムを作成します。"
+msgstr "圧縮 ROM ファイルシステムを作成します。"
 
 #: disk-utils/mkfs.cramfs.c:136
 msgid " dirname        root of the filesystem to be compressed"
@@ -8368,12 +8368,12 @@ msgstr "pidfd の statx() に失敗しました"
 #: lib/pidfd-utils.c:75
 #, c-format
 msgid "failed to obtain a valid file descriptor for PID %d"
-msgstr "PID の有効なファイルディスクリプタの取得に失敗しました"
+msgstr "PID %d の有効なファイルディスクリプタの取得に失敗しました"
 
 #: lib/pidutils.c:76
 #, c-format
 msgid "failed to parse PID argument '%s'"
-msgstr "PID 引数の解析に失敗しました"
+msgstr "PID 引数 '%s' の解析に失敗しました"
 
 #: lib/plymouth-ctrl.c:71
 msgid "cannot open UNIX socket"
@@ -10242,7 +10242,7 @@ msgstr "パケットソケットに関連付けられた L2 プロトコル名 (
 
 #: lsfd-cmd/lsfd.c:322
 msgid "L2 protocol number associated with the packet socket (raw)"
-msgstr "パケットソケットに関連付けられた L2 プロトコル番号(無加工)"
+msgstr "パケットソケットに関連付けられた L2 プロトコル番号 (無加工)"
 
 #: lsfd-cmd/lsfd.c:325
 msgid "block device name resolved by /proc/partition"
@@ -10410,7 +10410,7 @@ msgstr "プロセスの数値ユーザ ID"
 
 #: lsfd-cmd/lsfd.c:448
 msgid "inode number for the peer of the UNIX domain socket"
-msgstr "UNIX ドメインソケットのピアの inode 番号"
+msgstr "UNIX ドメインソケットのピアの iノード番号"
 
 #: lsfd-cmd/lsfd.c:451
 msgid "filesystem pathname for UNIX domain socket"
@@ -11038,7 +11038,7 @@ msgstr " %1$s [オプション] <ソース> <ディスティネーション> <�
 
 #: misc-utils/copyfilerange.c:62
 msgid "Copy the specified range(s) from source to destination file."
-msgstr "ソースファイルからディスティネーションファイルへ指定した範囲をコピーします"
+msgstr "ソースファイルからディスティネーションファイルへ指定した範囲をコピーします。"
 
 #: misc-utils/copyfilerange.c:65
 msgid " -r, --ranges <file>     read ranges separated by newlines from this file"
@@ -11061,7 +11061,7 @@ msgstr ""
 #: misc-utils/copyfilerange.c:136
 #, c-format
 msgid "%s offset %<PRId64> is beyond file size of %<PRId64>"
-msgstr "%s: オフセット %<PRIu64> がファイルサイズ %<PRId64> を超えています"
+msgstr "%s オフセット %<PRIu64> がファイルサイズ %<PRId64> を超えています"
 
 #: misc-utils/copyfilerange.c:149
 #, c-format
@@ -13837,7 +13837,7 @@ msgstr " -g, --get          パイプバッファを調査します"
 #: misc-utils/pipesz.c:77
 #, c-format
 msgid " -s, --set <size>   the buffer size to be used (default: %u)\n"
-msgstr " -s, --set <size>   使用するバッファのサイズ (既定値: %u)\n"
+msgstr " -s, --set <サイズ> 使用するバッファのサイズ (既定値: %u)\n"
 
 #: misc-utils/pipesz.c:80
 msgid " -f, --file <path>  act on a file"
@@ -14988,7 +14988,7 @@ msgid ""
 "                            of: pid, tgid, pgid; default: tgid"
 msgstr ""
 " -t, --dest-type <タイプ> 新規または対象の PID。pid, tgid, pgid の\n"
-"                            いずれかを指定する。既定値: tgid"
+"                            いずれかを指定します。既定値: tgid"
 
 #: schedutils/coresched.c:102
 msgid " -v, --verbose      verbose"
@@ -15539,7 +15539,7 @@ msgid ""
 "    This command releases the reservation specified by key and flags and thus\n"
 "    removes any access restriction implied by it."
 msgstr ""
-"    このコマンドは、key で指定された予約を解放し、予約で生じていた\n"
+"    このコマンドは、key および flag で指定された予約を解放し、予約で生じていた\n"
 "    アクセス制限を解除します。"
 
 #: sys-utils/blkpr.c:102
@@ -19639,7 +19639,7 @@ msgstr "Linux が CPU を利用しているかどうかの表示"
 
 #: sys-utils/lscpu.c:152
 msgid "shows the loaded CPU microcode version"
-msgstr "ロードされた CPU マイクロコードバージョンの表示"
+msgstr "ロードされた CPU マイクロコードのバージョンの表示"
 
 #: sys-utils/lscpu.c:153
 msgid "shows the current MHz of the CPU"
@@ -21363,7 +21363,7 @@ msgstr "ネームスペースハンドルの記入に失敗しました"
 #: sys-utils/nsenter.c:252
 #, c-format
 msgid "cannot open namespace of id %<PRIu64>"
-msgstr "ID  %<PRIu64> のネームスペースが開けません"
+msgstr "ID %<PRIu64> のネームスペースが開けません"
 
 #: sys-utils/nsenter.c:341
 #, c-format
@@ -24187,7 +24187,7 @@ msgid ""
 " -p, --algorithm-params <parameter>...\n"
 "                           parameters for the compression algorithm\n"
 msgstr ""
-" -p, --algorithm-params <parameter>...\n"
+" -p, --algorithm-params <パラメータ>...\n"
 "                           圧縮アルゴリズムのパラメータ\n"
 
 #: sys-utils/zramctl.c:756
